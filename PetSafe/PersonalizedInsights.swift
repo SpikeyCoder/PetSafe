@@ -154,6 +154,8 @@ struct PersonalizedInsights: View {
 
             healthOverviewCard
 
+            foodRecommendationsCard
+
             tipsCard
         }
     }
@@ -218,6 +220,66 @@ struct PersonalizedInsights: View {
                         .padding(.vertical, 4)
                         .background(Color.blue50)
                         .clipShape(RoundedRectangle(cornerRadius: 8))
+                }
+            }
+        }
+        .padding()
+        .background(Color(.systemBackground))
+        .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.gray.opacity(0.15)))
+        .clipShape(RoundedRectangle(cornerRadius: 12))
+    }
+
+    private var foodRecommendationsCard: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            HStack(spacing: 8) {
+                Image(systemName: "leaf.circle.fill").foregroundStyle(.green)
+                Text("Food Recommendations for \(onboardingData.dogName.isEmpty ? "your dog" : onboardingData.dogName)")
+                    .font(.headline)
+            }
+
+            let recs = getFoodRecommendations()
+            if recs.isEmpty {
+                Text("No recommendations yet. Start scanning foods to get personalized suggestions.")
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+                    .padding(.vertical, 4)
+            } else {
+                ForEach(recs.indices, id: \.self) { i in
+                    let rec = recs[i]
+                    VStack(alignment: .leading, spacing: 6) {
+                        HStack(alignment: .firstTextBaseline) {
+                            Text(rec.name)
+                                .font(.subheadline.weight(.semibold))
+                            Spacer()
+                            Text(rec.safety.rawValue)
+                                .font(.caption.weight(.semibold))
+                                .padding(.horizontal, 8)
+                                .padding(.vertical, 4)
+                                .background(rec.safety.badgeColor.opacity(0.15))
+                                .foregroundStyle(rec.safety.badgeColor)
+                                .clipShape(RoundedRectangle(cornerRadius: 8))
+                        }
+                        // Badges row
+                        FlowWrapHStack(items: rec.badges) { badge in
+                            Text(badge)
+                                .font(.caption2)
+                                .padding(.horizontal, 8)
+                                .padding(.vertical, 4)
+                                .overlay(RoundedRectangle(cornerRadius: 6).stroke(Color.gray.opacity(0.25)))
+                        }
+                        if let note = rec.note {
+                            Text(note)
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                                .padding(.horizontal, 8)
+                                .padding(.vertical, 6)
+                                .background(Color.gray.opacity(0.08))
+                                .clipShape(RoundedRectangle(cornerRadius: 8))
+                        }
+                    }
+                    .padding(10)
+                    .background(Color(.secondarySystemBackground))
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
                 }
             }
         }
@@ -328,6 +390,68 @@ struct PersonalizedInsights: View {
         }
         return tips
     }
+    
+    private enum FoodSafety: String { case good = "Good", caution = "Caution", avoid = "Avoid"
+        var badgeColor: Color {
+            switch self {
+            case .good: return .green600
+            case .caution: return .yellow600
+            case .avoid: return .red600
+            }
+        }
+    }
+
+    private struct FoodRecommendation: Identifiable {
+        let id = UUID()
+        let name: String
+        let safety: FoodSafety
+        let badges: [String]
+        let note: String?
+    }
+
+    private func getFoodRecommendations() -> [FoodRecommendation] {
+        var results: [FoodRecommendation] = []
+
+        // Simple, local logic based on risk level and dietary preferences
+        let isHighRisk = riskLevel.lowercased() == "high" || onboardingData.healthConditions.contains("Copper Storage Disease")
+        let prefersLowCopper = onboardingData.dietaryRestrictions.contains("Low-copper diet")
+
+        if prefersLowCopper || isHighRisk {
+            results.append(FoodRecommendation(
+                name: "Safe: Low-Copper Kibble",
+                safety: .good,
+                badges: ["Dry", "Kibble", "Low Cu", "Grain-free"],
+                note: "Balanced option with reduced copper content"
+            ))
+            results.append(FoodRecommendation(
+                name: "Turkey & Rice Formula",
+                safety: .caution,
+                badges: ["Canned", "Poultry", "Moderate Cu"],
+                note: "Use in moderation; monitor daily copper total"
+            ))
+            results.append(FoodRecommendation(
+                name: "Beef & Liver Mix",
+                safety: .avoid,
+                badges: ["Wet", "Beef", "Liver", "High Cu"],
+                note: "Avoid due to organ meat’s high copper content"
+            ))
+        } else {
+            results.append(FoodRecommendation(
+                name: "Chicken & Oatmeal",
+                safety: .good,
+                badges: ["Dry", "Chicken", "Balanced"],
+                note: "Good everyday choice"
+            ))
+            results.append(FoodRecommendation(
+                name: "Salmon Stew",
+                safety: .caution,
+                badges: ["Wet", "Fish", "Omega-3"],
+                note: "Fish can add copper; track servings"
+            ))
+        }
+
+        return results
+    }
 }
 
 struct FlowLayout: Layout {
@@ -412,4 +536,3 @@ struct FlowWrapHStack<Content: View, T: Hashable>: View {
         copperLimit: 5.0
     )
 }
-
