@@ -7,12 +7,155 @@ struct PersonalizedInsights: View {
     let copperLimit: Double
 
     var body: some View {
-        VStack(spacing: 12) {
-            personalizedMessageCard
-            healthProfileCard
-            tipsCard
+        ScrollView {
+            VStack(spacing: 16) {
+                upgradeBanner
+
+                profileSummaryCard
+
+                copperTodayCard
+
+                insightsSection
+            }
+            .padding(.vertical)
+            .padding(.horizontal)
+        }
+    }
+
+    private var upgradeBanner: some View {
+        HStack(alignment: .center) {
+            VStack(alignment: .leading, spacing: 4) {
+                Text("Unlock Premium Features")
+                    .font(.headline)
+                    .foregroundStyle(Color.orange900)
+                Text("Get unlimited tracking, photo identification, and more")
+                    .font(.caption)
+                    .foregroundStyle(Color.orange700)
+            }
+            Spacer(minLength: 12)
+            Button {
+                // Hook up to premium flow if needed
+            } label: {
+                Text("Upgrade")
+                    .font(.subheadline.weight(.semibold))
+                    .padding(.horizontal, 12)
+                    .padding(.vertical, 6)
+                    .background(Color.orange600)
+                    .foregroundStyle(.white)
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+            }
+        }
+        .padding(12)
+        .background(
+            LinearGradient(colors: [Color.orange100, Color.orange50], startPoint: .leading, endPoint: .trailing)
+        )
+        .overlay(
+            RoundedRectangle(cornerRadius: 12)
+                .stroke(Color.orange200, lineWidth: 1)
+        )
+        .clipShape(RoundedRectangle(cornerRadius: 12))
+    }
+
+    private var profileSummaryCard: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            HStack {
+                Image(systemName: "pawprint.circle.fill")
+                    .foregroundStyle(Color.blue600)
+                Text(onboardingData.dogName.isEmpty ? "Your Dog" : onboardingData.dogName)
+                    .font(.headline)
+                Spacer()
+            }
+            Grid(alignment: .leading) {
+                GridRow { Text("Breed").foregroundStyle(.secondary); Text(onboardingData.breed.isEmpty ? "—" : onboardingData.breed) }
+                GridRow { Text("Age").foregroundStyle(.secondary); Text("\(onboardingData.age) yrs") }
+                GridRow { Text("Weight").foregroundStyle(.secondary); Text("\(onboardingData.weight) lbs") }
+                GridRow { Text("Daily Limit").foregroundStyle(.secondary); Text("\(copperLimit, specifier: "%.2f") mg Cu") }
+                GridRow { Text("Risk").foregroundStyle(.secondary); Text(riskLevel.capitalized).foregroundStyle(colorForRisk()) }
+            }
         }
         .padding()
+        .background(Color.blue50)
+        .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.blue200))
+        .clipShape(RoundedRectangle(cornerRadius: 12))
+    }
+
+    private var copperTodayCard: some View {
+        let percentage = min(max(currentCopper / max(copperLimit, 0.001) * 100.0, 0), 100)
+        let status = statusFor(percentage: percentage)
+        return VStack(alignment: .leading, spacing: 12) {
+            HStack {
+                Text("\(onboardingData.dogName.isEmpty ? "Dog" : onboardingData.dogName)'s Copper Today")
+                    .font(.headline)
+                Spacer()
+                HStack(spacing: 8) {
+                    Image(systemName: status.icon).foregroundStyle(status.color)
+                    Text(status.text)
+                        .font(.subheadline.weight(.semibold))
+                        .foregroundStyle(status.color)
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 4)
+                        .overlay(RoundedRectangle(cornerRadius: 8).stroke(status.color.opacity(0.4)))
+                }
+            }
+
+            VStack(spacing: 2) {
+                HStack(alignment: .firstTextBaseline) {
+                    Text("\(currentCopper, specifier: "%.1f")")
+                        .font(.system(size: 28, weight: .semibold))
+                        .foregroundStyle(status.color)
+                    Text("/\(copperLimit, specifier: "%.2f")mg")
+                        .foregroundStyle(.secondary)
+                    Spacer()
+                }
+                Text("\(max(copperLimit - currentCopper, 0), specifier: "%.1f")mg remaining")
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+            }
+
+            VStack(spacing: 6) {
+                HStack {
+                    Text("Daily Limit")
+                    Spacer()
+                    Text("\(percentage, specifier: "%.0f")%")
+                }
+                .font(.caption)
+                GeometryReader { proxy in
+                    let availableWidth = proxy.size.width
+                    ZStack(alignment: .leading) {
+                        Capsule().fill(Color.primary.opacity(0.12)).frame(height: 10)
+                        Capsule()
+                            .fill(status.bar)
+                            .frame(width: max(0, min(1.0, percentage/100.0)) * availableWidth, height: 10)
+                    }
+                }
+                .frame(height: 10)
+            }
+
+            HStack(spacing: 8) {
+                Image(systemName: "stethoscope")
+                    .foregroundStyle(status.color)
+                Text(recommendationText())
+                    .font(.footnote)
+            }
+        }
+        .padding()
+        .background(status.bg)
+        .overlay(RoundedRectangle(cornerRadius: 12).stroke(status.border))
+        .clipShape(RoundedRectangle(cornerRadius: 12))
+    }
+
+    private var insightsSection: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text("Insights for \(onboardingData.dogName.isEmpty ? "your dog" : onboardingData.dogName)")
+                .font(.headline)
+                .padding(.horizontal, 2)
+
+            personalizedMessageCard
+
+            healthOverviewCard
+
+            tipsCard
+        }
     }
 
     private var personalizedMessageCard: some View {
@@ -41,23 +184,23 @@ struct PersonalizedInsights: View {
         .clipShape(RoundedRectangle(cornerRadius: 12))
     }
 
-    private var healthProfileCard: some View {
+    private var healthOverviewCard: some View {
         VStack(alignment: .leading, spacing: 8) {
             HStack(spacing: 8) {
                 Image(systemName: "waveform.path.ecg").foregroundStyle(.blue)
-                Text("\(onboardingData.dogName)'s Health Profile").font(.headline)
+                Text("Health Overview").font(.headline)
             }
             Grid(alignment: .leading) {
-                GridRow { Text("Age:").foregroundStyle(.secondary); Text("\(onboardingData.age) years") }
-                GridRow { Text("Weight:").foregroundStyle(.secondary); Text("\(onboardingData.weight, specifier: "%.1f") lbs") }
-                GridRow { Text("Risk Level:").foregroundStyle(.secondary); Text(riskLevel.capitalized).foregroundStyle(colorForRisk()) }
-                GridRow { Text("Daily Limit:").foregroundStyle(.secondary); Text("\(copperLimit, specifier: "%.1f")mg Cu") }
-                GridRow { Text("Current Copper:").foregroundStyle(.secondary); Text("\(currentCopper, specifier: "%.2f")mg Cu") }
+                GridRow { Text("Age").foregroundStyle(.secondary); Text("\(onboardingData.age) yrs") }
+                GridRow { Text("Weight").foregroundStyle(.secondary); Text("\(onboardingData.weight) lbs") }
+                GridRow { Text("Risk").foregroundStyle(.secondary); Text(riskLevel.capitalized).foregroundStyle(colorForRisk()) }
+                GridRow { Text("Daily Limit").foregroundStyle(.secondary); Text("\(copperLimit, specifier: "%.2f") mg Cu") }
+                GridRow { Text("Current").foregroundStyle(.secondary); Text("\(currentCopper, specifier: "%.2f") mg Cu") }
             }
             if onboardingData.healthConditions.filter({ $0 != "None of the above" }).count > 0 {
                 Divider()
                 Text("Health Conditions").font(.subheadline.weight(.semibold))
-                WrapHStack(items: Array(onboardingData.healthConditions.filter { $0 != "None of the above" })) { item in
+                FlowWrapHStack(items: Array(onboardingData.healthConditions.filter { $0 != "None of the above" })) { item in
                     Text(item)
                         .font(.caption)
                         .padding(.horizontal, 8)
@@ -68,12 +211,12 @@ struct PersonalizedInsights: View {
             if onboardingData.dietaryRestrictions.filter({ $0 != "No specific restrictions" }).count > 0 {
                 Divider()
                 Text("Diet Type").font(.subheadline.weight(.semibold))
-                WrapHStack(items: Array(onboardingData.dietaryRestrictions.filter { $0 != "No specific restrictions" }.prefix(3))) { item in
+                FlowWrapHStack(items: Array(onboardingData.dietaryRestrictions.filter { $0 != "No specific restrictions" }.prefix(3))) { item in
                     Text(item)
                         .font(.caption)
                         .padding(.horizontal, 8)
                         .padding(.vertical, 4)
-                        .background(Color.blue.opacity(0.1))
+                        .background(Color.blue50)
                         .clipShape(RoundedRectangle(cornerRadius: 8))
                 }
             }
@@ -102,6 +245,22 @@ struct PersonalizedInsights: View {
         .background(Color(.systemBackground))
         .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.gray.opacity(0.15)))
         .clipShape(RoundedRectangle(cornerRadius: 12))
+    }
+
+    private func statusFor(percentage: Double) -> (text: String, color: Color, bg: Color, border: Color, bar: Color, icon: String) {
+        if percentage < 70 { return ("Safe", .green600, .green50, .green200, .green500, "checkmark.circle") }
+        if percentage < 90 { return ("Caution", .yellow600, .yellow50, .yellow200, .yellow500, "exclamationmark.triangle") }
+        return ("High", .red600, .red50, .red200, .red500, "xmark.octagon")
+    }
+
+    private func recommendationText() -> String {
+        if onboardingData.vetRecommendations.contains("Regular liver function tests") {
+            return "Regular vet check-ups recommended for ongoing copper management"
+        }
+        if onboardingData.healthConditions.contains("Copper Storage Disease") {
+            return "Tip: Low-copper diet and regular monitoring"
+        }
+        return "Tip: Try a low-copper food or scan a barcode"
     }
 
     private func colorForRisk() -> Color {
@@ -171,41 +330,68 @@ struct PersonalizedInsights: View {
     }
 }
 
-struct WrapHStack<Content: View, T: Hashable>: View {
-    let items: [T]
-    let content: (T) -> Content
+struct FlowLayout: Layout {
+    var spacing: CGFloat = 8
+    
+    func sizeThatFits(proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) -> CGSize {
+        let maxWidth = proposal.width ?? .infinity
+        var x: CGFloat = 0
+        var y: CGFloat = 0
+        var rowHeight: CGFloat = 0
+        
+        for sub in subviews {
+            let size = sub.sizeThatFits(.unspecified)
+            if x > 0 && x + size.width > maxWidth {
+                // move to next line
+                x = 0
+                y += rowHeight + spacing
+                rowHeight = 0
+            }
+            rowHeight = max(rowHeight, size.height)
+            x += size.width + spacing
+        }
+        return CGSize(width: maxWidth.isFinite ? maxWidth : x, height: y + rowHeight)
+    }
+    
+    func placeSubviews(in bounds: CGRect, proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) {
+        let maxWidth = bounds.width
+        var x = bounds.minX
+        var y = bounds.minY
+        var rowHeight: CGFloat = 0
+        
+        for sub in subviews {
+            let size = sub.sizeThatFits(.unspecified)
+            if x > bounds.minX && x + size.width > bounds.minX + maxWidth {
+                // wrap to next line
+                x = bounds.minX
+                y += rowHeight + spacing
+                rowHeight = 0
+            }
+            sub.place(at: CGPoint(x: x, y: y), proposal: ProposedViewSize(size))
+            x += size.width + spacing
+            rowHeight = max(rowHeight, size.height)
+        }
+    }
+}
 
-    init(items: [T], @ViewBuilder content: @escaping (T) -> Content) {
+// Convenience wrapper to mimic the old API
+struct FlowWrapHStack<Content: View, T: Hashable>: View {
+    let items: [T]
+    let spacing: CGFloat
+    let content: (T) -> Content
+    
+    init(items: [T], spacing: CGFloat = 8, @ViewBuilder content: @escaping (T) -> Content) {
         self.items = items
+        self.spacing = spacing
         self.content = content
     }
-
+    
     var body: some View {
-        var width = CGFloat.zero
-        var height = CGFloat.zero
-
-        return GeometryReader { geometry in
-            ZStack(alignment: .topLeading) {
-                ForEach(items, id: \.self) { item in
-                    content(item)
-                        .padding(4)
-                        .alignmentGuide(.leading) { d in
-                            if (abs(width) + d.width) > geometry.size.width {
-                                width = 0
-                                height -= d.height
-                            }
-                            let result = width
-                            width += d.width
-                            return result
-                        }
-                        .alignmentGuide(.top) { _ in
-                            let result = height
-                            return result
-                        }
-                }
+        FlowLayout(spacing: spacing) {
+            ForEach(items, id: \.self) { item in
+                content(item)
             }
         }
-        .frame(minHeight: 24)
     }
 }
 
@@ -226,3 +412,4 @@ struct WrapHStack<Content: View, T: Hashable>: View {
         copperLimit: 5.0
     )
 }
+

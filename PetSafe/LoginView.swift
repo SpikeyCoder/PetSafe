@@ -68,7 +68,7 @@ struct LoginView: View {
                     switch result {
                     case .success(let auth):
                         // You can extract the credential and send identityToken to your server if needed
-                        if let appleIDCredential = auth.credential as? ASAuthorizationAppleIDCredential {
+                        if auth.credential is ASAuthorizationAppleIDCredential {
                             // Example: let token = appleIDCredential.identityToken
                             onLoginSuccess?()
                         } else {

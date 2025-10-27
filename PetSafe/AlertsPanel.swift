@@ -82,7 +82,7 @@ struct AlertsPanel: View {
     }
 }
 
-#Preview {
+#Preview(traits: .sizeThatFitsLayout) {
     VStack(spacing: 20) {
         AlertsPanel(currentCopper: 4.5, copperLimit: 5.0, riskLevel: "low", recentHighCopperFoods: [])
         AlertsPanel(currentCopper: 3.8, copperLimit: 5.0, riskLevel: "medium", recentHighCopperFoods: ["Liver Treats"])
@@ -90,5 +90,4 @@ struct AlertsPanel: View {
         AlertsPanel(currentCopper: 1.5, copperLimit: 5.0, riskLevel: "low", recentHighCopperFoods: [])
     }
     .padding()
-    .previewLayout(.sizeThatFits)
 }
