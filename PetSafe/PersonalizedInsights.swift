@@ -6,20 +6,68 @@ struct PersonalizedInsights: View {
     let currentCopper: Double
     let copperLimit: Double
 
+    @State private var recsState: LoadState<[FoodRecommendation]> = .idle
+    @State private var selectedTab: TopTab = .home
+    @State private var isPremium: Bool = false // TODO: Inject real premium status
+
+    // Dependency points (replace mocks with real implementations)
+    var openFoodFacts: OpenFoodFactsService = OpenFoodFactsMock()
+    var usdaService: USDAService = USDAMock()
+
     var body: some View {
         ScrollView {
             VStack(spacing: 16) {
-                upgradeBanner
+                topTabs
 
-                profileSummaryCard
-
-                copperTodayCard
-
-                insightsSection
+                switch selectedTab {
+                case .home:
+                    upgradeBanner
+                    profileSummaryCard
+                    copperTodayCard
+                    insightsSection
+                case .scan:
+                    scanSection
+                case .log:
+                    logSection
+                }
             }
             .padding(.vertical)
             .padding(.horizontal)
         }
+    }
+
+    private var topTabs: some View {
+        HStack(spacing: 8) {
+            segmentButton(.home, systemImage: "house")
+            segmentButton(.scan, systemImage: "barcode.viewfinder")
+            segmentButton(.log, systemImage: "clock.arrow.circlepath")
+        }
+        .padding(8)
+        .background(
+            RoundedRectangle(cornerRadius: 14)
+                .fill(Color(.secondarySystemBackground))
+        )
+    }
+
+    private func segmentButton(_ tab: TopTab, systemImage: String) -> some View {
+        Button {
+            selectedTab = tab
+        } label: {
+            HStack(spacing: 6) {
+                Image(systemName: systemImage)
+                Text(tab.rawValue)
+            }
+            .font(.subheadline.weight(.semibold))
+            .padding(.horizontal, 12)
+            .padding(.vertical, 8)
+            .background(
+                Group {
+                    if selectedTab == tab { Color.accentColor.opacity(0.12) } else { Color.clear }
+                }
+            )
+            .clipShape(RoundedRectangle(cornerRadius: 10))
+        }
+        .buttonStyle(.plain)
     }
 
     private var upgradeBanner: some View {
@@ -144,6 +192,134 @@ struct PersonalizedInsights: View {
         .clipShape(RoundedRectangle(cornerRadius: 12))
     }
 
+    private var scanSection: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            HStack(spacing: 8) {
+                Image(systemName: "barcode.viewfinder").foregroundStyle(.blue)
+                Text("Scan a Barcode").font(.headline)
+                Spacer()
+                if !isPremium {
+                    Text("Premium")
+                        .font(.caption.weight(.semibold))
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 4)
+                        .background(Color.orange.opacity(0.15))
+                        .foregroundStyle(.orange)
+                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                }
+            }
+
+            if isPremium {
+                VStack(alignment: .leading, spacing: 8) {
+                    Text("Point your camera at a barcode to analyze copper safety.")
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                    Button {
+                        // TODO: Hook into real scanner flow
+                    } label: {
+                        HStack {
+                            Image(systemName: "camera.viewfinder")
+                            Text("Start Scanning")
+                        }
+                        .font(.subheadline.weight(.semibold))
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.accentColor)
+                        .foregroundStyle(.white)
+                        .clipShape(RoundedRectangle(cornerRadius: 12))
+                    }
+                }
+                .padding()
+                .background(Color(.systemBackground))
+                .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.gray.opacity(0.15)))
+                .clipShape(RoundedRectangle(cornerRadius: 12))
+            } else {
+                // Non-premium preview: show pre-populated mock results (from current card state)
+                VStack(alignment: .leading, spacing: 8) {
+                    Text("Preview: Example scan results")
+                        .font(.subheadline.weight(.semibold))
+                        .foregroundStyle(.secondary)
+                    foodRecommendationsCard
+                    Button {
+                        // TODO: Present paywall
+                    } label: {
+                        Text("Upgrade to unlock scanning")
+                            .font(.subheadline.weight(.semibold))
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(Color.orange600)
+                            .foregroundStyle(.white)
+                            .clipShape(RoundedRectangle(cornerRadius: 12))
+                    }
+                }
+            }
+        }
+    }
+
+    private var logSection: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            HStack(spacing: 8) {
+                Image(systemName: "clock.arrow.circlepath").foregroundStyle(.purple)
+                Text("Food Log").font(.headline)
+                Spacer()
+                if !isPremium {
+                    Text("Premium")
+                        .font(.caption.weight(.semibold))
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 4)
+                        .background(Color.orange.opacity(0.15))
+                        .foregroundStyle(.orange)
+                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                }
+            }
+
+            if isPremium {
+                // Simple mock log list; replace with real data source
+                let items = [
+                    ("Chicken & Rice (homemade)", "0.42 mg Cu", "Today"),
+                    ("Safe: Low-Copper Kibble", "—", "Yesterday"),
+                    ("Beef & Liver Mix", "High Cu", "2 days ago")
+                ]
+                VStack(alignment: .leading, spacing: 8) {
+                    ForEach(0..<items.count, id: \.self) { i in
+                        HStack {
+                            VStack(alignment: .leading) {
+                                Text(items[i].0).font(.subheadline.weight(.semibold))
+                                Text(items[i].2).font(.caption).foregroundStyle(.secondary)
+                            }
+                            Spacer()
+                            Text(items[i].1)
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                        }
+                        .padding(10)
+                        .background(Color(.secondarySystemBackground))
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                    }
+                }
+            } else {
+                VStack(alignment: .leading, spacing: 8) {
+                    Text("Preview: Recent items")
+                        .font(.subheadline.weight(.semibold))
+                        .foregroundStyle(.secondary)
+                    // Reuse recommendations as a stand-in for recent log entries
+                    foodRecommendationsCard
+                    Button {
+                        // TODO: Present paywall
+                    } label: {
+                        Text("Upgrade to unlock food logging")
+                            .font(.subheadline.weight(.semibold))
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(Color.orange600)
+                            .foregroundStyle(.white)
+                            .clipShape(RoundedRectangle(cornerRadius: 12))
+                    }
+                }
+            }
+        }
+    }
+
     private var insightsSection: some View {
         VStack(alignment: .leading, spacing: 12) {
             Text("Insights for \(onboardingData.dogName.isEmpty ? "your dog" : onboardingData.dogName)")
@@ -235,51 +411,83 @@ struct PersonalizedInsights: View {
                 Image(systemName: "leaf.circle.fill").foregroundStyle(.green)
                 Text("Food Recommendations for \(onboardingData.dogName.isEmpty ? "your dog" : onboardingData.dogName)")
                     .font(.headline)
+                Spacer()
+                switch recsState {
+                case .loading:
+                    ProgressView().scaleEffect(0.8)
+                default:
+                    EmptyView()
+                }
             }
 
-            let recs = getFoodRecommendations()
-            if recs.isEmpty {
-                Text("No recommendations yet. Start scanning foods to get personalized suggestions.")
+            switch recsState {
+            case .idle:
+                Text("")
+                    .task { await loadRecommendations() }
+            case .loading:
+                VStack(alignment: .leading, spacing: 6) {
+                    ProgressView("Fetching recommendations…")
+                        .progressViewStyle(.linear)
+                }
+                .padding(.vertical, 4)
+            case .failed(let message):
+                Text(message)
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
                     .padding(.vertical, 4)
-            } else {
-                ForEach(recs.indices, id: \.self) { i in
-                    let rec = recs[i]
-                    VStack(alignment: .leading, spacing: 6) {
-                        HStack(alignment: .firstTextBaseline) {
-                            Text(rec.name)
-                                .font(.subheadline.weight(.semibold))
-                            Spacer()
-                            Text(rec.safety.rawValue)
-                                .font(.caption.weight(.semibold))
-                                .padding(.horizontal, 8)
-                                .padding(.vertical, 4)
-                                .background(rec.safety.badgeColor.opacity(0.15))
-                                .foregroundStyle(rec.safety.badgeColor)
-                                .clipShape(RoundedRectangle(cornerRadius: 8))
+            case .loaded(let recs):
+                if recs.isEmpty {
+                    Text("No recommendations yet. Start scanning foods to get personalized suggestions.")
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                        .padding(.vertical, 4)
+                } else {
+                    ForEach(recs.indices, id: \.self) { i in
+                        let rec = recs[i]
+                        VStack(alignment: .leading, spacing: 6) {
+                            HStack(alignment: .firstTextBaseline) {
+                                Text(rec.name)
+                                    .font(.subheadline.weight(.semibold))
+                                Spacer()
+                                HStack(spacing: 6) {
+                                    Text(rec.confidence.rawValue)
+                                        .font(.caption2.weight(.semibold))
+                                        .padding(.horizontal, 6)
+                                        .padding(.vertical, 3)
+                                        .background(rec.confidence.badgeColor.opacity(0.15))
+                                        .foregroundStyle(rec.confidence.badgeColor)
+                                        .clipShape(RoundedRectangle(cornerRadius: 6))
+                                    Text(rec.safety.rawValue)
+                                        .font(.caption.weight(.semibold))
+                                        .padding(.horizontal, 8)
+                                        .padding(.vertical, 4)
+                                        .background(rec.safety.badgeColor.opacity(0.15))
+                                        .foregroundStyle(rec.safety.badgeColor)
+                                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                                }
+                            }
+                            // Badges row
+                            FlowWrapHStack(items: rec.badges) { badge in
+                                Text(badge)
+                                    .font(.caption2)
+                                    .padding(.horizontal, 8)
+                                    .padding(.vertical, 4)
+                                    .overlay(RoundedRectangle(cornerRadius: 6).stroke(Color.gray.opacity(0.25)))
+                            }
+                            if let note = rec.note {
+                                Text(note)
+                                    .font(.caption)
+                                    .foregroundStyle(.secondary)
+                                    .padding(.horizontal, 8)
+                                    .padding(.vertical, 6)
+                                    .background(Color.gray.opacity(0.08))
+                                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                            }
                         }
-                        // Badges row
-                        FlowWrapHStack(items: rec.badges) { badge in
-                            Text(badge)
-                                .font(.caption2)
-                                .padding(.horizontal, 8)
-                                .padding(.vertical, 4)
-                                .overlay(RoundedRectangle(cornerRadius: 6).stroke(Color.gray.opacity(0.25)))
-                        }
-                        if let note = rec.note {
-                            Text(note)
-                                .font(.caption)
-                                .foregroundStyle(.secondary)
-                                .padding(.horizontal, 8)
-                                .padding(.vertical, 6)
-                                .background(Color.gray.opacity(0.08))
-                                .clipShape(RoundedRectangle(cornerRadius: 8))
-                        }
+                        .padding(10)
+                        .background(Color(.secondarySystemBackground))
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
                     }
-                    .padding(10)
-                    .background(Color(.secondarySystemBackground))
-                    .clipShape(RoundedRectangle(cornerRadius: 10))
                 }
             }
         }
@@ -287,6 +495,49 @@ struct PersonalizedInsights: View {
         .background(Color(.systemBackground))
         .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.gray.opacity(0.15)))
         .clipShape(RoundedRectangle(cornerRadius: 12))
+    }
+
+    @MainActor
+    private func loadRecommendations() async {
+        if case .loading = recsState { return }
+        recsState = .loading
+        do {
+            // Example flow:
+            // 1) Pull a few recent barcodes (stubbed here) and look up via OpenFoodFacts
+            let sampleBarcodes = ["0766781234567", "0001112223334"]
+            let products = try await openFoodFacts.lookup(barcodes: sampleBarcodes)
+
+            // 2) Build a couple of USDA ingredient-based recipe estimates
+            let recipe = try await usdaService.estimateCopperForRecipe(ingredients: [
+                USDAIngredient(name: "Chicken breast, raw", grams: 100),
+                USDAIngredient(name: "White rice, cooked", grams: 120)
+            ])
+
+            // 3) Map to FoodRecommendation list with safety heuristics
+            var combined: [FoodRecommendation] = []
+            for p in products {
+                let safety = safetyFor(ingredients: p.ingredients)
+                let note = p.copperMgPer100g != nil ? "Contains copper: \(String(format: "%.2f", p.copperMgPer100g!)) mg/100g" : "Estimated from ingredients"
+                combined.append(FoodRecommendation(
+                    name: p.name,
+                    safety: safety,
+                    badges: p.badges,
+                    note: note,
+                    confidence: p.copperMgPer100g != nil ? .verified : .estimated
+                ))
+            }
+            combined.append(FoodRecommendation(
+                name: recipe.title,
+                safety: recipe.copperMgPerServing <= 0.5 ? .good : (recipe.copperMgPerServing <= 1.0 ? .caution : .avoid),
+                badges: ["Recipe", "USDA", "Est."],
+                note: "Copper per serving: \(String(format: "%.2f", recipe.copperMgPerServing)) mg",
+                confidence: .estimated
+            ))
+
+            recsState = .loaded(combined)
+        } catch {
+            recsState = .failed("Could not load recommendations. Please try again.")
+        }
     }
 
     private var tipsCard: some View {
@@ -391,6 +642,13 @@ struct PersonalizedInsights: View {
         return tips
     }
     
+    private enum LoadState<Value> {
+        case idle
+        case loading
+        case loaded(Value)
+        case failed(String)
+    }
+    
     private enum FoodSafety: String { case good = "Good", caution = "Caution", avoid = "Avoid"
         var badgeColor: Color {
             switch self {
@@ -401,12 +659,19 @@ struct PersonalizedInsights: View {
         }
     }
 
+    private enum Confidence: String { case verified = "Verified", estimated = "Estimated"
+        var badgeColor: Color { self == .verified ? .blue600 : .gray }
+    }
+
+    private enum TopTab: String, CaseIterable { case home = "Home", scan = "Scan", log = "Log" }
+
     private struct FoodRecommendation: Identifiable {
         let id = UUID()
         let name: String
         let safety: FoodSafety
         let badges: [String]
         let note: String?
+        let confidence: Confidence
     }
 
     private func getFoodRecommendations() -> [FoodRecommendation] {
@@ -421,36 +686,99 @@ struct PersonalizedInsights: View {
                 name: "Safe: Low-Copper Kibble",
                 safety: .good,
                 badges: ["Dry", "Kibble", "Low Cu", "Grain-free"],
-                note: "Balanced option with reduced copper content"
+                note: "Balanced option with reduced copper content",
+                confidence: .estimated
             ))
             results.append(FoodRecommendation(
                 name: "Turkey & Rice Formula",
                 safety: .caution,
                 badges: ["Canned", "Poultry", "Moderate Cu"],
-                note: "Use in moderation; monitor daily copper total"
+                note: "Use in moderation; monitor daily copper total",
+                confidence: .estimated
             ))
             results.append(FoodRecommendation(
                 name: "Beef & Liver Mix",
                 safety: .avoid,
                 badges: ["Wet", "Beef", "Liver", "High Cu"],
-                note: "Avoid due to organ meat’s high copper content"
+                note: "Avoid due to organ meat’s high copper content",
+                confidence: .estimated
             ))
         } else {
             results.append(FoodRecommendation(
                 name: "Chicken & Oatmeal",
                 safety: .good,
                 badges: ["Dry", "Chicken", "Balanced"],
-                note: "Good everyday choice"
+                note: "Good everyday choice",
+                confidence: .estimated
             ))
             results.append(FoodRecommendation(
                 name: "Salmon Stew",
                 safety: .caution,
                 badges: ["Wet", "Fish", "Omega-3"],
-                note: "Fish can add copper; track servings"
+                note: "Fish can add copper; track servings",
+                confidence: .estimated
             ))
         }
 
         return results
+    }
+
+    private func safetyFor(ingredients: [String]) -> FoodSafety {
+        let lower = ingredients.map { $0.lowercased() }
+        if lower.contains(where: { $0.contains("liver") || $0.contains("organ") || $0.contains("shellfish") }) {
+            return .avoid
+        }
+        if lower.contains(where: { $0.contains("fish") || $0.contains("salmon") || $0.contains("by-product") }) {
+            return .caution
+        }
+        return .good
+    }
+}
+
+// MARK: - Data Services (stubs)
+protocol OpenFoodFactsService {
+    func lookup(barcodes: [String]) async throws -> [OFFProduct]
+}
+
+struct OFFProduct {
+    let barcode: String
+    let name: String
+    let ingredients: [String]
+    let copperMgPer100g: Double? // Often nil; OFF rarely has this
+    let badges: [String]
+}
+
+struct OpenFoodFactsMock: OpenFoodFactsService {
+    func lookup(barcodes: [String]) async throws -> [OFFProduct] {
+        // Stubbed examples
+        return [
+            OFFProduct(barcode: barcodes.first ?? "", name: "Safe: Low-Copper Kibble", ingredients: ["chicken", "rice", "vitamins"], copperMgPer100g: nil, badges: ["Dry", "Kibble", "Low Cu"]),
+            OFFProduct(barcode: barcodes.dropFirst().first ?? "", name: "Beef & Liver Mix", ingredients: ["beef", "liver", "minerals"], copperMgPer100g: nil, badges: ["Wet", "Beef", "Liver"])
+        ]
+    }
+}
+
+protocol USDAService {
+    func estimateCopperForRecipe(ingredients: [USDAIngredient]) async throws -> USDARecipeEstimate
+}
+
+struct USDAIngredient {
+    let name: String
+    let grams: Double
+}
+
+struct USDARecipeEstimate {
+    let title: String
+    let copperMgPerServing: Double
+}
+
+struct USDAMock: USDAService {
+    func estimateCopperForRecipe(ingredients: [USDAIngredient]) async throws -> USDARecipeEstimate {
+        // Very rough estimate: pretend ingredients contribute small copper amounts
+        let copper = ingredients.reduce(0.0) { partial, ing in
+            partial + (ing.name.lowercased().contains("liver") ? 1.5 : 0.05) * (ing.grams / 100.0)
+        }
+        return USDARecipeEstimate(title: "Chicken & Rice (USDA est.)", copperMgPerServing: copper)
     }
 }
 
