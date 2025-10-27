@@ -4,6 +4,7 @@ struct RootView: View {
     @State private var isLoading = true
     @State private var isAuthenticated = false
     @State private var isFirstLogin = true // simulate first-time; later, tie to persisted state
+    @State private var onboardingData: OnboardingData? = nil
 
     var body: some View {
         Group {
@@ -16,6 +17,7 @@ struct RootView: View {
             } else if isFirstLogin {
                 OnboardingFlow(
                     onComplete: { data in
+                        onboardingData = data
                         withAnimation(.easeInOut(duration: 0.35)) {
                             isFirstLogin = false
                         }
@@ -28,22 +30,18 @@ struct RootView: View {
                 )
                 .transition(.opacity)
             } else {
-                PersonalizedInsights(
-                    onboardingData: OnboardingData(
-                        dogName: "Max",
-                        breed: "Labrador Retriever",
-                        age: 7,
-                        weight: 65,
-                        healthConditions: ["Copper Storage Disease"],
-                        dietaryRestrictions: ["Low-copper diet"],
-                        primaryConcerns: ["Copper toxicity prevention"],
-                        vetRecommendations: ["Monitor copper intake"]
-                    ),
-                    riskLevel: "high",
-                    currentCopper: 1.2,
-                    copperLimit: 5.0
-                )
-                .transition(.opacity)
+                if let onboardingData {
+                    PersonalizedInsights(
+                        onboardingData: onboardingData,
+                        riskLevel: inferredRiskLevel(from: onboardingData),
+                        currentCopper: 1.2,
+                        copperLimit: 5.0
+                    )
+                    .transition(.opacity)
+                } else {
+                    ProgressView("Loading...")
+                        .transition(.opacity)
+                }
             }
         }
         .task {
@@ -53,6 +51,12 @@ struct RootView: View {
                 isLoading = false
             }
         }
+    }
+
+    private func inferredRiskLevel(from data: OnboardingData) -> String {
+        if data.healthConditions.contains("Copper Storage Disease") { return "high" }
+        if data.healthConditions.contains("Liver Disease") { return "medium" }
+        return "low"
     }
 }
 

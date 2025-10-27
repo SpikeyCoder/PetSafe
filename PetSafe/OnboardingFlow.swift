@@ -16,17 +16,19 @@ struct OnboardingFlow: View {
     let onBackToLogin: () -> Void
 
     @State private var step: Int = 0
+    @State private var ageText: String = ""
+    @State private var weightText: String = ""
     private let totalSteps = 7
 
     @State var data = OnboardingData(
         dogName: "",
         breed: "",
-        age: 8,
-        weight: 75,
-        healthConditions: ["test", "test"],
-        dietaryRestrictions: ["test", "test"],
-        primaryConcerns: ["test", "test"], 
-        vetRecommendations: ["test", "test"]
+        age: 0,
+        weight: 0,
+        healthConditions: [],
+        dietaryRestrictions: [],
+        primaryConcerns: [],
+        vetRecommendations: []
     )
 
     private let breeds = [
@@ -37,12 +39,12 @@ struct OnboardingFlow: View {
     private let healthConditions = [
         "Copper Storage Disease", "Liver Disease", "Wilson's Disease",
         "Chronic Hepatitis", "Kidney Disease", "Food Allergies",
-        "Digestive Issues", "None of the above"
+        "Digestive Issues"
     ]
     private let dietaryRestrictions = [
         "Grain-free diet", "Limited ingredient diet", "Raw food diet",
         "Prescription diet", "Low-copper diet", "Hypoallergenic diet",
-        "Senior dog formula", "No specific restrictions"
+        "Senior dog formula"
     ]
     private let primaryConcerns = [
         "Copper toxicity prevention", "Liver health monitoring", "Weight management",
@@ -51,7 +53,7 @@ struct OnboardingFlow: View {
     ]
     private let vetRecommendations = [
         "Monitor copper intake", "Avoid high-copper foods", "Regular liver function tests",
-        "Specific diet recommendations", "Monitor weight", "Track symptoms", "No specific recommendations"
+        "Specific diet recommendations", "Monitor weight", "Track symptoms"
     ]
 
     var progress: Double { Double(step + 1) / Double(totalSteps) * 100.0 }
@@ -75,6 +77,7 @@ struct OnboardingFlow: View {
 
                 HStack {
                     Button {
+                        sanitizeSelections()
                         if step == 0 { onBackToLogin() } else { step -= 1 }
                     } label: {
                         Label(step == 0 ? "Back to Login" : "Back", systemImage: "chevron.left")
@@ -83,6 +86,14 @@ struct OnboardingFlow: View {
                     .buttonStyle(.bordered)
 
                     Button {
+                        // Commit numeric fields when leaving step 2
+                        if step == 2 {
+                            let age = Int(ageText.trimmingCharacters(in: .whitespacesAndNewlines)) ?? 0
+                            let weight = Int(weightText.trimmingCharacters(in: .whitespacesAndNewlines)) ?? 0
+                            data.age = age
+                            data.weight = weight
+                        }
+                        sanitizeSelections()
                         if step < totalSteps - 1 { step += 1 } else { onComplete(data) }
                     } label: {
                         HStack {
@@ -114,6 +125,7 @@ struct OnboardingFlow: View {
             VStack(alignment: .leading, spacing: 12) {
                 Text("Breed").font(.headline)
                 Picker("Select your dog's breed", selection: $data.breed) {
+                    Text("None").tag(nil as [String]?)
                     ForEach(breeds, id: \.self) { breed in
                         Text(breed).tag(breed)
                     }
@@ -123,14 +135,29 @@ struct OnboardingFlow: View {
         case 2:
             VStack(alignment: .leading, spacing: 12) {
                 Text("Age").font(.headline)
-                TextField("Enter your dog's age (years)", value: $data.age, format: .number)
+                TextField("Enter your dog's age (years)", text: $ageText)
                     .keyboardType(.numberPad)
                     .textFieldStyle(.roundedBorder)
+                    .onChange(of: ageText) { oldValue, newValue in
+                        let filtered = newValue.filter { $0.isNumber }
+                        if filtered != newValue { ageText = filtered }
+                        data.age = Int(filtered) ?? 0
+                    }
 
                 Text("Weight").font(.headline)
-                TextField("Enter your dog's weight (lbs)", value: $data.weight, format: .number)
+                TextField("Enter your dog's weight (lbs)", text: $weightText)
                     .keyboardType(.numberPad)
                     .textFieldStyle(.roundedBorder)
+                    .onChange(of: weightText) { oldValue, newValue in
+                        let filtered = newValue.filter { $0.isNumber }
+                        if filtered != newValue { weightText = filtered }
+                        data.weight = Int(filtered) ?? 0
+                    }
+            }
+            .onAppear {
+                // Pre-fill when returning to this step
+                if ageText.isEmpty { ageText = data.age == 0 ? "" : String(data.age) }
+                if weightText.isEmpty { weightText = data.weight == 0 ? "" : String(data.weight) }
             }
         case 3:
             checkboxList(
@@ -165,11 +192,19 @@ struct OnboardingFlow: View {
         }
     }
 
+    private func sanitizeSelections() {
+        let stringToRemove = "test"
+        data.healthConditions.removeAll { $0 == stringToRemove }
+        data.dietaryRestrictions.removeAll { $0 == stringToRemove }
+        data.vetRecommendations.removeAll { $0 == stringToRemove }
+        data.primaryConcerns.removeAll { $0 == stringToRemove }
+    }
+
     private func canProceed() -> Bool {
         switch step {
         case 0: return !data.dogName.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).isEmpty
         case 1: return !data.breed.isEmpty
-        case 2: return data.age > 0 && data.weight > 0
+        case 2: return (Int(ageText) ?? 0) > 0 && (Int(weightText) ?? 0) > 0
         case 3: return !data.healthConditions.isEmpty
         case 4: return !data.dietaryRestrictions.isEmpty
         case 5: return !data.primaryConcerns.isEmpty

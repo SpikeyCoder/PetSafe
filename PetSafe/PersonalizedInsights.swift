@@ -57,7 +57,7 @@ struct PersonalizedInsights: View {
             if onboardingData.healthConditions.filter({ $0 != "None of the above" }).count > 0 {
                 Divider()
                 Text("Health Conditions").font(.subheadline.weight(.semibold))
-                WrapHStack(items: onboardingData.healthConditions.filter { $0 != "None of the above" }) { item in
+                WrapHStack(items: Array(onboardingData.healthConditions.filter { $0 != "None of the above" })) { item in
                     Text(item)
                         .font(.caption)
                         .padding(.horizontal, 8)
@@ -90,10 +90,11 @@ struct PersonalizedInsights: View {
                 Image(systemName: "star.fill").foregroundStyle(.yellow)
                 Text("Tips for \(onboardingData.dogName)").font(.headline)
             }
-            ForEach(Array(getPersonalizedTips().prefix(4)).indices, id: \.self) { i in
+            let tips = Array(getPersonalizedTips().prefix(4))
+            ForEach(tips.indices, id: \.self) { i in
                 HStack(alignment: .top, spacing: 8) {
                     Text("•").foregroundStyle(.secondary)
-                    Text(getPersonalizedTips()[i]).font(.subheadline)
+                    Text(tips[i]).font(.subheadline)
                 }
             }
         }
