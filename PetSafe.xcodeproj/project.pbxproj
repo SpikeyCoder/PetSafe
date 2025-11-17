@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		C127D6152ECA5B6D00BE26F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C11E2EE82EA33CC200657DF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C11E2EEF2EA33CC200657DF6;
+			remoteInfo = PetSafe;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		C11E2EF02EA33CC200657DF6 /* PetSafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetSafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C127D6112ECA5B6D00BE26F5 /* PetSafeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetSafeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +27,22 @@
 			path = PetSafe;
 			sourceTree = "<group>";
 		};
+		C127D6122ECA5B6D00BE26F5 /* PetSafeTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PetSafeTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C11E2EED2EA33CC200657DF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C127D60E2ECA5B6D00BE26F5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				C11E2EF22EA33CC200657DF6 /* PetSafe */,
+				C127D6122ECA5B6D00BE26F5 /* PetSafeTests */,
 				C11E2EF12EA33CC200657DF6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				C11E2EF02EA33CC200657DF6 /* PetSafe.app */,
+				C127D6112ECA5B6D00BE26F5 /* PetSafeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +95,29 @@
 			productReference = C11E2EF02EA33CC200657DF6 /* PetSafe.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C127D6102ECA5B6D00BE26F5 /* PetSafeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C127D6192ECA5B6D00BE26F5 /* Build configuration list for PBXNativeTarget "PetSafeTests" */;
+			buildPhases = (
+				C127D60D2ECA5B6D00BE26F5 /* Sources */,
+				C127D60E2ECA5B6D00BE26F5 /* Frameworks */,
+				C127D60F2ECA5B6D00BE26F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C127D6162ECA5B6D00BE26F5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C127D6122ECA5B6D00BE26F5 /* PetSafeTests */,
+			);
+			name = PetSafeTests;
+			packageProductDependencies = (
+			);
+			productName = PetSafeTests;
+			productReference = C127D6112ECA5B6D00BE26F5 /* PetSafeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -77,11 +125,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 2600;
-				LastUpgradeCheck = 2600;
+				LastSwiftUpdateCheck = 2610;
+				LastUpgradeCheck = 2610;
 				TargetAttributes = {
 					C11E2EEF2EA33CC200657DF6 = {
 						CreatedOnToolsVersion = 26.0.1;
+					};
+					C127D6102ECA5B6D00BE26F5 = {
+						CreatedOnToolsVersion = 26.1;
+						TestTargetID = C11E2EEF2EA33CC200657DF6;
 					};
 				};
 			};
@@ -100,12 +152,20 @@
 			projectRoot = "";
 			targets = (
 				C11E2EEF2EA33CC200657DF6 /* PetSafe */,
+				C127D6102ECA5B6D00BE26F5 /* PetSafeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C11E2EEE2EA33CC200657DF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C127D60F2ECA5B6D00BE26F5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +182,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C127D60D2ECA5B6D00BE26F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C127D6162ECA5B6D00BE26F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C11E2EEF2EA33CC200657DF6 /* PetSafe */;
+			targetProxy = C127D6152ECA5B6D00BE26F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C11E2EF92EA33CC500657DF6 /* Debug */ = {
@@ -184,6 +259,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -241,6 +317,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -312,6 +389,50 @@
 			};
 			name = Release;
 		};
+		C127D6172ECA5B6D00BE26F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CUKDK2C25K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.armstrong.PetSafeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PetSafe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PetSafe";
+			};
+			name = Debug;
+		};
+		C127D6182ECA5B6D00BE26F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CUKDK2C25K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.armstrong.PetSafeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PetSafe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PetSafe";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -329,6 +450,15 @@
 			buildConfigurations = (
 				C11E2EFC2EA33CC500657DF6 /* Debug */,
 				C11E2EFD2EA33CC500657DF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C127D6192ECA5B6D00BE26F5 /* Build configuration list for PBXNativeTarget "PetSafeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C127D6172ECA5B6D00BE26F5 /* Debug */,
+				C127D6182ECA5B6D00BE26F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

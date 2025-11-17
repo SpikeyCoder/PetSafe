@@ -1,10 +1,10 @@
 import SwiftUI
 
-struct OnboardingData: Equatable {
+struct PetOnboardingData: Equatable {
     var dogName: String = ""
     var breed: String = ""
     var age: Int = 0
-    var weight: Int = 0
+    var weight: Double = 0
     var healthConditions: [String] = []
     var dietaryRestrictions: [String] = []
     var primaryConcerns: [String] = []
@@ -12,7 +12,7 @@ struct OnboardingData: Equatable {
 }
 
 struct OnboardingFlow: View {
-    let onComplete: (OnboardingData) -> Void
+    let onComplete: (PetOnboardingData) -> Void
     let onBackToLogin: () -> Void
 
     @State private var step: Int = 0
@@ -20,7 +20,7 @@ struct OnboardingFlow: View {
     @State private var weightText: String = ""
     private let totalSteps = 7
 
-    @State var data = OnboardingData(
+    @State var data = PetOnboardingData(
         dogName: "",
         breed: "",
         age: 0,
@@ -91,7 +91,7 @@ struct OnboardingFlow: View {
                             let age = Int(ageText.trimmingCharacters(in: .whitespacesAndNewlines)) ?? 0
                             let weight = Int(weightText.trimmingCharacters(in: .whitespacesAndNewlines)) ?? 0
                             data.age = age
-                            data.weight = weight
+                            data.weight = Double(weight)
                         }
                         sanitizeSelections()
                         if step < totalSteps - 1 { step += 1 } else { onComplete(data) }
@@ -151,7 +151,7 @@ struct OnboardingFlow: View {
                     .onChange(of: weightText) { oldValue, newValue in
                         let filtered = newValue.filter { $0.isNumber }
                         if filtered != newValue { weightText = filtered }
-                        data.weight = Int(filtered) ?? 0
+                        data.weight = Double(Int(filtered) ?? 0)
                     }
             }
             .onAppear {

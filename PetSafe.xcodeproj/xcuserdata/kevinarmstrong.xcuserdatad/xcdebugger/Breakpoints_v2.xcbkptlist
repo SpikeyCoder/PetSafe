@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "64822F4D-9A0B-472A-847D-1A3071B52295"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2E43506E-F9D2-4D9B-BCD4-735A39C50307"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PetSafe/PersonalizedInsights.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "upgradeBanner"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0A44BEC6-9AFF-4619-8E4C-7D1FEE02D0C8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PetSafe/PersonalizedInsights.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "upgradeBanner"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "805ED993-E1BD-4D0B-B522-33E607A80B8F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PetSafe/PersonalizedInsights.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "upgradeBanner"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F0B6A5EB-3481-44D2-A5B9-E77E2D98F7DD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PetSafe/PersonalizedInsights.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "profileSummaryCard"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "F0B6A5EB-3481-44D2-A5B9-E77E2D98F7DD - 1c3ecca6ec7755ba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, SwiftUI.Grid&lt;SwiftUI.TupleView&lt;(SwiftUI.GridRow&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.GridRow&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.GridRow&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.GridRow&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.GridRow&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text)&gt;&gt;)&gt;&gt;)&gt; in PetSafe.PersonalizedInsights.profileSummaryCard.getter : some"
+                  moduleName = "PetSafe.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevinarmstrong/Documents/PetSafe/PetSafe/PersonalizedInsights.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116">
+               </Location>
+               <Location
+                  uuid = "F0B6A5EB-3481-44D2-A5B9-E77E2D98F7DD - 4eaf28966efdbc3c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.GridRow&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.GridRow&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.GridRow&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.GridRow&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.GridRow&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text)&gt;&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;, SwiftUI.Grid&lt;SwiftUI.TupleView&lt;(SwiftUI.GridRow&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.GridRow&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.GridRow&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.GridRow&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.GridRow&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text)&gt;&gt;)&gt;&gt;)&gt; in PetSafe.PersonalizedInsights.profileSummaryCard.getter : some"
+                  moduleName = "PetSafe.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevinarmstrong/Documents/PetSafe/PetSafe/PersonalizedInsights.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5409107E-D5FF-41D3-A707-2F01AD7CC2C1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PetSafe/PersonalizedInsights.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "copperTodayCard"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D75A3634-17E2-453E-B2C0-0FCF16E5C31B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PetSafe/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
