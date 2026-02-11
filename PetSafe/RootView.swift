@@ -1,10 +1,22 @@
 import SwiftUI
+import SwiftData
 
-struct RootView: View {
+// MARK: - Root View (Updated)
+/// Main app coordinator managing authentication, onboarding, and dashboard
+struct RootView_NEW: View {
+    // App state
     @State private var isLoading = true
     @State private var isAuthenticated = false
-    @State private var isFirstLogin = true // simulate first-time; later, tie to persisted state
-    @State private var onboardingData: PetOnboardingData? = nil
+    @State private var needsOnboarding = true
+
+    // SwiftData
+    @Environment(\.modelContext) private var modelContext
+    @Query private var profiles: [DogProfile]
+
+    private var dogProfile: DogProfile? { profiles.first }
+
+    // Services (injected from environment or app)
+    @Environment(\.openFoodFactsService) private var openFoodFactsService
 
     var body: some View {
         Group {
@@ -12,15 +24,16 @@ struct RootView: View {
                 LoadingScreen()
                     .transition(.opacity)
             } else if !isAuthenticated {
-                LoginView(onLoginSuccess: { isAuthenticated = true })
-                    .transition(.opacity)
-            } else if isFirstLogin {
+                LoginView(onLoginSuccess: {
+                    withAnimation(.easeInOut(duration: 0.35)) {
+                        isAuthenticated = true
+                    }
+                })
+                .transition(.opacity)
+            } else if needsOnboarding {
                 OnboardingFlow(
-                    onComplete: { (data: PetOnboardingData) in
-                        onboardingData = data
-                        withAnimation(.easeInOut(duration: 0.35)) {
-                            isFirstLogin = false
-                        }
+                    onComplete: { data in
+                        handleOnboardingComplete(data)
                     },
                     onBackToLogin: {
                         withAnimation(.easeInOut(duration: 0.35)) {
@@ -29,54 +42,107 @@ struct RootView: View {
                     }
                 )
                 .transition(.opacity)
-            } else {
-                if let onboardingData {
-                    PersonalizedInsights(
-                        onboardingData: makeOnboardingData(from: onboardingData),
-                        riskLevel: inferredRiskLevel(from: onboardingData),
-                        currentCopper: 1.2,
-                        copperLimit: 5.0
-                    )
-                    .transition(.opacity)
-                } else {
-                    ProgressView("Loading...")
-                        .transition(.opacity)
-                }
+            } else if let profile = dogProfile {
+                DashboardViewWrapper(
+                    modelContext: modelContext,
+                    dogProfile: profile
+                )
+                .transition(.opacity)
             }
         }
         .task {
-            // Simulate initial load
-            try? await Task.sleep(nanoseconds: 1_500_000_000)
-            withAnimation(.easeInOut(duration: 0.35)) {
-                isLoading = false
-            }
+            await initializeApp()
         }
     }
 
-    func inferredRiskLevel(from data: PetOnboardingData) -> String {
-        let conditions = data.healthConditions ?? []
-        if conditions.contains("Copper Storage Disease") { return "high" }
-        if conditions.contains("Liver Disease") { return "medium" }
-        return "low"
+    // MARK: - Initialization
+    private func initializeApp() async {
+        // Simulate initial load
+        try? await Task.sleep(nanoseconds: 1_500_000_000)
+
+        // Check if profile exists
+        needsOnboarding = dogProfile == nil
+
+        withAnimation(.easeInOut(duration: 0.35)) {
+            isLoading = false
+        }
     }
-    
-    private func makeOnboardingData(from pet: PetOnboardingData) -> OnboardingData {
-        // Map fields from PetOnboardingData to OnboardingData using strongly-typed access.
-        // Adjust the property names below to match your actual PetOnboardingData model.
-        // If your OnboardingData does not include a `species` parameter, remove it here too.
-        return OnboardingData(
-            dogName: pet.dogName,
-            breed: pet.breed,
-            age: pet.age,
-            weight: pet.weight,
-            healthConditions: pet.healthConditions,
-            dietaryRestrictions: pet.dietaryRestrictions,
-            primaryConcerns: [],
-            vetRecommendations: pet.vetRecommendations
-        )
+
+    // MARK: - Onboarding Complete
+    private func handleOnboardingComplete(_ data: PetOnboardingData) {
+        // Convert onboarding data to DogProfile
+        let profile = DogProfile.from(onboardingData: OnboardingData(
+            dogName: data.dogName,
+            breed: data.breed,
+            age: data.age,
+            weight: data.weight,
+            healthConditions: data.healthConditions,
+            dietaryRestrictions: data.dietaryRestrictions,
+            primaryConcerns: data.primaryConcerns,
+            vetRecommendations: data.vetRecommendations
+        ))
+
+        // Save to SwiftData
+        modelContext.insert(profile)
+        try? modelContext.save()
+
+        withAnimation(.easeInOut(duration: 0.35)) {
+            needsOnboarding = false
+        }
     }
 }
 
+// MARK: - Dashboard Wrapper
+/// Wrapper view that creates ViewModels with proper dependencies
+@MainActor
+private struct DashboardViewWrapper: View {
+    let modelContext: ModelContext
+    let dogProfile: DogProfile
+    
+    @StateObject private var subscriptionViewModel: SubscriptionViewModel
+    @StateObject private var scannerViewModel: ScannerViewModel
+    @StateObject private var foodLogViewModel: FoodLogViewModel
+    
+    init(modelContext: ModelContext, dogProfile: DogProfile) {
+        self.modelContext = modelContext
+        self.dogProfile = dogProfile
+        
+        // Initialize ViewModels with dependencies using the underscore syntax
+        let mockSubscriptionService = SubscriptionServiceMock()
+        _subscriptionViewModel = StateObject(wrappedValue: SubscriptionViewModel(subscriptionService: mockSubscriptionService))
+        
+        let mockOFFService = OpenFoodFactsServiceMock()
+        _scannerViewModel = StateObject(wrappedValue: ScannerViewModel(
+            openFoodFactsService: mockOFFService,
+            dogProfile: dogProfile
+        ))
+        
+        _foodLogViewModel = StateObject(wrappedValue: FoodLogViewModel(
+            modelContext: modelContext,
+            dogProfile: dogProfile
+        ))
+    }
+    
+    var body: some View {
+        DashboardView(
+            subscriptionViewModel: subscriptionViewModel,
+            scannerViewModel: scannerViewModel,
+            foodLogViewModel: foodLogViewModel
+        )
+        .task {
+            await subscriptionViewModel.checkSubscriptionStatus()
+        }
+    }
+}
+
+// MARK: - Preview
 #Preview {
-    RootView()
+    let config = ModelConfiguration(isStoredInMemoryOnly: true)
+    let container = try! ModelContainer(for: DogProfile.self, FoodEntry.self, configurations: config)
+
+    let subscriptionService = SubscriptionServiceMock()
+
+    return RootView_NEW()
+        .modelContainer(container)
+        .environmentObject(subscriptionService)
 }

@@ -11,8 +11,8 @@ struct PersonalizedInsights: View {
     @State private var isPremium: Bool = false // TODO: Inject real premium status
 
     // Dependency points (replace mocks with real implementations)
-    var openFoodFacts: OpenFoodFactsService = OpenFoodFactsMock()
-    var usdaService: USDAService = USDAMock()
+    var openFoodFacts: OpenFoodFactsService = OpenFoodFactsServiceMock()
+    var usdaService: USDAService = USDAServiceMock()
 
     var body: some View {
         ScrollView {
@@ -504,8 +504,19 @@ struct PersonalizedInsights: View {
         do {
             // Example flow:
             // 1) Pull a few recent barcodes (stubbed here) and look up via OpenFoodFacts
-            let sampleBarcodes = ["0766781234567", "0001112223334"]
-            let products = try await openFoodFacts.lookup(barcodes: sampleBarcodes)
+            let sampleBarcodes = ["1234567890", "0987654321"] // Use mock barcodes for demo
+            var products: [OFFProduct] = []
+            
+            // Fetch products individually using the real API
+            for barcode in sampleBarcodes {
+                do {
+                    let product = try await openFoodFacts.fetchProduct(barcode: barcode)
+                    products.append(product)
+                } catch {
+                    // Skip products that fail to load
+                    continue
+                }
+            }
 
             // 2) Build a couple of USDA ingredient-based recipe estimates
             let recipe = try await usdaService.estimateCopperForRecipe(ingredients: [
@@ -736,51 +747,7 @@ struct PersonalizedInsights: View {
 }
 
 // MARK: - Data Services (stubs)
-protocol OpenFoodFactsService {
-    func lookup(barcodes: [String]) async throws -> [OFFProduct]
-}
-
-struct OFFProduct {
-    let barcode: String
-    let name: String
-    let ingredients: [String]
-    let copperMgPer100g: Double? // Often nil; OFF rarely has this
-    let badges: [String]
-}
-
-struct OpenFoodFactsMock: OpenFoodFactsService {
-    func lookup(barcodes: [String]) async throws -> [OFFProduct] {
-        // Stubbed examples
-        return [
-            OFFProduct(barcode: barcodes.first ?? "", name: "Safe: Low-Copper Kibble", ingredients: ["chicken", "rice", "vitamins"], copperMgPer100g: nil, badges: ["Dry", "Kibble", "Low Cu"]),
-            OFFProduct(barcode: barcodes.dropFirst().first ?? "", name: "Beef & Liver Mix", ingredients: ["beef", "liver", "minerals"], copperMgPer100g: nil, badges: ["Wet", "Beef", "Liver"])
-        ]
-    }
-}
-
-protocol USDAService {
-    func estimateCopperForRecipe(ingredients: [USDAIngredient]) async throws -> USDARecipeEstimate
-}
-
-struct USDAIngredient {
-    let name: String
-    let grams: Double
-}
-
-struct USDARecipeEstimate {
-    let title: String
-    let copperMgPerServing: Double
-}
-
-struct USDAMock: USDAService {
-    func estimateCopperForRecipe(ingredients: [USDAIngredient]) async throws -> USDARecipeEstimate {
-        // Very rough estimate: pretend ingredients contribute small copper amounts
-        let copper = ingredients.reduce(0.0) { partial, ing in
-            partial + (ing.name.lowercased().contains("liver") ? 1.5 : 0.05) * (ing.grams / 100.0)
-        }
-        return USDARecipeEstimate(title: "Chicken & Rice (USDA est.)", copperMgPerServing: copper)
-    }
-}
+// Note: OpenFoodFactsService and USDAService are now defined in their respective service files
 
 struct FlowLayout: Layout {
     var spacing: CGFloat = 8

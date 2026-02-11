@@ -1,7 +1,7 @@
 import SwiftUI
 
 // Simple model matching your web structure
-struct FoodEntry: Identifiable, Hashable {
+struct MockFoodEntry: Identifiable, Hashable {
     let id: String
     let name: String
     let brand: String
@@ -20,7 +20,7 @@ struct ContentView: View {
     // Mock data
     @State private var dogName: String = "Max"
     @State private var dailyCopperLimit: Double = 5.0
-    @State private var entries: [FoodEntry] = []
+    @State private var entries: [MockFoodEntry] = []
 
     var currentCopper: Double {
         entries.reduce(0) { partial, e in
@@ -112,7 +112,7 @@ struct ContentView: View {
                             showPremiumGate = true
                             return
                         }
-                        let new = FoodEntry(
+                        let new = MockFoodEntry(
                             id: UUID().uuidString,
                             name: name,
                             brand: brand,
@@ -433,7 +433,7 @@ struct FoodScannerSection: View {
 
 // MARK: - Today's Log
 struct TodaysLogSection: View {
-    let entries: [FoodEntry]
+    let entries: [MockFoodEntry]
     let totalCopper: Double
     let isPremium: Bool
     let onRemove: (String) -> Void
