@@ -53,18 +53,26 @@ struct BarcodeScannerView: View {
         }
         .navigationBarHidden(true)
         .task {
+            print("🎬 BarcodeScannerView.task - Starting setup")
             await viewModel.requestCameraPermission()
+            print("🔐 Camera permission status: \(viewModel.cameraPermissionStatus.rawValue)")
 
             if viewModel.cameraPermissionStatus == .authorized {
                 do {
+                    print("⚙️ Setting up camera...")
                     _ = try viewModel.setupCamera()
+                    print("▶️ Starting scanning...")
                     viewModel.startScanning()
+                    print("✅ Scanner view ready")
                 } catch {
-                    print("Camera setup failed: \(error)")
+                    print("❌ Camera setup failed: \(error)")
                 }
+            } else {
+                print("⚠️ Camera permission not authorized, cannot setup camera")
             }
         }
         .onDisappear {
+            print("👋 BarcodeScannerView.onDisappear - Stopping scanning")
             viewModel.stopScanning()
         }
     }
@@ -195,25 +203,51 @@ struct CameraPreview: UIViewRepresentable {
     func makeUIView(context: Context) -> UIView {
         let view = UIView(frame: .zero)
         view.backgroundColor = .black
+
+        print("📸 CameraPreview.makeUIView - Creating preview view")
+
+        // Store the view reference for later use
+        context.coordinator.containerView = view
+
         return view
     }
 
     func updateUIView(_ uiView: UIView, context: Context) {
-        // Remove existing preview layer if any
-        uiView.layer.sublayers?.forEach { $0.removeFromSuperlayer() }
-
-        // Add camera preview if available
-        if let session = try? viewModel.setupCamera() {
-            let previewLayer = AVCaptureVideoPreviewLayer(session: session)
-            previewLayer.frame = uiView.bounds
-            previewLayer.videoGravity = .resizeAspectFill
-            uiView.layer.addSublayer(previewLayer)
-
-            // Auto-layout
-            DispatchQueue.main.async {
-                previewLayer.frame = uiView.bounds
-            }
+        // Only setup the preview layer once we have a capture session from viewModel
+        guard let session = viewModel.captureSession else {
+            print("⚠️ CameraPreview.updateUIView - No capture session available yet")
+            return
         }
+
+        // If we already created a preview layer, just update its frame
+        if let existingLayer = context.coordinator.previewLayer {
+            print("🔄 CameraPreview.updateUIView - Updating existing preview layer frame to \(uiView.bounds)")
+            existingLayer.frame = uiView.bounds
+            return
+        }
+
+        // First time: create and add the preview layer
+        print("✨ CameraPreview.updateUIView - Creating NEW preview layer for session")
+        let previewLayer = AVCaptureVideoPreviewLayer(session: session)
+        previewLayer.videoGravity = .resizeAspectFill
+        previewLayer.frame = uiView.bounds
+
+        uiView.layer.addSublayer(previewLayer)
+        context.coordinator.previewLayer = previewLayer
+
+        print("✅ CameraPreview - Preview layer added to view hierarchy")
+        print("   Session running: \(session.isRunning)")
+        print("   Preview layer connection active: \(previewLayer.connection?.isActive ?? false)")
+        print("   Preview layer connection enabled: \(previewLayer.connection?.isEnabled ?? false)")
+    }
+
+    func makeCoordinator() -> Coordinator {
+        Coordinator()
+    }
+
+    class Coordinator {
+        var containerView: UIView?
+        var previewLayer: AVCaptureVideoPreviewLayer?
     }
 }
 

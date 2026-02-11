@@ -11,39 +11,41 @@ struct ProductResultView: View {
     @State private var showingAddSuccess = false
 
     var body: some View {
-        VStack(spacing: 0) {
-            // Drag handle
-            RoundedRectangle(cornerRadius: 3)
-                .fill(Color.secondary.opacity(0.3))
-                .frame(width: 36, height: 5)
-                .padding(.top, Theme.Spacing.sm)
+        GeometryReader { geometry in
+            VStack(spacing: 0) {
+                // Drag handle
+                RoundedRectangle(cornerRadius: 3)
+                    .fill(Color.secondary.opacity(0.3))
+                    .frame(width: 36, height: 5)
+                    .padding(.top, Theme.Spacing.sm)
 
-            ScrollView {
-                VStack(spacing: Theme.Spacing.lg) {
-                    // Product header
-                    productHeader
+                ScrollView {
+                    VStack(spacing: Theme.Spacing.lg) {
+                        // Product header
+                        productHeader
 
-                    // Copper analysis card
-                    copperAnalysisCard
+                        // Copper analysis card
+                        copperAnalysisCard
 
-                    // Ingredients section
-                    if !product.ingredients.isEmpty {
-                        ingredientsSection
+                        // Ingredients section
+                        if !product.ingredients.isEmpty {
+                            ingredientsSection
+                        }
+
+                        // Add to log section
+                        addToLogSection
+
+                        // Rescan button
+                        rescanButton
                     }
-
-                    // Add to log section
-                    addToLogSection
-
-                    // Rescan button
-                    rescanButton
+                    .padding()
                 }
-                .padding()
             }
+            .frame(maxHeight: geometry.size.height * 0.75)
+            .background(Color(.systemBackground))
+            .clipShape(RoundedRectangle(cornerRadius: Theme.CornerRadius.xl))
+            .shadow(color: .black.opacity(0.2), radius: 20, x: 0, y: -5)
         }
-        .frame(maxHeight: UIScreen.main.bounds.height * 0.75)
-        .background(Color(.systemBackground))
-        .clipShape(RoundedRectangle(cornerRadius: Theme.CornerRadius.xl))
-        .shadow(color: .black.opacity(0.2), radius: 20, x: 0, y: -5)
     }
 
     // MARK: - Product Header

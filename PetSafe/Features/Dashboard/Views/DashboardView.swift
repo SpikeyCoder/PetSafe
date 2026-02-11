@@ -76,7 +76,7 @@ struct DashboardView: View {
             }
             .onChange(of: scannerViewModel.scanState) { oldValue, newValue in
                 // Auto-add scanned products to food log
-                if case .found(let product) = newValue,
+                if case .found(_) = newValue,
                    subscriptionViewModel.isPremium {
                     // Product found - user will add manually from ProductResultView
                 }
@@ -187,7 +187,7 @@ struct DashboardView: View {
                 .font(Theme.Typography.subheadline)
                 .padding(.horizontal, Theme.Spacing.md)
                 .padding(.vertical, Theme.Spacing.sm)
-                .background(Theme.Colors.orange50)
+                .background(Theme.Colors.orangeCardBackground)
                 .foregroundStyle(Theme.Colors.orange600)
                 .clipShape(Capsule())
             }
@@ -323,8 +323,8 @@ struct DashboardView: View {
             }
         }
         .cardStyle(
-            backgroundColor: Theme.Colors.blue50,
-            borderColor: Theme.Colors.blue200
+            backgroundColor: Theme.Colors.blueCardBackground,
+            borderColor: Theme.Colors.blueCardBorder
         )
     }
 

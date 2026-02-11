@@ -77,14 +77,29 @@ final class SubscriptionViewModel: ObservableObject {
 
     // MARK: - Public Methods
     func loadProducts() async {
-        guard availableProducts.isEmpty else { return }
+        guard availableProducts.isEmpty else { 
+            print("ℹ️ Products already loaded: \(availableProducts.count) products")
+            return 
+        }
 
+        print("🔄 Loading subscription products...")
         do {
             purchaseState = .loading
             try await subscriptionService.loadProducts()
             availableProducts = subscriptionService.availableProducts
             purchaseState = .idle
+            
+            if availableProducts.isEmpty {
+                print("⚠️ No products loaded! Check StoreKit configuration.")
+                errorMessage = "No subscription plans available. Please check your StoreKit configuration."
+            } else {
+                print("✅ Successfully loaded \(availableProducts.count) products:")
+                for product in availableProducts {
+                    print("   - \(product.id): \(product.displayName) (\(product.displayPrice))")
+                }
+            }
         } catch {
+            print("❌ Failed to load products: \(error.localizedDescription)")
             errorMessage = "Failed to load subscription plans. Please try again."
             purchaseState = .failed(error.localizedDescription)
         }
@@ -108,6 +123,9 @@ final class SubscriptionViewModel: ObservableObject {
                     self.showPaywall = false
                     self.purchaseState = .idle
                 }
+            } else {
+                // Purchase was cancelled or pending - reset state
+                purchaseState = .idle
             }
         } catch {
             errorMessage = "Purchase failed. Please try again."

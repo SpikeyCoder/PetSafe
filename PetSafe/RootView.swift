@@ -17,6 +17,7 @@ struct RootView_NEW: View {
 
     // Services (injected from environment or app)
     @Environment(\.openFoodFactsService) private var openFoodFactsService
+    @EnvironmentObject private var subscriptionService: SubscriptionServiceImpl
 
     var body: some View {
         Group {
@@ -24,11 +25,18 @@ struct RootView_NEW: View {
                 LoadingScreen()
                     .transition(.opacity)
             } else if !isAuthenticated {
-                LoginView(onLoginSuccess: {
-                    withAnimation(.easeInOut(duration: 0.35)) {
-                        isAuthenticated = true
+                LoginView(
+                    onLoginSuccess: {
+                        withAnimation(.easeInOut(duration: 0.35)) {
+                            isAuthenticated = true
+                        }
+                    },
+                    onLoginWithPremium: { isPremium in
+                        withAnimation(.easeInOut(duration: 0.35)) {
+                            isAuthenticated = true
+                        }
                     }
-                })
+                )
                 .transition(.opacity)
             } else if needsOnboarding {
                 OnboardingFlow(
@@ -46,6 +54,7 @@ struct RootView_NEW: View {
                 DashboardViewWrapper(
                     modelContext: modelContext,
                     dogProfile: profile,
+                    subscriptionService: subscriptionService,
                     onLogout: {
                         withAnimation(.easeInOut(duration: 0.35)) {
                             isAuthenticated = false
@@ -104,19 +113,18 @@ private struct DashboardViewWrapper: View {
     let modelContext: ModelContext
     let dogProfile: DogProfile
     let onLogout: () -> Void
-    
+
     @StateObject private var subscriptionViewModel: SubscriptionViewModel
     @StateObject private var scannerViewModel: ScannerViewModel
     @StateObject private var foodLogViewModel: FoodLogViewModel
-    
-    init(modelContext: ModelContext, dogProfile: DogProfile, onLogout: @escaping () -> Void) {
+
+    init(modelContext: ModelContext, dogProfile: DogProfile, subscriptionService: SubscriptionServiceImpl, onLogout: @escaping () -> Void) {
         self.modelContext = modelContext
         self.dogProfile = dogProfile
         self.onLogout = onLogout
-        
-        // Initialize ViewModels with dependencies using the underscore syntax
-        let mockSubscriptionService = SubscriptionServiceMock()
-        _subscriptionViewModel = StateObject(wrappedValue: SubscriptionViewModel(subscriptionService: mockSubscriptionService))
+
+        // Initialize ViewModels with real StoreKit service
+        _subscriptionViewModel = StateObject(wrappedValue: SubscriptionViewModel(subscriptionService: subscriptionService))
         
         let mockOFFService = OpenFoodFactsServiceMock()
         _scannerViewModel = StateObject(wrappedValue: ScannerViewModel(

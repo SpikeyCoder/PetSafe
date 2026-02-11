@@ -105,7 +105,7 @@
           "codeOffers" : [
 
           ],
-          "displayPrice" : "49.99",
+          "displayPrice" : "39.99",
           "familyShareable" : false,
           "groupNumber" : 2,
           "internalID" : "6738630789",
@@ -117,13 +117,13 @@
           "localizations" : [
             {
               "description" : "All premium features with 2 months free compared to monthly",
-              "displayName" : "PetSafe Premium Annual",
+              "displayName" : "PetSafe Premium Yearly",
               "locale" : "en_US"
             }
           ],
-          "productID" : "com.petsafe.premium.annual",
+          "productID" : "com.petsafe.premium.yearly",
           "recurringSubscriptionPeriod" : "P1Y",
-          "referenceName" : "Premium Annual",
+          "referenceName" : "Premium Yearly",
           "subscriptionGroupID" : "21482990",
           "type" : "RecurringSubscription"
         }

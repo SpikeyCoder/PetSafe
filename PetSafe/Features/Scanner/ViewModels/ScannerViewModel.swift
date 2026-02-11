@@ -18,7 +18,7 @@ final class ScannerViewModel: NSObject, ObservableObject {
     private let dogProfile: DogProfile?
 
     // MARK: - Camera Properties
-    private var captureSession: AVCaptureSession?
+    @Published var captureSession: AVCaptureSession?
     private var videoPreviewLayer: AVCaptureVideoPreviewLayer?
     private var lastScannedCode: String?
     private var lastScanTime: Date?
@@ -56,28 +56,44 @@ final class ScannerViewModel: NSObject, ObservableObject {
 
     // MARK: - Camera Setup
     func setupCamera() throws -> AVCaptureSession {
+        print("🎥 ScannerViewModel.setupCamera - Starting camera setup")
+
         guard cameraPermissionStatus == .authorized else {
+            print("❌ Camera permission denied: \(cameraPermissionStatus.rawValue)")
             throw ScannerError.cameraPermissionDenied
         }
 
+        // If we already have a session, return it
+        if let existingSession = captureSession {
+            print("♻️ Reusing existing capture session")
+            return existingSession
+        }
+
+        print("✨ Creating new AVCaptureSession")
         let session = AVCaptureSession()
         session.beginConfiguration()
 
         // Input: Camera device
         guard let videoCaptureDevice = AVCaptureDevice.default(for: .video) else {
+            print("❌ No video capture device available")
             throw ScannerError.noCameraAvailable
         }
+        print("📹 Found camera device: \(videoCaptureDevice.localizedName)")
 
         let videoInput: AVCaptureDeviceInput
         do {
             videoInput = try AVCaptureDeviceInput(device: videoCaptureDevice)
+            print("✅ Created video input from device")
         } catch {
+            print("❌ Failed to create video input: \(error)")
             throw ScannerError.cameraSetupFailed(error)
         }
 
         if session.canAddInput(videoInput) {
             session.addInput(videoInput)
+            print("✅ Added video input to session")
         } else {
+            print("❌ Cannot add video input to session")
             throw ScannerError.cameraSetupFailed(nil)
         }
 
@@ -85,6 +101,7 @@ final class ScannerViewModel: NSObject, ObservableObject {
         let metadataOutput = AVCaptureMetadataOutput()
         if session.canAddOutput(metadataOutput) {
             session.addOutput(metadataOutput)
+            print("✅ Added metadata output to session")
 
             metadataOutput.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
             metadataOutput.metadataObjectTypes = [
@@ -95,25 +112,41 @@ final class ScannerViewModel: NSObject, ObservableObject {
                 .code39,
                 .qr
             ]
+            print("✅ Configured barcode types: \(metadataOutput.metadataObjectTypes)")
         } else {
+            print("❌ Cannot add metadata output to session")
             throw ScannerError.cameraSetupFailed(nil)
         }
 
         session.commitConfiguration()
         captureSession = session
+        print("✅ Camera setup complete - Session configured and stored")
 
         return session
     }
 
     func startScanning() {
-        guard let session = captureSession else { return }
-        guard !session.isRunning else { return }
+        print("▶️ ScannerViewModel.startScanning - Called")
+        guard let session = captureSession else {
+            print("❌ No capture session available to start")
+            return
+        }
 
+        if session.isRunning {
+            print("⚠️ Session already running")
+            return
+        }
+
+        print("🚀 Starting capture session on background thread")
         DispatchQueue.global(qos: .userInitiated).async {
             session.startRunning()
+            DispatchQueue.main.async {
+                print("✅ Capture session started - isRunning: \(session.isRunning)")
+            }
         }
 
         scanState = .scanning
+        print("📊 Scan state set to .scanning")
     }
 
     func stopScanning() {

@@ -73,13 +73,25 @@ final class SubscriptionServiceImpl: SubscriptionService {
     }
 
     func loadProducts() async throws {
+        print("🔄 SubscriptionServiceImpl: Loading products from StoreKit...")
         purchaseState = .loading
 
         do {
             let products = try await Product.products(for: productIds)
             self.availableProducts = products.sorted { $0.price < $1.price }
             purchaseState = .idle
+            
+            if products.isEmpty {
+                print("⚠️ SubscriptionServiceImpl: No products found for IDs: \(productIds)")
+                print("   Make sure:")
+                print("   1. StoreKit Configuration file exists (PetSafe.storekit)")
+                print("   2. It's enabled in Scheme → Run → Options → StoreKit Configuration")
+                print("   3. Product IDs match: \(productIds)")
+            } else {
+                print("✅ SubscriptionServiceImpl: Loaded \(products.count) products")
+            }
         } catch {
+            print("❌ SubscriptionServiceImpl: Failed to load products: \(error)")
             purchaseState = .failed("Failed to load products: \(error.localizedDescription)")
             throw SubscriptionError.loadFailed(error)
         }
@@ -282,10 +294,6 @@ enum SubscriptionError: LocalizedError {
 
 // MARK: - Product Extensions for Display
 extension Product {
-    var displayPrice: String {
-        displayPrice
-    }
-
     var displayPeriod: String {
         subscription?.subscriptionPeriod.unit.displayText ?? ""
     }

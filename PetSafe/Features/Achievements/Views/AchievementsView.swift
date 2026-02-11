@@ -288,22 +288,34 @@ struct ConfettiCannon: ViewModifier {
     func body(content: Content) -> some View {
         content
             .overlay(
-                ZStack {
-                    ForEach(0..<num, id: \.self) { _ in
-                        ConfettiPiece()
+                GeometryReader { geometry in
+                    ZStack {
+                        ForEach(0..<num, id: \.self) { _ in
+                            ConfettiPiece(containerSize: geometry.size, trigger: counter)
+                        }
                     }
+                    .opacity(counter ? 1 : 0)
+                    .animation(.easeOut(duration: 3), value: counter)
                 }
-                .opacity(counter ? 1 : 0)
-                .animation(.easeOut(duration: 3), value: counter)
+                .allowsHitTesting(false)
             )
     }
 }
 
 struct ConfettiPiece: View {
-    @State private var location = CGPoint(x: UIScreen.main.bounds.width / 2, y: -20)
+    let containerSize: CGSize
+    let trigger: Bool
+    
+    @State private var location: CGPoint
     @State private var opacity = 1.0
 
     let colors: [Color] = [.red, .orange, .yellow, .green, .blue, .purple]
+
+    init(containerSize: CGSize, trigger: Bool) {
+        self.containerSize = containerSize
+        self.trigger = trigger
+        _location = State(initialValue: CGPoint(x: containerSize.width / 2, y: -20))
+    }
 
     var body: some View {
         Circle()
@@ -314,8 +326,8 @@ struct ConfettiPiece: View {
             .onAppear {
                 withAnimation(.easeOut(duration: 3)) {
                     location = CGPoint(
-                        x: CGFloat.random(in: 0...UIScreen.main.bounds.width),
-                        y: UIScreen.main.bounds.height + 20
+                        x: CGFloat.random(in: 0...containerSize.width),
+                        y: containerSize.height + 20
                     )
                     opacity = 0
                 }

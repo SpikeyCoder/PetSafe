@@ -60,7 +60,7 @@ struct DefaultLockedView: View {
             // Lock icon
             ZStack {
                 Circle()
-                    .fill(Theme.Colors.orange100)
+                    .fill(Theme.Colors.orangeCardBackground)
                     .frame(width: 60, height: 60)
 
                 Image(systemName: "lock.fill")
@@ -87,10 +87,10 @@ struct DefaultLockedView: View {
             }
         }
         .padding(Theme.Spacing.lg)
-        .background(Theme.Colors.orange50.opacity(0.3))
+        .background(Theme.Colors.orangeCardBackground)
         .overlay(
             RoundedRectangle(cornerRadius: Theme.CornerRadius.lg)
-                .stroke(Theme.Colors.orange200, lineWidth: 1)
+                .stroke(Theme.Colors.orangeCardBorder, lineWidth: 1)
         )
         .clipShape(RoundedRectangle(cornerRadius: Theme.CornerRadius.lg))
     }
@@ -151,11 +151,11 @@ struct PremiumUpgradeBanner: View {
                 VStack(alignment: .leading, spacing: 4) {
                     Text("Unlock Premium Features")
                         .font(Theme.Typography.headline)
-                        .foregroundStyle(Theme.Colors.orange900)
+                        .foregroundStyle(.primary)
 
                     Text("Get unlimited tracking, photo identification, and more")
                         .font(Theme.Typography.caption)
-                        .foregroundStyle(Theme.Colors.orange700)
+                        .foregroundStyle(.secondary)
                 }
 
                 Spacer(minLength: Theme.Spacing.md)
@@ -183,16 +183,10 @@ struct PremiumUpgradeBanner: View {
                 }
             }
             .padding(Theme.Spacing.md)
-            .background(
-                LinearGradient(
-                    colors: [Theme.Colors.orange100, Theme.Colors.orange50],
-                    startPoint: .leading,
-                    endPoint: .trailing
-                )
-            )
+            .background(Theme.Colors.orangeCardBackground)
             .overlay(
                 RoundedRectangle(cornerRadius: Theme.CornerRadius.lg)
-                    .stroke(Theme.Colors.orange200, lineWidth: 1)
+                    .stroke(Theme.Colors.orangeCardBorder, lineWidth: 1)
             )
             .clipShape(RoundedRectangle(cornerRadius: Theme.CornerRadius.lg))
         }

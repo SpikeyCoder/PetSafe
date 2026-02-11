@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Camera Access for Barcode Scanning -->
+	<key>NSCameraUsageDescription</key>
+	<string>PetSafe needs camera access to scan food product barcodes for copper content tracking.</string>
+	
+	<!-- Optional: Photo Library Access (uncomment if needed) -->
+	<!-- 
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>PetSafe needs photo library access to let you select food images for identification.</string>
+	-->
+	
+	<!-- Optional: Location Access (uncomment if needed) -->
+	<!--
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>PetSafe uses your location to find nearby veterinarians and pet stores.</string>
+	-->
+</dict>
+</plist>

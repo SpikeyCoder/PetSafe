@@ -19,6 +19,7 @@
 /* Begin PBXFileReference section */
 		C11E2EF02EA33CC200657DF6 /* PetSafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetSafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C127D6112ECA5B6D00BE26F5 /* PetSafeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetSafeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C15B1BA22F3C4B5C009347A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -72,6 +73,7 @@
 				C11E2EF22EA33CC200657DF6 /* PetSafe */,
 				C127D6122ECA5B6D00BE26F5 /* PetSafeTests */,
 				C11E2EF12EA33CC200657DF6 /* Products */,
+				C15B1BA22F3C4B5C009347A2 /* Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -348,6 +350,7 @@
 				DEVELOPMENT_TEAM = CUKDK2C25K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "PetSafe needs camera access to scan food product barcodes and check copper content for your dog's safety.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -381,6 +384,7 @@
 				DEVELOPMENT_TEAM = CUKDK2C25K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "PetSafe needs camera access to scan food product barcodes and check copper content for your dog's safety.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

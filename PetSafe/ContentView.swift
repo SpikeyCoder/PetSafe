@@ -297,11 +297,14 @@ struct DashboardCardView: View {
                     Text("\(percentage, specifier: "%.0f")%")
                 }
                 .font(.caption)
-                ZStack(alignment: .leading) {
-                    Capsule().fill(Color.primary.opacity(0.12)).frame(height: 10)
-                    Capsule().fill(status.bar).frame(width: max(0, percentage/100.0) * UIScreen.main.bounds.width * 0.8, height: 10)
-                        .animation(.easeInOut(duration: 0.35), value: percentage)
+                GeometryReader { geometry in
+                    ZStack(alignment: .leading) {
+                        Capsule().fill(Color.primary.opacity(0.12)).frame(height: 10)
+                        Capsule().fill(status.bar).frame(width: max(0, percentage/100.0) * geometry.size.width, height: 10)
+                            .animation(.easeInOut(duration: 0.35), value: percentage)
+                    }
                 }
+                .frame(height: 10)
             }
         }
         .padding()

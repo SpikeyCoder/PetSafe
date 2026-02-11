@@ -9,17 +9,9 @@ struct LoadingScreen: View {
     
     var body: some View {
         ZStack {
-            // Background gradient
-            LinearGradient(
-                colors: [
-                    Theme.Colors.orange50,
-                    Theme.Colors.orange100,
-                    .white
-                ],
-                startPoint: .topLeading,
-                endPoint: .bottomTrailing
-            )
-            .ignoresSafeArea()
+            // Background - use system background for dark mode compatibility
+            Color(.systemBackground)
+                .ignoresSafeArea()
             
             VStack(spacing: Theme.Spacing.xl) {
                 Spacer()
@@ -80,20 +72,11 @@ struct LoadingScreen: View {
                 VStack(spacing: Theme.Spacing.xs) {
                     Text("PetSafe")
                         .font(.system(size: 42, weight: .bold))
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [
-                                    Theme.Colors.orange700,
-                                    Theme.Colors.orange600
-                                ],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
+                        .foregroundStyle(.primary)
                     
                     Text("Copper Safety Tracker")
                         .font(Theme.Typography.callout)
-                        .foregroundStyle(Theme.Colors.orange800.opacity(0.8))
+                        .foregroundStyle(.secondary)
                         .tracking(1.5)
                 }
                 .opacity(fadeIn ? 1 : 0)

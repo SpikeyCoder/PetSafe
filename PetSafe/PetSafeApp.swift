@@ -7,7 +7,7 @@ struct PetSafeApp: App {
     let modelContainer: ModelContainer
 
     // MARK: - Services (Dependency Injection)
-    @StateObject private var subscriptionService: SubscriptionServiceMock
+    @StateObject private var subscriptionService: SubscriptionServiceImpl
     private let openFoodFactsService: OpenFoodFactsService
     private let usdaService: USDAService
 
@@ -32,14 +32,12 @@ struct PetSafeApp: App {
             fatalError("Could not initialize ModelContainer: \(error)")
         }
 
-        // Initialize services
-        // TODO: Replace mocks with real implementations when ready
-        _subscriptionService = StateObject(wrappedValue: SubscriptionServiceMock())
+        // Initialize services with real StoreKit implementation
+        _subscriptionService = StateObject(wrappedValue: SubscriptionServiceImpl())
         openFoodFactsService = OpenFoodFactsServiceMock()
         usdaService = USDAServiceMock()
 
-        // For production, use:
-        // _subscriptionService = StateObject(wrappedValue: SubscriptionServiceImpl())
+        // For production API services, use:
         // openFoodFactsService = OpenFoodFactsServiceImpl()
         // usdaService = USDAServiceImpl(apiKey: "YOUR_USDA_API_KEY")
     }
@@ -48,7 +46,7 @@ struct PetSafeApp: App {
         WindowGroup {
             RootView_NEW()
                 .modelContainer(modelContainer)
-                .environmentObject(subscriptionService as SubscriptionServiceMock)
+                .environmentObject(subscriptionService)
                 .environment(\.openFoodFactsService, openFoodFactsService)
                 .environment(\.usdaService, usdaService)
                 .task {

@@ -45,6 +45,56 @@ enum Theme {
         static let safeGreen = green600
         static let warningYellow = yellow600
         static let dangerRed = red600
+        
+        // MARK: - Adaptive Colors (Dark Mode Compatible)
+        /// Use these for card backgrounds that need to work in light and dark mode
+        static var cardBackground: Color {
+            Color(.secondarySystemBackground)
+        }
+        
+        static var cardBorder: Color {
+            Color(.tertiarySystemBackground)
+        }
+        
+        static var blueCardBackground: Color {
+            Color(light: blue50, dark: Color(red: 0.1, green: 0.15, blue: 0.25))
+        }
+        
+        static var blueCardBorder: Color {
+            Color(light: blue200, dark: Color(red: 0.15, green: 0.25, blue: 0.4))
+        }
+        
+        static var orangeCardBackground: Color {
+            Color(light: orange50, dark: Color(red: 0.25, green: 0.15, blue: 0.1))
+        }
+        
+        static var orangeCardBorder: Color {
+            Color(light: orange200, dark: Color(red: 0.4, green: 0.25, blue: 0.15))
+        }
+        
+        static var greenCardBackground: Color {
+            Color(light: green50, dark: Color(red: 0.1, green: 0.2, blue: 0.12))
+        }
+        
+        static var greenCardBorder: Color {
+            Color(light: green200, dark: Color(red: 0.15, green: 0.35, blue: 0.2))
+        }
+        
+        static var yellowCardBackground: Color {
+            Color(light: yellow50, dark: Color(red: 0.25, green: 0.2, blue: 0.05))
+        }
+        
+        static var yellowCardBorder: Color {
+            Color(light: yellow200, dark: Color(red: 0.45, green: 0.4, blue: 0.15))
+        }
+        
+        static var redCardBackground: Color {
+            Color(light: red50, dark: Color(red: 0.25, green: 0.1, blue: 0.1))
+        }
+        
+        static var redCardBorder: Color {
+            Color(light: red200, dark: Color(red: 0.45, green: 0.2, blue: 0.2))
+        }
     }
 
     // MARK: - Typography
@@ -91,6 +141,26 @@ enum Theme {
         static let sm = 2.0
         static let md = 4.0
         static let lg = 8.0
+    }
+}
+
+// MARK: - Color Extension for Light/Dark Mode
+extension Color {
+    init(light: Color, dark: Color) {
+        self.init(uiColor: UIColor(light: UIColor(light), dark: UIColor(dark)))
+    }
+}
+
+extension UIColor {
+    convenience init(light: UIColor, dark: UIColor) {
+        self.init { traitCollection in
+            switch traitCollection.userInterfaceStyle {
+            case .dark:
+                return dark
+            default:
+                return light
+            }
+        }
     }
 }
 
@@ -189,17 +259,17 @@ enum SafetyLevel {
 
     var backgroundColor: Color {
         switch self {
-        case .safe: return Theme.Colors.green50
-        case .caution: return Theme.Colors.yellow50
-        case .danger: return Theme.Colors.red50
+        case .safe: return Theme.Colors.greenCardBackground
+        case .caution: return Theme.Colors.yellowCardBackground
+        case .danger: return Theme.Colors.redCardBackground
         }
     }
 
     var borderColor: Color {
         switch self {
-        case .safe: return Theme.Colors.green200
-        case .caution: return Theme.Colors.yellow200
-        case .danger: return Theme.Colors.red200
+        case .safe: return Theme.Colors.greenCardBorder
+        case .caution: return Theme.Colors.yellowCardBorder
+        case .danger: return Theme.Colors.redCardBorder
         }
     }
 

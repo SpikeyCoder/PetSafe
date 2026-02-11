@@ -90,6 +90,40 @@ struct PaywallView: View {
             if viewModel.isLoading {
                 ProgressView()
                     .padding(.vertical, Theme.Spacing.xxl)
+            } else if viewModel.availableProducts.isEmpty {
+                // Debug view when no products load
+                VStack(spacing: Theme.Spacing.md) {
+                    Image(systemName: "exclamationmark.triangle")
+                        .font(.largeTitle)
+                        .foregroundStyle(.orange)
+                    
+                    Text("Unable to Load Products")
+                        .font(Theme.Typography.headline)
+                    
+                    Text("Make sure StoreKit Configuration is enabled in your scheme settings.")
+                        .font(Theme.Typography.caption)
+                        .foregroundStyle(.secondary)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal)
+                    
+                    Button {
+                        Task {
+                            await viewModel.loadProducts()
+                        }
+                    } label: {
+                        HStack {
+                            Image(systemName: "arrow.clockwise")
+                            Text("Retry Loading Products")
+                        }
+                        .font(Theme.Typography.subheadline.weight(.semibold))
+                        .padding(.horizontal, Theme.Spacing.lg)
+                        .padding(.vertical, Theme.Spacing.md)
+                        .background(Theme.Colors.orange600)
+                        .foregroundStyle(.white)
+                        .clipShape(RoundedRectangle(cornerRadius: Theme.CornerRadius.lg))
+                    }
+                }
+                .padding(.vertical, Theme.Spacing.xxl)
             } else {
                 if let yearlyProduct = viewModel.yearlyProduct {
                     PricingCard(
