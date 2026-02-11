@@ -12,44 +12,82 @@ struct DashboardView: View {
     // State
     @State private var selectedTab: DashboardTab = .home
     @State private var showingScanner = false
+    @State private var showingSettings = false
+    @State private var showingLogoutConfirmation = false
 
     // Dog profile from environment
     @Query private var profiles: [DogProfile]
     private var dogProfile: DogProfile? { profiles.first }
 
+    // Logout callback
+    var onLogout: () -> Void
+
     var body: some View {
-        VStack(spacing: 0) {
-            // Custom tab bar
-            tabBar
+        NavigationStack {
+            VStack(spacing: 0) {
+                // Custom tab bar
+                tabBar
 
-            Divider()
+                Divider()
 
-            // Tab content
-            TabView(selection: $selectedTab) {
-                homeTab
-                    .tag(DashboardTab.home)
+                // Tab content
+                TabView(selection: $selectedTab) {
+                    homeTab
+                        .tag(DashboardTab.home)
 
-                scannerTab
-                    .tag(DashboardTab.scan)
+                    scannerTab
+                        .tag(DashboardTab.scan)
 
-                logTab
-                    .tag(DashboardTab.log)
+                    logTab
+                        .tag(DashboardTab.log)
+                }
+                .tabViewStyle(.page(indexDisplayMode: .never))
             }
-            .tabViewStyle(.page(indexDisplayMode: .never))
-        }
-        .sheet(isPresented: $subscriptionViewModel.showPaywall) {
-            PaywallView(viewModel: subscriptionViewModel)
-        }
-        .sheet(isPresented: $showingScanner) {
-            NavigationStack {
-                BarcodeScannerView(viewModel: scannerViewModel)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        showingSettings = true
+                    } label: {
+                        Image(systemName: "gearshape.fill")
+                            .foregroundStyle(Theme.Colors.orange600)
+                    }
+                    .accessibleButton(
+                        label: "Settings",
+                        hint: "Open settings and account options"
+                    )
+                }
             }
-        }
-        .onChange(of: scannerViewModel.scanState) { oldValue, newValue in
-            // Auto-add scanned products to food log
-            if case .found(let product) = newValue,
-               subscriptionViewModel.isPremium {
-                // Product found - user will add manually from ProductResultView
+            .sheet(isPresented: $showingSettings) {
+                SettingsView(
+                    subscriptionViewModel: subscriptionViewModel,
+                    onLogout: {
+                        showingSettings = false
+                        showingLogoutConfirmation = true
+                    }
+                )
+            }
+            .sheet(isPresented: $subscriptionViewModel.showPaywall) {
+                PaywallView(viewModel: subscriptionViewModel)
+            }
+            .sheet(isPresented: $showingScanner) {
+                NavigationStack {
+                    BarcodeScannerView(viewModel: scannerViewModel)
+                }
+            }
+            .onChange(of: scannerViewModel.scanState) { oldValue, newValue in
+                // Auto-add scanned products to food log
+                if case .found(let product) = newValue,
+                   subscriptionViewModel.isPremium {
+                    // Product found - user will add manually from ProductResultView
+                }
+            }
+            .confirmationDialog("Log Out", isPresented: $showingLogoutConfirmation) {
+                Button("Log Out", role: .destructive) {
+                    onLogout()
+                }
+                Button("Cancel", role: .cancel) { }
+            } message: {
+                Text("Are you sure you want to log out?")
             }
         }
     }
@@ -95,6 +133,9 @@ struct DashboardView: View {
     private var homeTab: some View {
         ScrollView {
             VStack(spacing: Theme.Spacing.lg) {
+                // Header with logout
+                homeHeader
+
                 // Premium upgrade banner
                 PremiumUpgradeBanner(viewModel: subscriptionViewModel)
 
@@ -111,9 +152,153 @@ struct DashboardView: View {
 
                 // Recent insights
                 insightsCard
+
+                // Settings and logout section
+                settingsSection
             }
             .padding()
         }
+    }
+
+    // MARK: - Home Header
+    private var homeHeader: some View {
+        HStack {
+            VStack(alignment: .leading, spacing: 4) {
+                Text("PetSafe")
+                    .font(Theme.Typography.title)
+                    .fontWeight(.bold)
+
+                if let profile = dogProfile {
+                    Text("Protecting \(profile.name)")
+                        .font(Theme.Typography.caption)
+                        .foregroundStyle(.secondary)
+                }
+            }
+
+            Spacer()
+
+            Button {
+                showingLogoutConfirmation = true
+            } label: {
+                HStack(spacing: 4) {
+                    Image(systemName: "rectangle.portrait.and.arrow.right")
+                    Text("Logout")
+                }
+                .font(Theme.Typography.subheadline)
+                .padding(.horizontal, Theme.Spacing.md)
+                .padding(.vertical, Theme.Spacing.sm)
+                .background(Theme.Colors.orange50)
+                .foregroundStyle(Theme.Colors.orange600)
+                .clipShape(Capsule())
+            }
+            .accessibleButton(
+                label: "Log out",
+                hint: "Sign out of your account"
+            )
+        }
+    }
+
+    // MARK: - Settings Section
+    private var settingsSection: some View {
+        VStack(spacing: Theme.Spacing.md) {
+            Text("Account")
+                .font(Theme.Typography.headline)
+                .frame(maxWidth: .infinity, alignment: .leading)
+
+            VStack(spacing: Theme.Spacing.sm) {
+                settingsRow(
+                    icon: "bell.fill",
+                    title: "Notifications",
+                    subtitle: "Streak reminders & insights",
+                    color: Theme.Colors.orange600
+                ) {
+                    // Navigate to notifications settings
+                }
+
+                settingsRow(
+                    icon: "crown.fill",
+                    title: "Manage Subscription",
+                    subtitle: subscriptionViewModel.isPremium ? "Premium Active" : "Free Plan",
+                    color: Color.yellow
+                ) {
+                    subscriptionViewModel.presentPaywall(for: "Manage Subscription")
+                }
+
+                settingsRow(
+                    icon: "questionmark.circle.fill",
+                    title: "Help & Support",
+                    subtitle: "FAQs and contact",
+                    color: Theme.Colors.blue600
+                ) {
+                    // Navigate to help
+                }
+
+                Button {
+                    showingLogoutConfirmation = true
+                } label: {
+                    HStack {
+                        Image(systemName: "rectangle.portrait.and.arrow.right")
+                            .foregroundStyle(Theme.Colors.dangerRed)
+
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text("Log Out")
+                                .font(Theme.Typography.subheadline.weight(.semibold))
+                                .foregroundStyle(Theme.Colors.dangerRed)
+                            Text("Sign out of your account")
+                                .font(Theme.Typography.caption)
+                                .foregroundStyle(.secondary)
+                        }
+
+                        Spacer()
+
+                        Image(systemName: "chevron.right")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                    }
+                    .padding(Theme.Spacing.md)
+                    .background(Color(.secondarySystemBackground))
+                    .clipShape(RoundedRectangle(cornerRadius: Theme.CornerRadius.lg))
+                }
+                .buttonStyle(.plain)
+                .accessibleButton(
+                    label: "Log out",
+                    hint: "Sign out of your account"
+                )
+            }
+        }
+    }
+
+    private func settingsRow(
+        icon: String,
+        title: String,
+        subtitle: String,
+        color: Color,
+        action: @escaping () -> Void
+    ) -> some View {
+        Button(action: action) {
+            HStack {
+                Image(systemName: icon)
+                    .foregroundStyle(color)
+
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(title)
+                        .font(Theme.Typography.subheadline.weight(.semibold))
+                    Text(subtitle)
+                        .font(Theme.Typography.caption)
+                        .foregroundStyle(.secondary)
+                }
+
+                Spacer()
+
+                Image(systemName: "chevron.right")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
+            .padding(Theme.Spacing.md)
+            .background(Color(.secondarySystemBackground))
+            .clipShape(RoundedRectangle(cornerRadius: Theme.CornerRadius.lg))
+        }
+        .buttonStyle(.plain)
     }
 
     private func dogProfileCard(_ profile: DogProfile) -> some View {
@@ -364,7 +549,10 @@ enum DashboardTab {
     return DashboardView(
         subscriptionViewModel: subscriptionVM,
         scannerViewModel: scannerVM,
-        foodLogViewModel: foodLogVM
+        foodLogViewModel: foodLogVM,
+        onLogout: {
+            print("Logout tapped")
+        }
     )
     .modelContainer(container)
 }

@@ -26,6 +26,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Features/FoodLog/Views/LoadingScreen.swift,
+				Info.plist,
 			);
 			target = C11E2EEF2EA33CC200657DF6 /* PetSafe */;
 		};

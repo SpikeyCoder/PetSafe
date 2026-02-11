@@ -45,7 +45,12 @@ struct RootView_NEW: View {
             } else if let profile = dogProfile {
                 DashboardViewWrapper(
                     modelContext: modelContext,
-                    dogProfile: profile
+                    dogProfile: profile,
+                    onLogout: {
+                        withAnimation(.easeInOut(duration: 0.35)) {
+                            isAuthenticated = false
+                        }
+                    }
                 )
                 .transition(.opacity)
             }
@@ -98,14 +103,16 @@ struct RootView_NEW: View {
 private struct DashboardViewWrapper: View {
     let modelContext: ModelContext
     let dogProfile: DogProfile
+    let onLogout: () -> Void
     
     @StateObject private var subscriptionViewModel: SubscriptionViewModel
     @StateObject private var scannerViewModel: ScannerViewModel
     @StateObject private var foodLogViewModel: FoodLogViewModel
     
-    init(modelContext: ModelContext, dogProfile: DogProfile) {
+    init(modelContext: ModelContext, dogProfile: DogProfile, onLogout: @escaping () -> Void) {
         self.modelContext = modelContext
         self.dogProfile = dogProfile
+        self.onLogout = onLogout
         
         // Initialize ViewModels with dependencies using the underscore syntax
         let mockSubscriptionService = SubscriptionServiceMock()
@@ -127,7 +134,8 @@ private struct DashboardViewWrapper: View {
         DashboardView(
             subscriptionViewModel: subscriptionViewModel,
             scannerViewModel: scannerViewModel,
-            foodLogViewModel: foodLogViewModel
+            foodLogViewModel: foodLogViewModel,
+            onLogout: onLogout
         )
         .task {
             await subscriptionViewModel.checkSubscriptionStatus()
