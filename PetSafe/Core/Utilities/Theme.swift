@@ -11,6 +11,7 @@ enum Theme {
         static let orange50 = Color(red: 1.0, green: 0.973, blue: 0.941)
         static let orange100 = Color(red: 1.0, green: 0.945, blue: 0.89)
         static let orange200 = Color(red: 0.996, green: 0.894, blue: 0.78)
+        static let orange500 = Color(red: 0.96, green: 0.48, blue: 0.24)
         static let orange600 = Color(red: 0.89, green: 0.38, blue: 0.18)
         static let orange700 = Color(red: 0.78, green: 0.29, blue: 0.12)
         static let orange800 = Color(red: 0.64, green: 0.22, blue: 0.09)

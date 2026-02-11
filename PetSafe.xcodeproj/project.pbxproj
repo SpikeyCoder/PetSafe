@@ -21,9 +21,22 @@
 		C127D6112ECA5B6D00BE26F5 /* PetSafeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetSafeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C1BDC3772F3C04CC00D1AD1E /* Exceptions for "PetSafe" folder in "PetSafe" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Features/FoodLog/Views/LoadingScreen.swift,
+			);
+			target = C11E2EEF2EA33CC200657DF6 /* PetSafe */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C11E2EF22EA33CC200657DF6 /* PetSafe */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C1BDC3772F3C04CC00D1AD1E /* Exceptions for "PetSafe" folder in "PetSafe" target */,
+			);
 			path = PetSafe;
 			sourceTree = "<group>";
 		};
