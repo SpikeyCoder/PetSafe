@@ -1,0 +1,392 @@
+{
+  "source": "/Users/kevinarmstrong/Documents/PetSafe/PetSafe/SettingsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Settings",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 139
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ • %lld yrs",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 29
+        }
+      },
+      {
+        "comment": "",
+        "key": "Subscription",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 48
+        }
+      },
+      {
+        "comment": "",
+        "key": "Premium Active",
+        "location": {
+          "startingColumn": 72,
+          "startingLine": 51
+        }
+      },
+      {
+        "comment": "",
+        "key": "Free Plan",
+        "location": {
+          "startingColumn": 91,
+          "startingLine": 51
+        }
+      },
+      {
+        "comment": "",
+        "key": "Premium",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 64
+        }
+      },
+      {
+        "comment": "",
+        "key": "Notifications",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 73
+        }
+      },
+      {
+        "comment": "",
+        "key": "Edit Profile",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 84
+        }
+      },
+      {
+        "comment": "",
+        "key": "Settings",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 91
+        }
+      },
+      {
+        "comment": "",
+        "key": "Help & Support",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 100
+        }
+      },
+      {
+        "comment": "",
+        "key": "About",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 111
+        }
+      },
+      {
+        "comment": "",
+        "key": "Support",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 118
+        }
+      },
+      {
+        "comment": "",
+        "key": "Log Out",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 129
+        }
+      },
+      {
+        "comment": "",
+        "key": "Account",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 136
+        }
+      },
+      {
+        "comment": "",
+        "key": "Done",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 143
+        }
+      },
+      {
+        "comment": "",
+        "key": "Notifications",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 198
+        }
+      },
+      {
+        "comment": "",
+        "key": "Daily Reminders",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 165
+        }
+      },
+      {
+        "comment": "",
+        "key": "Get reminded to log your dog's food",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 167
+        }
+      },
+      {
+        "comment": "",
+        "key": "Copper Alerts",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 175
+        }
+      },
+      {
+        "comment": "",
+        "key": "Alert when approaching daily limit",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 177
+        }
+      },
+      {
+        "comment": "",
+        "key": "Weekly Insights",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 185
+        }
+      },
+      {
+        "comment": "",
+        "key": "Summary of your week's copper tracking",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 187
+        }
+      },
+      {
+        "comment": "",
+        "key": "Notifications",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 193
+        }
+      },
+      {
+        "comment": "",
+        "key": "Enable notifications to stay on top of your dog's copper intake",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 195
+        }
+      },
+      {
+        "comment": "",
+        "key": "Edit Profile",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 222
+        }
+      },
+      {
+        "comment": "",
+        "key": "Name",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 211
+        }
+      },
+      {
+        "comment": "",
+        "key": "Breed",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 212
+        }
+      },
+      {
+        "comment": "",
+        "key": "Age",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 213
+        }
+      },
+      {
+        "comment": "",
+        "key": "Weight",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 214
+        }
+      },
+      {
+        "comment": "",
+        "key": "Profile Information",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 217
+        }
+      },
+      {
+        "comment": "",
+        "key": "Profile editing coming soon",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 219
+        }
+      },
+      {
+        "comment": "",
+        "key": "Help & Support",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 242
+        }
+      },
+      {
+        "comment": "",
+        "key": "Frequently Asked Questions",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 231
+        }
+      },
+      {
+        "comment": "",
+        "key": "Contact Support",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 235
+        }
+      },
+      {
+        "comment": "",
+        "key": "Visit Our Website",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 239
+        }
+      },
+      {
+        "comment": "",
+        "key": "FAQs coming soon",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 232
+        }
+      },
+      {
+        "comment": "",
+        "key": "Contact form coming soon",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 236
+        }
+      },
+      {
+        "comment": "",
+        "key": "About",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 273
+        }
+      },
+      {
+        "comment": "",
+        "key": "Version",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 251
+        }
+      },
+      {
+        "comment": "",
+        "key": "Build",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 252
+        }
+      },
+      {
+        "comment": "",
+        "key": "App Information",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 254
+        }
+      },
+      {
+        "comment": "",
+        "key": "Privacy Policy",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 258
+        }
+      },
+      {
+        "comment": "",
+        "key": "Terms of Service",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 262
+        }
+      },
+      {
+        "comment": "",
+        "key": "Licenses",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 266
+        }
+      },
+      {
+        "comment": "",
+        "key": "Privacy policy coming soon",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 259
+        }
+      },
+      {
+        "comment": "",
+        "key": "Terms coming soon",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 263
+        }
+      },
+      {
+        "comment": "",
+        "key": "Open source licenses coming soon",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 267
+        }
+      },
+      {
+        "comment": "",
+        "key": "Legal",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 270
+        }
+      }
+    ]
+  },
+  "version": 1
+}

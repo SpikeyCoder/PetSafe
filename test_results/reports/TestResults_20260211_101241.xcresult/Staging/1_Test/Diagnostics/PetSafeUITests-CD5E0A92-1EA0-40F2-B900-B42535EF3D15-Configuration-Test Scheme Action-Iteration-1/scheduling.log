@@ -1,0 +1,158 @@
+2026-02-11 18:13:17 +0000: Received worker from worker provider: <XCTHTestRunner: 0xc76017700, PID: 0, device: Clone 1 of iPhone 17 Pro (916AE1E7-456A-43A1-AEFC-C54B047298B0)>
+2026-02-11 18:14:17 +0000: Worker <XCTHTestRunner: 0xc76017700, PID: 71426, device: Clone 1 of iPhone 17 Pro (916AE1E7-456A-43A1-AEFC-C54B047298B0)> finished bootstrapping
+2026-02-11 18:14:17 +0000: Parallelization enabled; test execution driven by the IDE
+2026-02-11 18:14:17 +0000: Requesting test classes from worker <XCTHTestRunner: 0xc76017700, PID: 71426, device: Clone 1 of iPhone 17 Pro (916AE1E7-456A-43A1-AEFC-C54B047298B0)>
+2026-02-11 18:14:24 +0000: Received parallelizable test identifiers from worker <XCTHTestRunner: 0xc76017700, PID: 71426, device: Clone 1 of iPhone 17 Pro (916AE1E7-456A-43A1-AEFC-C54B047298B0)>: <XCTTestIdentifier container, class ["SubscriptionTests"]>, <XCTTestIdentifier container, class ["End2EndTests"]>, <XCTTestIdentifier container, class ["OnboardingTests"]>, <XCTTestIdentifier container, class ["ScannerTests"]>, <XCTTestIdentifier container, class ["FoodLogTests"]>, <XCTTestIdentifier container ["__SwiftTestingParallelizationPlaceholderIdentifier"]>, <XCTTestIdentifier container, class ["SettingsTests"]>, <XCTTestIdentifier container, class ["PetSafeUITestBase"]>, <XCTTestIdentifier container, class ["AuthenticationTests"]>, <XCTTestIdentifier container, class ["DashboardTests"]>
+2026-02-11 18:14:24 +0000: Executing tests <XCTTestIdentifier container, class ["SubscriptionTests"]>, <XCTTestIdentifier container, class ["End2EndTests"]>, <XCTTestIdentifier container, class ["OnboardingTests"]>, <XCTTestIdentifier container, class ["ScannerTests"]>, <XCTTestIdentifier container, class ["FoodLogTests"]>, <XCTTestIdentifier container ["__SwiftTestingParallelizationPlaceholderIdentifier"]>, <XCTTestIdentifier container, class ["SettingsTests"]>, <XCTTestIdentifier container, class ["PetSafeUITestBase"]>, <XCTTestIdentifier container, class ["AuthenticationTests"]>, <XCTTestIdentifier container, class ["DashboardTests"]>; skipping tests 
+2026-02-11 18:14:24 +0000: Dispatching tests <XCTTestIdentifier container, class ["SubscriptionTests"]> to worker: <XCTHTestRunner: 0xc76017700, PID: 71426, device: Clone 1 of iPhone 17 Pro (916AE1E7-456A-43A1-AEFC-C54B047298B0)>
+2026-02-11 18:14:42 +0000: Received worker from worker provider: <XCTHTestRunner: 0xc7601d040, PID: 0, device: Clone 2 of iPhone 17 Pro (4EBCAD74-C9BB-4327-9F35-038F026E4404)>
+2026-02-11 18:15:11 +0000: Received worker from worker provider: <XCTHTestRunner: 0xc7601f200, PID: 0, device: Clone 3 of iPhone 17 Pro (5949F850-ABFA-43F6-BFB4-215E95C6A13F)>
+2026-02-11 18:15:43 +0000: Received worker from worker provider: <XCTHTestRunner: 0xc7601e300, PID: 0, device: Clone 4 of iPhone 17 Pro (1E1FD33B-122C-462B-8782-8E7938D9D066)>
+2026-02-11 18:48:36 +0000: Worker <XCTHTestRunner: 0xc7601d040, PID: 0, device: Clone 2 of iPhone 17 Pro (4EBCAD74-C9BB-4327-9F35-038F026E4404)> finished with error: Error Domain=XCTHTestOperationCoordinatorErrorDomain Code=4 "Failed to install or launch the test runner" UserInfo={NSLocalizedDescription=Failed to install or launch the test runner, NSUnderlyingError=0xc755c7810 {Error Domain=NSMachErrorDomain Code=-308 "(ipc/mig) server died" UserInfo={DVTAnalyticsEventNameKey=com.apple.dt.IDERunOperationWorkerFinished, DVTAnalyticsEventDictionaryKey={
+    "device_identifier" = "EF835E06-7665-4CAC-B7BE-3019D50CA10C";
+    "device_model" = "iPhone18,1";
+    "device_osBuild" = "26.1 (23B86)";
+    "device_osBuild_monotonic" = 2301008600;
+    "device_os_variant" = 1;
+    "device_platform" = "com.apple.platform.iphonesimulator";
+    "device_platform_family" = 2;
+    "device_reality" = 2;
+    "device_thinningType" = "iPhone18,1";
+    "device_transport" = 4;
+    "launchSession_schemeCommand" = Test;
+    "launchSession_schemeCommand_enum" = 2;
+    "launchSession_targetArch" = arm64;
+    "launchSession_targetArch_enum" = 6;
+    "operation_duration_ms" = 2023703;
+    "operation_errorCode" = "-308";
+    "operation_errorDomain" = NSMachErrorDomain;
+    "operation_errorWorker" = IDELaunchiPhoneSimulatorLauncher;
+    "operation_error_reportable" = 1;
+    "operation_name" = IDERunOperationWorkerGroup;
+    "param_consoleMode" = 0;
+    "param_debugger_attachToExtensions" = 0;
+    "param_debugger_attachToXPC" = 0;
+    "param_debugger_type" = 1;
+    "param_destination_isProxy" = 0;
+    "param_destination_platform" = "com.apple.platform.iphonesimulator";
+    "param_diag_MTE_enable" = 0;
+    "param_diag_MainThreadChecker_stopOnIssue" = 0;
+    "param_diag_MallocStackLogging_enableDuringAttach" = 0;
+    "param_diag_MallocStackLogging_enableForXPC" = 0;
+    "param_diag_allowLocationSimulation" = 1;
+    "param_diag_checker_mtc_enable" = 0;
+    "param_diag_checker_tpc_enable" = 1;
+    "param_diag_gpu_frameCapture_enable" = 3;
+    "param_diag_gpu_shaderValidation_enable" = 0;
+    "param_diag_gpu_validation_enable" = 1;
+    "param_diag_guardMalloc_enable" = 0;
+    "param_diag_memoryGraphOnResourceException" = 0;
+    "param_diag_queueDebugging_enable" = 1;
+    "param_diag_runtimeProfile_generate" = 1;
+    "param_diag_sanitizer_asan_enable" = 0;
+    "param_diag_sanitizer_tsan_enable" = 0;
+    "param_diag_sanitizer_tsan_stopOnIssue" = 0;
+    "param_diag_sanitizer_ubsan_enable" = 0;
+    "param_diag_sanitizer_ubsan_stopOnIssue" = 0;
+    "param_diag_showNonLocalizedStrings" = 0;
+    "param_diag_viewDebugging_enabled" = 0;
+    "param_diag_viewDebugging_insertDylibOnLaunch" = 0;
+    "param_install_style" = 2;
+    "param_launcher_UID" = 2;
+    "param_launcher_allowDeviceSensorReplayData" = 0;
+    "param_launcher_kind" = 0;
+    "param_launcher_style" = 0;
+    "param_launcher_substyle" = 64;
+    "param_lldbVersion_component_idx_1" = 0;
+    "param_lldbVersion_monotonic" = 170302360021;
+    "param_runnable_appExtensionHostRunMode" = 0;
+    "param_runnable_productType" = "com.apple.product-type.application";
+    "param_testing_launchedForTesting" = 1;
+    "param_testing_suppressSimulatorApp" = 1;
+    "param_testing_usingCLI" = 0;
+    "sdk_canonicalName" = "iphonesimulator26.2";
+    "sdk_osVersion" = "26.2";
+    "sdk_platformID" = 7;
+    "sdk_variant" = iphonesimulator;
+    "sdk_version_monotonic" = 2302005300;
+}, IDERunOperationFailingWorker=IDELaunchiPhoneSimulatorLauncher, DVTIssueReportingFunctionalityKey=1, DVTErrorCreationDateKey=2026-02-11 18:48:35 +0000}}}
+2026-02-11 18:48:38 +0000: Worker <XCTHTestRunner: 0xc76017700, PID: 71426, device: Clone 1 of iPhone 17 Pro (916AE1E7-456A-43A1-AEFC-C54B047298B0)> finished successfully.
+2026-02-11 18:48:38 +0000: Dispatching tests <XCTTestIdentifier container, class ["End2EndTests"]> to worker: <XCTHTestRunner: 0xc76017700, PID: 71426, device: Clone 1 of iPhone 17 Pro (916AE1E7-456A-43A1-AEFC-C54B047298B0)>
+2026-02-11 18:48:51 +0000: Worker <XCTHTestRunner: 0xc7601f200, PID: 0, device: Clone 3 of iPhone 17 Pro (5949F850-ABFA-43F6-BFB4-215E95C6A13F)> finished with error: Error Domain=XCTHTestOperationCoordinatorErrorDomain Code=4 "Failed to install or launch the test runner" UserInfo={NSLocalizedDescription=Failed to install or launch the test runner, NSUnderlyingError=0xc77f0e520 {Error Domain=NSMachErrorDomain Code=-308 "(ipc/mig) server died" UserInfo={DVTAnalyticsEventNameKey=com.apple.dt.IDERunOperationWorkerFinished, DVTAnalyticsEventDictionaryKey={
+    "device_identifier" = "EF835E06-7665-4CAC-B7BE-3019D50CA10C";
+    "device_model" = "iPhone18,1";
+    "device_osBuild" = "26.1 (23B86)";
+    "device_osBuild_monotonic" = 2301008600;
+    "device_os_variant" = 1;
+    "device_platform" = "com.apple.platform.iphonesimulator";
+    "device_platform_family" = 2;
+    "device_reality" = 2;
+    "device_thinningType" = "iPhone18,1";
+    "device_transport" = 4;
+    "launchSession_schemeCommand" = Test;
+    "launchSession_schemeCommand_enum" = 2;
+    "launchSession_targetArch" = arm64;
+    "launchSession_targetArch_enum" = 6;
+    "operation_duration_ms" = 2005003;
+    "operation_errorCode" = "-308";
+    "operation_errorDomain" = NSMachErrorDomain;
+    "operation_errorWorker" = IDELaunchiPhoneSimulatorLauncher;
+    "operation_error_reportable" = 1;
+    "operation_name" = IDERunOperationWorkerGroup;
+    "param_consoleMode" = 0;
+    "param_debugger_attachToExtensions" = 0;
+    "param_debugger_attachToXPC" = 0;
+    "param_debugger_type" = 1;
+    "param_destination_isProxy" = 0;
+    "param_destination_platform" = "com.apple.platform.iphonesimulator";
+    "param_diag_MTE_enable" = 0;
+    "param_diag_MainThreadChecker_stopOnIssue" = 0;
+    "param_diag_MallocStackLogging_enableDuringAttach" = 0;
+    "param_diag_MallocStackLogging_enableForXPC" = 0;
+    "param_diag_allowLocationSimulation" = 1;
+    "param_diag_checker_mtc_enable" = 0;
+    "param_diag_checker_tpc_enable" = 1;
+    "param_diag_gpu_frameCapture_enable" = 3;
+    "param_diag_gpu_shaderValidation_enable" = 0;
+    "param_diag_gpu_validation_enable" = 1;
+    "param_diag_guardMalloc_enable" = 0;
+    "param_diag_memoryGraphOnResourceException" = 0;
+    "param_diag_queueDebugging_enable" = 1;
+    "param_diag_runtimeProfile_generate" = 1;
+    "param_diag_sanitizer_asan_enable" = 0;
+    "param_diag_sanitizer_tsan_enable" = 0;
+    "param_diag_sanitizer_tsan_stopOnIssue" = 0;
+    "param_diag_sanitizer_ubsan_enable" = 0;
+    "param_diag_sanitizer_ubsan_stopOnIssue" = 0;
+    "param_diag_showNonLocalizedStrings" = 0;
+    "param_diag_viewDebugging_enabled" = 0;
+    "param_diag_viewDebugging_insertDylibOnLaunch" = 0;
+    "param_install_style" = 2;
+    "param_launcher_UID" = 2;
+    "param_launcher_allowDeviceSensorReplayData" = 0;
+    "param_launcher_kind" = 0;
+    "param_launcher_style" = 0;
+    "param_launcher_substyle" = 64;
+    "param_lldbVersion_component_idx_1" = 0;
+    "param_lldbVersion_monotonic" = 170302360021;
+    "param_runnable_appExtensionHostRunMode" = 0;
+    "param_runnable_productType" = "com.apple.product-type.application";
+    "param_testing_launchedForTesting" = 1;
+    "param_testing_suppressSimulatorApp" = 1;
+    "param_testing_usingCLI" = 0;
+    "sdk_canonicalName" = "iphonesimulator26.2";
+    "sdk_osVersion" = "26.2";
+    "sdk_platformID" = 7;
+    "sdk_variant" = iphonesimulator;
+    "sdk_version_monotonic" = 2302005300;
+}, IDERunOperationFailingWorker=IDELaunchiPhoneSimulatorLauncher, DVTIssueReportingFunctionalityKey=1, DVTErrorCreationDateKey=2026-02-11 18:48:50 +0000}}}
+2026-02-11 18:50:13 +0000: Worker <XCTHTestRunner: 0xc7601e300, PID: 73291, device: Clone 4 of iPhone 17 Pro (1E1FD33B-122C-462B-8782-8E7938D9D066)> finished bootstrapping
+2026-02-11 18:50:13 +0000: Dispatching tests <XCTTestIdentifier container, class ["OnboardingTests"]> to worker: <XCTHTestRunner: 0xc7601e300, PID: 73291, device: Clone 4 of iPhone 17 Pro (1E1FD33B-122C-462B-8782-8E7938D9D066)>
+2026-02-11 18:51:39 +0000: Worker <XCTHTestRunner: 0xc76017700, PID: 71426, device: Clone 1 of iPhone 17 Pro (916AE1E7-456A-43A1-AEFC-C54B047298B0)> finished successfully.
+2026-02-11 18:51:39 +0000: Dispatching tests <XCTTestIdentifier container ["__SwiftTestingParallelizationPlaceholderIdentifier"]> to worker: <XCTHTestRunner: 0xc76017700, PID: 71426, device: Clone 1 of iPhone 17 Pro (916AE1E7-456A-43A1-AEFC-C54B047298B0)>
+2026-02-11 18:51:39 +0000: Worker <XCTHTestRunner: 0xc76017700, PID: 71426, device: Clone 1 of iPhone 17 Pro (916AE1E7-456A-43A1-AEFC-C54B047298B0)> finished successfully.
+2026-02-11 18:51:39 +0000: Dispatching tests <XCTTestIdentifier container, class ["ScannerTests"]> to worker: <XCTHTestRunner: 0xc76017700, PID: 71426, device: Clone 1 of iPhone 17 Pro (916AE1E7-456A-43A1-AEFC-C54B047298B0)>
+2026-02-11 18:52:46 +0000: Test operation cancelled
+2026-02-11 18:52:46 +0000: Worker <XCTHTestRunner: 0xc7601e300, PID: 73291, device: Clone 4 of iPhone 17 Pro (1E1FD33B-122C-462B-8782-8E7938D9D066)> finished with cancellation
+2026-02-11 18:52:46 +0000: Worker <XCTHTestRunner: 0xc76017700, PID: 71426, device: Clone 1 of iPhone 17 Pro (916AE1E7-456A-43A1-AEFC-C54B047298B0)> finished with cancellation
+2026-02-11 18:52:46 +0000: Finished executing tests (cancelled: Yes)

@@ -1,0 +1,32 @@
+{
+  "source": "/Users/kevinarmstrong/Documents/PetSafe/PetSafe/Features/FoodLog/Views/AppIconGenerator.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Cu",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 120
+        }
+      },
+      {
+        "comment": "",
+        "key": "App Icon Sizes",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 178
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld×%lldpx",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 242
+        }
+      }
+    ]
+  },
+  "version": 1
+}

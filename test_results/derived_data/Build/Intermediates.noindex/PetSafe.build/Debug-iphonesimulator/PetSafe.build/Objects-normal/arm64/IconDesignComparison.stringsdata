@@ -1,0 +1,152 @@
+{
+  "source": "/Users/kevinarmstrong/Documents/PetSafe/PetSafe/Features/FoodLog/Views/IconDesignComparison.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "App Icon Designer",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 170
+        }
+      },
+      {
+        "comment": "",
+        "key": "Choose Your App Icon",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 24
+        }
+      },
+      {
+        "comment": "",
+        "key": "Select the design that best represents your brand",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 27
+        }
+      },
+      {
+        "comment": "",
+        "key": "Preview Size",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 36
+        }
+      },
+      {
+        "comment": "",
+        "key": "Size",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 39
+        }
+      },
+      {
+        "comment": "",
+        "key": "Small (60pt)",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 40
+        }
+      },
+      {
+        "comment": "",
+        "key": "Medium (120pt)",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 41
+        }
+      },
+      {
+        "comment": "",
+        "key": "Large (180pt)",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 42
+        }
+      },
+      {
+        "comment": "",
+        "key": "Extra Large (300pt)",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 43
+        }
+      },
+      {
+        "comment": "",
+        "key": "Choose Design",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 72
+        }
+      },
+      {
+        "comment": "",
+        "key": "In Context",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 110
+        }
+      },
+      {
+        "comment": "",
+        "key": "Next Steps",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 123
+        }
+      },
+      {
+        "comment": "",
+        "key": "Design Details",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 142
+        }
+      },
+      {
+        "comment": "",
+        "key": "PetSafe",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 209
+        }
+      },
+      {
+        "comment": "",
+        "key": "PetSafe",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 238
+        }
+      },
+      {
+        "comment": "",
+        "key": "Version 1.0",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 240
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 259
+        }
+      },
+      {
+        "comment": "",
+        "key": "App Icon Designs",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 300
+        }
+      }
+    ]
+  },
+  "version": 1
+}

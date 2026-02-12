@@ -1,0 +1,80 @@
+{
+  "source": "/Users/kevinarmstrong/Documents/PetSafe/PetSafe/Features/Scanner/Views/BarcodeScannerView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Scan Barcode",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 97
+        }
+      },
+      {
+        "comment": "",
+        "key": "Position barcode in frame",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 121
+        }
+      },
+      {
+        "comment": "",
+        "key": "Looking up product...",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 138
+        }
+      },
+      {
+        "comment": "",
+        "key": "Align barcode within the frame",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 154
+        }
+      },
+      {
+        "comment": "",
+        "key": "Error",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 171
+        }
+      },
+      {
+        "comment": "",
+        "key": "Try Again",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 184
+        }
+      },
+      {
+        "comment": "",
+        "key": "Camera Access Required",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 348
+        }
+      },
+      {
+        "comment": "",
+        "key": "PetSafe needs camera access to scan barcodes. Please enable it in Settings.",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 351
+        }
+      },
+      {
+        "comment": "",
+        "key": "Open Settings",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 362
+        }
+      }
+    ]
+  },
+  "version": 1
+}

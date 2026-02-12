@@ -1,0 +1,436 @@
+2026-02-11 11:25:08.935781-0800 PetSafeUITests-Runner[76586:4203039] [Default] Running tests...
+2026-02-11 11:25:09.241371-0800 PetSafeUITests-Runner[76586:4203228] [General] Failed to send CA Event for app launch measurements for ca_event_type: 0 event_name: com.apple.app_launch_measurement.FirstFramePresentationMetric
+2026-02-11 11:25:09.282528-0800 PetSafeUITests-Runner[76586:4203228] [General] Failed to send CA Event for app launch measurements for ca_event_type: 1 event_name: com.apple.app_launch_measurement.ExtendedLaunchMetrics
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'SubscriptionTests' started at 2026-02-11 11:25:15.959.
+Test Case '-[PetSafeUITests.SubscriptionTests testClosePaywall]' started.
+    t =     0.00s Start Test at 2026-02-11 11:25:15.962
+    t =     1.01s Set Up
+    t =     1.02s Open com.armstrong.PetSafe
+    t =     1.02s     Launch com.armstrong.PetSafe
+    t =     7.70s         Setting up automation session
+    t =    10.83s         Wait for com.armstrong.PetSafe to idle
+    t =    13.09s Tap "email_field" TextField
+    t =    13.09s     Wait for com.armstrong.PetSafe to idle
+    t =    13.09s     Find the "email_field" TextField
+    t =    14.20s         Find the "email_field" TextField (retry 1)
+    t =    15.42s         Find the "email_field" TextField (retry 2)
+    t =    15.46s Requesting snapshot of accessibility hierarchy for app with pid 76637
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/PageObjects/LoginPage.swift:34: error: -[PetSafeUITests.SubscriptionTests testClosePaywall] : Failed to tap "email_field" TextField: No matches found for Descendants matching type TextField from input {(
+    Application, pid: 76637, label: 'PetSafe'
+)}
+    t =    16.17s Tear Down
+Test Case '-[PetSafeUITests.SubscriptionTests testClosePaywall]' failed (16.499 seconds).
+Test Case '-[PetSafeUITests.SubscriptionTests testMonthlyPlanSelection]' started.
+    t =     0.00s Start Test at 2026-02-11 11:25:32.463
+    t =     0.06s Set Up
+    t =     0.06s Open com.armstrong.PetSafe
+    t =     0.06s     Launch com.armstrong.PetSafe
+    t =     0.07s         Terminate com.armstrong.PetSafe:76637
+    t =     1.76s         Setting up automation session
+    t =     3.90s         Wait for com.armstrong.PetSafe to idle
+    t =     6.05s Tap "email_field" TextField
+    t =     6.05s     Wait for com.armstrong.PetSafe to idle
+    t =     6.06s     Find the "email_field" TextField
+    t =     7.13s         Find the "email_field" TextField (retry 1)
+    t =     8.25s         Find the "email_field" TextField (retry 2)
+    t =    15.53s Requesting snapshot of accessibility hierarchy for app with pid 76719
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/PageObjects/LoginPage.swift:34: error: -[PetSafeUITests.SubscriptionTests testMonthlyPlanSelection] : Failed to tap "email_field" TextField: No matches found for Descendants matching type TextField from input {(
+    Application, pid: 76719, label: 'PetSafe'
+)}
+    t =    15.74s Tear Down
+Test Case '-[PetSafeUITests.SubscriptionTests testMonthlyPlanSelection]' failed (16.572 seconds).
+Test Case '-[PetSafeUITests.SubscriptionTests testPaywallDisplays]' started.
+    t =     0.00s Start Test at 2026-02-11 11:25:49.040
+    t =     0.15s Set Up
+    t =     0.17s Open com.armstrong.PetSafe
+    t =     0.17s     Launch com.armstrong.PetSafe
+    t =     0.17s         Terminate com.armstrong.PetSafe:76719
+    t =     3.72s         Setting up automation session
+    t =     5.27s         Wait for com.armstrong.PetSafe to idle
+    t =     6.96s Tap "email_field" TextField
+    t =     6.96s     Wait for com.armstrong.PetSafe to idle
+    t =     6.97s     Find the "email_field" TextField
+    t =     8.23s         Find the "email_field" TextField (retry 1)
+    t =     9.64s         Find the "email_field" TextField (retry 2)
+    t =     9.71s Requesting snapshot of accessibility hierarchy for app with pid 76860
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/PageObjects/LoginPage.swift:34: error: -[PetSafeUITests.SubscriptionTests testPaywallDisplays] : Failed to tap "email_field" TextField: No matches found for Descendants matching type TextField from input {(
+    Application, pid: 76860, label: 'PetSafe'
+)}
+    t =     9.79s Tear Down
+Test Case '-[PetSafeUITests.SubscriptionTests testPaywallDisplays]' failed (10.114 seconds).
+Test Case '-[PetSafeUITests.SubscriptionTests testPremiumFeaturesDisplay]' started.
+    t =     0.00s Start Test at 2026-02-11 11:25:59.155
+    t =     0.07s Set Up
+    t =     0.07s Open com.armstrong.PetSafe
+    t =     0.07s     Launch com.armstrong.PetSafe
+    t =     0.07s         Terminate com.armstrong.PetSafe:76860
+    t =     5.46s         Setting up automation session
+    t =     6.42s         Wait for com.armstrong.PetSafe to idle
+    t =    19.88s Tap "email_field" TextField
+    t =    19.88s     Wait for com.armstrong.PetSafe to idle
+    t =    19.88s     Find the "email_field" TextField
+    t =    21.96s         Find the "email_field" TextField (retry 1)
+    t =    23.11s         Find the "email_field" TextField (retry 2)
+    t =    23.30s Requesting snapshot of accessibility hierarchy for app with pid 76928
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/PageObjects/LoginPage.swift:34: error: -[PetSafeUITests.SubscriptionTests testPremiumFeaturesDisplay] : Failed to tap "email_field" TextField: No matches found for Elements matching predicate '"email_field" IN identifiers' from input {(
+    TextField, placeholderValue: 'Email'
+)}
+    t =    23.44s Tear Down
+Test Case '-[PetSafeUITests.SubscriptionTests testPremiumFeaturesDisplay]' failed (23.958 seconds).
+Test Case '-[PetSafeUITests.SubscriptionTests testRestorePurchasesButton]' started.
+    t =     0.00s Start Test at 2026-02-11 11:26:23.116
+    t =     0.08s Set Up
+    t =     0.08s Open com.armstrong.PetSafe
+    t =     0.08s     Launch com.armstrong.PetSafe
+    t =     0.08s         Terminate com.armstrong.PetSafe:76928
+    t =     3.63s         Setting up automation session
+    t =    12.73s         Wait for com.armstrong.PetSafe to idle
+    t =    79.41s Tap "email_field" TextField
+    t =    79.53s     Wait for com.armstrong.PetSafe to idle
+    t =    82.67s     Find the "email_field" TextField
+    t =   115.69s         Find the "email_field" TextField (retry 1)
+    t =   125.83s         Find the "email_field" TextField (retry 2)
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/PageObjects/LoginPage.swift:34: error: -[PetSafeUITests.SubscriptionTests testRestorePurchasesButton] : Failed to tap "email_field" TextField: Timed out while evaluating UI query.
+    t =   127.26s Tear Down
+Test Case '-[PetSafeUITests.SubscriptionTests testRestorePurchasesButton]' failed (127.834 seconds).
+Test Case '-[PetSafeUITests.SubscriptionTests testSubscribeButton]' started.
+    t =     0.01s Start Test at 2026-02-11 11:28:30.955
+    t =     0.12s Set Up
+    t =     0.14s Open com.armstrong.PetSafe
+    t =     0.14s     Launch com.armstrong.PetSafe
+    t =     0.15s         Terminate com.armstrong.PetSafe:77060
+    t =     1.97s         Setting up automation session
+    t =     3.97s         Wait for com.armstrong.PetSafe to idle
+    t =     6.14s Tap "email_field" TextField
+    t =     6.14s     Wait for com.armstrong.PetSafe to idle
+    t =     6.16s     Find the "email_field" TextField
+    t =     7.32s         Find the "email_field" TextField (retry 1)
+    t =     8.49s         Find the "email_field" TextField (retry 2)
+    t =     8.54s Requesting snapshot of accessibility hierarchy for app with pid 77264
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/PageObjects/LoginPage.swift:34: error: -[PetSafeUITests.SubscriptionTests testSubscribeButton] : Failed to tap "email_field" TextField: No matches found for Descendants matching type TextField from input {(
+    Application, pid: 77264, label: 'PetSafe'
+)}
+    t =     8.60s Tear Down
+Test Case '-[PetSafeUITests.SubscriptionTests testSubscribeButton]' failed (8.873 seconds).
+Test Case '-[PetSafeUITests.SubscriptionTests testSubscriptionPlansDisplay]' started.
+    t =     0.00s Start Test at 2026-02-11 11:28:39.826
+    t =     0.07s Set Up
+    t =     0.09s Open com.armstrong.PetSafe
+    t =     0.09s     Launch com.armstrong.PetSafe
+    t =     0.09s         Terminate com.armstrong.PetSafe:77264
+    t =     2.30s         Setting up automation session
+    t =     6.51s         Wait for com.armstrong.PetSafe to idle
+    t =     8.75s Tap "email_field" TextField
+    t =     8.75s     Wait for com.armstrong.PetSafe to idle
+    t =     8.76s     Find the "email_field" TextField
+    t =     9.90s         Find the "email_field" TextField (retry 1)
+    t =    10.99s         Find the "email_field" TextField (retry 2)
+    t =    11.03s Requesting snapshot of accessibility hierarchy for app with pid 77292
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/PageObjects/LoginPage.swift:34: error: -[PetSafeUITests.SubscriptionTests testSubscriptionPlansDisplay] : Failed to tap "email_field" TextField: No matches found for Descendants matching type TextField from input {(
+    Application, pid: 77292, label: 'PetSafe'
+)}
+    t =    11.08s Tear Down
+Test Case '-[PetSafeUITests.SubscriptionTests testSubscriptionPlansDisplay]' failed (11.354 seconds).
+Test Case '-[PetSafeUITests.SubscriptionTests testTermsAndPrivacyLinks]' started.
+    t =     0.00s Start Test at 2026-02-11 11:28:51.178
+    t =     0.05s Set Up
+    t =     0.05s Open com.armstrong.PetSafe
+    t =     0.05s     Launch com.armstrong.PetSafe
+    t =     0.05s         Terminate com.armstrong.PetSafe:77292
+    t =     2.79s         Setting up automation session
+    t =     6.04s         Wait for com.armstrong.PetSafe to idle
+    t =     7.73s Tap "email_field" TextField
+    t =     7.73s     Wait for com.armstrong.PetSafe to idle
+    t =     7.74s     Find the "email_field" TextField
+    t =     8.82s         Find the "email_field" TextField (retry 1)
+    t =     9.88s         Find the "email_field" TextField (retry 2)
+    t =     9.90s Requesting snapshot of accessibility hierarchy for app with pid 77306
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/PageObjects/LoginPage.swift:34: error: -[PetSafeUITests.SubscriptionTests testTermsAndPrivacyLinks] : Failed to tap "email_field" TextField: No matches found for Descendants matching type TextField from input {(
+    Application, pid: 77306, label: 'PetSafe'
+)}
+    t =     9.95s Tear Down
+Test Case '-[PetSafeUITests.SubscriptionTests testTermsAndPrivacyLinks]' failed (10.222 seconds).
+Test Case '-[PetSafeUITests.SubscriptionTests testYearlyPlanSelection]' started.
+    t =     0.00s Start Test at 2026-02-11 11:29:01.400
+    t =     0.06s Set Up
+    t =     0.06s Open com.armstrong.PetSafe
+    t =     0.06s     Launch com.armstrong.PetSafe
+    t =     0.06s         Terminate com.armstrong.PetSafe:77306
+    t =     1.38s         Setting up automation session
+    t =     2.64s         Wait for com.armstrong.PetSafe to idle
+    t =     3.88s Tap "email_field" TextField
+    t =     3.88s     Wait for com.armstrong.PetSafe to idle
+    t =     3.89s     Find the "email_field" TextField
+    t =     4.95s         Find the "email_field" TextField (retry 1)
+    t =     6.01s         Find the "email_field" TextField (retry 2)
+    t =     6.04s Requesting snapshot of accessibility hierarchy for app with pid 77321
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/PageObjects/LoginPage.swift:34: error: -[PetSafeUITests.SubscriptionTests testYearlyPlanSelection] : Failed to tap "email_field" TextField: No matches found for Descendants matching type TextField from input {(
+    Application, pid: 77321, label: 'PetSafe'
+)}
+    t =     6.06s Tear Down
+Test Case '-[PetSafeUITests.SubscriptionTests testYearlyPlanSelection]' failed (6.291 seconds).
+Test Suite 'SubscriptionTests' failed at 2026-02-11 11:29:07.691.
+	 Executed 9 tests, with 9 failures (0 unexpected) in 231.716 (231.733) seconds
+Test Suite 'End2EndTests' started at 2026-02-11 11:29:07.742.
+Test Case '-[PetSafeUITests.End2EndTests testAchievementViewingJourney]' started.
+    t =     0.00s Start Test at 2026-02-11 11:29:07.743
+    t =     0.02s Set Up
+    t =     0.02s Open com.armstrong.PetSafe
+    t =     0.02s     Launch com.armstrong.PetSafe
+    t =     0.02s         Terminate com.armstrong.PetSafe:77321
+    t =     1.30s         Setting up automation session
+    t =     3.03s         Wait for com.armstrong.PetSafe to idle
+    t =     4.55s Tap "email_field" TextField
+    t =     4.55s     Wait for com.armstrong.PetSafe to idle
+    t =     4.55s     Find the "email_field" TextField
+    t =     5.62s         Find the "email_field" TextField (retry 1)
+    t =     6.68s         Find the "email_field" TextField (retry 2)
+    t =     6.72s Requesting snapshot of accessibility hierarchy for app with pid 77325
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/PageObjects/LoginPage.swift:34: error: -[PetSafeUITests.End2EndTests testAchievementViewingJourney] : Failed to tap "email_field" TextField: No matches found for Descendants matching type TextField from input {(
+    Application, pid: 77325, label: 'PetSafe'
+)}
+    t =     6.75s Tear Down
+Test Case '-[PetSafeUITests.End2EndTests testAchievementViewingJourney]' failed (6.981 seconds).
+Test Case '-[PetSafeUITests.End2EndTests testCompleteNewUserJourney]' started.
+    t =     0.00s Start Test at 2026-02-11 11:29:14.724
+    t =     0.04s Set Up
+    t =     0.04s Open com.armstrong.PetSafe
+    t =     0.04s     Launch com.armstrong.PetSafe
+    t =     0.04s         Terminate com.armstrong.PetSafe:77325
+    t =     1.56s         Setting up automation session
+    t =     3.63s         Wait for com.armstrong.PetSafe to idle
+    t =     5.56s Added attachment named 'E2E_01_App_Launch'
+    t =     5.57s Waiting 5.0s for "email_field" TextField to exist
+    t =     6.60s     Checking `Expect predicate `existsNoRetry == 1` for object "email_field" TextField`
+    t =     6.60s         Checking existence of `"email_field" TextField`
+    t =     6.75s         Capturing element debug description
+    t =     7.57s     Checking `Expect predicate `existsNoRetry == 1` for object "email_field" TextField`
+    t =     7.57s         Checking existence of `"email_field" TextField`
+    t =     7.59s         Capturing element debug description
+    t =     8.61s     Checking `Expect predicate `existsNoRetry == 1` for object "email_field" TextField`
+    t =     8.62s         Checking existence of `"email_field" TextField`
+    t =     8.65s         Capturing element debug description
+    t =     9.57s     Checking `Expect predicate `existsNoRetry == 1` for object "email_field" TextField`
+    t =     9.57s         Checking existence of `"email_field" TextField`
+    t =     9.60s         Capturing element debug description
+    t =    10.57s     Checking `Expect predicate `existsNoRetry == 1` for object "email_field" TextField`
+    t =    10.57s         Checking existence of `"email_field" TextField`
+    t =    10.60s         Capturing element debug description
+    t =    10.61s     Checking existence of `"email_field" TextField`
+    t =    10.63s Collecting debug information to assist test failure triage
+    t =    10.63s     Requesting snapshot of accessibility hierarchy for app with pid 77334
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/End2EndTests.swift:14: error: -[PetSafeUITests.End2EndTests testCompleteNewUserJourney] : XCTAssertTrue failed - Login screen should display
+    t =    10.67s Tear Down
+Test Case '-[PetSafeUITests.End2EndTests testCompleteNewUserJourney]' failed (10.953 seconds).
+Test Case '-[PetSafeUITests.End2EndTests testLogoutJourney]' started.
+    t =     0.00s Start Test at 2026-02-11 11:29:25.678
+    t =     0.05s Set Up
+    t =     0.06s Open com.armstrong.PetSafe
+    t =     0.06s     Launch com.armstrong.PetSafe
+    t =     0.06s         Terminate com.armstrong.PetSafe:77334
+    t =     1.54s         Setting up automation session
+    t =     3.66s         Wait for com.armstrong.PetSafe to idle
+    t =     5.51s Tap "email_field" TextField
+    t =     5.51s     Wait for com.armstrong.PetSafe to idle
+    t =     5.51s     Find the "email_field" TextField
+    t =     6.65s         Find the "email_field" TextField (retry 1)
+    t =     7.83s         Find the "email_field" TextField (retry 2)
+    t =     7.87s Requesting snapshot of accessibility hierarchy for app with pid 77342
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/PageObjects/LoginPage.swift:34: error: -[PetSafeUITests.End2EndTests testLogoutJourney] : Failed to tap "email_field" TextField: No matches found for Descendants matching type TextField from input {(
+    Application, pid: 77342, label: 'PetSafe'
+)}
+    t =     7.96s Tear Down
+Test Case '-[PetSafeUITests.End2EndTests testLogoutJourney]' failed (8.283 seconds).
+Test Case '-[PetSafeUITests.End2EndTests testPremiumUpgradeJourney]' started.
+    t =     0.00s Start Test at 2026-02-11 11:29:33.963
+    t =     0.07s Set Up
+    t =     0.07s Open com.armstrong.PetSafe
+    t =     0.07s     Launch com.armstrong.PetSafe
+    t =     0.07s         Terminate com.armstrong.PetSafe:77342
+    t =     2.42s         Setting up automation session
+    t =     5.39s         Wait for com.armstrong.PetSafe to idle
+    t =     7.56s Tap "email_field" TextField
+    t =     7.56s     Wait for com.armstrong.PetSafe to idle
+    t =     7.57s     Find the "email_field" TextField
+    t =     8.66s         Find the "email_field" TextField (retry 1)
+    t =     9.77s         Find the "email_field" TextField (retry 2)
+    t =     9.80s Requesting snapshot of accessibility hierarchy for app with pid 77348
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/PageObjects/LoginPage.swift:34: error: -[PetSafeUITests.End2EndTests testPremiumUpgradeJourney] : Failed to tap "email_field" TextField: No matches found for Descendants matching type TextField from input {(
+    Application, pid: 77348, label: 'PetSafe'
+)}
+    t =     9.85s Tear Down
+Test Case '-[PetSafeUITests.End2EndTests testPremiumUpgradeJourney]' failed (10.118 seconds).
+Test Case '-[PetSafeUITests.End2EndTests testQuickScanToFoodLogJourney]' started.
+    t =     0.00s Start Test at 2026-02-11 11:29:44.081
+    t =     0.06s Set Up
+    t =     0.06s Open com.armstrong.PetSafe
+    t =     0.06s     Launch com.armstrong.PetSafe
+    t =     0.06s         Terminate com.armstrong.PetSafe:77348
+    t =     1.85s         Setting up automation session
+    t =     4.12s         Wait for com.armstrong.PetSafe to idle
+    t =     6.23s Tap "email_field" TextField
+    t =     6.23s     Wait for com.armstrong.PetSafe to idle
+    t =     6.23s     Find the "email_field" TextField
+    t =     7.35s         Find the "email_field" TextField (retry 1)
+    t =     8.46s         Find the "email_field" TextField (retry 2)
+    t =     8.50s Requesting snapshot of accessibility hierarchy for app with pid 77354
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/PageObjects/LoginPage.swift:34: error: -[PetSafeUITests.End2EndTests testQuickScanToFoodLogJourney] : Failed to tap "email_field" TextField: No matches found for Descendants matching type TextField from input {(
+    Application, pid: 77354, label: 'PetSafe'
+)}
+    t =     8.55s Tear Down
+Test Case '-[PetSafeUITests.End2EndTests testQuickScanToFoodLogJourney]' failed (9.218 seconds).
+Test Case '-[PetSafeUITests.End2EndTests testScanAndLogFoodJourney]' started.
+    t =     0.00s Start Test at 2026-02-11 11:29:53.299
+    t =     0.07s Set Up
+    t =     0.07s Open com.armstrong.PetSafe
+    t =     0.07s     Launch com.armstrong.PetSafe
+    t =     0.07s         Terminate com.armstrong.PetSafe:77354
+    t =     2.01s         Setting up automation session
+    t =     4.49s         Wait for com.armstrong.PetSafe to idle
+    t =     6.31s Tap "email_field" TextField
+    t =     6.31s     Wait for com.armstrong.PetSafe to idle
+    t =     6.32s     Find the "email_field" TextField
+    t =     7.45s         Find the "email_field" TextField (retry 1)
+    t =     8.55s         Find the "email_field" TextField (retry 2)
+    t =     8.59s Requesting snapshot of accessibility hierarchy for app with pid 77358
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/PageObjects/LoginPage.swift:34: error: -[PetSafeUITests.End2EndTests testScanAndLogFoodJourney] : Failed to tap "email_field" TextField: No matches found for Descendants matching type TextField from input {(
+    Application, pid: 77358, label: 'PetSafe'
+)}
+    t =     8.65s Tear Down
+Test Case '-[PetSafeUITests.End2EndTests testScanAndLogFoodJourney]' failed (8.905 seconds).
+Test Suite 'End2EndTests' failed at 2026-02-11 11:30:02.205.
+	 Executed 6 tests, with 6 failures (0 unexpected) in 54.457 (54.462) seconds
+Test Suite 'OnboardingTests' started at 2026-02-11 11:30:02.254.
+Test Case '-[PetSafeUITests.OnboardingTests testAgeAndWeightEntry]' started.
+    t =     0.00s Start Test at 2026-02-11 11:30:02.255
+    t =     0.06s Set Up
+    t =     0.06s Open com.armstrong.PetSafe
+    t =     0.06s     Launch com.armstrong.PetSafe
+    t =     0.07s         Terminate com.armstrong.PetSafe:77358
+    t =     1.77s         Setting up automation session
+    t =     4.01s         Wait for com.armstrong.PetSafe to idle
+    t =     5.91s Tap "email_field" TextField
+    t =     5.91s     Wait for com.armstrong.PetSafe to idle
+    t =     5.92s     Find the "email_field" TextField
+    t =     7.13s         Find the "email_field" TextField (retry 1)
+    t =     9.77s         Find the "email_field" TextField (retry 2)
+    t =     9.81s Requesting snapshot of accessibility hierarchy for app with pid 77362
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/PageObjects/LoginPage.swift:34: error: -[PetSafeUITests.OnboardingTests testAgeAndWeightEntry] : Failed to tap "email_field" TextField: No matches found for Descendants matching type TextField from input {(
+    Application, pid: 77362, label: 'PetSafe'
+)}
+    t =     9.89s Tear Down
+Test Case '-[PetSafeUITests.OnboardingTests testAgeAndWeightEntry]' failed (10.218 seconds).
+Test Case '-[PetSafeUITests.OnboardingTests testBackNavigation]' started.
+    t =     0.00s Start Test at 2026-02-11 11:30:12.475
+    t =     0.07s Set Up
+    t =     0.07s Open com.armstrong.PetSafe
+    t =     0.08s     Launch com.armstrong.PetSafe
+    t =     0.08s         Terminate com.armstrong.PetSafe:77362
+    t =     2.03s         Setting up automation session
+    t =     5.22s         Wait for com.armstrong.PetSafe to idle
+    t =     7.19s Tap "email_field" TextField
+    t =     7.20s     Wait for com.armstrong.PetSafe to idle
+    t =     7.20s     Find the "email_field" TextField
+    t =     8.31s         Find the "email_field" TextField (retry 1)
+    t =     9.41s         Find the "email_field" TextField (retry 2)
+    t =     9.46s Requesting snapshot of accessibility hierarchy for app with pid 77369
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/PageObjects/LoginPage.swift:34: error: -[PetSafeUITests.OnboardingTests testBackNavigation] : Failed to tap "email_field" TextField: No matches found for Descendants matching type TextField from input {(
+    Application, pid: 77369, label: 'PetSafe'
+)}
+    t =     9.52s Tear Down
+Test Case '-[PetSafeUITests.OnboardingTests testBackNavigation]' failed (9.781 seconds).
+Test Case '-[PetSafeUITests.OnboardingTests testBreedSearchAndSelection]' started.
+    t =     0.00s Start Test at 2026-02-11 11:30:22.256
+    t =     0.06s Set Up
+    t =     0.06s Open com.armstrong.PetSafe
+    t =     0.06s     Launch com.armstrong.PetSafe
+    t =     0.06s         Terminate com.armstrong.PetSafe:77369
+    t =     2.21s         Setting up automation session
+    t =     5.39s         Wait for com.armstrong.PetSafe to idle
+    t =     7.56s Tap "email_field" TextField
+    t =     7.56s     Wait for com.armstrong.PetSafe to idle
+    t =     7.57s     Find the "email_field" TextField
+    t =     8.67s         Find the "email_field" TextField (retry 1)
+    t =     9.77s         Find the "email_field" TextField (retry 2)
+    t =     9.82s Requesting snapshot of accessibility hierarchy for app with pid 77382
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/PageObjects/LoginPage.swift:34: error: -[PetSafeUITests.OnboardingTests testBreedSearchAndSelection] : Failed to tap "email_field" TextField: No matches found for Descendants matching type TextField from input {(
+    Application, pid: 77382, label: 'PetSafe'
+)}
+    t =     9.86s Tear Down
+Test Case '-[PetSafeUITests.OnboardingTests testBreedSearchAndSelection]' failed (10.121 seconds).
+Test Case '-[PetSafeUITests.OnboardingTests testCompleteOnboardingFlow]' started.
+    t =     0.00s Start Test at 2026-02-11 11:30:32.379
+    t =     0.07s Set Up
+    t =     0.07s Open com.armstrong.PetSafe
+    t =     0.07s     Launch com.armstrong.PetSafe
+    t =     0.07s         Terminate com.armstrong.PetSafe:77382
+    t =     2.64s         Setting up automation session
+    t =     5.06s         Wait for com.armstrong.PetSafe to idle
+    t =     6.44s Tap "email_field" TextField
+    t =     6.44s     Wait for com.armstrong.PetSafe to idle
+    t =     6.44s     Find the "email_field" TextField
+    t =     7.54s         Find the "email_field" TextField (retry 1)
+    t =     8.63s         Find the "email_field" TextField (retry 2)
+    t =     8.67s Requesting snapshot of accessibility hierarchy for app with pid 77387
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/PageObjects/LoginPage.swift:34: error: -[PetSafeUITests.OnboardingTests testCompleteOnboardingFlow] : Failed to tap "email_field" TextField: No matches found for Descendants matching type TextField from input {(
+    Application, pid: 77387, label: 'PetSafe'
+)}
+    t =     8.72s Tear Down
+Test Case '-[PetSafeUITests.OnboardingTests testCompleteOnboardingFlow]' failed (8.981 seconds).
+Test Case '-[PetSafeUITests.OnboardingTests testDogNameEntry]' started.
+    t =     0.00s Start Test at 2026-02-11 11:30:41.362
+    t =     0.07s Set Up
+    t =     0.07s Open com.armstrong.PetSafe
+    t =     0.07s     Launch com.armstrong.PetSafe
+    t =     0.07s         Terminate com.armstrong.PetSafe:77387
+    t =     1.54s         Setting up automation session
+    t =     3.24s         Wait for com.armstrong.PetSafe to idle
+    t =     4.78s Tap "email_field" TextField
+    t =     4.79s     Wait for com.armstrong.PetSafe to idle
+    t =     4.83s     Find the "email_field" TextField
+    t =     5.98s         Find the "email_field" TextField (retry 1)
+    t =     7.09s         Find the "email_field" TextField (retry 2)
+    t =     7.14s Requesting snapshot of accessibility hierarchy for app with pid 77392
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/PageObjects/LoginPage.swift:34: error: -[PetSafeUITests.OnboardingTests testDogNameEntry] : Failed to tap "email_field" TextField: No matches found for Descendants matching type TextField from input {(
+    Application, pid: 77392, label: 'PetSafe'
+)}
+    t =     7.22s Tear Down
+Test Case '-[PetSafeUITests.OnboardingTests testDogNameEntry]' failed (7.480 seconds).
+Test Suite 'OnboardingTests' failed at 2026-02-11 11:30:48.842.
+	 Executed 5 tests, with 5 failures (0 unexpected) in 46.581 (46.588) seconds
+Test Suite 'ScannerTests' started at 2026-02-11 11:30:48.895.
+Test Case '-[PetSafeUITests.ScannerTests testCameraPermissionRequest]' started.
+    t =     0.00s Start Test at 2026-02-11 11:30:48.895
+    t =     0.06s Set Up
+    t =     0.06s Open com.armstrong.PetSafe
+    t =     0.06s     Launch com.armstrong.PetSafe
+    t =     0.06s         Terminate com.armstrong.PetSafe:77392
+    t =     1.58s         Setting up automation session
+    t =     4.12s         Wait for com.armstrong.PetSafe to idle
+    t =     5.74s Tap "email_field" TextField
+    t =     5.74s     Wait for com.armstrong.PetSafe to idle
+    t =     5.75s     Find the "email_field" TextField
+    t =     6.84s         Find the "email_field" TextField (retry 1)
+    t =     7.95s         Find the "email_field" TextField (retry 2)
+    t =     7.97s Requesting snapshot of accessibility hierarchy for app with pid 77398
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/PageObjects/LoginPage.swift:34: error: -[PetSafeUITests.ScannerTests testCameraPermissionRequest] : Failed to tap "email_field" TextField: No matches found for Descendants matching type TextField from input {(
+    Application, pid: 77398, label: 'PetSafe'
+)}
+    t =     8.01s Tear Down
+Test Case '-[PetSafeUITests.ScannerTests testCameraPermissionRequest]' failed (8.347 seconds).
+Test Case '-[PetSafeUITests.ScannerTests testCameraPreviewActive]' started.
+    t =     0.00s Start Test at 2026-02-11 11:30:57.244
+    t =     0.07s Set Up
+    t =     0.07s Open com.armstrong.PetSafe
+    t =     0.07s     Launch com.armstrong.PetSafe
+    t =     0.07s         Terminate com.armstrong.PetSafe:77398
+    t =     1.57s         Setting up automation session
+    t =     3.73s         Wait for com.armstrong.PetSafe to idle
+    t =     5.66s Tap "email_field" TextField
+    t =     5.66s     Wait for com.armstrong.PetSafe to idle
+    t =     5.66s     Find the "email_field" TextField
+
+
+*** If you believe this error represents a bug, please attach the result bundle at /Users/kevinarmstrong/Documents/PetSafe/test_results/reports/TestResults_20260211_112311.xcresult
+

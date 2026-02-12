@@ -1,0 +1,163 @@
+Port:
+    UUID: 1DE258F5-4822-4751-9CB8-2A5469DCD029
+    Class: Unknown
+    Port Identifier: com.apple.display.captureservice
+    Power state: On
+
+Port:
+    UUID: 21DFF0DE-9855-4E6D-B4F2-5AE1122A0D90
+    Class: Display
+    Port Identifier: com.apple.framebuffer.display
+    Power state: On
+    Display class: 1
+    Default width: 720
+    Default height: 480
+    Default pixel format: 'BGRA'
+
+Port:
+    UUID: CD4161D6-6503-4298-BB6E-7A8BD937EF42
+    Class: Display
+    Port Identifier: com.apple.framebuffer.display
+    Power state: On
+    Display class: 0
+    Default width: 1206
+    Default height: 2622
+    Default pixel format: 'BGRA'
+
+Port:
+    UUID: EC630D27-21A1-415B-AF17-563E504122DA
+    Class: DisplayAdapter
+    Port Identifier: com.apple.framebuffer.server
+    Power state: On
+    Creatable Screen Properties:
+    (101) CarPlay:
+        Screen ID: 101
+        Name: CarPlay
+        Seed: 1
+        Screen Type: CarPlay
+        Pixel Size: {720, 480}
+        Dot Pitch: 460
+        Mask URL: (none)
+        Preferred UI Scale: 1
+        Pixel Format: 'BGRA'
+        Colorspace: sRGB
+        HDR Mode: SDR
+        Refresh Rate: 6000
+    Connected Screens:
+    (1) LCD:
+        Screen ID: 1
+        Name: LCD
+        Seed: 2
+        Screen Type: Integrated
+        Pixel Size: {1206, 2622}
+        Dot Pitch: 460
+        Mask URL: file:///Library/Developer/CoreSimulator/Profiles/DeviceTypes/iPhone%2017%20Pro.simdevicetype/Contents/Resources/4E5532ED-1470-47D1-BDF4-7AA90C26957A.pdf
+        Preferred UI Scale: 3
+        Pixel Format: 'BGRA'
+        Colorspace: sRGB
+        HDR Mode: SDR
+        Refresh Rate: 6000
+    (2) TVOut:
+        Screen ID: 2
+        Name: TVOut
+        Seed: 3
+        Screen Type: TVOut
+        Pixel Size: {720, 480}
+        Dot Pitch: 0
+        Mask URL: (none)
+        Preferred UI Scale: 1
+        Pixel Format: 'BGRA'
+        Colorspace: sRGB
+        HDR Mode: SDR
+        Refresh Rate: 3000
+
+Port:
+    UUID: EA42F92D-C2B3-4036-9878-E17C97D0CEF2
+    Class: Accelerator
+    Port Identifier: com.apple.accelerator.metal
+    Power state: On
+
+Port:
+    UUID: AE29DE72-E4F5-445E-A747-F0348405A570
+    Class: Accelerator
+    Port Identifier: com.apple.accelerator.iosurface
+    Power state: On
+
+Port:
+    UUID: AD970DD1-4DE7-4C1A-8573-C5F292B74C17
+    Class: LegacyHID
+    Port Identifier: com.apple.CoreSimulator.HID.LegacyHID
+    Power state: On
+
+Port:
+    UUID: 0EA688F3-A9C0-466E-B779-E9B2D4B9F046
+    Class: StreamProcessor
+    Port Identifier: com.apple.SimStreamProcessor.default
+    Power state: On
+    Stream processor device
+    Specification:
+        SimStreamProcessorSpecificationPerformanceHint = SimStreamProcessorSpecificationPerformanceHint_MaximizePerformance
+        SimStreamProcessorSpecificationRendererHint = SimStreamProcessorSpecificationRendererHint_Metal
+        SimStreamProcessorSpecificationEmulationHint = SimStreamProcessorSpecificationEmulationHint_NoEmulation
+    Renderer private name: Apple M2
+    Renderer version: 1.3
+    Denylisted: No
+    Memory regions:
+        (Timed out trying to list memory regions)
+
+Port:
+    UUID: 3A23236D-D37D-4E07-B4BC-1F2B12E29CFD
+    Class: StreamProcessor
+    Port Identifier: com.apple.SimStreamProcessor.default
+    Power state: On
+    Stream processor device
+    Specification:
+        SimStreamProcessorSpecificationPerformanceHint = SimStreamProcessorSpecificationPerformanceHint_MaximizePerformance
+        SimStreamProcessorSpecificationRendererHint = SimStreamProcessorSpecificationRendererHint_OpenGL
+        SimStreamProcessorSpecificationEmulationHint = SimStreamProcessorSpecificationEmulationHint_NoEmulation
+    Renderer private name: Apple M2
+    Renderer version: 4.1 Metal - 90.5
+    Denylisted: No
+    Memory regions:
+        (Timed out trying to list memory regions)
+
+Port:
+    UUID: C6F15224-60E9-4D73-8E5A-1A8509E82197
+    Class: StreamProcessor
+    Port Identifier: com.apple.SimStreamProcessor.default
+    Power state: On
+    Stream processor device
+    Specification:
+        SimStreamProcessorSpecificationPerformanceHint = SimStreamProcessorSpecificationPerformanceHint_Default
+        SimStreamProcessorSpecificationRendererHint = SimStreamProcessorSpecificationRendererHint_OpenGL
+        SimStreamProcessorSpecificationEmulationHint = SimStreamProcessorSpecificationEmulationHint_SerialProcessing
+    Renderer private name: Apple Software Renderer
+    Renderer version: 4.1 APPLE-23.0.2
+    Denylisted: No
+    Memory regions:
+        (Timed out trying to list memory regions)
+
+Port:
+    UUID: 3D998DD8-9FFC-40FE-AAFC-CFCB0421F1AF
+    Class: Audio
+    Port Identifier: com.apple.CoreSimulator.Audio.HostRoute
+    Power state: On
+    Guest Audio Input -> Default Host Audio Device
+    Guest Audio Output -> Default Host Audio Device
+    Host Audio Devices:
+        BuiltInMicrophoneDevice: MacBook Pro Microphone (1 In / 0 Out)
+        BuiltInSpeakerDevice: MacBook Pro Speakers (0 In / 2 Out)
+        DCC03367-5B9A-4B73-B3B2-3BE900000003: iPhone Microphone (1 In / 0 Out)
+
+Port:
+    UUID: 923E0396-A791-4619-B7B0-D4B0FE7936AB
+    Class: Unknown
+    Port Identifier: com.apple.gputools.service.simulator
+    Power state: On
+
+Port:
+    UUID: ECACCBCC-8174-46C7-86B3-4E7C9156808E
+    Class: Unknown
+    Port Identifier: com.apple.gputools.GPUToolsAgentService.simulator
+    Power state: On
+

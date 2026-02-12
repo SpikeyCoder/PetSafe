@@ -1,0 +1,49 @@
+10:14:43.639 xcodebuild[71161:4011551] Got a sim device notification for Clone 2 of iPhone 17 Pro: {
+    notification = "availableDevices_changed";
+}
+10:14:43.639 xcodebuild[71161:4011551] Got a sim device notification for Clone 2 of iPhone 17 Pro: {
+    device = "Clone 2 of iPhone 17 Pro (4EBCAD74-C9BB-4327-9F35-038F026E4404, iOS 26.1, Booting)";
+    "last_booted_at" = "2026-02-11 18:14:43 +0000";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+10:14:43.641 xcodebuild[71161:4011551] Sim Clone 2 of iPhone 17 Pro state changed to 2
+10:14:43.653 xcodebuild[71161:4012329] Got a sim device notification for Clone 2 of iPhone 17 Pro: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    device = "Clone 2 of iPhone 17 Pro (4EBCAD74-C9BB-4327-9F35-038F026E4404, iOS 26.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+10:14:44.946 xcodebuild[71161:4012329] Got a sim device notification for Clone 2 of iPhone 17 Pro: {
+    notification = "availableDevices_changed";
+}
+10:14:44.946 xcodebuild[71161:4012329] Got a sim device notification for Clone 2 of iPhone 17 Pro: {
+    device = "Clone 2 of iPhone 17 Pro (4EBCAD74-C9BB-4327-9F35-038F026E4404, iOS 26.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+10:14:44.946 xcodebuild[71161:4012329] Sim Clone 2 of iPhone 17 Pro state changed to 3
+10:14:44.946 xcodebuild[71161:4012329] Sim Clone 2 of iPhone 17 Pro: Unregistering for sim device notification with token 3
+10:14:44.947 xcodebuild[71161:4012329] Calling -[SimDevice getenv:error:] for TESTMANAGERD_SIM_SOCK
+10:14:45.088 xcodebuild[71161:4012329] Sim Clone 2 of iPhone 17 Pro has testmanagerd socket at /private/tmp/com.apple.launchd.RdT3xWKS2L/com.apple.testmanagerd.unix-domain.socket
+10:14:45.088 xcodebuild[71161:4012329] Validating test connection socket path (/private/tmp/com.apple.launchd.RdT3xWKS2L/com.apple.testmanagerd.unix-domain.socket)
+10:14:45.088 xcodebuild[71161:4012329] Constructing transport for test connection socket
+10:14:45.088 xcodebuild[71161:4012329] Connected socket 48 to testmanagerd for Sim Clone 2 of iPhone 17 Pro
+10:14:45.130 xcodebuild[71161:4012329] Initiating control session with IDE capabilities: <XCTCapabilities: 0xc75f28040>: {
+}
+10:14:52.044 xcodebuild[71161:4012329] Got reply to control session initiation request (result:error): <XCTCapabilities: 0xc77273d50>: {
+    "authorize test session capability" = 1;
+    "automation mode" = 1;
+    "daemon container sandbox extension" = 1;
+    "initiate daemon control session capability" = 4;
+    "initiate test runner session capability" = 2;
+    "record UI interaction capability" = 2;
+    "recording events as source code" = 1;
+    "report crashes capability" = 1;
+    "request log archive capability" = 1;
+    "supports delayed attachment transfers" = 1;
+}: (null)
+10:14:52.048 xcodebuild[71161:4012329] Requesting crash report collection for process names: assertiond, DTServiceHub, debugserver, xctest, SpringBoard, PetSafe, PetSafeUITests, PetSafeUITests-Runner, FrontBoard, runningboardd, testmanagerd, backboardd
+10:14:52.060 xcodebuild[71161:4013100] Got reply to crash report collection request (error: (null))
+10:48:38.521 xcodebuild[71161:4094413] <XCTDaemonControlSession: 0xc722cfa70> lost connection to daemon

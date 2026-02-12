@@ -1,0 +1,6 @@
+2026-02-11 12:10:49.932659-0800 PetSafeUITests-Runner[81280:4318408] [Default] Running tests...
+2026-02-11 12:11:56.955161-0800 PetSafeUITests-Runner[81280:4318408] [Default] Failed to initialize for UI testing: Error Domain=XCTDaemonErrorDomain Code=18 "Timed out waiting for AX loaded notification" UserInfo={NSLocalizedDescription=Timed out waiting for AX loaded notification}
+
+
+*** If you believe this error represents a bug, please attach the result bundle at /Users/kevinarmstrong/Documents/PetSafe/test_results/reports/TestResults_20260211_115556.xcresult
+

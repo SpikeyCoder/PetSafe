@@ -1,0 +1,128 @@
+{
+  "source": "/Users/kevinarmstrong/Documents/PetSafe/PetSafe/Features/Scanner/Views/ProductResultView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Barcode: %@",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 88
+        }
+      },
+      {
+        "comment": "",
+        "key": "Copper Analysis",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 101
+        }
+      },
+      {
+        "comment": "",
+        "key": "Safety Level",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 109
+        }
+      },
+      {
+        "comment": "",
+        "key": "Copper Content",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 127
+        }
+      },
+      {
+        "comment": "",
+        "key": "mg / 100g",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 134
+        }
+      },
+      {
+        "comment": "",
+        "key": "Level",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 141
+        }
+      },
+      {
+        "comment": "",
+        "key": "Estimated based on ingredients - actual values may vary",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 155
+        }
+      },
+      {
+        "comment": "",
+        "key": "Ingredients",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 175
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add to Food Log",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 193
+        }
+      },
+      {
+        "comment": "",
+        "key": "Amount (grams)",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 200
+        }
+      },
+      {
+        "comment": "",
+        "key": "e.g., 150",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 203
+        }
+      },
+      {
+        "comment": "",
+        "key": "Copper",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 210
+        }
+      },
+      {
+        "comment": "",
+        "key": "Added!",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 235
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add to Log",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 238
+        }
+      },
+      {
+        "comment": "",
+        "key": "Scan Another Product",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 263
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+2026-02-11 11:10:38.662944-0800 PetSafeUITests-Runner[75397:4166401] [Default] Running tests...
+Test Suite 'FoodLogTests' started at 2026-02-11 11:11:25.649.
+Test Case '-[PetSafeUITests.FoodLogTests testAddFoodButton]' started.
+    t =     0.00s Start Test at 2026-02-11 11:11:25.679
+    t =    27.87s Set Up
+    t =    28.11s Open com.armstrong.PetSafe
+    t =    28.13s     Launch com.armstrong.PetSafe
+    t =   101.83s         Setting up automation session
+    t =   135.66s         Wait for com.armstrong.PetSafe to idle
+    t =   140.06s Tap "email_field" TextField
+    t =   140.13s     Wait for com.armstrong.PetSafe to idle
+    t =   141.63s     Find the "email_field" TextField
+    t =   162.50s         Find the "email_field" TextField (retry 1)
+    t =   164.69s         Find the "email_field" TextField (retry 2)
+    t =   165.26s Requesting snapshot of accessibility hierarchy for app with pid 75609
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/PageObjects/LoginPage.swift:34: error: -[PetSafeUITests.FoodLogTests testAddFoodButton] : Failed to tap "email_field" TextField: No matches found for Elements matching predicate '"email_field" IN identifiers' from input {(
+    TextField, placeholderValue: 'Email'
+)}
+    t =   184.26s Tear Down
+Test Case '-[PetSafeUITests.FoodLogTests testAddFoodButton]' failed (185.046 seconds).
+Test Case '-[PetSafeUITests.FoodLogTests testDeleteFoodEntry]' started.
+    t =     0.00s Start Test at 2026-02-11 11:14:30.726
+    t =     0.20s Set Up
+    t =     0.20s Open com.armstrong.PetSafe
+    t =     0.20s     Launch com.armstrong.PetSafe
+    t =     0.24s         Terminate com.armstrong.PetSafe:75609
+    t =    37.92s         Setting up automation session
+    t =    52.05s         Wait for com.armstrong.PetSafe to idle
+    t =    61.92s Tap "email_field" TextField
+    t =    61.92s     Wait for com.armstrong.PetSafe to idle
+    t =   122.63s         App event loop idle notification not received, will attempt to continue.
+    t =   122.76s     Find the "email_field" TextField

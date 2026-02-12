@@ -1,0 +1,37 @@
+{
+  "/Users/kevinarmstrong/Documents/PetSafe/PetSafe/Features/FoodLog/Views/IMPLEMENTATION_SUMMARY.swift" : {
+    "const-values" : "/Users/kevinarmstrong/Documents/PetSafe/test_results/derived_data/Build/Intermediates.noindex/PetSafe.build/Debug-iphonesimulator/PetSafe.build/Objects-normal/arm64/IMPLEMENTATION_SUMMARY.swiftconstvalues",
+    "dependencies" : "/Users/kevinarmstrong/Documents/PetSafe/test_results/derived_data/Build/Intermediates.noindex/PetSafe.build/Debug-iphonesimulator/PetSafe.build/Objects-normal/arm64/IMPLEMENTATION_SUMMARY.d",
+    "diagnostics" : "/Users/kevinarmstrong/Documents/PetSafe/test_results/derived_data/Build/Intermediates.noindex/PetSafe.build/Debug-iphonesimulator/PetSafe.build/Objects-normal/arm64/IMPLEMENTATION_SUMMARY.dia",
+    "object" : "/Users/kevinarmstrong/Documents/PetSafe/test_results/derived_data/Build/Intermediates.noindex/PetSafe.build/Debug-iphonesimulator/PetSafe.build/Objects-normal/arm64/IMPLEMENTATION_SUMMARY.o",
+    "swift-dependencies" : "/Users/kevinarmstrong/Documents/PetSafe/test_results/derived_data/Build/Intermediates.noindex/PetSafe.build/Debug-iphonesimulator/PetSafe.build/Objects-normal/arm64/IMPLEMENTATION_SUMMARY.swiftdeps"
+  },
+  "/Users/kevinarmstrong/Documents/PetSafe/PetSafe/Features/Scanner/ViewModels/ScannerViewModel.swift" : {
+    "const-values" : "/Users/kevinarmstrong/Documents/PetSafe/test_results/derived_data/Build/Intermediates.noindex/PetSafe.build/Debug-iphonesimulator/PetSafe.build/Objects-normal/arm64/ScannerViewModel.swiftconstvalues",
+    "dependencies" : "/Users/kevinarmstrong/Documents/PetSafe/test_results/derived_data/Build/Intermediates.noindex/PetSafe.build/Debug-iphonesimulator/PetSafe.build/Objects-normal/arm64/ScannerViewModel.d",
+    "diagnostics" : "/Users/kevinarmstrong/Documents/PetSafe/test_results/derived_data/Build/Intermediates.noindex/PetSafe.build/Debug-iphonesimulator/PetSafe.build/Objects-normal/arm64/ScannerViewModel.dia",
+    "object" : "/Users/kevinarmstrong/Documents/PetSafe/test_results/derived_data/Build/Intermediates.noindex/PetSafe.build/Debug-iphonesimulator/PetSafe.build/Objects-normal/arm64/ScannerViewModel.o",
+    "swift-dependencies" : "/Users/kevinarmstrong/Documents/PetSafe/test_results/derived_data/Build/Intermediates.noindex/PetSafe.build/Debug-iphonesimulator/PetSafe.build/Objects-normal/arm64/ScannerViewModel.swiftdeps"
+  },
+  "/Users/kevinarmstrong/Documents/PetSafe/PetSafe/Features/Scanner/Views/BarcodeScannerView.swift" : {
+    "const-values" : "/Users/kevinarmstrong/Documents/PetSafe/test_results/derived_data/Build/Intermediates.noindex/PetSafe.build/Debug-iphonesimulator/PetSafe.build/Objects-normal/arm64/BarcodeScannerView.swiftconstvalues",
+    "dependencies" : "/Users/kevinarmstrong/Documents/PetSafe/test_results/derived_data/Build/Intermediates.noindex/PetSafe.build/Debug-iphonesimulator/PetSafe.build/Objects-normal/arm64/BarcodeScannerView.d",
+    "diagnostics" : "/Users/kevinarmstrong/Documents/PetSafe/test_results/derived_data/Build/Intermediates.noindex/PetSafe.build/Debug-iphonesimulator/PetSafe.build/Objects-normal/arm64/BarcodeScannerView.dia",
+    "object" : "/Users/kevinarmstrong/Documents/PetSafe/test_results/derived_data/Build/Intermediates.noindex/PetSafe.build/Debug-iphonesimulator/PetSafe.build/Objects-normal/arm64/BarcodeScannerView.o",
+    "swift-dependencies" : "/Users/kevinarmstrong/Documents/PetSafe/test_results/derived_data/Build/Intermediates.noindex/PetSafe.build/Debug-iphonesimulator/PetSafe.build/Objects-normal/arm64/BarcodeScannerView.swiftdeps"
+  },
+  "/Users/kevinarmstrong/Documents/PetSafe/PetSafe/Features/Scanner/Views/ProductResultView.swift" : {
+    "const-values" : "/Users/kevinarmstrong/Documents/PetSafe/test_results/derived_data/Build/Intermediates.noindex/PetSafe.build/Debug-iphonesimulator/PetSafe.build/Objects-normal/arm64/ProductResultView.swiftconstvalues",
+    "dependencies" : "/Users/kevinarmstrong/Documents/PetSafe/test_results/derived_data/Build/Intermediates.noindex/PetSafe.build/Debug-iphonesimulator/PetSafe.build/Objects-normal/arm64/ProductResultView.d",
+    "diagnostics" : "/Users/kevinarmstrong/Documents/PetSafe/test_results/derived_data/Build/Intermediates.noindex/PetSafe.build/Debug-iphonesimulator/PetSafe.build/Objects-normal/arm64/ProductResultView.dia",
+    "object" : "/Users/kevinarmstrong/Documents/PetSafe/test_results/derived_data/Build/Intermediates.noindex/PetSafe.build/Debug-iphonesimulator/PetSafe.build/Objects-normal/arm64/ProductResultView.o",
+    "swift-dependencies" : "/Users/kevinarmstrong/Documents/PetSafe/test_results/derived_data/Build/Intermediates.noindex/PetSafe.build/Debug-iphonesimulator/PetSafe.build/Objects-normal/arm64/ProductResultView.swiftdeps"
+  },
+  "/Users/kevinarmstrong/Documents/PetSafe/PetSafe/Features/Social/Views/WeeklySummaryShare.swift" : {
+    "const-values" : "/Users/kevinarmstrong/Documents/PetSafe/test_results/derived_data/Build/Intermediates.noindex/PetSafe.build/Debug-iphonesimulator/PetSafe.build/Objects-normal/arm64/WeeklySummaryShare.swiftconstvalues",
+    "dependencies" : "/Users/kevinarmstrong/Documents/PetSafe/test_results/derived_data/Build/Intermediates.noindex/PetSafe.build/Debug-iphonesimulator/PetSafe.build/Objects-normal/arm64/WeeklySummaryShare.d",
+    "diagnostics" : "/Users/kevinarmstrong/Documents/PetSafe/test_results/derived_data/Build/Intermediates.noindex/PetSafe.build/Debug-iphonesimulator/PetSafe.build/Objects-normal/arm64/WeeklySummaryShare.dia",
+    "object" : "/Users/kevinarmstrong/Documents/PetSafe/test_results/derived_data/Build/Intermediates.noindex/PetSafe.build/Debug-iphonesimulator/PetSafe.build/Objects-normal/arm64/WeeklySummaryShare.o",
+    "swift-dependencies" : "/Users/kevinarmstrong/Documents/PetSafe/test_results/derived_data/Build/Intermediates.noindex/PetSafe.build/Debug-iphonesimulator/PetSafe.build/Objects-normal/arm64/WeeklySummaryShare.swiftdeps"
+  }
+}

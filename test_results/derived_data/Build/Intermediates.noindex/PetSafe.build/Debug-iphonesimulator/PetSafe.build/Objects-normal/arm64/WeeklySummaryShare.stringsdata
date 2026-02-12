@@ -1,0 +1,88 @@
+{
+  "source": "/Users/kevinarmstrong/Documents/PetSafe/PetSafe/Features/Social/Views/WeeklySummaryShare.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Weekly Summary",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 29
+        }
+      },
+      {
+        "comment": "",
+        "key": "Done",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 33
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@'s Week",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 51
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld%%",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 85
+        }
+      },
+      {
+        "comment": "",
+        "key": "Safe",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 88
+        }
+      },
+      {
+        "comment": "",
+        "key": "🏆 Achievements This Week",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 133
+        }
+      },
+      {
+        "comment": "",
+        "key": "Tracked with PetSafe",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 158
+        }
+      },
+      {
+        "comment": "",
+        "key": "Daily Copper Intake",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 193
+        }
+      },
+      {
+        "comment": "",
+        "key": "This Week's Details",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 229
+        }
+      },
+      {
+        "comment": "",
+        "key": "Share Weekly Summary",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 265
+        }
+      }
+    ]
+  },
+  "version": 1
+}

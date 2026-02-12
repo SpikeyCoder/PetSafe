@@ -1,0 +1,80 @@
+{
+  "source": "/Users/kevinarmstrong/Documents/PetSafe/PetSafe/Features/Subscription/Views/PremiumGate.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Premium Feature",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 71
+        }
+      },
+      {
+        "comment": "",
+        "key": "Unlock %@ with Premium",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 74
+        }
+      },
+      {
+        "comment": "",
+        "key": "Upgrade to Premium",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 80
+        }
+      },
+      {
+        "comment": "",
+        "key": "Premium",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 110
+        }
+      },
+      {
+        "comment": "",
+        "key": "Unlock Premium Features",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 152
+        }
+      },
+      {
+        "comment": "",
+        "key": "Get unlimited tracking, photo identification, and more",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 156
+        }
+      },
+      {
+        "comment": "",
+        "key": "Upgrade",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 166
+        }
+      },
+      {
+        "comment": "",
+        "key": "Scanner content here",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 197
+        }
+      },
+      {
+        "comment": "",
+        "key": "Scanner content here",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 209
+        }
+      }
+    ]
+  },
+  "version": 1
+}

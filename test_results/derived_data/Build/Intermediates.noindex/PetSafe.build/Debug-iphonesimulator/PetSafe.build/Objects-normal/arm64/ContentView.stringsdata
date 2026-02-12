@@ -1,0 +1,376 @@
+{
+  "source": "/Users/kevinarmstrong/Documents/PetSafe/PetSafe/ContentView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Home",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 141
+        }
+      },
+      {
+        "comment": "",
+        "key": "Unlock Premium Features",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 39
+        }
+      },
+      {
+        "comment": "",
+        "key": "Get unlimited food tracking, photo identification, and more",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 42
+        }
+      },
+      {
+        "comment": "",
+        "key": "Upgrade",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 51
+        }
+      },
+      {
+        "comment": "",
+        "key": "PetSafe",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 77
+        }
+      },
+      {
+        "comment": "",
+        "key": "Daily Copper Limit: %.1fmg",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 87
+        }
+      },
+      {
+        "comment": "",
+        "key": "Premium",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 233
+        }
+      },
+      {
+        "comment": "",
+        "key": "Unlock %@",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 174
+        }
+      },
+      {
+        "comment": "",
+        "key": "This feature requires a Premium subscription",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 176
+        }
+      },
+      {
+        "comment": "",
+        "key": "Subscribe to unlock all premium features. Cancel anytime from your account settings.",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 202
+        }
+      },
+      {
+        "comment": "",
+        "key": "Premium Subscription",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 198
+        }
+      },
+      {
+        "comment": "",
+        "key": "Upgrade to Premium",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 215
+        }
+      },
+      {
+        "comment": "",
+        "key": "Maybe Later",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 224
+        }
+      },
+      {
+        "comment": "",
+        "key": "Close",
+        "location": {
+          "startingColumn": 73,
+          "startingLine": 234
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@'s Copper Today",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 264
+        }
+      },
+      {
+        "comment": "",
+        "key": "%.1fmg remaining",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 288
+        }
+      },
+      {
+        "comment": "",
+        "key": "%.1f",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 281
+        }
+      },
+      {
+        "comment": "",
+        "key": "/%.2fmg",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 284
+        }
+      },
+      {
+        "comment": "",
+        "key": "Daily Limit",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 295
+        }
+      },
+      {
+        "comment": "",
+        "key": "%.0f%%",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 297
+        }
+      },
+      {
+        "comment": "",
+        "key": "Photo Identification",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 330
+        }
+      },
+      {
+        "comment": "",
+        "key": "Premium",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 334
+        }
+      },
+      {
+        "comment": "",
+        "key": "Take Photo",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 348
+        }
+      },
+      {
+        "comment": "",
+        "key": "Take Photo (Premium)",
+        "location": {
+          "startingColumn": 54,
+          "startingLine": 348
+        }
+      },
+      {
+        "comment": "",
+        "key": "Scan Barcode",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 356
+        }
+      },
+      {
+        "comment": "",
+        "key": "Scan Barcode (Premium)",
+        "location": {
+          "startingColumn": 56,
+          "startingLine": 356
+        }
+      },
+      {
+        "comment": "",
+        "key": "LI",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 368
+        }
+      },
+      {
+        "comment": "",
+        "key": "Copper: %.1fmg / 100g",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 380
+        }
+      },
+      {
+        "comment": "",
+        "key": "Amount (g)",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 391
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 401
+        }
+      },
+      {
+        "comment": "",
+        "key": "Today's Food Log",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 449
+        }
+      },
+      {
+        "comment": "",
+        "key": "Premium",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 453
+        }
+      },
+      {
+        "comment": "",
+        "key": "No foods logged today",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 466
+        }
+      },
+      {
+        "comment": "",
+        "key": "Use the scanner or search to add foods",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 468
+        }
+      },
+      {
+        "comment": "",
+        "key": "Premium Feature",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 477
+        }
+      },
+      {
+        "comment": "",
+        "key": "Track your dog's daily food intake and copper consumption with unlimited logging",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 478
+        }
+      },
+      {
+        "comment": "",
+        "key": "Unlock Food Logging",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 485
+        }
+      },
+      {
+        "comment": "",
+        "key": "LI",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 503
+        }
+      },
+      {
+        "comment": "",
+        "key": "%.0fg",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 512
+        }
+      },
+      {
+        "comment": "",
+        "key": "%.1fmg copper",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 514
+        }
+      },
+      {
+        "comment": "",
+        "key": "Items",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 540
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 541
+        }
+      },
+      {
+        "comment": "",
+        "key": "Total Weight",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 545
+        }
+      },
+      {
+        "comment": "",
+        "key": "%.0fg",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 547
+        }
+      },
+      {
+        "comment": "",
+        "key": "Total",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 551
+        }
+      },
+      {
+        "comment": "",
+        "key": "%.1fmg Cu",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 552
+        }
+      }
+    ]
+  },
+  "version": 1
+}

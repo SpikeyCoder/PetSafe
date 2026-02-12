@@ -1,0 +1,384 @@
+{
+  "source": "/Users/kevinarmstrong/Documents/PetSafe/PetSafe/PersonalizedInsights.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Unlock Premium Features",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 76
+        }
+      },
+      {
+        "comment": "",
+        "key": "Get unlimited tracking, photo identification, and more",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 79
+        }
+      },
+      {
+        "comment": "",
+        "key": "Upgrade",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 87
+        }
+      },
+      {
+        "comment": "",
+        "key": "Breed",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 117
+        }
+      },
+      {
+        "comment": "",
+        "key": "Age",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 118
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld yrs",
+        "location": {
+          "startingColumn": 73,
+          "startingLine": 118
+        }
+      },
+      {
+        "comment": "",
+        "key": "Weight",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 119
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lf lbs",
+        "location": {
+          "startingColumn": 76,
+          "startingLine": 119
+        }
+      },
+      {
+        "comment": "",
+        "key": "Daily Limit",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 120
+        }
+      },
+      {
+        "comment": "",
+        "key": "%.2f mg Cu",
+        "location": {
+          "startingColumn": 81,
+          "startingLine": 120
+        }
+      },
+      {
+        "comment": "",
+        "key": "Risk",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 121
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@'s Copper Today",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 135
+        }
+      },
+      {
+        "comment": "",
+        "key": "%.1fmg remaining",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 158
+        }
+      },
+      {
+        "comment": "",
+        "key": "%.1f",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 151
+        }
+      },
+      {
+        "comment": "",
+        "key": "/%.2fmg",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 154
+        }
+      },
+      {
+        "comment": "",
+        "key": "Daily Limit",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 165
+        }
+      },
+      {
+        "comment": "",
+        "key": "%.0f%%",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 167
+        }
+      },
+      {
+        "comment": "",
+        "key": "Scan a Barcode",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 199
+        }
+      },
+      {
+        "comment": "",
+        "key": "Premium",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 202
+        }
+      },
+      {
+        "comment": "",
+        "key": "Point your camera at a barcode to analyze copper safety.",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 214
+        }
+      },
+      {
+        "comment": "",
+        "key": "Start Scanning",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 222
+        }
+      },
+      {
+        "comment": "",
+        "key": "Preview: Example scan results",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 239
+        }
+      },
+      {
+        "comment": "",
+        "key": "Upgrade to unlock scanning",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 246
+        }
+      },
+      {
+        "comment": "",
+        "key": "Food Log",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 263
+        }
+      },
+      {
+        "comment": "",
+        "key": "Premium",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 266
+        }
+      },
+      {
+        "comment": "",
+        "key": "Preview: Recent items",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 302
+        }
+      },
+      {
+        "comment": "",
+        "key": "Upgrade to unlock food logging",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 310
+        }
+      },
+      {
+        "comment": "",
+        "key": "Insights for %@",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 325
+        }
+      },
+      {
+        "comment": "",
+        "key": "Priority: %@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 354
+        }
+      },
+      {
+        "comment": "",
+        "key": "Health Conditions",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 380
+        }
+      },
+      {
+        "comment": "",
+        "key": "Diet Type",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 391
+        }
+      },
+      {
+        "comment": "",
+        "key": "Health Overview",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 369
+        }
+      },
+      {
+        "comment": "",
+        "key": "Age",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 372
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld yrs",
+        "location": {
+          "startingColumn": 73,
+          "startingLine": 372
+        }
+      },
+      {
+        "comment": "",
+        "key": "Weight",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 373
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lf lbs",
+        "location": {
+          "startingColumn": 76,
+          "startingLine": 373
+        }
+      },
+      {
+        "comment": "",
+        "key": "Risk",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 374
+        }
+      },
+      {
+        "comment": "",
+        "key": "Daily Limit",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 375
+        }
+      },
+      {
+        "comment": "",
+        "key": "%.2f mg Cu",
+        "location": {
+          "startingColumn": 81,
+          "startingLine": 375
+        }
+      },
+      {
+        "comment": "",
+        "key": "Current",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 376
+        }
+      },
+      {
+        "comment": "",
+        "key": "%.2f mg Cu",
+        "location": {
+          "startingColumn": 77,
+          "startingLine": 376
+        }
+      },
+      {
+        "comment": "",
+        "key": "",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 425
+        }
+      },
+      {
+        "comment": "",
+        "key": "No recommendations yet. Start scanning foods to get personalized suggestions.",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 440
+        }
+      },
+      {
+        "comment": "",
+        "key": "Food Recommendations for %@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 412
+        }
+      },
+      {
+        "comment": "",
+        "key": "Fetching recommendations…",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 429
+        }
+      },
+      {
+        "comment": "",
+        "key": "Tips for %@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 558
+        }
+      },
+      {
+        "comment": "",
+        "key": "•",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 563
+        }
+      }
+    ]
+  },
+  "version": 1
+}

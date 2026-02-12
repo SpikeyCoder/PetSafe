@@ -1,0 +1,24 @@
+{
+  "source": "/Users/kevinarmstrong/Documents/PetSafe/PetSafe/LoadingScreen.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "PetSafe",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 26
+        }
+      },
+      {
+        "comment": "",
+        "key": "Protecting your pet's health",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 31
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,34 @@
+2026-02-11 11:10:08.611980-0800 PetSafeUITests-Runner[75360:4165041] [Default] Running tests...
+2026-02-11 11:10:08.919751-0800 PetSafeUITests-Runner[75360:4167196] [General] Failed to send CA Event for app launch measurements for ca_event_type: 0 event_name: com.apple.app_launch_measurement.FirstFramePresentationMetric
+2026-02-11 11:10:08.964488-0800 PetSafeUITests-Runner[75360:4167126] [General] Failed to send CA Event for app launch measurements for ca_event_type: 1 event_name: com.apple.app_launch_measurement.ExtendedLaunchMetrics
+Test Suite 'ScannerTests' started at 2026-02-11 11:10:33.687.
+Test Case '-[PetSafeUITests.ScannerTests testCameraPermissionRequest]' started.
+    t =     0.10s Start Test at 2026-02-11 11:10:33.832
+    t =    19.54s Set Up
+    t =    19.62s Open com.armstrong.PetSafe
+    t =    19.63s     Launch com.armstrong.PetSafe
+    t =   117.39s         Setting up automation session
+    t =   158.31s         Wait for com.armstrong.PetSafe to idle
+    t =   186.63s Tap "email_field" TextField
+    t =   186.63s     Wait for com.armstrong.PetSafe to idle
+    t =   186.63s     Find the "email_field" TextField
+    t =   188.84s         Find the "email_field" TextField (retry 1)
+    t =   190.06s         Find the "email_field" TextField (retry 2)
+    t =   190.45s Requesting snapshot of accessibility hierarchy for app with pid 75577
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/PageObjects/LoginPage.swift:34: error: -[PetSafeUITests.ScannerTests testCameraPermissionRequest] : Failed to tap "email_field" TextField: No matches found for Elements matching predicate '"email_field" IN identifiers' from input {(
+    TextField, placeholderValue: 'Email'
+)}
+    t =   236.21s Tear Down
+Test Case '-[PetSafeUITests.ScannerTests testCameraPermissionRequest]' failed (236.940 seconds).
+Test Case '-[PetSafeUITests.ScannerTests testCameraPreviewActive]' started.
+    t =     0.00s Start Test at 2026-02-11 11:14:30.723
+    t =     0.20s Set Up
+    t =     0.21s Open com.armstrong.PetSafe
+    t =     0.21s     Launch com.armstrong.PetSafe
+    t =     0.25s         Terminate com.armstrong.PetSafe:75577
+    t =    37.92s         Setting up automation session
+    t =    52.05s         Wait for com.armstrong.PetSafe to idle
+    t =    61.46s Tap "email_field" TextField
+    t =    61.90s     Wait for com.armstrong.PetSafe to idle
+    t =   122.63s         App event loop idle notification not received, will attempt to continue.
+    t =   122.77s     Find the "email_field" TextField

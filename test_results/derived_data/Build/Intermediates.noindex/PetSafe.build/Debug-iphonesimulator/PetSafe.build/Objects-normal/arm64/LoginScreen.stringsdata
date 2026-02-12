@@ -1,0 +1,48 @@
+{
+  "source": "/Users/kevinarmstrong/Documents/PetSafe/PetSafe/LoginScreen.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Login",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 50
+        }
+      },
+      {
+        "comment": "",
+        "key": "By continuing, you agree to our Terms of Service and Privacy Policy.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 45
+        }
+      },
+      {
+        "comment": "",
+        "key": "Welcome to PetSafe",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 17
+        }
+      },
+      {
+        "comment": "",
+        "key": "Monitor your dog's special diet intake and keep them healthy",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 18
+        }
+      },
+      {
+        "comment": "",
+        "key": "What you'll get:",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 33
+        }
+      }
+    ]
+  },
+  "version": 1
+}

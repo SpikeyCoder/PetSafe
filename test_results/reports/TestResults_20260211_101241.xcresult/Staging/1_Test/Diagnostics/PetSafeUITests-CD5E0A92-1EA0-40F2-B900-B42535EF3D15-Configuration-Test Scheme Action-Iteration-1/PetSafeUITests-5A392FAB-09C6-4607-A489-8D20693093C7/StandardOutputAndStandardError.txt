@@ -1,0 +1,4 @@
+
+
+*** If you believe this error represents a bug, please attach the result bundle at /Users/kevinarmstrong/Documents/PetSafe/test_results/reports/TestResults_20260211_101241.xcresult
+

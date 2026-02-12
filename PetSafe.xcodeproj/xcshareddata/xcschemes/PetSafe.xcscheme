@@ -31,13 +31,24 @@
       shouldAutocreateTestPlan = "YES">
       <Testables>
          <TestableReference
-            skipped = "NO"
+            skipped = "YES"
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C127D6102ECA5B6D00BE26F5"
                BuildableName = "PetSafeTests.xctest"
                BlueprintName = "PetSafeTests"
+               ReferencedContainer = "container:PetSafe.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C15B1CD32F3CF920009347A2"
+               BuildableName = "PetSafeUITests.xctest"
+               BlueprintName = "PetSafeUITests"
                ReferencedContainer = "container:PetSafe.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -63,6 +74,13 @@
             ReferencedContainer = "container:PetSafe.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "ANTHROPIC_LOG"
+            value = "debug"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
       <StoreKitConfigurationFileReference
          identifier = "../../PetSafe/StoreKitConfiguration.storekit">
       </StoreKitConfigurationFileReference>

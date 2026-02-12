@@ -1,0 +1,152 @@
+{
+  "source": "/Users/kevinarmstrong/Documents/PetSafe/PetSafe/Features/Dashboard/Views/DashboardView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Log Out",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 84
+        }
+      },
+      {
+        "comment": "",
+        "key": "Log Out",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 85
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 88
+        }
+      },
+      {
+        "comment": "",
+        "key": "Are you sure you want to log out?",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 90
+        }
+      },
+      {
+        "comment": "",
+        "key": "PetSafe",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 167
+        }
+      },
+      {
+        "comment": "",
+        "key": "Protecting %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 172
+        }
+      },
+      {
+        "comment": "",
+        "key": "Logout",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 185
+        }
+      },
+      {
+        "comment": "",
+        "key": "Account",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 204
+        }
+      },
+      {
+        "comment": "",
+        "key": "Log Out",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 244
+        }
+      },
+      {
+        "comment": "",
+        "key": "Sign out of your account",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 247
+        }
+      },
+      {
+        "comment": "",
+        "key": "Today's Copper",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 344
+        }
+      },
+      {
+        "comment": "",
+        "key": "/ %.1f mg",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 364
+        }
+      },
+      {
+        "comment": "",
+        "key": "Quick Actions",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 391
+        }
+      },
+      {
+        "comment": "",
+        "key": "Start logging food to see personalized insights",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 449
+        }
+      },
+      {
+        "comment": "",
+        "key": "Insights",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 443
+        }
+      },
+      {
+        "comment": "",
+        "key": "Ready to Scan",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 493
+        }
+      },
+      {
+        "comment": "",
+        "key": "Tap below to start scanning food product barcodes",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 496
+        }
+      },
+      {
+        "comment": "",
+        "key": "Start Scanner",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 507
+        }
+      }
+    ]
+  },
+  "version": 1
+}

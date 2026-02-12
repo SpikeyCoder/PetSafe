@@ -1,0 +1,104 @@
+{
+  "source": "/Users/kevinarmstrong/Documents/PetSafe/PetSafe/Features/FoodLog/Views/FoodLogView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Delete",
+        "location": {
+          "startingColumn": 51,
+          "startingLine": 32
+        }
+      },
+      {
+        "comment": "",
+        "key": "Today",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 63
+        }
+      },
+      {
+        "comment": "",
+        "key": "Today's Copper",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 88
+        }
+      },
+      {
+        "comment": "",
+        "key": "mg",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 97
+        }
+      },
+      {
+        "comment": "",
+        "key": "%.1f mg remaining",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 117
+        }
+      },
+      {
+        "comment": "",
+        "key": "No food logged",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 192
+        }
+      },
+      {
+        "comment": "",
+        "key": "Start tracking by scanning a barcode or adding food manually",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 195
+        }
+      },
+      {
+        "comment": "",
+        "key": "No entries for this day",
+        "location": {
+          "startingColumn": 103,
+          "startingLine": 195
+        }
+      },
+      {
+        "comment": "",
+        "key": "LI",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 227
+        }
+      },
+      {
+        "comment": "",
+        "key": "%.0fg",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 244
+        }
+      },
+      {
+        "comment": "",
+        "key": "%.2f mg Cu",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 251
+        }
+      },
+      {
+        "comment": "",
+        "key": "Food Log",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 290
+        }
+      }
+    ]
+  },
+  "version": 1
+}

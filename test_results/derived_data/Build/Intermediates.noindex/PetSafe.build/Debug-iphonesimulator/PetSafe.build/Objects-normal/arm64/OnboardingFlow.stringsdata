@@ -1,0 +1,136 @@
+{
+  "source": "/Users/kevinarmstrong/Documents/PetSafe/PetSafe/OnboardingFlow.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Onboarding",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 112
+        }
+      },
+      {
+        "comment": "",
+        "key": "Welcome to PetSafe",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 65
+        }
+      },
+      {
+        "comment": "",
+        "key": "Let's personalize your experience with %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 66
+        }
+      },
+      {
+        "comment": "",
+        "key": "Back to Login",
+        "location": {
+          "startingColumn": 43,
+          "startingLine": 83
+        }
+      },
+      {
+        "comment": "",
+        "key": "Back",
+        "location": {
+          "startingColumn": 61,
+          "startingLine": 83
+        }
+      },
+      {
+        "comment": "",
+        "key": "Get Started",
+        "location": {
+          "startingColumn": 59,
+          "startingLine": 100
+        }
+      },
+      {
+        "comment": "",
+        "key": "Next",
+        "location": {
+          "startingColumn": 75,
+          "startingLine": 100
+        }
+      },
+      {
+        "comment": "",
+        "key": "Dog's Name",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 120
+        }
+      },
+      {
+        "comment": "",
+        "key": "Enter your dog's name",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 121
+        }
+      },
+      {
+        "comment": "",
+        "key": "Breed",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 126
+        }
+      },
+      {
+        "comment": "",
+        "key": "Select your dog's breed",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 127
+        }
+      },
+      {
+        "comment": "",
+        "key": "None",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 128
+        }
+      },
+      {
+        "comment": "",
+        "key": "Age",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 137
+        }
+      },
+      {
+        "comment": "",
+        "key": "Weight",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 147
+        }
+      },
+      {
+        "comment": "",
+        "key": "Enter your dog's age (years)",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 138
+        }
+      },
+      {
+        "comment": "",
+        "key": "Enter your dog's weight (lbs)",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 148
+        }
+      }
+    ]
+  },
+  "version": 1
+}

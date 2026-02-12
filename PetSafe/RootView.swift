@@ -8,6 +8,7 @@ struct RootView_NEW: View {
     @State private var isLoading = true
     @State private var isAuthenticated = false
     @State private var needsOnboarding = true
+    @State private var hasInitialized = false  // Track first initialization
 
     // SwiftData
     @Environment(\.modelContext) private var modelContext
@@ -71,11 +72,65 @@ struct RootView_NEW: View {
 
     // MARK: - Initialization
     private func initializeApp() async {
-        // Simulate initial load
-        try? await Task.sleep(nanoseconds: 1_500_000_000)
+        // UI Testing Mode: Create test profile and skip onboarding
+        let isUITesting = ProcessInfo.processInfo.arguments.contains("UI-Testing")
 
-        // Check if profile exists
-        needsOnboarding = dogProfile == nil
+        print("🧪 [RootView] initializeApp - isUITesting: \(isUITesting)")
+        print("🧪 [RootView] Current profiles count: \(profiles.count)")
+        print("🧪 [RootView] dogProfile exists: \(dogProfile != nil)")
+
+        if isUITesting && dogProfile == nil && !hasInitialized {
+            print("🧪 [RootView] Creating test profile for UI testing (first initialization)...")
+            // Create a test dog profile automatically on first run only
+            let testProfile = DogProfile(
+                name: "TestDog",
+                breed: "Golden Retriever",
+                age: 3,
+                weight: 30.0,
+                healthConditions: [],
+                dietaryRestrictions: [],
+                primaryConcerns: []
+            )
+            modelContext.insert(testProfile)
+
+            do {
+                try modelContext.save()
+                print("✅ [RootView] Test profile saved successfully")
+
+                // Give SwiftData a moment to update the query
+                try? await Task.sleep(nanoseconds: 50_000_000) // 0.05s
+
+                print("🧪 [RootView] After save - profiles count: \(profiles.count)")
+                print("🧪 [RootView] After save - dogProfile exists: \(dogProfile != nil)")
+
+                // Force skip onboarding in UI test mode since we created a profile
+                needsOnboarding = false
+                hasInitialized = true  // Mark as initialized
+                print("✅ [RootView] Forced needsOnboarding = false for UI testing")
+            } catch {
+                print("❌ [RootView] Failed to save test profile: \(error)")
+                needsOnboarding = true
+            }
+        } else {
+            // Normal flow: check if profile exists
+            // Only set needsOnboarding on first initialization
+            // After logout (hasInitialized = true), keep needsOnboarding = false to show login
+            if !hasInitialized {
+                needsOnboarding = dogProfile == nil
+                hasInitialized = true
+                print("🧪 [RootView] First initialization - needsOnboarding: \(needsOnboarding)")
+            } else {
+                // After logout: profile is nil but user already onboarded
+                // Keep needsOnboarding = false to show login screen
+                print("🧪 [RootView] Post-logout - keeping needsOnboarding = false")
+            }
+        }
+
+        // Simulate initial load (skip delay in UI tests)
+        let delay = isUITesting ? 100_000_000 : 1_500_000_000 // 0.1s vs 1.5s
+        try? await Task.sleep(nanoseconds: UInt64(delay))
+
+        print("🧪 [RootView] Final state - needsOnboarding: \(needsOnboarding), isLoading -> false")
 
         withAnimation(.easeInOut(duration: 0.35)) {
             isLoading = false

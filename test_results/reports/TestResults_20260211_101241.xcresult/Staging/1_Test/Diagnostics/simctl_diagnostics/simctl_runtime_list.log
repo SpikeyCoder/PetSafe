@@ -1,0 +1,32 @@
+== Disk Images ==
+-- iOS --
+iOS 26.2 (23C54) - 62EC94EB-879A-4BB5-9AC8-3742DADA9C85
+    State: Ready
+    Image Kind: Patchable Cryptex Disk Image
+    Signature State: Verified
+    Deletable: YES
+    Last Used At: 2026-02-11 18:12:51 +0000
+    Mounting Mode: Disk Image Mount
+    Mount Policy: Automatic
+    Mount Path: /Library/Developer/CoreSimulator/Volumes/iOS_23C54
+    Image Path: /System/Library/AssetsV2/com_apple_MobileAsset_iOSSimulatorRuntime/e4478b4b9014ff28fe3c265daca488f55a284f4c.asset/AssetData/Restore/043-87504-067.dmg
+    Size: 7.8G
+    Bundle Path: /Library/Developer/CoreSimulator/Volumes/iOS_23C54/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.2.simruntime
+    Supported Architectures: arm64
+    Parent Mount Path: /System/Library/AssetsV2/com_apple_MobileAsset_iOSSimulatorRuntime/e4478b4b9014ff28fe3c265daca488f55a284f4c.asset/AssetData
+iOS 26.1 (23B86) - E1DDE9B9-44FD-444B-92F0-3308CB7E3D01
+    State: Ready
+    Image Kind: Patchable Cryptex Disk Image
+    Signature State: Verified
+    Deletable: YES
+    Last Used At: 2026-02-11 18:16:11 +0000
+    Mounting Mode: Disk Image Mount
+    Mount Policy: Automatic
+    Mount Path: /Library/Developer/CoreSimulator/Volumes/iOS_23B86
+    Image Path: /System/Library/AssetsV2/com_apple_MobileAsset_iOSSimulatorRuntime/c3c3bec8bbcbf1e8dfc677d6c5a0eae524567fdf.asset/AssetData/Restore/043-54727-122.dmg
+    Size: 7.8G
+    Bundle Path: /Library/Developer/CoreSimulator/Volumes/iOS_23B86/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.1.simruntime
+    Supported Architectures: arm64
+    Parent Mount Path: /System/Library/AssetsV2/com_apple_MobileAsset_iOSSimulatorRuntime/c3c3bec8bbcbf1e8dfc677d6c5a0eae524567fdf.asset/AssetData
+
+Total Disk Images: 2 (15.6G)

@@ -1,0 +1,56 @@
+{
+  "source": "/Users/kevinarmstrong/Documents/PetSafe/PetSafe/Core/Utilities/AccessibilityHelper.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "%lld of %lld",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 33
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld%%",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 41
+        }
+      },
+      {
+        "comment": "",
+        "key": "Currently selected",
+        "location": {
+          "startingColumn": 45,
+          "startingLine": 51
+        }
+      },
+      {
+        "comment": "",
+        "key": "Double tap to select",
+        "location": {
+          "startingColumn": 68,
+          "startingLine": 51
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@. %@",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 57
+        }
+      },
+      {
+        "comment": "",
+        "key": "Copper status: %@",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 73
+        }
+      }
+    ]
+  },
+  "version": 1
+}

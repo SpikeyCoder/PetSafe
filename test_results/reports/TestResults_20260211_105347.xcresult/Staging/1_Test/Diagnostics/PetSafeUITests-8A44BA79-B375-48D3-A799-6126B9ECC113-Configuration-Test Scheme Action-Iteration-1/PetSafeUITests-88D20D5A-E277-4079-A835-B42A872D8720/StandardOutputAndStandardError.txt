@@ -1,0 +1,88 @@
+2026-02-11 11:08:47.144416-0800 PetSafeUITests-Runner[75280:4159941] [Default] Running tests...
+Test Suite 'OnboardingTests' started at 2026-02-11 11:09:05.673.
+Test Case '-[PetSafeUITests.OnboardingTests testAgeAndWeightEntry]' started.
+    t =     0.22s Start Test at 2026-02-11 11:09:05.922
+    t =    24.70s Set Up
+    t =    25.15s Open com.armstrong.PetSafe
+    t =    25.15s     Launch com.armstrong.PetSafe
+    t =    62.76s         Setting up automation session
+    t =    64.97s         Wait for com.armstrong.PetSafe to idle
+    t =    68.05s Tap "email_field" TextField
+    t =    68.06s     Wait for com.armstrong.PetSafe to idle
+    t =    68.16s     Find the "email_field" TextField
+    t =    70.62s         Find the "email_field" TextField (retry 1)
+    t =    83.68s         Find the "email_field" TextField (retry 2)
+    t =    85.09s Requesting snapshot of accessibility hierarchy for app with pid 75416
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/PageObjects/LoginPage.swift:34: error: -[PetSafeUITests.OnboardingTests testAgeAndWeightEntry] : Failed to tap "email_field" TextField: No matches found for Descendants matching type TextField from input {(
+    Application, pid: 75416, label: 'PetSafe'
+)}
+    t =    99.98s Tear Down
+Test Case '-[PetSafeUITests.OnboardingTests testAgeAndWeightEntry]' failed (100.423 seconds).
+Test Case '-[PetSafeUITests.OnboardingTests testBackNavigation]' started.
+    t =     0.00s Start Test at 2026-02-11 11:10:46.347
+    t =     0.22s Set Up
+    t =     0.26s Open com.armstrong.PetSafe
+    t =     0.26s     Launch com.armstrong.PetSafe
+    t =     0.26s         Terminate com.armstrong.PetSafe:75416
+    t =    11.04s         Setting up automation session
+    t =    47.12s         Wait for com.armstrong.PetSafe to idle
+    t =    66.84s Tap "email_field" TextField
+    t =    66.84s     Wait for com.armstrong.PetSafe to idle
+    t =    66.86s     Find the "email_field" TextField
+    t =    75.01s         Find the "email_field" TextField (retry 1)
+    t =    79.26s         Find the "email_field" TextField (retry 2)
+    t =    80.46s Requesting snapshot of accessibility hierarchy for app with pid 75494
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/PageObjects/LoginPage.swift:34: error: -[PetSafeUITests.OnboardingTests testBackNavigation] : Failed to tap "email_field" TextField: No matches found for Elements matching predicate '"email_field" IN identifiers' from input {(
+    TextField, placeholderValue: 'Email'
+)}
+    t =    81.26s Tear Down
+Test Case '-[PetSafeUITests.OnboardingTests testBackNavigation]' failed (81.964 seconds).
+Test Case '-[PetSafeUITests.OnboardingTests testBreedSearchAndSelection]' started.
+    t =     0.01s Start Test at 2026-02-11 11:12:08.323
+    t =     0.39s Set Up
+    t =     0.40s Open com.armstrong.PetSafe
+    t =     0.40s     Launch com.armstrong.PetSafe
+    t =     0.40s         Terminate com.armstrong.PetSafe:75494
+    t =    22.54s         Setting up automation session
+    t =    63.75s         Wait for com.armstrong.PetSafe to idle
+    t =    91.96s Tap "email_field" TextField
+    t =    92.01s     Wait for com.armstrong.PetSafe to idle
+    t =    92.02s     Find the "email_field" TextField
+    t =    94.25s         Find the "email_field" TextField (retry 1)
+    t =    95.46s         Find the "email_field" TextField (retry 2)
+    t =    95.60s Requesting snapshot of accessibility hierarchy for app with pid 75576
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/PageObjects/LoginPage.swift:34: error: -[PetSafeUITests.OnboardingTests testBreedSearchAndSelection] : Failed to tap "email_field" TextField: No matches found for Elements matching predicate '"email_field" IN identifiers' from input {(
+    TextField, placeholderValue: 'Email'
+)}
+    t =    98.02s Tear Down
+Test Case '-[PetSafeUITests.OnboardingTests testBreedSearchAndSelection]' failed (99.111 seconds).
+Test Case '-[PetSafeUITests.OnboardingTests testCompleteOnboardingFlow]' started.
+    t =     0.01s Start Test at 2026-02-11 11:13:47.452
+    t =     0.58s Set Up
+    t =     0.85s Open com.armstrong.PetSafe
+    t =     0.85s     Launch com.armstrong.PetSafe
+    t =     0.85s         Terminate com.armstrong.PetSafe:75576
+    t =    38.41s         Setting up automation session
+    t =    49.50s         Wait for com.armstrong.PetSafe to idle
+    t =    56.77s Tap "email_field" TextField
+    t =    56.77s     Wait for com.armstrong.PetSafe to idle
+    t =    76.31s     Find the "email_field" TextField
+    t =    80.21s         Find the "email_field" TextField (retry 1)
+    t =    81.43s         Find the "email_field" TextField (retry 2)
+    t =    82.61s Requesting snapshot of accessibility hierarchy for app with pid 75652
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/PageObjects/LoginPage.swift:34: error: -[PetSafeUITests.OnboardingTests testCompleteOnboardingFlow] : Failed to tap "email_field" TextField: No matches found for Elements matching predicate '"email_field" IN identifiers' from input {(
+    TextField, placeholderValue: 'Email'
+)}
+    t =    85.14s Tear Down
+Test Case '-[PetSafeUITests.OnboardingTests testCompleteOnboardingFlow]' failed (85.628 seconds).
+Test Case '-[PetSafeUITests.OnboardingTests testDogNameEntry]' started.
+    t =     0.03s Start Test at 2026-02-11 11:15:13.150
+    t =     0.32s Set Up
+    t =     0.32s Open com.armstrong.PetSafe
+    t =     0.32s     Launch com.armstrong.PetSafe
+    t =     0.32s         Terminate com.armstrong.PetSafe:75652
+    t =     5.71s         Setting up automation session
+    t =    16.68s         Wait for com.armstrong.PetSafe to idle
+    t =    77.48s             App event loop idle notification not received, will attempt to continue.
+    t =    78.56s Tap "email_field" TextField
+    t =    78.56s     Wait for com.armstrong.PetSafe to idle

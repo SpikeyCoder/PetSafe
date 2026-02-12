@@ -1,0 +1,1462 @@
+2026-02-11 11:35:59.061565-0800 PetSafeUITests-Runner[78186:4234251] [Default] Running tests...
+Test Suite 'SubscriptionTests' started at 2026-02-11 11:36:10.519.
+Test Case '-[PetSafeUITests.SubscriptionTests testClosePaywall]' started.
+    t =     0.00s Start Test at 2026-02-11 11:36:10.522
+    t =     1.03s Set Up
+    t =     1.04s Open com.armstrong.PetSafe
+    t =     1.04s     Launch com.armstrong.PetSafe
+    t =     4.91s         Setting up automation session
+    t =     6.81s         Wait for com.armstrong.PetSafe to idle
+    t =     8.41s Tap "email_field" TextField
+    t =     8.41s     Wait for com.armstrong.PetSafe to idle
+    t =     8.41s     Find the "email_field" TextField
+    t =     9.56s         Find the "email_field" TextField (retry 1)
+    t =     9.67s     Check for interrupting elements affecting "email_field" TextField
+    t =     9.75s     Synthesize event
+    t =    10.16s     Wait for com.armstrong.PetSafe to idle
+    t =    11.27s Type 'test@petsafe.com' into "email_field" TextField
+    t =    11.27s     Wait for com.armstrong.PetSafe to idle
+    t =    16.53s     Find the "email_field" TextField
+    t =    16.70s     Check for interrupting elements affecting "email_field" TextField
+    t =    16.79s     Synthesize event
+    t =    17.27s     Wait for com.armstrong.PetSafe to idle
+    t =    17.74s Tap "password_field" SecureTextField
+    t =    17.74s     Wait for com.armstrong.PetSafe to idle
+    t =    17.75s     Find the "password_field" SecureTextField
+    t =    17.92s     Check for interrupting elements affecting "password_field" SecureTextField
+    t =    17.97s     Synthesize event
+    t =    18.28s     Wait for com.armstrong.PetSafe to idle
+    t =    18.41s Type '<redacted>' into "password_field" SecureTextField
+    t =    18.41s     Wait for com.armstrong.PetSafe to idle
+    t =    18.75s     Find the "password_field" SecureTextField
+    t =    18.78s     Check for interrupting elements affecting "password_field" SecureTextField
+    t =    18.82s     Synthesize event
+    t =    19.14s     Wait for com.armstrong.PetSafe to idle
+    t =    19.30s Tap "login_button" Button
+    t =    19.30s     Wait for com.armstrong.PetSafe to idle
+    t =    19.31s     Find the "login_button" Button
+    t =    19.34s     Check for interrupting elements affecting "login_button" Button
+    t =    19.37s     Synthesize event
+    t =    19.38s         Scroll element to visible
+    t =    19.39s         Find the "login_button" Button
+    t =    19.45s         Computed hit point {201, 334.83333333333337} after scrolling to visible
+    t =    19.74s     Wait for com.armstrong.PetSafe to idle
+    t =    20.08s Waiting 10.0s for "Home" Button to exist
+    t =    21.11s     Checking `Expect predicate `existsNoRetry == 1` for object "Home" Button`
+    t =    21.11s         Checking existence of `"Home" Button`
+    t =    21.17s Checking existence of `"Scan" Button`
+    t =    21.20s Checking existence of `"Log" Button`
+    t =    21.23s Tear Down
+Test Case '-[PetSafeUITests.SubscriptionTests testClosePaywall]' passed (21.588 seconds).
+Test Case '-[PetSafeUITests.SubscriptionTests testMonthlyPlanSelection]' started.
+    t =     0.00s Start Test at 2026-02-11 11:36:32.111
+    t =     0.04s Set Up
+    t =     0.04s Open com.armstrong.PetSafe
+    t =     0.04s     Launch com.armstrong.PetSafe
+    t =     0.04s         Terminate com.armstrong.PetSafe:78239
+    t =     1.74s         Setting up automation session
+    t =     3.61s         Wait for com.armstrong.PetSafe to idle
+    t =     5.91s Tap "email_field" TextField
+    t =     5.91s     Wait for com.armstrong.PetSafe to idle
+    t =     5.97s     Find the "email_field" TextField
+    t =     7.18s         Find the "email_field" TextField (retry 1)
+    t =     7.28s     Check for interrupting elements affecting "email_field" TextField
+    t =     7.35s     Synthesize event
+    t =     7.65s     Wait for com.armstrong.PetSafe to idle
+    t =     8.07s Type 'test@petsafe.com' into "email_field" TextField
+    t =     8.07s     Wait for com.armstrong.PetSafe to idle
+    t =     8.43s     Find the "email_field" TextField
+    t =    15.16s     Check for interrupting elements affecting "email_field" TextField
+    t =    15.46s     Synthesize event
+    t =    15.94s     Wait for com.armstrong.PetSafe to idle
+    t =    16.43s Tap "password_field" SecureTextField
+    t =    16.43s     Wait for com.armstrong.PetSafe to idle
+    t =    16.61s     Find the "password_field" SecureTextField
+    t =    16.67s     Check for interrupting elements affecting "password_field" SecureTextField
+    t =    16.71s     Synthesize event
+    t =    17.02s     Wait for com.armstrong.PetSafe to idle
+    t =    17.40s Type '<redacted>' into "password_field" SecureTextField
+    t =    17.40s     Wait for com.armstrong.PetSafe to idle
+    t =    17.40s     Find the "password_field" SecureTextField
+    t =    17.43s     Check for interrupting elements affecting "password_field" SecureTextField
+    t =    17.46s     Synthesize event
+    t =    17.78s     Wait for com.armstrong.PetSafe to idle
+    t =    17.96s Tap "login_button" Button
+    t =    17.96s     Wait for com.armstrong.PetSafe to idle
+    t =    17.97s     Find the "login_button" Button
+    t =    18.02s     Check for interrupting elements affecting "login_button" Button
+    t =    18.07s     Synthesize event
+    t =    18.41s     Wait for com.armstrong.PetSafe to idle
+    t =    20.02s Waiting 10.0s for "Home" Button to exist
+    t =    21.06s     Checking `Expect predicate `existsNoRetry == 1` for object "Home" Button`
+    t =    21.07s         Checking existence of `"Home" Button`
+    t =    21.22s Checking existence of `"Scan" Button`
+    t =    21.28s Checking existence of `"Log" Button`
+    t =    21.34s Tear Down
+Test Case '-[PetSafeUITests.SubscriptionTests testMonthlyPlanSelection]' passed (23.026 seconds).
+Test Case '-[PetSafeUITests.SubscriptionTests testPaywallDisplays]' started.
+    t =     0.00s Start Test at 2026-02-11 11:36:55.142
+    t =     0.26s Set Up
+    t =     0.26s Open com.armstrong.PetSafe
+    t =     0.27s     Launch com.armstrong.PetSafe
+    t =     0.27s         Terminate com.armstrong.PetSafe:78305
+    t =    14.66s         Setting up automation session
+    t =    16.69s         Wait for com.armstrong.PetSafe to idle
+    t =    18.81s Tap "email_field" TextField
+    t =    18.81s     Wait for com.armstrong.PetSafe to idle
+    t =    18.82s     Find the "email_field" TextField
+    t =    20.13s         Find the "email_field" TextField (retry 1)
+    t =    22.30s     Check for interrupting elements affecting "email_field" TextField
+    t =    22.55s     Synthesize event
+    t =    23.27s     Wait for com.armstrong.PetSafe to idle
+    t =    26.37s Type 'test@petsafe.com' into "email_field" TextField
+    t =    26.37s     Wait for com.armstrong.PetSafe to idle
+    t =    26.67s     Find the "email_field" TextField
+    t =    30.65s     Check for interrupting elements affecting "email_field" TextField
+    t =    35.54s     Synthesize event
+    t =    36.41s     Wait for com.armstrong.PetSafe to idle
+    t =    42.61s Tap "password_field" SecureTextField
+    t =    42.61s     Wait for com.armstrong.PetSafe to idle
+    t =    42.64s     Find the "password_field" SecureTextField
+    t =    42.84s     Check for interrupting elements affecting "password_field" SecureTextField
+    t =    43.08s     Synthesize event
+    t =    43.45s     Wait for com.armstrong.PetSafe to idle
+    t =    43.63s Type '<redacted>' into "password_field" SecureTextField
+    t =    43.63s     Wait for com.armstrong.PetSafe to idle
+    t =    44.06s     Find the "password_field" SecureTextField
+    t =    44.29s     Check for interrupting elements affecting "password_field" SecureTextField
+    t =    44.72s     Synthesize event
+    t =    45.29s     Wait for com.armstrong.PetSafe to idle
+    t =    46.15s Tap "login_button" Button
+    t =    46.16s     Wait for com.armstrong.PetSafe to idle
+    t =    46.41s     Find the "login_button" Button
+    t =    46.76s     Check for interrupting elements affecting "login_button" Button
+    t =    47.03s     Synthesize event
+    t =    47.55s     Wait for com.armstrong.PetSafe to idle
+    t =    49.69s Waiting 10.0s for "Home" Button to exist
+    t =    50.76s     Checking `Expect predicate `existsNoRetry == 1` for object "Home" Button`
+    t =    50.95s         Checking existence of `"Home" Button`
+    t =    52.10s Checking existence of `"Scan" Button`
+    t =    52.17s Checking existence of `"Log" Button`
+    t =    52.23s Tear Down
+Test Case '-[PetSafeUITests.SubscriptionTests testPaywallDisplays]' passed (52.656 seconds).
+Test Case '-[PetSafeUITests.SubscriptionTests testPremiumFeaturesDisplay]' started.
+    t =     0.01s Start Test at 2026-02-11 11:37:47.822
+    t =     0.17s Set Up
+    t =     0.18s Open com.armstrong.PetSafe
+    t =     0.18s     Launch com.armstrong.PetSafe
+    t =     0.18s         Terminate com.armstrong.PetSafe:78538
+    t =     7.64s         Setting up automation session
+    t =     9.01s         Wait for com.armstrong.PetSafe to idle
+    t =    10.33s Tap "email_field" TextField
+    t =    10.33s     Wait for com.armstrong.PetSafe to idle
+    t =    10.33s     Find the "email_field" TextField
+    t =    11.42s         Find the "email_field" TextField (retry 1)
+    t =    11.67s     Check for interrupting elements affecting "email_field" TextField
+    t =    11.74s     Synthesize event
+    t =    12.05s     Wait for com.armstrong.PetSafe to idle
+    t =    12.05s Type 'test@petsafe.com' into "email_field" TextField
+    t =    12.05s     Wait for com.armstrong.PetSafe to idle
+    t =    12.05s     Find the "email_field" TextField
+    t =    12.07s     Check for interrupting elements affecting "email_field" TextField
+    t =    12.08s     Synthesize event
+    t =    12.09s         Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =    12.10s         Requesting snapshot of accessibility hierarchy for app with pid 78788
+    t =    12.21s         Find: Descendants matching type TextField
+    t =    12.21s         Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    12.26s         Requesting snapshot of accessibility hierarchy for app with pid 78788
+    t =    12.28s         Find: Descendants matching type TextField
+    t =    12.28s         Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    12.28s         Requesting snapshot of accessibility hierarchy for app with pid 78788
+    t =    12.29s         Find: Descendants matching type TextField
+    t =    12.30s         Requesting snapshot of accessibility hierarchy for app with pid 78788
+    t =    12.32s         Requesting snapshot of accessibility hierarchy for app with pid 78788
+    t =    12.33s         Find: Descendants matching type TextField
+    t =    12.33s         Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    12.38s         Requesting snapshot of accessibility hierarchy for app with pid 78788
+    t =    12.39s         Find: Descendants matching type TextField
+    t =    12.39s         Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    12.39s         Requesting snapshot of accessibility hierarchy for app with pid 78788
+    t =    12.41s         Find: Descendants matching type TextField
+    t =    12.41s         Requesting snapshot of accessibility hierarchy for app with pid 78788
+    t =    12.44s         Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: TextField, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Element debug description:
+Attributes: TextField, 0x10624b130, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Element subtree:
+ →TextField, 0x10624b130, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Path to element:
+ →Application, 0x105f46340, pid: 78788, label: 'PetSafe'
+  ↳Window (Main), 0x10624a7a0, {{0.0, 0.0}, {402.0, 874.0}}
+   ↳Other, 0x106231f60, {{0.0, 0.0}, {402.0, 874.0}}
+    ↳Other, 0x106231180, {{0.0, 0.0}, {402.0, 874.0}}
+     ↳Other, 0x106231870, {{0.0, 0.0}, {402.0, 874.0}}
+      ↳Other, 0x106230ab0, {{0.0, 0.0}, {402.0, 874.0}}
+       ↳Other, 0x106231bd0, {{0.0, 0.0}, {402.0, 874.0}}
+        ↳Other, 0x106234fd0, {{0.0, 0.0}, {402.0, 874.0}}
+         ↳Other, 0x106233b30, {{0.0, 0.0}, {402.0, 874.0}}
+          ↳Other, 0x106234580, {{0.0, 0.0}, {402.0, 874.0}}
+           ↳Other, 0x106234c40, {{0.0, 0.0}, {402.0, 874.0}}
+            ↳ScrollView, 0x106233ea0, {{0.0, 0.0}, {402.0, 874.0}}
+             ↳Other, 0x1062356d0, {{0.0, 168.0}, {402.0, 538.0}}
+              ↳TextField, 0x10624b130, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Query chain:
+ →Find: Target Application 'com.armstrong.PetSafe'
+  Output: {
+    Application, 0x10632a060, pid: 78788, label: 'PetSafe'
+  }
+  ↪︎Find: Descendants matching type TextField
+    Output: {
+      TextField, 0x1062614c0, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+    }
+    ↪︎Find: Elements matching predicate '"email_field" IN identifiers'
+      Output: {
+        TextField, 0x106122070, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+      }
+
+    t =    12.44s     Wait for com.armstrong.PetSafe to idle
+    t =    13.44s     Retrying `Type 'test@petsafe.com' into "email_field" TextField` (attempt #2)
+    t =    13.44s         Wait for com.armstrong.PetSafe to idle
+    t =    13.45s         Find the "email_field" TextField
+    t =    13.46s         Check for interrupting elements affecting "email_field" TextField
+    t =    13.48s         Synthesize event
+    t =    13.48s             Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =    13.49s             Requesting snapshot of accessibility hierarchy for app with pid 78788
+    t =    13.50s             Find: Descendants matching type TextField
+    t =    13.50s             Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    13.54s             Requesting snapshot of accessibility hierarchy for app with pid 78788
+    t =    13.55s             Find: Descendants matching type TextField
+    t =    13.55s             Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    13.55s             Requesting snapshot of accessibility hierarchy for app with pid 78788
+    t =    13.57s             Find: Descendants matching type TextField
+    t =    13.57s             Requesting snapshot of accessibility hierarchy for app with pid 78788
+    t =    13.59s             Requesting snapshot of accessibility hierarchy for app with pid 78788
+    t =    13.60s             Find: Descendants matching type TextField
+    t =    13.60s             Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    13.63s             Requesting snapshot of accessibility hierarchy for app with pid 78788
+    t =    13.65s             Find: Descendants matching type TextField
+    t =    13.65s             Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    13.65s             Requesting snapshot of accessibility hierarchy for app with pid 78788
+    t =    13.66s             Find: Descendants matching type TextField
+    t =    13.67s             Requesting snapshot of accessibility hierarchy for app with pid 78788
+    t =    13.69s             Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: TextField, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Element debug description:
+Attributes: TextField, 0x105f377e0, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Element subtree:
+ →TextField, 0x105f377e0, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Path to element:
+ →Application, 0x105f2e7a0, pid: 78788, label: 'PetSafe'
+  ↳Window (Main), 0x105f30f00, {{0.0, 0.0}, {402.0, 874.0}}
+   ↳Other, 0x105f31260, {{0.0, 0.0}, {402.0, 874.0}}
+    ↳Other, 0x105f30850, {{0.0, 0.0}, {402.0, 874.0}}
+     ↳Other, 0x105f31950, {{0.0, 0.0}, {402.0, 874.0}}
+      ↳Other, 0x105f315c0, {{0.0, 0.0}, {402.0, 874.0}}
+       ↳Other, 0x105f32190, {{0.0, 0.0}, {402.0, 874.0}}
+        ↳Other, 0x105f32bd0, {{0.0, 0.0}, {402.0, 874.0}}
+         ↳Other, 0x105f32f70, {{0.0, 0.0}, {402.0, 874.0}}
+          ↳Other, 0x105f332d0, {{0.0, 0.0}, {402.0, 874.0}}
+           ↳Other, 0x105f33db0, {{0.0, 0.0}, {402.0, 874.0}}
+            ↳ScrollView, 0x105f34130, {{0.0, 0.0}, {402.0, 874.0}}
+             ↳Other, 0x105f381f0, {{0.0, 168.0}, {402.0, 538.0}}
+              ↳TextField, 0x105f377e0, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Query chain:
+ →Find: Target Application 'com.armstrong.PetSafe'
+  Output: {
+    Application, 0x10632eb40, pid: 78788, label: 'PetSafe'
+  }
+  ↪︎Find: Descendants matching type TextField
+    Output: {
+      TextField, 0x105f5e500, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+    }
+    ↪︎Find: Elements matching predicate '"email_field" IN identifiers'
+      Output: {
+        TextField, 0x105f5bcc0, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+      }
+
+    t =    13.69s         Wait for com.armstrong.PetSafe to idle
+    t =    14.69s     Retrying `Type 'test@petsafe.com' into "email_field" TextField` (attempt #3)
+    t =    14.69s         Wait for com.armstrong.PetSafe to idle
+    t =    14.69s         Find the "email_field" TextField
+    t =    14.71s         Check for interrupting elements affecting "email_field" TextField
+    t =    14.72s         Synthesize event
+    t =    14.72s             Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =    14.73s             Requesting snapshot of accessibility hierarchy for app with pid 78788
+    t =    14.75s             Find: Descendants matching type TextField
+    t =    14.75s             Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    14.78s             Requesting snapshot of accessibility hierarchy for app with pid 78788
+    t =    14.79s             Find: Descendants matching type TextField
+    t =    14.79s             Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    14.79s             Requesting snapshot of accessibility hierarchy for app with pid 78788
+    t =    14.81s             Find: Descendants matching type TextField
+    t =    14.81s             Requesting snapshot of accessibility hierarchy for app with pid 78788
+    t =    14.83s             Requesting snapshot of accessibility hierarchy for app with pid 78788
+    t =    14.84s             Find: Descendants matching type TextField
+    t =    14.84s             Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    14.87s             Requesting snapshot of accessibility hierarchy for app with pid 78788
+    t =    14.89s             Find: Descendants matching type TextField
+    t =    14.89s             Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    14.89s             Requesting snapshot of accessibility hierarchy for app with pid 78788
+    t =    14.90s             Find: Descendants matching type TextField
+    t =    14.90s             Requesting snapshot of accessibility hierarchy for app with pid 78788
+    t =    14.92s             Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: TextField, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Element debug description:
+Attributes: TextField, 0x106130240, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Element subtree:
+ →TextField, 0x106130240, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Path to element:
+ →Application, 0x106122070, pid: 78788, label: 'PetSafe'
+  ↳Window (Main), 0x106124ec0, {{0.0, 0.0}, {402.0, 874.0}}
+   ↳Other, 0x1061240c0, {{0.0, 0.0}, {402.0, 874.0}}
+    ↳Other, 0x1061255c0, {{0.0, 0.0}, {402.0, 874.0}}
+     ↳Other, 0x106123680, {{0.0, 0.0}, {402.0, 874.0}}
+      ↳Other, 0x106123310, {{0.0, 0.0}, {402.0, 874.0}}
+       ↳Other, 0x1061217f0, {{0.0, 0.0}, {402.0, 874.0}}
+        ↳Other, 0x10611a600, {{0.0, 0.0}, {402.0, 874.0}}
+         ↳Other, 0x10612d300, {{0.0, 0.0}, {402.0, 874.0}}
+          ↳Other, 0x10610a4b0, {{0.0, 0.0}, {402.0, 874.0}}
+           ↳Other, 0x10612dd30, {{0.0, 0.0}, {402.0, 874.0}}
+            ↳ScrollView, 0x1061314a0, {{0.0, 0.0}, {402.0, 874.0}}
+             ↳Other, 0x10612fdc0, {{0.0, 168.0}, {402.0, 538.0}}
+              ↳TextField, 0x106130240, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Query chain:
+ →Find: Target Application 'com.armstrong.PetSafe'
+  Output: {
+    Application, 0x106124430, pid: 78788, label: 'PetSafe'
+  }
+  ↪︎Find: Descendants matching type TextField
+    Output: {
+      TextField, 0x105f3bc70, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+    }
+    ↪︎Find: Elements matching predicate '"email_field" IN identifiers'
+      Output: {
+        TextField, 0x105f2ee50, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+      }
+
+    t =    14.92s         Wait for com.armstrong.PetSafe to idle
+    t =    14.93s     Requesting snapshot of accessibility hierarchy for app with pid 78788
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/PageObjects/LoginPage.swift:35: error: -[PetSafeUITests.SubscriptionTests testPremiumFeaturesDisplay] : Failed to synthesize event: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: TextField, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Element debug description:
+Attributes: TextField, 0x106130240, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Element subtree:
+ →TextField, 0x106130240, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Path to element:
+ →Application, 0x106122070, pid: 78788, label: 'PetSafe'
+  ↳Window (Main), 0x106124ec0, {{0.0, 0.0}, {402.0, 874.0}}
+   ↳Other, 0x1061240c0, {{0.0, 0.0}, {402.0, 874.0}}
+    ↳Other, 0x1061255c0, {{0.0, 0.0}, {402.0, 874.0}}
+     ↳Other, 0x106123680, {{0.0, 0.0}, {402.0, 874.0}}
+      ↳Other, 0x106123310, {{0.0, 0.0}, {402.0, 874.0}}
+       ↳Other, 0x1061217f0, {{0.0, 0.0}, {402.0, 874.0}}
+        ↳Other, 0x10611a600, {{0.0, 0.0}, {402.0, 874.0}}
+         ↳Other, 0x10612d300, {{0.0, 0.0}, {402.0, 874.0}}
+          ↳Other, 0x10610a4b0, {{0.0, 0.0}, {402.0, 874.0}}
+           ↳Other, 0x10612dd30, {{0.0, 0.0}, {402.0, 874.0}}
+            ↳ScrollView, 0x1061314a0, {{0.0, 0.0}, {402.0, 874.0}}
+             ↳Other, 0x10612fdc0, {{0.0, 168.0}, {402.0, 538.0}}
+              ↳TextField, 0x106130240, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Query chain:
+ →Find: Target Application 'com.armstrong.PetSafe'
+  Output: {
+    Application, 0x106124430, pid: 78788, label: 'PetSafe'
+  }
+  ↪︎Find: Descendants matching type TextField
+    Output: {
+      TextField, 0x105f3bc70, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+    }
+    ↪︎Find: Elements matching predicate '"email_field" IN identifiers'
+      Output: {
+        TextField, 0x105f2ee50, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+      }
+
+    t =    15.46s Tear Down
+Test Case '-[PetSafeUITests.SubscriptionTests testPremiumFeaturesDisplay]' failed (15.716 seconds).
+Test Case '-[PetSafeUITests.SubscriptionTests testRestorePurchasesButton]' started.
+    t =     0.00s Start Test at 2026-02-11 11:38:03.533
+    t =     0.03s Set Up
+    t =     0.03s     Open com.armstrong.PetSafe
+    t =     0.03s         Launch com.armstrong.PetSafe
+    t =     0.03s             Terminate com.armstrong.PetSafe:78788
+    t =     1.27s             Setting up automation session
+    t =     2.22s             Wait for com.armstrong.PetSafe to idle
+    t =     3.48s     Tap "email_field" TextField
+    t =     3.49s         Wait for com.armstrong.PetSafe to idle
+    t =     3.49s         Find the "email_field" TextField
+    t =     4.55s             Find the "email_field" TextField (retry 1)
+    t =     4.60s         Check for interrupting elements affecting "email_field" TextField
+    t =     4.62s         Synthesize event
+    t =     4.91s         Wait for com.armstrong.PetSafe to idle
+    t =     5.17s     Type 'test@petsafe.com' into "email_field" TextField
+    t =     5.17s         Wait for com.armstrong.PetSafe to idle
+    t =     5.53s         Find the "email_field" TextField
+    t =     5.59s         Check for interrupting elements affecting "email_field" TextField
+    t =     5.61s         Synthesize event
+    t =     6.08s         Wait for com.armstrong.PetSafe to idle
+    t =     6.09s     Tap "password_field" SecureTextField
+    t =     6.09s         Wait for com.armstrong.PetSafe to idle
+    t =     6.09s         Find the "password_field" SecureTextField
+    t =     6.13s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     6.15s         Synthesize event
+    t =     6.44s         Wait for com.armstrong.PetSafe to idle
+    t =     6.74s     Type '<redacted>' into "password_field" SecureTextField
+    t =     6.74s         Wait for com.armstrong.PetSafe to idle
+    t =     6.74s         Find the "password_field" SecureTextField
+    t =     6.78s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     6.80s         Synthesize event
+    t =     7.12s         Wait for com.armstrong.PetSafe to idle
+    t =     7.25s     Tap "login_button" Button
+    t =     7.25s         Wait for com.armstrong.PetSafe to idle
+    t =     7.26s         Find the "login_button" Button
+    t =     7.30s         Check for interrupting elements affecting "login_button" Button
+    t =     7.32s         Synthesize event
+    t =     7.33s             Scroll element to visible
+    t =     7.33s             Find the "login_button" Button
+    t =     7.37s             Computed hit point {201, 334.83333333333337} after scrolling to visible
+    t =     7.66s         Wait for com.armstrong.PetSafe to idle
+    t =     7.88s     Waiting 10.0s for "Home" Button to exist
+    t =     8.88s         Checking `Expect predicate `existsNoRetry == 1` for object "Home" Button`
+    t =     8.89s             Checking existence of `"Home" Button`
+    t =     8.95s     Checking existence of `"Scan" Button`
+    t =     8.98s     Checking existence of `"Log" Button`
+    t =     9.01s Tear Down
+Test Case '-[PetSafeUITests.SubscriptionTests testRestorePurchasesButton]' passed (9.257 seconds).
+Test Case '-[PetSafeUITests.SubscriptionTests testSubscribeButton]' started.
+    t =     0.00s Start Test at 2026-02-11 11:38:12.791
+    t =     0.02s Set Up
+    t =     0.02s     Open com.armstrong.PetSafe
+    t =     0.02s         Launch com.armstrong.PetSafe
+    t =     0.02s             Terminate com.armstrong.PetSafe:78822
+    t =     1.29s             Setting up automation session
+    t =     2.19s             Wait for com.armstrong.PetSafe to idle
+    t =     3.74s     Tap "email_field" TextField
+    t =     3.74s         Wait for com.armstrong.PetSafe to idle
+    t =     3.74s         Find the "email_field" TextField
+    t =     4.78s             Find the "email_field" TextField (retry 1)
+    t =     4.87s         Check for interrupting elements affecting "email_field" TextField
+    t =     4.91s         Synthesize event
+    t =     5.21s         Wait for com.armstrong.PetSafe to idle
+    t =     5.56s     Type 'test@petsafe.com' into "email_field" TextField
+    t =     5.56s         Wait for com.armstrong.PetSafe to idle
+    t =     5.93s         Find the "email_field" TextField
+    t =     5.98s         Check for interrupting elements affecting "email_field" TextField
+    t =     6.01s         Synthesize event
+    t =     6.48s         Wait for com.armstrong.PetSafe to idle
+    t =     6.48s     Tap "password_field" SecureTextField
+    t =     6.48s         Wait for com.armstrong.PetSafe to idle
+    t =     6.49s         Find the "password_field" SecureTextField
+    t =     6.53s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     6.57s         Synthesize event
+    t =     6.85s         Wait for com.armstrong.PetSafe to idle
+    t =     7.17s     Type '<redacted>' into "password_field" SecureTextField
+    t =     7.17s         Wait for com.armstrong.PetSafe to idle
+    t =     7.17s         Find the "password_field" SecureTextField
+    t =     7.20s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     7.24s         Synthesize event
+    t =     7.55s         Wait for com.armstrong.PetSafe to idle
+    t =     7.69s     Tap "login_button" Button
+    t =     7.69s         Wait for com.armstrong.PetSafe to idle
+    t =     7.70s         Find the "login_button" Button
+    t =     7.73s         Check for interrupting elements affecting "login_button" Button
+    t =     7.76s         Synthesize event
+    t =     7.77s             Scroll element to visible
+    t =     7.77s             Find the "login_button" Button
+    t =     7.81s             Computed hit point {201, 334.83333333333337} after scrolling to visible
+    t =     8.09s         Wait for com.armstrong.PetSafe to idle
+    t =     8.36s     Waiting 10.0s for "Home" Button to exist
+    t =     9.39s         Checking `Expect predicate `existsNoRetry == 1` for object "Home" Button`
+    t =     9.39s             Checking existence of `"Home" Button`
+    t =     9.46s     Checking existence of `"Scan" Button`
+    t =     9.49s     Checking existence of `"Log" Button`
+    t =     9.52s Tear Down
+Test Case '-[PetSafeUITests.SubscriptionTests testSubscribeButton]' passed (9.775 seconds).
+Test Case '-[PetSafeUITests.SubscriptionTests testSubscriptionPlansDisplay]' started.
+    t =     0.00s Start Test at 2026-02-11 11:38:22.567
+    t =     0.04s Set Up
+    t =     0.05s     Open com.armstrong.PetSafe
+    t =     0.05s         Launch com.armstrong.PetSafe
+    t =     0.05s             Terminate com.armstrong.PetSafe:78835
+    t =     1.57s             Setting up automation session
+    t =     3.06s             Wait for com.armstrong.PetSafe to idle
+    t =     4.47s     Tap "email_field" TextField
+    t =     4.47s         Wait for com.armstrong.PetSafe to idle
+    t =     4.48s         Find the "email_field" TextField
+    t =     5.55s             Find the "email_field" TextField (retry 1)
+    t =     5.63s         Check for interrupting elements affecting "email_field" TextField
+    t =     5.64s         Synthesize event
+    t =     5.94s         Wait for com.armstrong.PetSafe to idle
+    t =     6.24s     Type 'test@petsafe.com' into "email_field" TextField
+    t =     6.24s         Wait for com.armstrong.PetSafe to idle
+    t =     6.59s         Find the "email_field" TextField
+    t =     6.63s         Check for interrupting elements affecting "email_field" TextField
+    t =     6.66s         Synthesize event
+    t =     7.12s         Wait for com.armstrong.PetSafe to idle
+    t =     7.12s     Tap "password_field" SecureTextField
+    t =     7.12s         Wait for com.armstrong.PetSafe to idle
+    t =     7.12s         Find the "password_field" SecureTextField
+    t =     7.16s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     7.18s         Synthesize event
+    t =     7.47s         Wait for com.armstrong.PetSafe to idle
+    t =     7.77s     Type '<redacted>' into "password_field" SecureTextField
+    t =     7.77s         Wait for com.armstrong.PetSafe to idle
+    t =     7.77s         Find the "password_field" SecureTextField
+    t =     7.80s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     7.83s         Synthesize event
+    t =     8.15s         Wait for com.armstrong.PetSafe to idle
+    t =     8.30s     Tap "login_button" Button
+    t =     8.30s         Wait for com.armstrong.PetSafe to idle
+    t =     8.30s         Find the "login_button" Button
+    t =     8.33s         Check for interrupting elements affecting "login_button" Button
+    t =     8.35s         Synthesize event
+    t =     8.36s             Scroll element to visible
+    t =     8.36s             Find the "login_button" Button
+    t =     8.42s             Computed hit point {201, 334.83333333333337} after scrolling to visible
+    t =     8.70s         Wait for com.armstrong.PetSafe to idle
+    t =     8.97s     Waiting 10.0s for "Home" Button to exist
+    t =    10.04s         Checking `Expect predicate `existsNoRetry == 1` for object "Home" Button`
+    t =    10.04s             Checking existence of `"Home" Button`
+    t =    10.09s     Checking existence of `"Scan" Button`
+    t =    10.13s     Checking existence of `"Log" Button`
+    t =    10.17s Tear Down
+Test Case '-[PetSafeUITests.SubscriptionTests testSubscriptionPlansDisplay]' passed (10.428 seconds).
+Test Case '-[PetSafeUITests.SubscriptionTests testTermsAndPrivacyLinks]' started.
+    t =     0.00s Start Test at 2026-02-11 11:38:32.996
+    t =     0.08s Set Up
+    t =     0.09s     Open com.armstrong.PetSafe
+    t =     0.09s         Launch com.armstrong.PetSafe
+    t =     0.09s             Terminate com.armstrong.PetSafe:78848
+    t =     1.41s             Setting up automation session
+    t =     3.69s             Wait for com.armstrong.PetSafe to idle
+    t =     5.44s     Tap "email_field" TextField
+    t =     5.44s         Wait for com.armstrong.PetSafe to idle
+    t =     5.45s         Find the "email_field" TextField
+    t =     6.56s             Find the "email_field" TextField (retry 1)
+    t =     6.65s         Check for interrupting elements affecting "email_field" TextField
+    t =     6.71s         Synthesize event
+    t =     7.00s         Wait for com.armstrong.PetSafe to idle
+    t =     7.31s     Type 'test@petsafe.com' into "email_field" TextField
+    t =     7.31s         Wait for com.armstrong.PetSafe to idle
+    t =     7.67s         Find the "email_field" TextField
+    t =     7.73s         Check for interrupting elements affecting "email_field" TextField
+    t =     7.75s         Synthesize event
+    t =     8.22s         Wait for com.armstrong.PetSafe to idle
+    t =     8.22s     Tap "password_field" SecureTextField
+    t =     8.22s         Wait for com.armstrong.PetSafe to idle
+    t =     8.22s         Find the "password_field" SecureTextField
+    t =     8.25s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     8.28s         Synthesize event
+    t =     8.56s         Wait for com.armstrong.PetSafe to idle
+    t =     8.86s     Type '<redacted>' into "password_field" SecureTextField
+    t =     8.86s         Wait for com.armstrong.PetSafe to idle
+    t =     8.86s         Find the "password_field" SecureTextField
+    t =     8.89s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     8.92s         Synthesize event
+    t =     9.23s         Wait for com.armstrong.PetSafe to idle
+    t =     9.37s     Tap "login_button" Button
+    t =     9.37s         Wait for com.armstrong.PetSafe to idle
+    t =     9.37s         Find the "login_button" Button
+    t =     9.41s         Check for interrupting elements affecting "login_button" Button
+    t =     9.44s         Synthesize event
+    t =     9.44s             Scroll element to visible
+    t =     9.45s             Find the "login_button" Button
+    t =     9.48s             Computed hit point {201, 334.83333333333337} after scrolling to visible
+    t =     9.77s         Wait for com.armstrong.PetSafe to idle
+    t =     9.99s     Waiting 10.0s for "Home" Button to exist
+    t =    11.02s         Checking `Expect predicate `existsNoRetry == 1` for object "Home" Button`
+    t =    11.03s             Checking existence of `"Home" Button`
+    t =    11.07s     Checking existence of `"Scan" Button`
+    t =    11.11s     Checking existence of `"Log" Button`
+    t =    11.14s Tear Down
+Test Case '-[PetSafeUITests.SubscriptionTests testTermsAndPrivacyLinks]' passed (11.398 seconds).
+Test Case '-[PetSafeUITests.SubscriptionTests testYearlyPlanSelection]' started.
+    t =     0.00s Start Test at 2026-02-11 11:38:44.394
+    t =     0.04s Set Up
+    t =     0.05s     Open com.armstrong.PetSafe
+    t =     0.05s         Launch com.armstrong.PetSafe
+    t =     0.05s             Terminate com.armstrong.PetSafe:78873
+    t =     1.58s             Setting up automation session
+    t =     3.08s             Wait for com.armstrong.PetSafe to idle
+    t =     4.45s     Tap "email_field" TextField
+    t =     4.45s         Wait for com.armstrong.PetSafe to idle
+    t =     4.46s         Find the "email_field" TextField
+    t =     5.54s             Find the "email_field" TextField (retry 1)
+    t =     5.63s         Check for interrupting elements affecting "email_field" TextField
+    t =     5.68s         Synthesize event
+    t =     5.97s         Wait for com.armstrong.PetSafe to idle
+    t =     6.26s     Type 'test@petsafe.com' into "email_field" TextField
+    t =     6.26s         Wait for com.armstrong.PetSafe to idle
+    t =     6.62s         Find the "email_field" TextField
+    t =     6.68s         Check for interrupting elements affecting "email_field" TextField
+    t =     6.70s         Synthesize event
+    t =     7.17s         Wait for com.armstrong.PetSafe to idle
+    t =     7.17s     Tap "password_field" SecureTextField
+    t =     7.17s         Wait for com.armstrong.PetSafe to idle
+    t =     7.17s         Find the "password_field" SecureTextField
+    t =     7.21s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     7.23s         Synthesize event
+    t =     7.52s         Wait for com.armstrong.PetSafe to idle
+    t =     7.80s     Type '<redacted>' into "password_field" SecureTextField
+    t =     7.80s         Wait for com.armstrong.PetSafe to idle
+    t =     7.80s         Find the "password_field" SecureTextField
+    t =     7.84s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     7.87s         Synthesize event
+    t =     8.19s         Wait for com.armstrong.PetSafe to idle
+    t =     8.33s     Tap "login_button" Button
+    t =     8.33s         Wait for com.armstrong.PetSafe to idle
+    t =     8.33s         Find the "login_button" Button
+    t =     8.37s         Check for interrupting elements affecting "login_button" Button
+    t =     8.39s         Synthesize event
+    t =     8.40s             Scroll element to visible
+    t =     8.40s             Find the "login_button" Button
+    t =     8.44s             Computed hit point {201, 334.83333333333337} after scrolling to visible
+    t =     8.72s         Wait for com.armstrong.PetSafe to idle
+    t =     9.00s     Waiting 10.0s for "Home" Button to exist
+    t =    10.03s         Checking `Expect predicate `existsNoRetry == 1` for object "Home" Button`
+    t =    10.04s             Checking existence of `"Home" Button`
+    t =    10.11s     Checking existence of `"Scan" Button`
+    t =    10.14s     Checking existence of `"Log" Button`
+    t =    10.17s Tear Down
+Test Case '-[PetSafeUITests.SubscriptionTests testYearlyPlanSelection]' passed (10.434 seconds).
+Test Suite 'SubscriptionTests' failed at 2026-02-11 11:38:54.828.
+	 Executed 9 tests, with 1 failure (0 unexpected) in 164.279 (164.309) seconds
+Test Suite 'End2EndTests' started at 2026-02-11 11:38:54.866.
+Test Case '-[PetSafeUITests.End2EndTests testAchievementViewingJourney]' started.
+    t =     0.00s Start Test at 2026-02-11 11:38:54.867
+    t =     0.04s Set Up
+    t =     0.04s     Open com.armstrong.PetSafe
+    t =     0.04s         Launch com.armstrong.PetSafe
+    t =     0.04s             Terminate com.armstrong.PetSafe:78887
+    t =     1.35s             Setting up automation session
+    t =     2.39s             Wait for com.armstrong.PetSafe to idle
+    t =     3.60s     Tap "email_field" TextField
+    t =     3.60s         Wait for com.armstrong.PetSafe to idle
+    t =     3.60s         Find the "email_field" TextField
+    t =     4.64s             Find the "email_field" TextField (retry 1)
+    t =     4.70s         Check for interrupting elements affecting "email_field" TextField
+    t =     4.72s         Synthesize event
+    t =     5.01s         Wait for com.armstrong.PetSafe to idle
+    t =     5.04s     Type 'test@petsafe.com' into "email_field" TextField
+    t =     5.04s         Wait for com.armstrong.PetSafe to idle
+    t =     5.04s         Find the "email_field" TextField
+    t =     5.07s         Check for interrupting elements affecting "email_field" TextField
+    t =     5.09s         Synthesize event
+    t =     5.56s         Wait for com.armstrong.PetSafe to idle
+    t =     5.56s     Tap "password_field" SecureTextField
+    t =     5.56s         Wait for com.armstrong.PetSafe to idle
+    t =     5.57s         Find the "password_field" SecureTextField
+    t =     5.60s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     5.62s         Synthesize event
+    t =     5.91s         Wait for com.armstrong.PetSafe to idle
+    t =     6.20s     Type '<redacted>' into "password_field" SecureTextField
+    t =     6.20s         Wait for com.armstrong.PetSafe to idle
+    t =     6.21s         Find the "password_field" SecureTextField
+    t =     6.25s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     6.28s         Synthesize event
+    t =     6.59s         Wait for com.armstrong.PetSafe to idle
+    t =     6.74s     Tap "login_button" Button
+    t =     6.74s         Wait for com.armstrong.PetSafe to idle
+    t =     6.74s         Find the "login_button" Button
+    t =     6.78s         Check for interrupting elements affecting "login_button" Button
+    t =     6.81s         Synthesize event
+    t =     6.82s             Scroll element to visible
+    t =     6.82s             Find the "login_button" Button
+    t =     6.86s             Computed hit point {201, 334.83333333333337} after scrolling to visible
+    t =     7.14s         Wait for com.armstrong.PetSafe to idle
+    t =     7.15s     Waiting 10.0s for "Home" Button to exist
+    t =     8.18s         Checking `Expect predicate `existsNoRetry == 1` for object "Home" Button`
+    t =     8.18s             Checking existence of `"Home" Button`
+    t =     8.22s     Checking existence of `"Scan" Button`
+    t =     8.25s     Checking existence of `"Log" Button`
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/End2EndTests.swift:182: error: -[PetSafeUITests.End2EndTests testAchievementViewingJourney] : XCTAssertTrue failed - Should reach dashboard
+    t =     8.29s Tear Down
+Test Case '-[PetSafeUITests.End2EndTests testAchievementViewingJourney]' failed (8.513 seconds).
+Test Case '-[PetSafeUITests.End2EndTests testCompleteNewUserJourney]' started.
+    t =     0.00s Start Test at 2026-02-11 11:39:03.381
+    t =     0.03s Set Up
+    t =     0.03s     Open com.armstrong.PetSafe
+    t =     0.03s         Launch com.armstrong.PetSafe
+    t =     0.03s             Terminate com.armstrong.PetSafe:78892
+    t =     1.33s             Setting up automation session
+    t =     2.51s             Wait for com.armstrong.PetSafe to idle
+    t =     4.01s Added attachment named 'E2E_01_App_Launch'
+    t =     4.02s     Waiting 5.0s for "email_field" TextField to exist
+    t =     5.04s         Checking `Expect predicate `existsNoRetry == 1` for object "email_field" TextField`
+    t =     5.04s             Checking existence of `"email_field" TextField`
+    t =     5.13s     Checking existence of `"password_field" SecureTextField`
+    t =     5.14s     Checking existence of `"login_button" Button`
+    t =     5.15s     Tap "email_field" TextField
+    t =     5.15s         Wait for com.armstrong.PetSafe to idle
+    t =     5.16s         Find the "email_field" TextField
+    t =     5.17s         Check for interrupting elements affecting "email_field" TextField
+    t =     5.18s         Synthesize event
+    t =     5.48s         Wait for com.armstrong.PetSafe to idle
+    t =     5.56s     Type 'newuser@example.com' into "email_field" TextField
+    t =     5.56s         Wait for com.armstrong.PetSafe to idle
+    t =     5.89s         Find the "email_field" TextField
+    t =     5.94s         Check for interrupting elements affecting "email_field" TextField
+    t =     5.96s         Synthesize event
+    t =     6.48s         Wait for com.armstrong.PetSafe to idle
+    t =     6.48s     Tap "password_field" SecureTextField
+    t =     6.48s         Wait for com.armstrong.PetSafe to idle
+    t =     6.49s         Find the "password_field" SecureTextField
+    t =     6.53s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     6.55s         Synthesize event
+    t =     6.88s         Wait for com.armstrong.PetSafe to idle
+    t =     7.14s     Type '<redacted>' into "password_field" SecureTextField
+    t =     7.14s         Wait for com.armstrong.PetSafe to idle
+    t =     7.15s         Find the "password_field" SecureTextField
+    t =     7.20s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     7.24s         Synthesize event
+    t =     7.55s         Wait for com.armstrong.PetSafe to idle
+    t =     7.70s     Tap "login_button" Button
+    t =     7.70s         Wait for com.armstrong.PetSafe to idle
+    t =     7.70s         Find the "login_button" Button
+    t =     7.74s         Check for interrupting elements affecting "login_button" Button
+    t =     7.76s         Synthesize event
+    t =     7.77s             Scroll element to visible
+    t =     7.77s             Find the "login_button" Button
+    t =     7.84s             Computed hit point {201, 334.83333333333337} after scrolling to visible
+    t =     8.12s         Wait for com.armstrong.PetSafe to idle
+    t =     8.53s Added attachment named 'E2E_02_After_Login'
+    t =     8.53s     Waiting 10.0s for "dog_name_field" TextField to exist
+    t =     9.54s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =     9.55s             Checking existence of `"dog_name_field" TextField`
+    t =     9.61s             Capturing element debug description
+    t =    10.54s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    10.54s             Checking existence of `"dog_name_field" TextField`
+    t =    10.60s             Capturing element debug description
+    t =    11.60s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    11.61s             Checking existence of `"dog_name_field" TextField`
+    t =    11.65s             Capturing element debug description
+    t =    12.58s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    12.58s             Checking existence of `"dog_name_field" TextField`
+    t =    12.64s             Capturing element debug description
+    t =    13.56s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    13.57s             Checking existence of `"dog_name_field" TextField`
+    t =    13.62s             Capturing element debug description
+    t =    14.55s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    14.55s             Checking existence of `"dog_name_field" TextField`
+    t =    14.60s             Capturing element debug description
+    t =    15.54s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    15.54s             Checking existence of `"dog_name_field" TextField`
+    t =    15.59s             Capturing element debug description
+    t =    16.61s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    16.61s             Checking existence of `"dog_name_field" TextField`
+    t =    16.67s             Capturing element debug description
+    t =    17.58s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    17.58s             Checking existence of `"dog_name_field" TextField`
+    t =    17.61s             Capturing element debug description
+    t =    18.54s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    18.54s             Checking existence of `"dog_name_field" TextField`
+    t =    18.60s             Capturing element debug description
+    t =    18.60s         Checking existence of `"dog_name_field" TextField`
+    t =    18.63s     Collecting debug information to assist test failure triage
+    t =    18.63s         Requesting snapshot of accessibility hierarchy for app with pid 78894
+    t =    18.79s Added attachment named 'E2E_03_After_Onboarding'
+    t =    18.79s     Waiting 10.0s for "Home" Button to exist
+    t =    19.79s         Checking `Expect predicate `existsNoRetry == 1` for object "Home" Button`
+    t =    19.80s             Checking existence of `"Home" Button`
+    t =    19.86s     Checking existence of `"Scan" Button`
+    t =    19.90s     Checking existence of `"Log" Button`
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/End2EndTests.swift:34: error: -[PetSafeUITests.End2EndTests testCompleteNewUserJourney] : XCTAssertTrue failed - Should reach dashboard
+    t =    19.94s Tear Down
+Test Case '-[PetSafeUITests.End2EndTests testCompleteNewUserJourney]' failed (20.203 seconds).
+Test Case '-[PetSafeUITests.End2EndTests testLogoutJourney]' started.
+    t =     0.00s Start Test at 2026-02-11 11:39:23.585
+    t =     0.07s Set Up
+    t =     0.07s     Open com.armstrong.PetSafe
+    t =     0.07s         Launch com.armstrong.PetSafe
+    t =     0.07s             Terminate com.armstrong.PetSafe:78894
+    t =     1.60s             Setting up automation session
+    t =     3.45s             Wait for com.armstrong.PetSafe to idle
+    t =     5.07s     Tap "email_field" TextField
+    t =     5.07s         Wait for com.armstrong.PetSafe to idle
+    t =     5.08s         Find the "email_field" TextField
+    t =     6.17s             Find the "email_field" TextField (retry 1)
+    t =     6.26s         Check for interrupting elements affecting "email_field" TextField
+    t =     6.33s         Synthesize event
+    t =     6.62s         Wait for com.armstrong.PetSafe to idle
+    t =     6.96s     Type 'test@petsafe.com' into "email_field" TextField
+    t =     6.96s         Wait for com.armstrong.PetSafe to idle
+    t =     7.31s         Find the "email_field" TextField
+    t =     7.35s         Check for interrupting elements affecting "email_field" TextField
+    t =     7.38s         Synthesize event
+    t =     7.84s         Wait for com.armstrong.PetSafe to idle
+    t =     7.85s     Tap "password_field" SecureTextField
+    t =     7.85s         Wait for com.armstrong.PetSafe to idle
+    t =     7.85s         Find the "password_field" SecureTextField
+    t =     7.88s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     7.91s         Synthesize event
+    t =     8.19s         Wait for com.armstrong.PetSafe to idle
+    t =     8.48s     Type '<redacted>' into "password_field" SecureTextField
+    t =     8.48s         Wait for com.armstrong.PetSafe to idle
+    t =     8.48s         Find the "password_field" SecureTextField
+    t =     8.52s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     8.55s         Synthesize event
+    t =     8.86s         Wait for com.armstrong.PetSafe to idle
+    t =     8.99s     Tap "login_button" Button
+    t =     8.99s         Wait for com.armstrong.PetSafe to idle
+    t =     8.99s         Find the "login_button" Button
+    t =     9.03s         Check for interrupting elements affecting "login_button" Button
+    t =     9.06s         Synthesize event
+    t =     9.07s             Scroll element to visible
+    t =     9.07s             Find the "login_button" Button
+    t =     9.13s             Computed hit point {201, 334.83333333333337} after scrolling to visible
+    t =     9.41s         Wait for com.armstrong.PetSafe to idle
+    t =     9.66s     Waiting 10.0s for "Home" Button to exist
+    t =    10.67s         Checking `Expect predicate `existsNoRetry == 1` for object "Home" Button`
+    t =    10.68s             Checking existence of `"Home" Button`
+    t =    10.74s     Checking existence of `"Scan" Button`
+    t =    10.77s     Checking existence of `"Log" Button`
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/End2EndTests.swift:154: error: -[PetSafeUITests.End2EndTests testLogoutJourney] : XCTAssertTrue failed - Should reach dashboard
+    t =    10.81s Tear Down
+Test Case '-[PetSafeUITests.End2EndTests testLogoutJourney]' failed (11.083 seconds).
+Test Case '-[PetSafeUITests.End2EndTests testPremiumUpgradeJourney]' started.
+    t =     0.00s Start Test at 2026-02-11 11:39:34.669
+    t =     0.06s Set Up
+    t =     0.06s     Open com.armstrong.PetSafe
+    t =     0.06s         Launch com.armstrong.PetSafe
+    t =     0.07s             Terminate com.armstrong.PetSafe:78907
+    t =     1.59s             Setting up automation session
+    t =     3.08s             Wait for com.armstrong.PetSafe to idle
+    t =     4.40s     Tap "email_field" TextField
+    t =     4.40s         Wait for com.armstrong.PetSafe to idle
+    t =     4.41s         Find the "email_field" TextField
+    t =     5.46s             Find the "email_field" TextField (retry 1)
+    t =     5.54s         Check for interrupting elements affecting "email_field" TextField
+    t =     5.58s         Synthesize event
+    t =     5.87s         Wait for com.armstrong.PetSafe to idle
+    t =     6.13s     Type 'test@petsafe.com' into "email_field" TextField
+    t =     6.13s         Wait for com.armstrong.PetSafe to idle
+    t =     6.49s         Find the "email_field" TextField
+    t =     6.55s         Check for interrupting elements affecting "email_field" TextField
+    t =     6.57s         Synthesize event
+    t =     7.04s         Wait for com.armstrong.PetSafe to idle
+    t =     7.04s     Tap "password_field" SecureTextField
+    t =     7.04s         Wait for com.armstrong.PetSafe to idle
+    t =     7.05s         Find the "password_field" SecureTextField
+    t =     7.08s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     7.11s         Synthesize event
+    t =     7.40s         Wait for com.armstrong.PetSafe to idle
+    t =     7.71s     Type '<redacted>' into "password_field" SecureTextField
+    t =     7.71s         Wait for com.armstrong.PetSafe to idle
+    t =     7.71s         Find the "password_field" SecureTextField
+    t =     7.75s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     7.77s         Synthesize event
+    t =     8.09s         Wait for com.armstrong.PetSafe to idle
+    t =     8.23s     Tap "login_button" Button
+    t =     8.23s         Wait for com.armstrong.PetSafe to idle
+    t =     8.23s         Find the "login_button" Button
+    t =     8.28s         Check for interrupting elements affecting "login_button" Button
+    t =     8.31s         Synthesize event
+    t =     8.32s             Scroll element to visible
+    t =     8.32s             Find the "login_button" Button
+    t =     8.37s             Computed hit point {201, 334.83333333333337} after scrolling to visible
+    t =     8.65s         Wait for com.armstrong.PetSafe to idle
+    t =     8.92s     Waiting 10.0s for "Home" Button to exist
+    t =     9.95s         Checking `Expect predicate `existsNoRetry == 1` for object "Home" Button`
+    t =     9.95s             Checking existence of `"Home" Button`
+    t =    10.02s     Checking existence of `"Scan" Button`
+    t =    10.05s     Checking existence of `"Log" Button`
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/End2EndTests.swift:110: error: -[PetSafeUITests.End2EndTests testPremiumUpgradeJourney] : XCTAssertTrue failed - Should reach dashboard
+    t =    10.10s Tear Down
+Test Case '-[PetSafeUITests.End2EndTests testPremiumUpgradeJourney]' failed (10.368 seconds).
+Test Case '-[PetSafeUITests.End2EndTests testQuickScanToFoodLogJourney]' started.
+    t =     0.00s Start Test at 2026-02-11 11:39:45.039
+    t =     0.07s Set Up
+    t =     0.07s     Open com.armstrong.PetSafe
+    t =     0.07s         Launch com.armstrong.PetSafe
+    t =     0.07s             Terminate com.armstrong.PetSafe:78923
+    t =     1.41s             Setting up automation session
+    t =     3.02s             Wait for com.armstrong.PetSafe to idle
+    t =     4.40s     Tap "email_field" TextField
+    t =     4.40s         Wait for com.armstrong.PetSafe to idle
+    t =     4.41s         Find the "email_field" TextField
+    t =     5.48s             Find the "email_field" TextField (retry 1)
+    t =     5.56s         Check for interrupting elements affecting "email_field" TextField
+    t =     5.60s         Synthesize event
+    t =     5.90s         Wait for com.armstrong.PetSafe to idle
+    t =     6.22s     Type 'test@petsafe.com' into "email_field" TextField
+    t =     6.22s         Wait for com.armstrong.PetSafe to idle
+    t =     6.57s         Find the "email_field" TextField
+    t =     6.64s         Check for interrupting elements affecting "email_field" TextField
+    t =     6.66s         Synthesize event
+    t =     7.12s         Wait for com.armstrong.PetSafe to idle
+    t =     7.15s     Tap "password_field" SecureTextField
+    t =     7.15s         Wait for com.armstrong.PetSafe to idle
+    t =     7.15s         Find the "password_field" SecureTextField
+    t =     7.18s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     7.21s         Synthesize event
+    t =     7.50s         Wait for com.armstrong.PetSafe to idle
+    t =     7.83s     Type '<redacted>' into "password_field" SecureTextField
+    t =     7.83s         Wait for com.armstrong.PetSafe to idle
+    t =     7.83s         Find the "password_field" SecureTextField
+    t =     7.88s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     7.94s         Synthesize event
+    t =     8.25s         Wait for com.armstrong.PetSafe to idle
+    t =     8.42s     Tap "login_button" Button
+    t =     8.42s         Wait for com.armstrong.PetSafe to idle
+    t =     8.42s         Find the "login_button" Button
+    t =     8.46s         Check for interrupting elements affecting "login_button" Button
+    t =     8.49s         Synthesize event
+    t =     8.50s             Scroll element to visible
+    t =     8.50s             Find the "login_button" Button
+    t =     8.55s             Computed hit point {201, 334.83333333333337} after scrolling to visible
+    t =     8.83s         Wait for com.armstrong.PetSafe to idle
+    t =     9.09s     Waiting 10.0s for "Home" Button to exist
+    t =    10.13s         Checking `Expect predicate `existsNoRetry == 1` for object "Home" Button`
+    t =    10.13s             Checking existence of `"Home" Button`
+    t =    10.18s     Checking existence of `"Scan" Button`
+    t =    10.22s     Checking existence of `"Log" Button`
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/End2EndTests.swift:208: error: -[PetSafeUITests.End2EndTests testQuickScanToFoodLogJourney] : XCTAssertTrue failed - Should reach dashboard
+    t =    10.26s Tear Down
+Test Case '-[PetSafeUITests.End2EndTests testQuickScanToFoodLogJourney]' failed (10.536 seconds).
+Test Case '-[PetSafeUITests.End2EndTests testScanAndLogFoodJourney]' started.
+    t =     0.00s Start Test at 2026-02-11 11:39:55.576
+    t =     0.06s Set Up
+    t =     0.07s     Open com.armstrong.PetSafe
+    t =     0.07s         Launch com.armstrong.PetSafe
+    t =     0.07s             Terminate com.armstrong.PetSafe:78930
+    t =     1.39s             Setting up automation session
+    t =     3.32s             Wait for com.armstrong.PetSafe to idle
+    t =     4.78s     Tap "email_field" TextField
+    t =     4.79s         Wait for com.armstrong.PetSafe to idle
+    t =     4.79s         Find the "email_field" TextField
+    t =     5.86s             Find the "email_field" TextField (retry 1)
+    t =     5.94s         Check for interrupting elements affecting "email_field" TextField
+    t =     5.97s         Synthesize event
+    t =     6.27s         Wait for com.armstrong.PetSafe to idle
+    t =     6.76s     Type 'test@petsafe.com' into "email_field" TextField
+    t =     6.76s         Wait for com.armstrong.PetSafe to idle
+    t =     7.12s         Find the "email_field" TextField
+    t =     7.18s         Check for interrupting elements affecting "email_field" TextField
+    t =     7.21s         Synthesize event
+    t =     7.68s         Wait for com.armstrong.PetSafe to idle
+    t =     7.68s     Tap "password_field" SecureTextField
+    t =     7.68s         Wait for com.armstrong.PetSafe to idle
+    t =     7.69s         Find the "password_field" SecureTextField
+    t =     7.73s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     7.76s         Synthesize event
+    t =     8.05s         Wait for com.armstrong.PetSafe to idle
+    t =     8.37s     Type '<redacted>' into "password_field" SecureTextField
+    t =     8.37s         Wait for com.armstrong.PetSafe to idle
+    t =     8.39s         Find the "password_field" SecureTextField
+    t =     8.44s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     8.54s         Synthesize event
+    t =     8.85s         Wait for com.armstrong.PetSafe to idle
+    t =     9.01s     Tap "login_button" Button
+    t =     9.01s         Wait for com.armstrong.PetSafe to idle
+    t =     9.02s         Find the "login_button" Button
+    t =     9.06s         Check for interrupting elements affecting "login_button" Button
+    t =     9.09s         Synthesize event
+    t =     9.09s             Scroll element to visible
+    t =     9.10s             Find the "login_button" Button
+    t =     9.14s             Computed hit point {201, 334.83333333333337} after scrolling to visible
+    t =     9.43s         Wait for com.armstrong.PetSafe to idle
+    t =     9.68s     Waiting 10.0s for "Home" Button to exist
+    t =    10.70s         Checking `Expect predicate `existsNoRetry == 1` for object "Home" Button`
+    t =    10.71s             Checking existence of `"Home" Button`
+    t =    10.79s     Checking existence of `"Scan" Button`
+    t =    10.82s     Checking existence of `"Log" Button`
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/End2EndTests.swift:71: error: -[PetSafeUITests.End2EndTests testScanAndLogFoodJourney] : XCTAssertTrue failed - Should reach dashboard
+    t =    10.86s Tear Down
+Test Case '-[PetSafeUITests.End2EndTests testScanAndLogFoodJourney]' failed (11.137 seconds).
+Test Suite 'End2EndTests' failed at 2026-02-11 11:40:06.713.
+	 Executed 6 tests, with 6 failures (0 unexpected) in 71.840 (71.847) seconds
+Test Suite 'OnboardingTests' started at 2026-02-11 11:40:06.754.
+Test Case '-[PetSafeUITests.OnboardingTests testAgeAndWeightEntry]' started.
+    t =     0.00s Start Test at 2026-02-11 11:40:06.754
+    t =     0.05s Set Up
+    t =     0.05s     Open com.armstrong.PetSafe
+    t =     0.05s         Launch com.armstrong.PetSafe
+    t =     0.05s             Terminate com.armstrong.PetSafe:78938
+    t =     1.35s             Setting up automation session
+    t =     3.01s             Wait for com.armstrong.PetSafe to idle
+    t =     4.44s     Tap "email_field" TextField
+    t =     4.44s         Wait for com.armstrong.PetSafe to idle
+    t =     4.45s         Find the "email_field" TextField
+    t =     5.52s             Find the "email_field" TextField (retry 1)
+    t =     5.60s         Check for interrupting elements affecting "email_field" TextField
+    t =     5.63s         Synthesize event
+    t =     5.93s         Wait for com.armstrong.PetSafe to idle
+    t =     6.23s     Type 'newuser@example.com' into "email_field" TextField
+    t =     6.23s         Wait for com.armstrong.PetSafe to idle
+    t =     6.24s         Find the "email_field" TextField
+    t =     6.27s         Check for interrupting elements affecting "email_field" TextField
+    t =     6.30s         Synthesize event
+    t =     6.81s         Wait for com.armstrong.PetSafe to idle
+    t =     6.81s     Tap "password_field" SecureTextField
+    t =     6.81s         Wait for com.armstrong.PetSafe to idle
+    t =     6.81s         Find the "password_field" SecureTextField
+    t =     6.84s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     6.86s         Synthesize event
+    t =     7.15s         Wait for com.armstrong.PetSafe to idle
+    t =     7.46s     Type '<redacted>' into "password_field" SecureTextField
+    t =     7.46s         Wait for com.armstrong.PetSafe to idle
+    t =     7.46s         Find the "password_field" SecureTextField
+    t =     7.49s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     7.51s         Synthesize event
+    t =     7.82s         Wait for com.armstrong.PetSafe to idle
+    t =     7.96s     Tap "login_button" Button
+    t =     7.96s         Wait for com.armstrong.PetSafe to idle
+    t =     7.97s         Find the "login_button" Button
+    t =     8.01s         Check for interrupting elements affecting "login_button" Button
+    t =     8.04s         Synthesize event
+    t =     8.04s             Scroll element to visible
+    t =     8.05s             Find the "login_button" Button
+    t =     8.09s             Computed hit point {201, 334.83333333333337} after scrolling to visible
+    t =     8.37s         Wait for com.armstrong.PetSafe to idle
+    t =     8.62s     Waiting 10.0s for "dog_name_field" TextField to exist
+    t =     9.65s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =     9.65s             Checking existence of `"dog_name_field" TextField`
+    t =     9.72s             Capturing element debug description
+    t =    10.65s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    10.65s             Checking existence of `"dog_name_field" TextField`
+    t =    10.68s             Capturing element debug description
+    t =    11.71s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    11.71s             Checking existence of `"dog_name_field" TextField`
+    t =    11.77s             Capturing element debug description
+    t =    12.69s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    12.69s             Checking existence of `"dog_name_field" TextField`
+    t =    12.75s             Capturing element debug description
+    t =    13.68s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    13.68s             Checking existence of `"dog_name_field" TextField`
+    t =    13.74s             Capturing element debug description
+    t =    14.65s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    14.65s             Checking existence of `"dog_name_field" TextField`
+    t =    14.71s             Capturing element debug description
+    t =    15.63s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    15.63s             Checking existence of `"dog_name_field" TextField`
+    t =    15.67s             Capturing element debug description
+    t =    16.69s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    16.69s             Checking existence of `"dog_name_field" TextField`
+    t =    16.75s             Capturing element debug description
+    t =    17.66s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    17.67s             Checking existence of `"dog_name_field" TextField`
+    t =    17.70s             Capturing element debug description
+    t =    18.62s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    18.63s             Checking existence of `"dog_name_field" TextField`
+    t =    18.68s             Capturing element debug description
+    t =    18.69s         Checking existence of `"dog_name_field" TextField`
+    t =    18.72s     Collecting debug information to assist test failure triage
+    t =    18.72s         Requesting snapshot of accessibility hierarchy for app with pid 78948
+    t =    18.77s Tear Down
+Test Case '-[PetSafeUITests.OnboardingTests testAgeAndWeightEntry]' passed (19.040 seconds).
+Test Case '-[PetSafeUITests.OnboardingTests testBackNavigation]' started.
+    t =     0.00s Start Test at 2026-02-11 11:40:25.797
+    t =     0.07s Set Up
+    t =     0.07s     Open com.armstrong.PetSafe
+    t =     0.07s         Launch com.armstrong.PetSafe
+    t =     0.07s             Terminate com.armstrong.PetSafe:78948
+    t =     1.32s             Setting up automation session
+    t =     2.94s             Wait for com.armstrong.PetSafe to idle
+    t =     4.35s     Tap "email_field" TextField
+    t =     4.35s         Wait for com.armstrong.PetSafe to idle
+    t =     4.35s         Find the "email_field" TextField
+    t =     5.43s             Find the "email_field" TextField (retry 1)
+    t =     5.51s         Check for interrupting elements affecting "email_field" TextField
+    t =     5.56s         Synthesize event
+    t =     5.85s         Wait for com.armstrong.PetSafe to idle
+    t =     6.15s     Type 'newuser@example.com' into "email_field" TextField
+    t =     6.15s         Wait for com.armstrong.PetSafe to idle
+    t =     6.51s         Find the "email_field" TextField
+    t =     6.56s         Check for interrupting elements affecting "email_field" TextField
+    t =     6.59s         Synthesize event
+    t =     7.10s         Wait for com.armstrong.PetSafe to idle
+    t =     7.11s     Tap "password_field" SecureTextField
+    t =     7.11s         Wait for com.armstrong.PetSafe to idle
+    t =     7.11s         Find the "password_field" SecureTextField
+    t =     7.15s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     7.17s         Synthesize event
+    t =     7.46s         Wait for com.armstrong.PetSafe to idle
+    t =     7.76s     Type '<redacted>' into "password_field" SecureTextField
+    t =     7.77s         Wait for com.armstrong.PetSafe to idle
+    t =     7.77s         Find the "password_field" SecureTextField
+    t =     7.80s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     7.83s         Synthesize event
+    t =     8.15s         Wait for com.armstrong.PetSafe to idle
+    t =     8.29s     Tap "login_button" Button
+    t =     8.29s         Wait for com.armstrong.PetSafe to idle
+    t =     8.29s         Find the "login_button" Button
+    t =     8.33s         Check for interrupting elements affecting "login_button" Button
+    t =     8.36s         Synthesize event
+    t =     8.37s             Scroll element to visible
+    t =     8.37s             Find the "login_button" Button
+    t =     8.44s             Computed hit point {201, 334.83333333333337} after scrolling to visible
+    t =     8.73s         Wait for com.armstrong.PetSafe to idle
+    t =     8.98s     Waiting 10.0s for "dog_name_field" TextField to exist
+    t =    10.00s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    10.00s             Checking existence of `"dog_name_field" TextField`
+    t =    10.07s             Capturing element debug description
+    t =    10.99s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    10.99s             Checking existence of `"dog_name_field" TextField`
+    t =    11.05s             Capturing element debug description
+    t =    12.07s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    12.07s             Checking existence of `"dog_name_field" TextField`
+    t =    12.12s             Capturing element debug description
+    t =    13.05s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    13.05s             Checking existence of `"dog_name_field" TextField`
+    t =    13.10s             Capturing element debug description
+    t =    14.03s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    14.03s             Checking existence of `"dog_name_field" TextField`
+    t =    14.09s             Capturing element debug description
+    t =    15.00s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    15.00s             Checking existence of `"dog_name_field" TextField`
+    t =    15.06s             Capturing element debug description
+    t =    15.98s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    15.98s             Checking existence of `"dog_name_field" TextField`
+    t =    16.04s             Capturing element debug description
+    t =    17.06s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    17.06s             Checking existence of `"dog_name_field" TextField`
+    t =    17.13s             Capturing element debug description
+    t =    18.04s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    18.04s             Checking existence of `"dog_name_field" TextField`
+    t =    18.10s             Capturing element debug description
+    t =    18.98s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    18.98s             Checking existence of `"dog_name_field" TextField`
+    t =    19.04s             Capturing element debug description
+    t =    19.04s         Checking existence of `"dog_name_field" TextField`
+    t =    19.08s     Collecting debug information to assist test failure triage
+    t =    19.08s         Requesting snapshot of accessibility hierarchy for app with pid 78956
+    t =    19.14s Tear Down
+Test Case '-[PetSafeUITests.OnboardingTests testBackNavigation]' passed (19.391 seconds).
+Test Case '-[PetSafeUITests.OnboardingTests testBreedSearchAndSelection]' started.
+    t =     0.00s Start Test at 2026-02-11 11:40:45.190
+    t =     0.07s Set Up
+    t =     0.07s     Open com.armstrong.PetSafe
+    t =     0.07s         Launch com.armstrong.PetSafe
+    t =     0.07s             Terminate com.armstrong.PetSafe:78956
+    t =     1.60s             Setting up automation session
+    t =     2.84s             Wait for com.armstrong.PetSafe to idle
+    t =     4.20s     Tap "email_field" TextField
+    t =     4.20s         Wait for com.armstrong.PetSafe to idle
+    t =     4.20s         Find the "email_field" TextField
+    t =     5.28s             Find the "email_field" TextField (retry 1)
+    t =     5.36s         Check for interrupting elements affecting "email_field" TextField
+    t =     5.40s         Synthesize event
+    t =     5.69s         Wait for com.armstrong.PetSafe to idle
+    t =     6.00s     Type 'newuser@example.com' into "email_field" TextField
+    t =     6.00s         Wait for com.armstrong.PetSafe to idle
+    t =     6.35s         Find the "email_field" TextField
+    t =     6.40s         Check for interrupting elements affecting "email_field" TextField
+    t =     6.43s         Synthesize event
+    t =     6.95s         Wait for com.armstrong.PetSafe to idle
+    t =     6.96s     Tap "password_field" SecureTextField
+    t =     6.96s         Wait for com.armstrong.PetSafe to idle
+    t =     6.96s         Find the "password_field" SecureTextField
+    t =     7.00s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     7.03s         Synthesize event
+    t =     7.35s         Wait for com.armstrong.PetSafe to idle
+    t =     7.64s     Type '<redacted>' into "password_field" SecureTextField
+    t =     7.64s         Wait for com.armstrong.PetSafe to idle
+    t =     7.64s         Find the "password_field" SecureTextField
+    t =     7.67s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     7.70s         Synthesize event
+    t =     8.02s         Wait for com.armstrong.PetSafe to idle
+    t =     8.16s     Tap "login_button" Button
+    t =     8.16s         Wait for com.armstrong.PetSafe to idle
+    t =     8.17s         Find the "login_button" Button
+    t =     8.21s         Check for interrupting elements affecting "login_button" Button
+    t =     8.23s         Synthesize event
+    t =     8.24s             Scroll element to visible
+    t =     8.24s             Find the "login_button" Button
+    t =     8.29s             Computed hit point {201, 334.83333333333337} after scrolling to visible
+    t =     8.58s         Wait for com.armstrong.PetSafe to idle
+    t =     8.81s     Waiting 10.0s for "dog_name_field" TextField to exist
+    t =     9.89s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =     9.89s             Checking existence of `"dog_name_field" TextField`
+    t =     9.96s             Capturing element debug description
+    t =    10.88s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    10.88s             Checking existence of `"dog_name_field" TextField`
+    t =    10.93s             Capturing element debug description
+    t =    11.84s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    11.84s             Checking existence of `"dog_name_field" TextField`
+    t =    11.90s             Capturing element debug description
+    t =    12.82s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    12.82s             Checking existence of `"dog_name_field" TextField`
+    t =    12.85s             Capturing element debug description
+    t =    13.87s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    13.87s             Checking existence of `"dog_name_field" TextField`
+    t =    13.93s             Capturing element debug description
+    t =    14.86s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    14.86s             Checking existence of `"dog_name_field" TextField`
+    t =    14.92s             Capturing element debug description
+    t =    15.84s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    15.84s             Checking existence of `"dog_name_field" TextField`
+    t =    15.90s             Capturing element debug description
+    t =    16.81s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    16.81s             Checking existence of `"dog_name_field" TextField`
+    t =    16.87s             Capturing element debug description
+    t =    17.89s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    17.89s             Checking existence of `"dog_name_field" TextField`
+    t =    17.95s             Capturing element debug description
+    t =    18.81s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    18.82s             Checking existence of `"dog_name_field" TextField`
+    t =    18.87s             Capturing element debug description
+    t =    18.88s         Checking existence of `"dog_name_field" TextField`
+    t =    18.91s     Collecting debug information to assist test failure triage
+    t =    18.91s         Requesting snapshot of accessibility hierarchy for app with pid 78966
+    t =    18.96s Tear Down
+Test Case '-[PetSafeUITests.OnboardingTests testBreedSearchAndSelection]' passed (19.232 seconds).
+Test Case '-[PetSafeUITests.OnboardingTests testCompleteOnboardingFlow]' started.
+    t =     0.00s Start Test at 2026-02-11 11:41:04.424
+    t =     0.06s Set Up
+    t =     0.07s     Open com.armstrong.PetSafe
+    t =     0.07s         Launch com.armstrong.PetSafe
+    t =     0.07s             Terminate com.armstrong.PetSafe:78966
+    t =     1.60s             Setting up automation session
+    t =     3.17s             Wait for com.armstrong.PetSafe to idle
+    t =     4.57s     Tap "email_field" TextField
+    t =     4.57s         Wait for com.armstrong.PetSafe to idle
+    t =     4.57s         Find the "email_field" TextField
+    t =     5.63s             Find the "email_field" TextField (retry 1)
+    t =     5.72s         Check for interrupting elements affecting "email_field" TextField
+    t =     5.73s         Synthesize event
+    t =     6.03s         Wait for com.armstrong.PetSafe to idle
+    t =     6.18s     Type 'newuser@example.com' into "email_field" TextField
+    t =     6.18s         Wait for com.armstrong.PetSafe to idle
+    t =     6.54s         Find the "email_field" TextField
+    t =     6.60s         Check for interrupting elements affecting "email_field" TextField
+    t =     6.63s         Synthesize event
+    t =     7.14s         Wait for com.armstrong.PetSafe to idle
+    t =     7.15s     Tap "password_field" SecureTextField
+    t =     7.15s         Wait for com.armstrong.PetSafe to idle
+    t =     7.15s         Find the "password_field" SecureTextField
+    t =     7.19s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     7.22s         Synthesize event
+    t =     7.51s         Wait for com.armstrong.PetSafe to idle
+    t =     7.80s     Type '<redacted>' into "password_field" SecureTextField
+    t =     7.80s         Wait for com.armstrong.PetSafe to idle
+    t =     7.80s         Find the "password_field" SecureTextField
+    t =     7.84s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     7.86s         Synthesize event
+    t =     8.18s         Wait for com.armstrong.PetSafe to idle
+    t =     8.31s     Tap "login_button" Button
+    t =     8.31s         Wait for com.armstrong.PetSafe to idle
+    t =     8.31s         Find the "login_button" Button
+    t =     8.35s         Check for interrupting elements affecting "login_button" Button
+    t =     8.38s         Synthesize event
+    t =     8.39s             Scroll element to visible
+    t =     8.39s             Find the "login_button" Button
+    t =     8.42s             Computed hit point {201, 334.83333333333337} after scrolling to visible
+    t =     8.71s         Wait for com.armstrong.PetSafe to idle
+    t =     8.93s     Waiting 10.0s for "dog_name_field" TextField to exist
+    t =     9.96s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =     9.96s             Checking existence of `"dog_name_field" TextField`
+    t =    10.01s             Capturing element debug description
+    t =    11.02s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    11.02s             Checking existence of `"dog_name_field" TextField`
+    t =    11.08s             Capturing element debug description
+    t =    12.00s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    12.00s             Checking existence of `"dog_name_field" TextField`
+    t =    12.03s             Capturing element debug description
+    t =    12.96s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    12.96s             Checking existence of `"dog_name_field" TextField`
+    t =    13.02s             Capturing element debug description
+    t =    13.94s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    13.94s             Checking existence of `"dog_name_field" TextField`
+    t =    13.99s             Capturing element debug description
+    t =    15.02s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    15.02s             Checking existence of `"dog_name_field" TextField`
+    t =    15.08s             Capturing element debug description
+    t =    16.00s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    16.01s             Checking existence of `"dog_name_field" TextField`
+    t =    16.06s             Capturing element debug description
+    t =    16.97s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    16.97s             Checking existence of `"dog_name_field" TextField`
+    t =    17.03s             Capturing element debug description
+    t =    17.94s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    17.94s             Checking existence of `"dog_name_field" TextField`
+    t =    17.99s             Capturing element debug description
+    t =    18.93s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    18.94s             Checking existence of `"dog_name_field" TextField`
+    t =    19.00s             Capturing element debug description
+    t =    19.00s         Checking existence of `"dog_name_field" TextField`
+    t =    19.03s     Collecting debug information to assist test failure triage
+    t =    19.03s         Requesting snapshot of accessibility hierarchy for app with pid 78975
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/OnboardingTests.swift:17: error: -[PetSafeUITests.OnboardingTests testCompleteOnboardingFlow] : XCTAssertTrue failed - Onboarding should start for new users
+    t =    19.09s Tear Down
+Test Case '-[PetSafeUITests.OnboardingTests testCompleteOnboardingFlow]' failed (19.359 seconds).
+Test Case '-[PetSafeUITests.OnboardingTests testDogNameEntry]' started.
+    t =     0.00s Start Test at 2026-02-11 11:41:23.783
+    t =     0.07s Set Up
+    t =     0.07s     Open com.armstrong.PetSafe
+    t =     0.07s         Launch com.armstrong.PetSafe
+    t =     0.07s             Terminate com.armstrong.PetSafe:78975
+    t =     1.60s             Setting up automation session
+    t =     3.05s             Wait for com.armstrong.PetSafe to idle
+    t =     4.49s     Tap "email_field" TextField
+    t =     4.49s         Wait for com.armstrong.PetSafe to idle
+    t =     4.49s         Find the "email_field" TextField
+    t =     5.56s             Find the "email_field" TextField (retry 1)
+    t =     5.64s         Check for interrupting elements affecting "email_field" TextField
+    t =     5.66s         Synthesize event
+    t =     5.95s         Wait for com.armstrong.PetSafe to idle
+    t =     6.09s     Type 'newuser@example.com' into "email_field" TextField
+    t =     6.09s         Wait for com.armstrong.PetSafe to idle
+    t =     6.45s         Find the "email_field" TextField
+    t =     6.51s         Check for interrupting elements affecting "email_field" TextField
+    t =     6.54s         Synthesize event
+    t =     7.06s         Wait for com.armstrong.PetSafe to idle
+    t =     7.06s     Tap "password_field" SecureTextField
+    t =     7.06s         Wait for com.armstrong.PetSafe to idle
+    t =     7.06s         Find the "password_field" SecureTextField
+    t =     7.10s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     7.13s         Synthesize event
+    t =     7.49s         Wait for com.armstrong.PetSafe to idle
+    t =     7.78s     Type '<redacted>' into "password_field" SecureTextField
+    t =     7.78s         Wait for com.armstrong.PetSafe to idle
+    t =     7.78s         Find the "password_field" SecureTextField
+    t =     7.82s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     7.84s         Synthesize event
+    t =     8.16s         Wait for com.armstrong.PetSafe to idle
+    t =     8.31s     Tap "login_button" Button
+    t =     8.31s         Wait for com.armstrong.PetSafe to idle
+    t =     8.32s         Find the "login_button" Button
+    t =     8.35s         Check for interrupting elements affecting "login_button" Button
+    t =     8.38s         Synthesize event
+    t =     8.39s             Scroll element to visible
+    t =     8.40s             Find the "login_button" Button
+    t =     8.45s             Computed hit point {201, 334.83333333333337} after scrolling to visible
+    t =     8.73s         Wait for com.armstrong.PetSafe to idle
+    t =     9.28s     Waiting 10.0s for "dog_name_field" TextField to exist
+    t =    10.30s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    10.30s             Checking existence of `"dog_name_field" TextField`
+    t =    10.36s             Capturing element debug description
+    t =    11.29s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    11.30s             Checking existence of `"dog_name_field" TextField`
+    t =    11.41s             Capturing element debug description
+    t =    12.34s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    12.34s             Checking existence of `"dog_name_field" TextField`
+    t =    12.39s             Capturing element debug description
+    t =    13.31s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    13.31s             Checking existence of `"dog_name_field" TextField`
+    t =    13.37s             Capturing element debug description
+    t =    14.29s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    14.29s             Checking existence of `"dog_name_field" TextField`
+    t =    14.34s             Capturing element debug description
+    t =    15.36s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    15.36s             Checking existence of `"dog_name_field" TextField`
+    t =    15.41s             Capturing element debug description
+    t =    16.32s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    16.32s             Checking existence of `"dog_name_field" TextField`
+    t =    16.38s             Capturing element debug description
+    t =    17.30s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    17.30s             Checking existence of `"dog_name_field" TextField`
+    t =    17.35s             Capturing element debug description
+    t =    18.38s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    18.38s             Checking existence of `"dog_name_field" TextField`
+    t =    18.42s             Capturing element debug description
+    t =    19.28s         Checking `Expect predicate `existsNoRetry == 1` for object "dog_name_field" TextField`
+    t =    19.29s             Checking existence of `"dog_name_field" TextField`
+    t =    19.34s             Capturing element debug description
+    t =    19.34s         Checking existence of `"dog_name_field" TextField`
+    t =    19.38s     Collecting debug information to assist test failure triage
+    t =    19.38s         Requesting snapshot of accessibility hierarchy for app with pid 78986
+    t =    19.43s Tear Down
+Test Case '-[PetSafeUITests.OnboardingTests testDogNameEntry]' passed (19.720 seconds).
+Test Suite 'OnboardingTests' failed at 2026-02-11 11:41:43.502.
+	 Executed 5 tests, with 1 failure (0 unexpected) in 96.742 (96.748) seconds
+Test Suite 'ScannerTests' started at 2026-02-11 11:41:43.605.
+Test Case '-[PetSafeUITests.ScannerTests testCameraPermissionRequest]' started.
+    t =     0.00s Start Test at 2026-02-11 11:41:43.607
+    t =     0.06s Set Up
+    t =     0.06s     Open com.armstrong.PetSafe
+    t =     0.07s         Launch com.armstrong.PetSafe
+    t =     0.07s             Terminate com.armstrong.PetSafe:78986
+    t =     1.83s             Setting up automation session
+    t =     3.63s             Wait for com.armstrong.PetSafe to idle
+    t =     5.44s     Tap "email_field" TextField
+    t =     5.44s         Wait for com.armstrong.PetSafe to idle
+    t =     5.44s         Find the "email_field" TextField
+    t =     6.56s             Find the "email_field" TextField (retry 1)
+    t =     6.66s         Check for interrupting elements affecting "email_field" TextField
+    t =     6.71s         Synthesize event
+    t =     7.01s         Wait for com.armstrong.PetSafe to idle
+    t =     7.45s     Type 'test@petsafe.com' into "email_field" TextField
+    t =     7.46s         Wait for com.armstrong.PetSafe to idle
+    t =     7.46s         Find the "email_field" TextField
+    t =     7.50s         Check for interrupting elements affecting "email_field" TextField
+    t =     7.53s         Synthesize event
+    t =     8.00s         Wait for com.armstrong.PetSafe to idle
+    t =     8.01s     Tap "password_field" SecureTextField
+    t =     8.01s         Wait for com.armstrong.PetSafe to idle
+    t =     8.01s         Find the "password_field" SecureTextField
+    t =     8.05s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     8.08s         Synthesize event
+    t =     8.37s         Wait for com.armstrong.PetSafe to idle
+    t =     8.70s     Type '<redacted>' into "password_field" SecureTextField
+    t =     8.70s         Wait for com.armstrong.PetSafe to idle
+    t =     8.70s         Find the "password_field" SecureTextField
+    t =     8.73s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     8.77s         Synthesize event
+    t =     9.08s         Wait for com.armstrong.PetSafe to idle
+    t =     9.26s     Tap "login_button" Button
+    t =     9.26s         Wait for com.armstrong.PetSafe to idle
+    t =     9.26s         Find the "login_button" Button
+    t =     9.29s         Check for interrupting elements affecting "login_button" Button
+    t =     9.32s         Synthesize event
+    t =     9.33s             Scroll element to visible
+    t =     9.34s             Find the "login_button" Button
+    t =     9.71s             Computed hit point {201, 334.83333333333337} after scrolling to visible
+    t =    10.00s         Wait for com.armstrong.PetSafe to idle
+    t =    10.40s     Waiting 10.0s for "Home" Button to exist
+    t =    11.44s         Checking `Expect predicate `existsNoRetry == 1` for object "Home" Button`
+    t =    11.44s             Checking existence of `"Home" Button`
+    t =    11.50s     Checking existence of `"Scan" Button`
+    t =    11.53s     Checking existence of `"Log" Button`
+    t =    11.56s Tear Down
+Test Case '-[PetSafeUITests.ScannerTests testCameraPermissionRequest]' passed (11.829 seconds).
+Test Case '-[PetSafeUITests.ScannerTests testCameraPreviewActive]' started.
+    t =     0.00s Start Test at 2026-02-11 11:41:55.437
+    t =     0.08s Set Up
+    t =     0.08s     Open com.armstrong.PetSafe
+    t =     0.08s         Launch com.armstrong.PetSafe
+    t =     0.08s             Terminate com.armstrong.PetSafe:78999
+    t =     1.64s             Setting up automation session
+    t =     3.52s             Wait for com.armstrong.PetSafe to idle
+    t =     4.99s     Tap "email_field" TextField
+    t =     4.99s         Wait for com.armstrong.PetSafe to idle
+    t =     5.00s         Find the "email_field" TextField
+    t =     6.11s             Find the "email_field" TextField (retry 1)
+    t =     6.19s         Check for interrupting elements affecting "email_field" TextField
+    t =     6.25s         Synthesize event
+    t =     6.55s         Wait for com.armstrong.PetSafe to idle
+    t =     6.91s     Type 'test@petsafe.com' into "email_field" TextField
+    t =     6.91s         Wait for com.armstrong.PetSafe to idle
+    t =     7.27s         Find the "email_field" TextField
+    t =     7.32s         Check for interrupting elements affecting "email_field" TextField
+    t =     7.35s         Synthesize event
+    t =     7.82s         Wait for com.armstrong.PetSafe to idle
+    t =     7.86s     Tap "password_field" SecureTextField
+    t =     7.86s         Wait for com.armstrong.PetSafe to idle
+    t =     7.87s         Find the "password_field" SecureTextField
+    t =     7.91s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     7.95s         Synthesize event
+    t =     8.25s         Wait for com.armstrong.PetSafe to idle
+    t =     8.58s     Type '<redacted>' into "password_field" SecureTextField
+    t =     8.58s         Wait for com.armstrong.PetSafe to idle
+    t =     8.58s         Find the "password_field" SecureTextField
+    t =     8.62s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     8.65s         Synthesize event
+    t =     8.96s         Wait for com.armstrong.PetSafe to idle
+    t =     9.13s     Tap "login_button" Button
+    t =     9.13s         Wait for com.armstrong.PetSafe to idle
+    t =     9.13s         Find the "login_button" Button
+    t =     9.17s         Check for interrupting elements affecting "login_button" Button
+    t =     9.20s         Synthesize event
+    t =     9.22s             Scroll element to visible
+    t =     9.22s             Find the "login_button" Button
+    t =     9.28s             Computed hit point {201, 334.83333333333337} after scrolling to visible
+    t =     9.57s         Wait for com.armstrong.PetSafe to idle
+    t =    10.14s     Waiting 10.0s for "Home" Button to exist
+    t =    11.16s         Checking `Expect predicate `existsNoRetry == 1` for object "Home" Button`
+    t =    11.18s             Checking existence of `"Home" Button`
+    t =    11.25s     Checking existence of `"Scan" Button`
+    t =    11.28s     Checking existence of `"Log" Button`
+    t =    11.32s Tear Down
+Test Case '-[PetSafeUITests.ScannerTests testCameraPreviewActive]' passed (11.600 seconds).
+Test Case '-[PetSafeUITests.ScannerTests testQuickScanFromHome]' started.
+    t =     0.00s Start Test at 2026-02-11 11:42:07.040
+    t =     0.09s Set Up
+    t =     0.11s     Open com.armstrong.PetSafe
+    t =     0.11s         Launch com.armstrong.PetSafe
+    t =     0.11s             Terminate com.armstrong.PetSafe:79004
+    t =     1.61s             Setting up automation session

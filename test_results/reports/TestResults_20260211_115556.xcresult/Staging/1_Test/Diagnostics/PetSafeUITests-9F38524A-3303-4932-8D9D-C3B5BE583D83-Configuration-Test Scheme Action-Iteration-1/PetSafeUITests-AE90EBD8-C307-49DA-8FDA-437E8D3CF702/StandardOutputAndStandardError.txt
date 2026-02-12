@@ -1,0 +1,1545 @@
+2026-02-11 11:57:56.100331-0800 PetSafeUITests-Runner[80161:4278499] [Default] Running tests...
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'SubscriptionTests' started at 2026-02-11 11:58:04.543.
+Test Case '-[PetSafeUITests.SubscriptionTests testClosePaywall]' started.
+    t =     0.00s Start Test at 2026-02-11 11:58:04.551
+    t =     0.81s Set Up
+    t =     0.83s Open com.armstrong.PetSafe
+    t =     0.83s     Launch com.armstrong.PetSafe
+    t =     4.67s         Setting up automation session
+    t =     7.14s         Wait for com.armstrong.PetSafe to idle
+    t =     9.23s Tap "email_field" TextField
+    t =     9.23s     Wait for com.armstrong.PetSafe to idle
+    t =     9.26s     Find the "email_field" TextField
+    t =    10.38s         Find the "email_field" TextField (retry 1)
+    t =    10.66s     Check for interrupting elements affecting "email_field" TextField
+    t =    11.53s     Synthesize event
+    t =    12.46s     Wait for com.armstrong.PetSafe to idle
+    t =    12.47s Type 'test@petsafe.com' into "email_field" TextField
+    t =    12.47s     Wait for com.armstrong.PetSafe to idle
+    t =    12.48s     Find the "email_field" TextField
+    t =    12.54s     Check for interrupting elements affecting "email_field" TextField
+    t =    12.79s     Synthesize event
+    t =    12.79s         Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =    12.82s         Requesting snapshot of accessibility hierarchy for app with pid 80204
+    t =    12.87s         Find: Descendants matching type TextField
+    t =    12.88s         Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    12.98s         Requesting snapshot of accessibility hierarchy for app with pid 80204
+    t =    13.01s         Find: Descendants matching type TextField
+    t =    13.01s         Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    13.01s         Requesting snapshot of accessibility hierarchy for app with pid 80204
+    t =    13.03s         Find: Descendants matching type TextField
+    t =    13.03s         Requesting snapshot of accessibility hierarchy for app with pid 80204
+    t =    13.08s         Requesting snapshot of accessibility hierarchy for app with pid 80204
+    t =    13.12s         Find: Descendants matching type TextField
+    t =    13.12s         Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    13.20s         Requesting snapshot of accessibility hierarchy for app with pid 80204
+    t =    13.22s         Find: Descendants matching type TextField
+    t =    13.22s         Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    13.22s         Requesting snapshot of accessibility hierarchy for app with pid 80204
+    t =    13.25s         Find: Descendants matching type TextField
+    t =    13.25s         Requesting snapshot of accessibility hierarchy for app with pid 80204
+    t =    13.29s         Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: TextField, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Element debug description:
+Attributes: TextField, 0x10172d360, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Element subtree:
+ →TextField, 0x10172d360, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Path to element:
+ →Application, 0x10382f810, pid: 80204, label: 'PetSafe'
+  ↳Window (Main), 0x103926290, {{0.0, 0.0}, {402.0, 874.0}}
+   ↳Other, 0x103927080, {{0.0, 0.0}, {402.0, 874.0}}
+    ↳Other, 0x103926d00, {{0.0, 0.0}, {402.0, 874.0}}
+     ↳Other, 0x1039269a0, {{0.0, 0.0}, {402.0, 874.0}}
+      ↳Other, 0x103926600, {{0.0, 0.0}, {402.0, 874.0}}
+       ↳Other, 0x103927410, {{0.0, 0.0}, {402.0, 874.0}}
+        ↳Other, 0x10172b2b0, {{0.0, 0.0}, {402.0, 874.0}}
+         ↳Other, 0x10172b630, {{0.0, 0.0}, {402.0, 874.0}}
+          ↳Other, 0x10172c0d0, {{0.0, 0.0}, {402.0, 874.0}}
+           ↳Other, 0x10172b9b0, {{0.0, 0.0}, {402.0, 874.0}}
+            ↳ScrollView, 0x1039277b0, {{0.0, 0.0}, {402.0, 874.0}}
+             ↳Other, 0x10172c470, {{0.0, 168.0}, {402.0, 538.0}}
+              ↳TextField, 0x10172d360, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Query chain:
+ →Find: Target Application 'com.armstrong.PetSafe'
+  Output: {
+    Application, 0x101738810, pid: 80204, label: 'PetSafe'
+  }
+  ↪︎Find: Descendants matching type TextField
+    Output: {
+      TextField, 0x103844070, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+    }
+    ↪︎Find: Elements matching predicate '"email_field" IN identifiers'
+      Output: {
+        TextField, 0x10383d8b0, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+      }
+
+    t =    13.29s     Wait for com.armstrong.PetSafe to idle
+    t =    14.30s     Retrying `Type 'test@petsafe.com' into "email_field" TextField` (attempt #2)
+    t =    14.30s         Wait for com.armstrong.PetSafe to idle
+    t =    14.35s         Find the "email_field" TextField
+    t =    18.37s         Check for interrupting elements affecting "email_field" TextField
+    t =    18.44s         Synthesize event
+    t =    18.44s             Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =    18.47s             Requesting snapshot of accessibility hierarchy for app with pid 80204
+    t =    18.50s             Find: Descendants matching type TextField
+    t =    18.50s             Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    18.53s             Requesting snapshot of accessibility hierarchy for app with pid 80204
+    t =    18.55s             Find: Descendants matching type TextField
+    t =    18.55s             Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    18.55s             Requesting snapshot of accessibility hierarchy for app with pid 80204
+    t =    18.56s             Find: Descendants matching type TextField
+    t =    18.57s             Requesting snapshot of accessibility hierarchy for app with pid 80204
+    t =    18.59s             Requesting snapshot of accessibility hierarchy for app with pid 80204
+    t =    18.60s             Find: Descendants matching type TextField
+    t =    18.60s             Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    18.64s             Requesting snapshot of accessibility hierarchy for app with pid 80204
+    t =    18.65s             Find: Descendants matching type TextField
+    t =    18.65s             Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    18.65s             Requesting snapshot of accessibility hierarchy for app with pid 80204
+    t =    18.67s             Find: Descendants matching type TextField
+    t =    18.67s             Requesting snapshot of accessibility hierarchy for app with pid 80204
+    t =    18.80s             Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: TextField, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Element debug description:
+Attributes: TextField, 0x101641b30, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Element subtree:
+ →TextField, 0x101641b30, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Path to element:
+ →Application, 0x101729dd0, pid: 80204, label: 'PetSafe'
+  ↳Window (Main), 0x10172eb60, {{0.0, 0.0}, {402.0, 874.0}}
+   ↳Other, 0x10172eec0, {{0.0, 0.0}, {402.0, 874.0}}
+    ↳Other, 0x10172f5c0, {{0.0, 0.0}, {402.0, 874.0}}
+     ↳Other, 0x10172abb0, {{0.0, 0.0}, {402.0, 874.0}}
+      ↳Other, 0x10174c9b0, {{0.0, 0.0}, {402.0, 874.0}}
+       ↳Other, 0x10172f920, {{0.0, 0.0}, {402.0, 874.0}}
+        ↳Other, 0x101733070, {{0.0, 0.0}, {402.0, 874.0}}
+         ↳Other, 0x101732650, {{0.0, 0.0}, {402.0, 874.0}}
+          ↳Other, 0x101738120, {{0.0, 0.0}, {402.0, 874.0}}
+           ↳Other, 0x101739cc0, {{0.0, 0.0}, {402.0, 874.0}}
+            ↳ScrollView, 0x101739960, {{0.0, 0.0}, {402.0, 874.0}}
+             ↳Other, 0x10163fe30, {{0.0, 168.0}, {402.0, 538.0}}
+              ↳TextField, 0x101641b30, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Query chain:
+ →Find: Target Application 'com.armstrong.PetSafe'
+  Output: {
+    Application, 0x1038443b0, pid: 80204, label: 'PetSafe'
+  }
+  ↪︎Find: Descendants matching type TextField
+    Output: {
+      TextField, 0x10173b4d0, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+    }
+    ↪︎Find: Elements matching predicate '"email_field" IN identifiers'
+      Output: {
+        TextField, 0x101737a60, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+      }
+
+    t =    18.80s         Wait for com.armstrong.PetSafe to idle
+    t =    19.81s     Retrying `Type 'test@petsafe.com' into "email_field" TextField` (attempt #3)
+    t =    19.81s         Wait for com.armstrong.PetSafe to idle
+    t =    19.81s         Find the "email_field" TextField
+    t =    19.85s         Check for interrupting elements affecting "email_field" TextField
+    t =    19.90s         Synthesize event
+    t =    19.90s             Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =    19.92s             Requesting snapshot of accessibility hierarchy for app with pid 80204
+    t =    19.95s             Find: Descendants matching type TextField
+    t =    19.95s             Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    20.05s             Requesting snapshot of accessibility hierarchy for app with pid 80204
+    t =    20.08s             Find: Descendants matching type TextField
+    t =    20.08s             Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    20.08s             Requesting snapshot of accessibility hierarchy for app with pid 80204
+    t =    20.12s             Find: Descendants matching type TextField
+    t =    20.12s             Requesting snapshot of accessibility hierarchy for app with pid 80204
+    t =    20.16s             Requesting snapshot of accessibility hierarchy for app with pid 80204
+    t =    20.19s             Find: Descendants matching type TextField
+    t =    20.19s             Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    20.24s             Requesting snapshot of accessibility hierarchy for app with pid 80204
+    t =    20.26s             Find: Descendants matching type TextField
+    t =    20.26s             Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    20.26s             Requesting snapshot of accessibility hierarchy for app with pid 80204
+    t =    20.28s             Find: Descendants matching type TextField
+    t =    20.28s             Requesting snapshot of accessibility hierarchy for app with pid 80204
+    t =    20.32s             Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: TextField, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Element debug description:
+Attributes: TextField, 0x101737a60, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Element subtree:
+ →TextField, 0x101737a60, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Path to element:
+ →Application, 0x103933900, pid: 80204, label: 'PetSafe'
+  ↳Window (Main), 0x103934ad0, {{0.0, 0.0}, {402.0, 874.0}}
+   ↳Other, 0x103934400, {{0.0, 0.0}, {402.0, 874.0}}
+    ↳Other, 0x10163faf0, {{0.0, 0.0}, {402.0, 874.0}}
+     ↳Other, 0x1038310f0, {{0.0, 0.0}, {402.0, 874.0}}
+      ↳Other, 0x1016401c0, {{0.0, 0.0}, {402.0, 874.0}}
+       ↳Other, 0x10163ff80, {{0.0, 0.0}, {402.0, 874.0}}
+        ↳Other, 0x10163fd30, {{0.0, 0.0}, {402.0, 874.0}}
+         ↳Other, 0x103d0f080, {{0.0, 0.0}, {402.0, 874.0}}
+          ↳Other, 0x1017353d0, {{0.0, 0.0}, {402.0, 874.0}}
+           ↳Other, 0x103934780, {{0.0, 0.0}, {402.0, 874.0}}
+            ↳ScrollView, 0x103831950, {{0.0, 0.0}, {402.0, 874.0}}
+             ↳Other, 0x1039351a0, {{0.0, 168.0}, {402.0, 538.0}}
+              ↳TextField, 0x101737a60, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Query chain:
+ →Find: Target Application 'com.armstrong.PetSafe'
+  Output: {
+    Application, 0x103843410, pid: 80204, label: 'PetSafe'
+  }
+  ↪︎Find: Descendants matching type TextField
+    Output: {
+      TextField, 0x103a0bc40, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+    }
+    ↪︎Find: Elements matching predicate '"email_field" IN identifiers'
+      Output: {
+        TextField, 0x1038426f0, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+      }
+
+    t =    20.32s         Wait for com.armstrong.PetSafe to idle
+    t =    20.33s     Requesting snapshot of accessibility hierarchy for app with pid 80204
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/PageObjects/LoginPage.swift:35: error: -[PetSafeUITests.SubscriptionTests testClosePaywall] : Failed to synthesize event: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: TextField, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Element debug description:
+Attributes: TextField, 0x101737a60, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Element subtree:
+ →TextField, 0x101737a60, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Path to element:
+ →Application, 0x103933900, pid: 80204, label: 'PetSafe'
+  ↳Window (Main), 0x103934ad0, {{0.0, 0.0}, {402.0, 874.0}}
+   ↳Other, 0x103934400, {{0.0, 0.0}, {402.0, 874.0}}
+    ↳Other, 0x10163faf0, {{0.0, 0.0}, {402.0, 874.0}}
+     ↳Other, 0x1038310f0, {{0.0, 0.0}, {402.0, 874.0}}
+      ↳Other, 0x1016401c0, {{0.0, 0.0}, {402.0, 874.0}}
+       ↳Other, 0x10163ff80, {{0.0, 0.0}, {402.0, 874.0}}
+        ↳Other, 0x10163fd30, {{0.0, 0.0}, {402.0, 874.0}}
+         ↳Other, 0x103d0f080, {{0.0, 0.0}, {402.0, 874.0}}
+          ↳Other, 0x1017353d0, {{0.0, 0.0}, {402.0, 874.0}}
+           ↳Other, 0x103934780, {{0.0, 0.0}, {402.0, 874.0}}
+            ↳ScrollView, 0x103831950, {{0.0, 0.0}, {402.0, 874.0}}
+             ↳Other, 0x1039351a0, {{0.0, 168.0}, {402.0, 538.0}}
+              ↳TextField, 0x101737a60, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Query chain:
+ →Find: Target Application 'com.armstrong.PetSafe'
+  Output: {
+    Application, 0x103843410, pid: 80204, label: 'PetSafe'
+  }
+  ↪︎Find: Descendants matching type TextField
+    Output: {
+      TextField, 0x103a0bc40, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+    }
+    ↪︎Find: Elements matching predicate '"email_field" IN identifiers'
+      Output: {
+        TextField, 0x1038426f0, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+      }
+
+    t =    21.37s Tear Down
+Test Case '-[PetSafeUITests.SubscriptionTests testClosePaywall]' failed (21.721 seconds).
+Test Case '-[PetSafeUITests.SubscriptionTests testMonthlyPlanSelection]' started.
+    t =     0.00s Start Test at 2026-02-11 11:58:26.276
+    t =     0.10s Set Up
+    t =     0.10s     Open com.armstrong.PetSafe
+    t =     0.11s         Launch com.armstrong.PetSafe
+    t =     0.11s             Terminate com.armstrong.PetSafe:80204
+    t =     4.03s             Setting up automation session
+    t =     7.95s             Wait for com.armstrong.PetSafe to idle
+    t =    10.02s     Tap "email_field" TextField
+    t =    10.02s         Wait for com.armstrong.PetSafe to idle
+    t =    10.03s         Find the "email_field" TextField
+    t =    11.40s             Find the "email_field" TextField (retry 1)
+    t =    26.78s         Check for interrupting elements affecting "email_field" TextField
+    t =    27.12s         Synthesize event
+    t =    27.55s         Wait for com.armstrong.PetSafe to idle
+    t =    30.67s     Type 'test@petsafe.com' into "email_field" TextField
+    t =    30.68s         Wait for com.armstrong.PetSafe to idle
+    t =    31.03s         Find the "email_field" TextField
+    t =    31.14s         Check for interrupting elements affecting "email_field" TextField
+    t =    31.29s         Synthesize event
+    t =    31.76s         Wait for com.armstrong.PetSafe to idle
+    t =    32.10s     Tap "password_field" SecureTextField
+    t =    32.11s         Wait for com.armstrong.PetSafe to idle
+    t =    32.11s         Find the "password_field" SecureTextField
+    t =    32.15s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =    32.31s         Synthesize event
+    t =    32.75s         Wait for com.armstrong.PetSafe to idle
+    t =    33.32s     Type '<redacted>' into "password_field" SecureTextField
+    t =    33.33s         Wait for com.armstrong.PetSafe to idle
+    t =    33.72s         Find the "password_field" SecureTextField
+    t =    33.81s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =    33.94s         Synthesize event
+    t =    34.27s         Wait for com.armstrong.PetSafe to idle
+    t =    34.58s     Tap "login_button" Button
+    t =    34.58s         Wait for com.armstrong.PetSafe to idle
+    t =    34.58s         Find the "login_button" Button
+    t =    34.62s         Check for interrupting elements affecting "login_button" Button
+    t =    34.65s         Synthesize event
+    t =    34.66s             Scroll element to visible
+    t =    34.68s             Find the "login_button" Button
+    t =    34.76s             Computed hit point {201, 334.83333333333337} after scrolling to visible
+    t =    35.04s         Wait for com.armstrong.PetSafe to idle
+    t =    36.33s     Waiting 10.0s for "Home" Button to exist
+    t =    37.39s         Checking `Expect predicate `existsNoRetry == 1` for object "Home" Button`
+    t =    37.42s             Checking existence of `"Home" Button`
+    t =    47.28s             Capturing element debug description
+    t =    47.34s         Checking existence of `"Home" Button`
+    t =    49.05s     Checking existence of `"Scan" Button`
+    t =    49.20s     Checking existence of `"Log" Button`
+    t =    49.35s Tear Down
+Test Case '-[PetSafeUITests.SubscriptionTests testMonthlyPlanSelection]' passed (50.003 seconds).
+Test Case '-[PetSafeUITests.SubscriptionTests testPaywallDisplays]' started.
+    t =     0.01s Start Test at 2026-02-11 11:59:16.285
+    t =     0.14s Set Up
+    t =     0.16s     Open com.armstrong.PetSafe
+    t =     0.16s         Launch com.armstrong.PetSafe
+    t =     0.34s             Terminate com.armstrong.PetSafe:80328
+    t =    10.98s             Setting up automation session
+    t =    41.95s             Wait for com.armstrong.PetSafe to idle
+    t =    55.04s     Tap "email_field" TextField
+    t =    55.04s         Wait for com.armstrong.PetSafe to idle
+    t =    55.05s         Find the "email_field" TextField
+    t =    55.76s         Check for interrupting elements affecting "email_field" TextField
+    t =    55.90s         Synthesize event
+    t =    56.24s         Wait for com.armstrong.PetSafe to idle
+    t =    68.04s     Type 'test@petsafe.com' into "email_field" TextField
+    t =    68.04s         Wait for com.armstrong.PetSafe to idle
+    t =    68.11s         Find the "email_field" TextField
+    t =    68.74s         Check for interrupting elements affecting "email_field" TextField
+    t =    69.13s         Synthesize event
+    t =    69.71s         Wait for com.armstrong.PetSafe to idle
+    t =    72.53s     Tap "password_field" SecureTextField
+    t =    72.53s         Wait for com.armstrong.PetSafe to idle
+    t =    72.56s         Find the "password_field" SecureTextField
+    t =    73.06s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =    73.53s         Synthesize event
+    t =    74.00s         Wait for com.armstrong.PetSafe to idle
+    t =    75.17s     Type '<redacted>' into "password_field" SecureTextField
+    t =    75.17s         Wait for com.armstrong.PetSafe to idle
+    t =    75.60s         Find the "password_field" SecureTextField
+    t =    75.71s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =    75.80s         Synthesize event
+    t =    76.12s         Wait for com.armstrong.PetSafe to idle
+    t =    76.50s     Tap "login_button" Button
+    t =    76.50s         Wait for com.armstrong.PetSafe to idle
+    t =    76.84s         Find the "login_button" Button
+    t =    76.90s         Check for interrupting elements affecting "login_button" Button
+    t =    76.96s         Synthesize event
+    t =    76.98s             Scroll element to visible
+    t =    77.12s             Find the "login_button" Button
+    t =    77.88s             Computed hit point {201, 334.83333333333337} after scrolling to visible
+    t =    78.35s         Wait for com.armstrong.PetSafe to idle
+    t =   107.41s     Waiting 10.0s for "Home" Button to exist
+    t =   108.69s         Checking `Expect predicate `existsNoRetry == 1` for object "Home" Button`
+    t =   108.84s             Checking existence of `"Home" Button`
+    t =   115.73s     Checking existence of `"Scan" Button`
+    t =   145.67s     Checking existence of `"Log" Button`
+    t =   145.81s Tear Down
+Test Case '-[PetSafeUITests.SubscriptionTests testPaywallDisplays]' passed (146.404 seconds).
+Test Case '-[PetSafeUITests.SubscriptionTests testPremiumFeaturesDisplay]' started.
+    t =     0.00s Start Test at 2026-02-11 12:01:42.689
+    t =     0.10s Set Up
+    t =     0.11s     Open com.armstrong.PetSafe
+    t =     0.11s         Launch com.armstrong.PetSafe
+    t =     0.11s             Terminate com.armstrong.PetSafe:80636
+    t =     8.59s             Setting up automation session
+    t =    17.86s             Wait for com.armstrong.PetSafe to idle
+    t =    36.34s     Tap "email_field" TextField
+    t =    36.35s         Wait for com.armstrong.PetSafe to idle
+    t =    36.48s         Find the "email_field" TextField
+    t =    60.59s         Check for interrupting elements affecting "email_field" TextField
+    t =    65.45s         Synthesize event
+    t =    66.98s         Wait for com.armstrong.PetSafe to idle
+    t =   103.56s     Type 'test@petsafe.com' into "email_field" TextField
+    t =   103.56s         Wait for com.armstrong.PetSafe to idle
+    t =   103.72s         Find the "email_field" TextField
+    t =   106.14s         Check for interrupting elements affecting "email_field" TextField
+    t =   108.55s         Synthesize event
+    t =   109.19s         Wait for com.armstrong.PetSafe to idle
+    t =   168.54s     Tap "password_field" SecureTextField
+    t =   168.54s         Wait for com.armstrong.PetSafe to idle
+    t =   168.55s         Find the "password_field" SecureTextField
+    t =   168.99s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =   172.74s         Synthesize event
+    t =   173.56s         Wait for com.armstrong.PetSafe to idle
+    t =   177.38s     Type '<redacted>' into "password_field" SecureTextField
+    t =   177.38s         Wait for com.armstrong.PetSafe to idle
+    t =   177.45s         Find the "password_field" SecureTextField
+    t =   178.01s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =   179.25s         Synthesize event
+    t =   179.85s         Wait for com.armstrong.PetSafe to idle
+    t =   184.54s     Tap "login_button" Button
+    t =   184.55s         Wait for com.armstrong.PetSafe to idle
+    t =   184.61s         Find the "login_button" Button
+    t =   185.29s         Check for interrupting elements affecting "login_button" Button
+    t =   186.05s         Synthesize event
+    t =   186.14s             Scroll element to visible
+    t =   186.55s             Find the "login_button" Button
+    t =   187.30s             Computed hit point {201, 334.83333333333337} after scrolling to visible
+    t =   187.83s         Wait for com.armstrong.PetSafe to idle
+    t =   194.19s     Waiting 10.0s for "Home" Button to exist
+    t =   195.27s         Checking `Expect predicate `existsNoRetry == 1` for object "Home" Button`
+    t =   195.32s             Checking existence of `"Home" Button`
+    t =   197.17s     Checking existence of `"Scan" Button`
+    t =   197.63s     Checking existence of `"Log" Button`
+    t =   198.27s Tear Down
+Test Case '-[PetSafeUITests.SubscriptionTests testPremiumFeaturesDisplay]' passed (198.717 seconds).
+Test Case '-[PetSafeUITests.SubscriptionTests testRestorePurchasesButton]' started.
+    t =     0.01s Start Test at 2026-02-11 12:05:01.411
+    t =     0.14s Set Up
+    t =     0.15s     Open com.armstrong.PetSafe
+    t =     0.15s         Launch com.armstrong.PetSafe
+    t =     0.15s             Terminate com.armstrong.PetSafe:80880
+    t =     7.74s             Setting up automation session
+    t =    10.94s             Wait for com.armstrong.PetSafe to idle
+    t =    13.87s     Tap "email_field" TextField
+    t =    13.88s         Wait for com.armstrong.PetSafe to idle
+    t =    50.61s         Find the "email_field" TextField
+    t =    65.97s         Check for interrupting elements affecting "email_field" TextField
+    t =    66.67s         Synthesize event
+    t =    67.29s         Wait for com.armstrong.PetSafe to idle
+    t =    75.33s     Type 'test@petsafe.com' into "email_field" TextField
+    t =    75.33s         Wait for com.armstrong.PetSafe to idle
+    t =    75.59s         Find the "email_field" TextField
+    t =    76.64s         Check for interrupting elements affecting "email_field" TextField
+    t =    77.03s         Synthesize event
+    t =    77.59s         Wait for com.armstrong.PetSafe to idle
+    t =    80.99s     Tap "password_field" SecureTextField
+    t =    81.01s         Wait for com.armstrong.PetSafe to idle
+    t =    81.05s         Find the "password_field" SecureTextField
+    t =    81.32s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =    82.12s         Synthesize event
+    t =    82.58s         Wait for com.armstrong.PetSafe to idle
+    t =    84.07s     Type '<redacted>' into "password_field" SecureTextField
+    t =    84.07s         Wait for com.armstrong.PetSafe to idle
+    t =    84.47s         Find the "password_field" SecureTextField
+    t =    84.62s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =    84.71s         Synthesize event
+    t =    85.08s         Wait for com.armstrong.PetSafe to idle
+    t =    85.48s     Tap "login_button" Button
+    t =    85.48s         Wait for com.armstrong.PetSafe to idle
+    t =    85.49s         Find the "login_button" Button
+    t =    85.67s         Check for interrupting elements affecting "login_button" Button
+    t =    86.14s         Synthesize event
+    t =    86.16s             Scroll element to visible
+    t =    87.13s             Find the "login_button" Button
+    t =    88.77s             Computed hit point {201, 334.83333333333337} after scrolling to visible
+    t =    89.14s         Wait for com.armstrong.PetSafe to idle
+    t =    91.77s     Waiting 10.0s for "Home" Button to exist
+    t =    92.83s         Checking `Expect predicate `existsNoRetry == 1` for object "Home" Button`
+    t =    92.89s             Checking existence of `"Home" Button`
+    t =    95.89s     Checking existence of `"Scan" Button`
+    t =    97.84s     Checking existence of `"Log" Button`
+    t =    97.94s Tear Down
+Test Case '-[PetSafeUITests.SubscriptionTests testRestorePurchasesButton]' passed (98.701 seconds).
+Test Case '-[PetSafeUITests.SubscriptionTests testSubscribeButton]' started.
+    t =     0.00s Start Test at 2026-02-11 12:06:40.109
+    t =     0.46s Set Up
+    t =     0.46s     Open com.armstrong.PetSafe
+    t =     0.46s         Launch com.armstrong.PetSafe
+    t =     0.46s             Terminate com.armstrong.PetSafe:81062
+    t =    70.25s             Setting up automation session
+    t =    93.98s             Wait for com.armstrong.PetSafe to idle
+    t =   116.85s     Tap "email_field" TextField
+    t =   116.85s         Wait for com.armstrong.PetSafe to idle
+    t =   116.86s         Find the "email_field" TextField
+    t =   121.73s         Check for interrupting elements affecting "email_field" TextField
+    t =   122.99s         Synthesize event
+    t =   123.93s         Wait for com.armstrong.PetSafe to idle
+    t =   131.17s     Type 'test@petsafe.com' into "email_field" TextField
+    t =   131.17s         Wait for com.armstrong.PetSafe to idle
+    t =   131.46s         Find the "email_field" TextField
+    t =   131.92s         Check for interrupting elements affecting "email_field" TextField
+    t =   132.53s         Synthesize event
+    t =   133.06s         Wait for com.armstrong.PetSafe to idle
+    t =   161.73s     Tap "password_field" SecureTextField
+    t =   161.73s         Wait for com.armstrong.PetSafe to idle
+    t =   161.73s         Find the "password_field" SecureTextField
+    t =   162.06s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =   162.70s         Synthesize event
+    t =   163.19s         Wait for com.armstrong.PetSafe to idle
+    t =   169.38s     Type '<redacted>' into "password_field" SecureTextField
+    t =   169.38s         Wait for com.armstrong.PetSafe to idle
+    t =   169.39s         Find the "password_field" SecureTextField
+    t =   170.17s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =   170.87s         Synthesize event
+    t =   171.28s         Wait for com.armstrong.PetSafe to idle
+    t =   173.04s     Tap "login_button" Button
+    t =   173.04s         Wait for com.armstrong.PetSafe to idle
+    t =   173.23s         Find the "login_button" Button
+    t =   173.76s         Check for interrupting elements affecting "login_button" Button
+    t =   173.99s         Synthesize event
+    t =   174.00s             Scroll element to visible
+    t =   174.09s             Find the "login_button" Button
+    t =   174.55s             Computed hit point {201, 334.83333333333337} after scrolling to visible
+    t =   175.25s         Wait for com.armstrong.PetSafe to idle
+    t =   179.29s     Waiting 10.0s for "Home" Button to exist
+    t =   180.34s         Checking `Expect predicate `existsNoRetry == 1` for object "Home" Button`
+    t =   180.35s             Checking existence of `"Home" Button`
+    t =   183.69s     Checking existence of `"Scan" Button`
+    t =   185.25s     Checking existence of `"Log" Button`
+    t =   185.35s Tear Down
+Test Case '-[PetSafeUITests.SubscriptionTests testSubscribeButton]' passed (185.741 seconds).
+Test Case '-[PetSafeUITests.SubscriptionTests testSubscriptionPlansDisplay]' started.
+    t =     0.00s Start Test at 2026-02-11 12:09:45.868
+    t =     0.12s Set Up
+    t =     0.13s     Open com.armstrong.PetSafe
+    t =     0.13s         Launch com.armstrong.PetSafe
+    t =     0.13s             Terminate com.armstrong.PetSafe:81170
+    t =     7.72s             Setting up automation session
+    t =    13.03s             Wait for com.armstrong.PetSafe to idle
+    t =    19.60s     Tap "email_field" TextField
+    t =    19.60s         Wait for com.armstrong.PetSafe to idle
+    t =    24.61s         Find the "email_field" TextField
+    t =    26.58s         Check for interrupting elements affecting "email_field" TextField
+    t =    27.02s         Synthesize event
+    t =    27.40s         Wait for com.armstrong.PetSafe to idle
+    t =    32.24s     Type 'test@petsafe.com' into "email_field" TextField
+    t =    32.24s         Wait for com.armstrong.PetSafe to idle
+    t =    32.49s         Find the "email_field" TextField
+    t =    32.88s         Check for interrupting elements affecting "email_field" TextField
+    t =    33.17s         Synthesize event
+    t =    33.67s         Wait for com.armstrong.PetSafe to idle
+    t =    36.85s     Tap "password_field" SecureTextField
+    t =    36.86s         Wait for com.armstrong.PetSafe to idle
+    t =    36.86s         Find the "password_field" SecureTextField
+    t =    37.06s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =    37.28s         Synthesize event
+    t =    37.68s         Wait for com.armstrong.PetSafe to idle
+    t =    39.41s     Type '<redacted>' into "password_field" SecureTextField
+    t =    39.41s         Wait for com.armstrong.PetSafe to idle
+    t =    39.82s         Find the "password_field" SecureTextField
+    t =    40.10s         Check for interrupting elements affecting "password_field" SecureTextField
+    t =    40.40s         Synthesize event
+    t =    40.74s         Wait for com.armstrong.PetSafe to idle
+    t =    43.09s     Tap "login_button" Button
+    t =    43.09s         Wait for com.armstrong.PetSafe to idle
+    t =    43.13s         Find the "login_button" Button
+    t =    44.66s         Check for interrupting elements affecting "login_button" Button
+    t =    45.28s         Synthesize event
+    t =    45.34s             Scroll element to visible
+    t =    45.67s             Find the "login_button" Button
+    t =    46.83s             Computed hit point {201, 334.83333333333337} after scrolling to visible
+    t =    47.15s         Wait for com.armstrong.PetSafe to idle
+    t =    49.34s     Waiting 10.0s for "Home" Button to exist
+    t =    50.40s         Checking `Expect predicate `existsNoRetry == 1` for object "Home" Button`
+    t =    50.52s             Checking existence of `"Home" Button`
+    t =    56.55s     Checking existence of `"Scan" Button`
+    t =    57.53s     Checking existence of `"Log" Button`
+    t =    57.87s Tear Down
+Test Case '-[PetSafeUITests.SubscriptionTests testSubscriptionPlansDisplay]' passed (58.458 seconds).
+Test Case '-[PetSafeUITests.SubscriptionTests testTermsAndPrivacyLinks]' started.
+    t =     0.01s Start Test at 2026-02-11 12:10:44.330
+    t =     0.37s Set Up
+    t =     0.37s     Open com.armstrong.PetSafe
+    t =     0.37s         Launch com.armstrong.PetSafe
+    t =     0.37s             Terminate com.armstrong.PetSafe:81254
+    t =     5.60s             Setting up automation session
+    t =     6.96s             Wait for com.armstrong.PetSafe to idle
+    t =     9.55s     Tap "email_field" TextField
+    t =     9.55s         Wait for com.armstrong.PetSafe to idle
+    t =     9.57s         Find the "email_field" TextField
+    t =    12.54s             Find the "email_field" TextField (retry 1)
+    t =    48.22s             Find the "email_field" TextField (retry 2)
+    t =    63.86s     Requesting snapshot of accessibility hierarchy for app with pid 81339
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/PageObjects/LoginPage.swift:34: error: -[PetSafeUITests.SubscriptionTests testTermsAndPrivacyLinks] : Failed to tap "email_field" TextField: No matches found for Descendants matching type TextField from input {(
+    Application, pid: 81339, label: 'PetSafe'
+)}
+    t =    82.81s Tear Down
+Test Case '-[PetSafeUITests.SubscriptionTests testTermsAndPrivacyLinks]' failed (83.400 seconds).
+Test Case '-[PetSafeUITests.SubscriptionTests testYearlyPlanSelection]' started.
+    t =     0.00s Start Test at 2026-02-11 12:12:07.744
+    t =     0.70s Set Up
+    t =     0.73s     Open com.armstrong.PetSafe
+    t =     0.73s         Launch com.armstrong.PetSafe
+    t =     0.73s             Terminate com.armstrong.PetSafe:81339
+    t =    15.93s             Setting up automation session
+    t =    31.49s             Wait for com.armstrong.PetSafe to idle
+    t =    93.51s                 App event loop idle notification not received, will attempt to continue.
+    t =    95.95s     Tap "email_field" TextField
+    t =    95.96s         Wait for com.armstrong.PetSafe to idle
+    t =   120.58s         Find the "email_field" TextField
+    t =   122.25s         Check for interrupting elements affecting "email_field" TextField
+    t =   129.07s             Wait for com.apple.springboard to idle
+    t =   146.15s         Found 1 interrupting element:
+    t =   146.16s             Find the "Sign in to iCloud" Alert
+    t =   146.30s "Sign in to iCloud" Alert from Application 'com.apple.springboard'
+    t =   146.30s         Invoking UI interruption monitors for "Sign in to iCloud" Alert from Application 'com.apple.springboard'
+    t =   146.30s             Find the "Sign in to iCloud" Alert
+    t =   146.33s             Checking existence of `Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"')`
+    t =   146.40s             Checking existence of `Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"')`
+    t =   146.46s Default interruption handler attempting to dismiss alert by tapping Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"').
+    t =   146.46s             Tap Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"')
+    t =   146.46s                 Wait for com.apple.springboard to idle
+    t =   146.46s                 Find the Button (Elements matching predicate 'userTestingAttributes CONTAINS "cancel-button"')
+    t =   146.52s                 Check for interrupting elements affecting "Cancel" Button
+    t =   146.76s                 Synthesize event
+    t =   152.70s                 Wait for com.apple.springboard to idle
+    t =   159.27s             Waiting 1.0s for Alert to not exist
+    t =   160.29s                 Checking `Expect predicate `existsNoRetry == 0` for object Alert`
+    t =   160.43s                     Checking existence of `Alert`
+    t =   160.55s                 Checking existence of `Alert`
+    t =   163.09s             Verifying handling...
+    t =   164.30s Confirmed successful handling of interrupting element
+    t =   164.30s         Synthesize event
+    t =   164.76s         Wait for com.armstrong.PetSafe to idle
+    t =   166.38s     Type 'test@petsafe.com' into "email_field" TextField
+    t =   167.02s         Wait for com.armstrong.PetSafe to idle
+    t =   167.11s         Find the "email_field" TextField
+    t =   167.57s         Check for interrupting elements affecting "email_field" TextField
+    t =   168.27s         Synthesize event
+    t =   168.27s             Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =   168.30s             Requesting snapshot of accessibility hierarchy for app with pid 81447
+    t =   169.71s             Find: Descendants matching type TextField
+    t =   170.64s             Find: Elements matching predicate '"email_field" IN identifiers'
+    t =   183.66s             Requesting snapshot of accessibility hierarchy for app with pid 81447
+    t =   187.14s             Find: Descendants matching type TextField
+    t =   187.14s             Find: Elements matching predicate '"email_field" IN identifiers'
+    t =   187.14s             Requesting snapshot of accessibility hierarchy for app with pid 81447
+    t =   189.61s             Find: Descendants matching type TextField
+    t =   189.63s             Requesting snapshot of accessibility hierarchy for app with pid 81447
+    t =   189.75s             Requesting snapshot of accessibility hierarchy for app with pid 81447
+    t =   189.77s             Find: Descendants matching type TextField
+    t =   189.77s             Find: Elements matching predicate '"email_field" IN identifiers'
+    t =   189.83s             Requesting snapshot of accessibility hierarchy for app with pid 81447
+    t =   189.86s             Find: Descendants matching type TextField
+    t =   189.86s             Find: Elements matching predicate '"email_field" IN identifiers'
+    t =   189.86s             Requesting snapshot of accessibility hierarchy for app with pid 81447
+    t =   189.89s             Find: Descendants matching type TextField
+    t =   189.89s             Requesting snapshot of accessibility hierarchy for app with pid 81447
+    t =   190.78s             Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: TextField, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Element debug description:
+Attributes: TextField, 0x10173efb0, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Element subtree:
+ →TextField, 0x10173efb0, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Path to element:
+ →Application, 0x10162e950, pid: 81447, label: 'PetSafe'
+  ↳Window (Main), 0x101711da0, {{0.0, 0.0}, {402.0, 874.0}}
+   ↳Other, 0x101733ad0, {{0.0, 0.0}, {402.0, 874.0}}
+    ↳Other, 0x1017322c0, {{0.0, 0.0}, {402.0, 874.0}}
+     ↳Other, 0x10174c9f0, {{0.0, 0.0}, {402.0, 874.0}}
+      ↳Other, 0x10172abb0, {{0.0, 0.0}, {402.0, 874.0}}
+       ↳Other, 0x101738810, {{0.0, 0.0}, {402.0, 874.0}}
+        ↳Other, 0x101732d20, {{0.0, 0.0}, {402.0, 874.0}}
+         ↳Other, 0x10172eec0, {{0.0, 0.0}, {402.0, 874.0}}
+          ↳Other, 0x101729a00, {{0.0, 0.0}, {402.0, 874.0}}
+           ↳Other, 0x101738120, {{0.0, 0.0}, {402.0, 874.0}}
+            ↳ScrollView, 0x10172f920, {{0.0, 0.0}, {402.0, 874.0}}
+             ↳Other, 0x10173e580, {{0.0, 168.0}, {402.0, 538.0}}
+              ↳TextField, 0x10173efb0, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Query chain:
+ →Find: Target Application 'com.armstrong.PetSafe'
+  Output: {
+    Application, 0x10165ca80, pid: 81447, label: 'PetSafe'
+  }
+  ↪︎Find: Descendants matching type TextField
+    Output: {
+      TextField, 0x103d19000, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+    }
+    ↪︎Find: Elements matching predicate '"email_field" IN identifiers'
+      Output: {
+        TextField, 0x10177c340, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+      }
+
+    t =   190.80s         Wait for com.armstrong.PetSafe to idle
+    t =   192.20s         Retrying `Type 'test@petsafe.com' into "email_field" TextField` (attempt #2)
+    t =   192.24s             Wait for com.armstrong.PetSafe to idle
+    t =   192.42s             Find the "email_field" TextField
+    t =   194.14s             Check for interrupting elements affecting "email_field" TextField
+    t =   196.05s             Synthesize event
+    t =   196.35s                 Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =   199.62s                 Requesting snapshot of accessibility hierarchy for app with pid 81447
+    t =   205.09s                 Find: Descendants matching type TextField
+    t =   205.10s                 Find: Elements matching predicate '"email_field" IN identifiers'
+    t =   206.18s                 Requesting snapshot of accessibility hierarchy for app with pid 81447
+    t =   206.52s                 Find: Descendants matching type TextField
+    t =   206.52s                 Find: Elements matching predicate '"email_field" IN identifiers'
+    t =   206.52s                 Requesting snapshot of accessibility hierarchy for app with pid 81447
+    t =   206.54s                 Find: Descendants matching type TextField
+    t =   206.54s                 Requesting snapshot of accessibility hierarchy for app with pid 81447
+    t =   206.57s                 Requesting snapshot of accessibility hierarchy for app with pid 81447
+    t =   206.62s                 Find: Descendants matching type TextField
+    t =   206.62s                 Find: Elements matching predicate '"email_field" IN identifiers'
+    t =   206.66s                 Requesting snapshot of accessibility hierarchy for app with pid 81447
+    t =   206.69s                 Find: Descendants matching type TextField
+    t =   206.69s                 Find: Elements matching predicate '"email_field" IN identifiers'
+    t =   206.69s                 Requesting snapshot of accessibility hierarchy for app with pid 81447
+    t =   206.72s                 Find: Descendants matching type TextField
+    t =   206.72s                 Requesting snapshot of accessibility hierarchy for app with pid 81447
+    t =   207.11s                 Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: TextField, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Element debug description:
+Attributes: TextField, 0x10172eec0, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Element subtree:
+ →TextField, 0x10172eec0, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Path to element:
+ →Application, 0x103d13520, pid: 81447, label: 'PetSafe'
+  ↳Window (Main), 0x103c20210, {{0.0, 0.0}, {402.0, 874.0}}
+   ↳Other, 0x10382f950, {{0.0, 0.0}, {402.0, 874.0}}
+    ↳Other, 0x103851c80, {{0.0, 0.0}, {402.0, 874.0}}
+     ↳Other, 0x10393d510, {{0.0, 0.0}, {402.0, 874.0}}
+      ↳Other, 0x10382f6b0, {{0.0, 0.0}, {402.0, 874.0}}
+       ↳Other, 0x10382f7d0, {{0.0, 0.0}, {402.0, 874.0}}
+        ↳Other, 0x101733ad0, {{0.0, 0.0}, {402.0, 874.0}}
+         ↳Other, 0x1017322c0, {{0.0, 0.0}, {402.0, 874.0}}
+          ↳Other, 0x101742a30, {{0.0, 0.0}, {402.0, 874.0}}
+           ↳Other, 0x10172abb0, {{0.0, 0.0}, {402.0, 874.0}}
+            ↳ScrollView, 0x101741200, {{0.0, 0.0}, {402.0, 874.0}}
+             ↳Other, 0x10393caa0, {{0.0, 168.0}, {402.0, 538.0}}
+              ↳TextField, 0x10172eec0, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Query chain:
+ →Find: Target Application 'com.armstrong.PetSafe'
+  Output: {
+    Application, 0x10177d270, pid: 81447, label: 'PetSafe'
+  }
+  ↪︎Find: Descendants matching type TextField
+    Output: {
+      TextField, 0x10177bdf0, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+    }
+    ↪︎Find: Elements matching predicate '"email_field" IN identifiers'
+      Output: {
+        TextField, 0x10177b850, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+      }
+
+    t =   207.12s             Wait for com.armstrong.PetSafe to idle
+    t =   208.21s         Retrying `Type 'test@petsafe.com' into "email_field" TextField` (attempt #3)
+    t =   208.25s             Wait for com.armstrong.PetSafe to idle
+    t =   208.26s             Find the "email_field" TextField
+    t =   209.36s             Check for interrupting elements affecting "email_field" TextField
+    t =   210.37s             Synthesize event
+    t =   210.37s                 Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =   210.44s                 Requesting snapshot of accessibility hierarchy for app with pid 81447
+    t =   210.74s                 Find: Descendants matching type TextField
+    t =   210.74s                 Find: Elements matching predicate '"email_field" IN identifiers'
+    t =   211.70s                 Requesting snapshot of accessibility hierarchy for app with pid 81447
+    t =   212.58s                 Find: Descendants matching type TextField
+    t =   212.60s                 Find: Elements matching predicate '"email_field" IN identifiers'
+    t =   212.61s                 Requesting snapshot of accessibility hierarchy for app with pid 81447
+    t =   212.83s                 Find: Descendants matching type TextField
+    t =   212.84s                 Requesting snapshot of accessibility hierarchy for app with pid 81447
+    t =   213.00s                 Requesting snapshot of accessibility hierarchy for app with pid 81447
+    t =   213.03s                 Find: Descendants matching type TextField
+    t =   213.03s                 Find: Elements matching predicate '"email_field" IN identifiers'
+    t =   213.08s                 Requesting snapshot of accessibility hierarchy for app with pid 81447
+    t =   213.12s                 Find: Descendants matching type TextField
+    t =   213.12s                 Find: Elements matching predicate '"email_field" IN identifiers'
+    t =   213.13s                 Requesting snapshot of accessibility hierarchy for app with pid 81447
+    t =   213.14s                 Find: Descendants matching type TextField
+    t =   213.15s                 Requesting snapshot of accessibility hierarchy for app with pid 81447
+    t =   213.22s                 Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: TextField, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Element debug description:
+Attributes: TextField, 0x103b0b5a0, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Element subtree:
+ →TextField, 0x103b0b5a0, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Path to element:
+ →Application, 0x10173f320, pid: 81447, label: 'PetSafe'
+  ↳Window (Main), 0x103d11ea0, {{0.0, 0.0}, {402.0, 874.0}}
+   ↳Other, 0x103d175c0, {{0.0, 0.0}, {402.0, 874.0}}
+    ↳Other, 0x103d176e0, {{0.0, 0.0}, {402.0, 874.0}}
+     ↳Other, 0x103d0f5c0, {{0.0, 0.0}, {402.0, 874.0}}
+      ↳Other, 0x103d17a40, {{0.0, 0.0}, {402.0, 874.0}}
+       ↳Other, 0x103d17800, {{0.0, 0.0}, {402.0, 874.0}}
+        ↳Other, 0x103d13640, {{0.0, 0.0}, {402.0, 874.0}}
+         ↳Other, 0x103d12270, {{0.0, 0.0}, {402.0, 874.0}}
+          ↳Other, 0x103d12390, {{0.0, 0.0}, {402.0, 874.0}}
+           ↳Other, 0x103d124b0, {{0.0, 0.0}, {402.0, 874.0}}
+            ↳ScrollView, 0x103d125d0, {{0.0, 0.0}, {402.0, 874.0}}
+             ↳Other, 0x103d12a50, {{0.0, 168.0}, {402.0, 538.0}}
+              ↳TextField, 0x103b0b5a0, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Query chain:
+ →Find: Target Application 'com.armstrong.PetSafe'
+  Output: {
+    Application, 0x10393ce20, pid: 81447, label: 'PetSafe'
+  }
+  ↪︎Find: Descendants matching type TextField
+    Output: {
+      TextField, 0x10166eec0, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+    }
+    ↪︎Find: Elements matching predicate '"email_field" IN identifiers'
+      Output: {
+        TextField, 0x1017322c0, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+      }
+
+    t =   213.22s             Wait for com.armstrong.PetSafe to idle
+    t =   213.23s         Requesting snapshot of accessibility hierarchy for app with pid 81447
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/PageObjects/LoginPage.swift:35: error: -[PetSafeUITests.SubscriptionTests testYearlyPlanSelection] : Failed to synthesize event: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: TextField, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Element debug description:
+Attributes: TextField, 0x103b0b5a0, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Element subtree:
+ →TextField, 0x103b0b5a0, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Path to element:
+ →Application, 0x10173f320, pid: 81447, label: 'PetSafe'
+  ↳Window (Main), 0x103d11ea0, {{0.0, 0.0}, {402.0, 874.0}}
+   ↳Other, 0x103d175c0, {{0.0, 0.0}, {402.0, 874.0}}
+    ↳Other, 0x103d176e0, {{0.0, 0.0}, {402.0, 874.0}}
+     ↳Other, 0x103d0f5c0, {{0.0, 0.0}, {402.0, 874.0}}
+      ↳Other, 0x103d17a40, {{0.0, 0.0}, {402.0, 874.0}}
+       ↳Other, 0x103d17800, {{0.0, 0.0}, {402.0, 874.0}}
+        ↳Other, 0x103d13640, {{0.0, 0.0}, {402.0, 874.0}}
+         ↳Other, 0x103d12270, {{0.0, 0.0}, {402.0, 874.0}}
+          ↳Other, 0x103d12390, {{0.0, 0.0}, {402.0, 874.0}}
+           ↳Other, 0x103d124b0, {{0.0, 0.0}, {402.0, 874.0}}
+            ↳ScrollView, 0x103d125d0, {{0.0, 0.0}, {402.0, 874.0}}
+             ↳Other, 0x103d12a50, {{0.0, 168.0}, {402.0, 538.0}}
+              ↳TextField, 0x103b0b5a0, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Query chain:
+ →Find: Target Application 'com.armstrong.PetSafe'
+  Output: {
+    Application, 0x10393ce20, pid: 81447, label: 'PetSafe'
+  }
+  ↪︎Find: Descendants matching type TextField
+    Output: {
+      TextField, 0x10166eec0, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+    }
+    ↪︎Find: Elements matching predicate '"email_field" IN identifiers'
+      Output: {
+        TextField, 0x1017322c0, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+      }
+
+    t =   213.46s Tear Down
+Test Case '-[PetSafeUITests.SubscriptionTests testYearlyPlanSelection]' failed (214.676 seconds).
+Test Suite 'SubscriptionTests' failed at 2026-02-11 12:15:42.420.
+	 Executed 9 tests, with 3 failures (0 unexpected) in 1057.820 (1057.876) seconds
+Test Suite 'ScannerTests' started at 2026-02-11 12:15:44.230.
+Test Case '-[PetSafeUITests.ScannerTests testCameraPermissionRequest]' started.
+    t =     0.01s Start Test at 2026-02-11 12:15:44.238
+    t =     0.55s Set Up
+    t =     0.57s         Open com.armstrong.PetSafe
+    t =     0.57s             Launch com.armstrong.PetSafe
+    t =     0.57s                 Terminate com.armstrong.PetSafe:81447
+    t =    25.40s                 Setting up automation session
+    t =    45.81s                 Wait for com.armstrong.PetSafe to idle
+    t =    57.83s         Tap "email_field" TextField
+    t =    57.83s             Wait for com.armstrong.PetSafe to idle
+    t =    57.90s             Find the "email_field" TextField
+    t =    66.68s             Check for interrupting elements affecting "email_field" TextField
+    t =    67.53s             Synthesize event
+    t =    67.99s             Wait for com.armstrong.PetSafe to idle
+    t =    68.75s         Type 'test@petsafe.com' into "email_field" TextField
+    t =    68.75s             Wait for com.armstrong.PetSafe to idle
+    t =    68.75s             Find the "email_field" TextField
+    t =    68.81s             Check for interrupting elements affecting "email_field" TextField
+    t =    68.93s             Synthesize event
+    t =    68.93s                 Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =    68.97s                 Requesting snapshot of accessibility hierarchy for app with pid 81592
+    t =    69.06s                 Find: Descendants matching type TextField
+    t =    69.06s                 Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    69.14s                 Requesting snapshot of accessibility hierarchy for app with pid 81592
+    t =    69.22s                 Find: Descendants matching type TextField
+    t =    69.22s                 Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    69.22s                 Requesting snapshot of accessibility hierarchy for app with pid 81592
+    t =    69.24s                 Find: Descendants matching type TextField
+    t =    69.27s                 Requesting snapshot of accessibility hierarchy for app with pid 81592
+    t =    69.31s                 Requesting snapshot of accessibility hierarchy for app with pid 81592
+    t =    69.39s                 Find: Descendants matching type TextField
+    t =    69.40s                 Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    69.44s                 Requesting snapshot of accessibility hierarchy for app with pid 81592
+    t =    69.48s                 Find: Descendants matching type TextField
+    t =    69.48s                 Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    69.48s                 Requesting snapshot of accessibility hierarchy for app with pid 81592
+    t =    69.51s                 Find: Descendants matching type TextField
+    t =    69.52s                 Requesting snapshot of accessibility hierarchy for app with pid 81592
+    t =    69.66s                 Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: TextField, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Element debug description:
+Attributes: TextField, 0x103835a40, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Element subtree:
+ →TextField, 0x103835a40, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Path to element:
+ →Application, 0x1038370c0, pid: 81592, label: 'PetSafe'
+  ↳Window (Main), 0x1038383c0, {{0.0, 0.0}, {402.0, 874.0}}
+   ↳Other, 0x103838780, {{0.0, 0.0}, {402.0, 874.0}}
+    ↳Other, 0x1038388a0, {{0.0, 0.0}, {402.0, 874.0}}
+     ↳Other, 0x103838c00, {{0.0, 0.0}, {402.0, 874.0}}
+      ↳Other, 0x103830390, {{0.0, 0.0}, {402.0, 874.0}}
+       ↳Other, 0x1038304b0, {{0.0, 0.0}, {402.0, 874.0}}
+        ↳Other, 0x1038389c0, {{0.0, 0.0}, {402.0, 874.0}}
+         ↳Other, 0x103838ae0, {{0.0, 0.0}, {402.0, 874.0}}
+          ↳Other, 0x1038384e0, {{0.0, 0.0}, {402.0, 874.0}}
+           ↳Other, 0x103838600, {{0.0, 0.0}, {402.0, 874.0}}
+            ↳ScrollView, 0x103835140, {{0.0, 0.0}, {402.0, 874.0}}
+             ↳Other, 0x1038355c0, {{0.0, 168.0}, {402.0, 538.0}}
+              ↳TextField, 0x103835a40, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Query chain:
+ →Find: Target Application 'com.armstrong.PetSafe'
+  Output: {
+    Application, 0x10166b650, pid: 81592, label: 'PetSafe'
+  }
+  ↪︎Find: Descendants matching type TextField
+    Output: {
+      TextField, 0x101796a10, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+    }
+    ↪︎Find: Elements matching predicate '"email_field" IN identifiers'
+      Output: {
+        TextField, 0x101741c70, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+      }
+
+    t =    69.66s             Wait for com.armstrong.PetSafe to idle
+    t =    70.71s             Retrying `Type 'test@petsafe.com' into "email_field" TextField` (attempt #2)
+    t =    70.71s                 Wait for com.armstrong.PetSafe to idle
+    t =    70.75s                 Find the "email_field" TextField
+    t =    70.85s                 Check for interrupting elements affecting "email_field" TextField
+    t =    70.93s                 Synthesize event
+    t =    70.93s                     Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =    70.95s                     Requesting snapshot of accessibility hierarchy for app with pid 81592
+    t =    70.97s                     Find: Descendants matching type TextField
+    t =    70.97s                     Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    71.01s                     Requesting snapshot of accessibility hierarchy for app with pid 81592
+    t =    71.02s                     Find: Descendants matching type TextField
+    t =    71.02s                     Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    71.02s                     Requesting snapshot of accessibility hierarchy for app with pid 81592
+    t =    71.04s                     Find: Descendants matching type TextField
+    t =    71.04s                     Requesting snapshot of accessibility hierarchy for app with pid 81592
+    t =    71.06s                     Requesting snapshot of accessibility hierarchy for app with pid 81592
+    t =    71.07s                     Find: Descendants matching type TextField
+    t =    71.07s                     Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    71.20s                     Requesting snapshot of accessibility hierarchy for app with pid 81592
+    t =    71.22s                     Find: Descendants matching type TextField
+    t =    71.22s                     Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    71.22s                     Requesting snapshot of accessibility hierarchy for app with pid 81592
+    t =    71.27s                     Find: Descendants matching type TextField
+    t =    71.27s                     Requesting snapshot of accessibility hierarchy for app with pid 81592
+    t =    71.31s                     Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: TextField, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Element debug description:
+Attributes: TextField, 0x10165d9b0, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Element subtree:
+ →TextField, 0x10165d9b0, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Path to element:
+ →Application, 0x10395f560, pid: 81592, label: 'PetSafe'
+  ↳Window (Main), 0x10393ce20, {{0.0, 0.0}, {402.0, 874.0}}
+   ↳Other, 0x10393b930, {{0.0, 0.0}, {402.0, 874.0}}
+    ↳Other, 0x1017399a0, {{0.0, 0.0}, {402.0, 874.0}}
+     ↳Other, 0x101733070, {{0.0, 0.0}, {402.0, 874.0}}
+      ↳Other, 0x101678e30, {{0.0, 0.0}, {402.0, 874.0}}
+       ↳Other, 0x10173fa30, {{0.0, 0.0}, {402.0, 874.0}}
+        ↳Other, 0x103839790, {{0.0, 0.0}, {402.0, 874.0}}
+         ↳Other, 0x1038398b0, {{0.0, 0.0}, {402.0, 874.0}}
+          ↳Other, 0x1038399d0, {{0.0, 0.0}, {402.0, 874.0}}
+           ↳Other, 0x103839d70, {{0.0, 0.0}, {402.0, 874.0}}
+            ↳ScrollView, 0x101679470, {{0.0, 0.0}, {402.0, 874.0}}
+             ↳Other, 0x10165d530, {{0.0, 168.0}, {402.0, 538.0}}
+              ↳TextField, 0x10165d9b0, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Query chain:
+ →Find: Target Application 'com.armstrong.PetSafe'
+  Output: {
+    Application, 0x101787880, pid: 81592, label: 'PetSafe'
+  }
+  ↪︎Find: Descendants matching type TextField
+    Output: {
+      TextField, 0x101677e00, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+    }
+    ↪︎Find: Elements matching predicate '"email_field" IN identifiers'
+      Output: {
+        TextField, 0x101738810, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+      }
+
+    t =    71.32s                 Wait for com.armstrong.PetSafe to idle
+    t =    72.34s             Retrying `Type 'test@petsafe.com' into "email_field" TextField` (attempt #3)
+    t =    72.34s                 Wait for com.armstrong.PetSafe to idle
+    t =    72.35s                 Find the "email_field" TextField
+    t =    72.60s                 Check for interrupting elements affecting "email_field" TextField
+    t =    72.77s                 Synthesize event
+    t =    72.77s                     Get number of matches for: Elements containing elements matching predicate 'hasKeyboardFocus == 1'
+    t =    72.80s                     Requesting snapshot of accessibility hierarchy for app with pid 81592
+    t =    72.84s                     Find: Descendants matching type TextField
+    t =    72.84s                     Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    72.87s                     Requesting snapshot of accessibility hierarchy for app with pid 81592
+    t =    72.89s                     Find: Descendants matching type TextField
+    t =    72.89s                     Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    72.89s                     Requesting snapshot of accessibility hierarchy for app with pid 81592
+    t =    72.93s                     Find: Descendants matching type TextField
+    t =    72.93s                     Requesting snapshot of accessibility hierarchy for app with pid 81592
+    t =    72.96s                     Requesting snapshot of accessibility hierarchy for app with pid 81592
+    t =    72.98s                     Find: Descendants matching type TextField
+    t =    72.99s                     Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    73.03s                     Requesting snapshot of accessibility hierarchy for app with pid 81592
+    t =    73.36s                     Find: Descendants matching type TextField
+    t =    73.37s                     Find: Elements matching predicate '"email_field" IN identifiers'
+    t =    73.37s                     Requesting snapshot of accessibility hierarchy for app with pid 81592
+    t =    73.41s                     Find: Descendants matching type TextField
+    t =    73.41s                     Requesting snapshot of accessibility hierarchy for app with pid 81592
+    t =    73.44s                     Failed: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: TextField, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Element debug description:
+Attributes: TextField, 0x103948750, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Element subtree:
+ →TextField, 0x103948750, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Path to element:
+ →Application, 0x101740eb0, pid: 81592, label: 'PetSafe'
+  ↳Window (Main), 0x10173e580, {{0.0, 0.0}, {402.0, 874.0}}
+   ↳Other, 0x101729680, {{0.0, 0.0}, {402.0, 874.0}}
+    ↳Other, 0x101741fe0, {{0.0, 0.0}, {402.0, 874.0}}
+     ↳Other, 0x10172eec0, {{0.0, 0.0}, {402.0, 874.0}}
+      ↳Other, 0x10173fda0, {{0.0, 0.0}, {402.0, 874.0}}
+       ↳Other, 0x101742330, {{0.0, 0.0}, {402.0, 874.0}}
+        ↳Other, 0x103926600, {{0.0, 0.0}, {402.0, 874.0}}
+         ↳Other, 0x103941d20, {{0.0, 0.0}, {402.0, 874.0}}
+          ↳Other, 0x10392d180, {{0.0, 0.0}, {402.0, 874.0}}
+           ↳Other, 0x103930940, {{0.0, 0.0}, {402.0, 874.0}}
+            ↳ScrollView, 0x10393c3c0, {{0.0, 0.0}, {402.0, 874.0}}
+             ↳Other, 0x103931a90, {{0.0, 168.0}, {402.0, 538.0}}
+              ↳TextField, 0x103948750, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Query chain:
+ →Find: Target Application 'com.armstrong.PetSafe'
+  Output: {
+    Application, 0x101656e50, pid: 81592, label: 'PetSafe'
+  }
+  ↪︎Find: Descendants matching type TextField
+    Output: {
+      TextField, 0x1039313b0, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+    }
+    ↪︎Find: Elements matching predicate '"email_field" IN identifiers'
+      Output: {
+        TextField, 0x10166cfe0, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+      }
+
+    t =    73.44s                 Wait for com.armstrong.PetSafe to idle
+    t =    73.45s             Requesting snapshot of accessibility hierarchy for app with pid 81592
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/PageObjects/LoginPage.swift:35: error: -[PetSafeUITests.ScannerTests testCameraPermissionRequest] : Failed to synthesize event: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: TextField, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Element debug description:
+Attributes: TextField, 0x103948750, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Element subtree:
+ →TextField, 0x103948750, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Path to element:
+ →Application, 0x101740eb0, pid: 81592, label: 'PetSafe'
+  ↳Window (Main), 0x10173e580, {{0.0, 0.0}, {402.0, 874.0}}
+   ↳Other, 0x101729680, {{0.0, 0.0}, {402.0, 874.0}}
+    ↳Other, 0x101741fe0, {{0.0, 0.0}, {402.0, 874.0}}
+     ↳Other, 0x10172eec0, {{0.0, 0.0}, {402.0, 874.0}}
+      ↳Other, 0x10173fda0, {{0.0, 0.0}, {402.0, 874.0}}
+       ↳Other, 0x101742330, {{0.0, 0.0}, {402.0, 874.0}}
+        ↳Other, 0x103926600, {{0.0, 0.0}, {402.0, 874.0}}
+         ↳Other, 0x103941d20, {{0.0, 0.0}, {402.0, 874.0}}
+          ↳Other, 0x10392d180, {{0.0, 0.0}, {402.0, 874.0}}
+           ↳Other, 0x103930940, {{0.0, 0.0}, {402.0, 874.0}}
+            ↳ScrollView, 0x10393c3c0, {{0.0, 0.0}, {402.0, 874.0}}
+             ↳Other, 0x103931a90, {{0.0, 168.0}, {402.0, 538.0}}
+              ↳TextField, 0x103948750, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+Query chain:
+ →Find: Target Application 'com.armstrong.PetSafe'
+  Output: {
+    Application, 0x101656e50, pid: 81592, label: 'PetSafe'
+  }
+  ↪︎Find: Descendants matching type TextField
+    Output: {
+      TextField, 0x1039313b0, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+    }
+    ↪︎Find: Elements matching predicate '"email_field" IN identifiers'
+      Output: {
+        TextField, 0x10166cfe0, {{15.5, 403.8}, {371.0, 47.0}}, identifier: 'email_field', placeholderValue: 'Email', value: Email
+      }
+
+    t =    73.50s Tear Down
+Test Case '-[PetSafeUITests.ScannerTests testCameraPermissionRequest]' failed (73.996 seconds).
+Test Case '-[PetSafeUITests.ScannerTests testCameraPreviewActive]' started.
+    t =     0.00s Start Test at 2026-02-11 12:16:58.229
+    t =     0.08s Set Up
+    t =     0.09s             Open com.armstrong.PetSafe
+    t =     0.09s                 Launch com.armstrong.PetSafe
+    t =     0.09s                     Terminate com.armstrong.PetSafe:81592
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/ScannerTests.swift:107: error: -[PetSafeUITests.ScannerTests testCameraPreviewActive] : Failed to get launch progress for <XCUIApplicationImpl: 0x600000c92a60 com.armstrong.PetSafe at /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app>: Simulator device failed to launch com.armstrong.PetSafe. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The request to open "com.armstrong.PetSafe" failed. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The operation couldn’t be completed. The process failed to launch. (Underlying Error: The operation couldn’t be completed. Launch failed. (Underlying Error: Launchd job spawn failed. Resource temporarily unavailable))))
+    t =     6.93s Tear Down
+Test Case '-[PetSafeUITests.ScannerTests testCameraPreviewActive]' failed (7.153 seconds).
+Test Case '-[PetSafeUITests.ScannerTests testQuickScanFromHome]' started.
+    t =     0.02s Start Test at 2026-02-11 12:17:05.409
+    t =     0.15s Set Up
+    t =     0.15s                     Open com.armstrong.PetSafe
+    t =     0.15s                         Launch com.armstrong.PetSafe
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/ScannerTests.swift:138: error: -[PetSafeUITests.ScannerTests testQuickScanFromHome] : Failed to get launch progress for <XCUIApplicationImpl: 0x600000c92a60 com.armstrong.PetSafe at /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app>: Simulator device failed to launch com.armstrong.PetSafe. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The request to open "com.armstrong.PetSafe" failed. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The operation couldn’t be completed. The process failed to launch. (Underlying Error: The operation couldn’t be completed. Launch failed. (Underlying Error: Launchd job spawn failed. Resource temporarily unavailable))))
+    t =     6.05s Tear Down
+Test Case '-[PetSafeUITests.ScannerTests testQuickScanFromHome]' failed (6.228 seconds).
+Test Case '-[PetSafeUITests.ScannerTests testScannerCloseButton]' started.
+    t =     0.00s Start Test at 2026-02-11 12:17:11.624
+    t =     0.13s Set Up
+    t =     0.15s                             Open com.armstrong.PetSafe
+    t =     0.15s                                 Launch com.armstrong.PetSafe
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/ScannerTests.swift:77: error: -[PetSafeUITests.ScannerTests testScannerCloseButton] : Failed to get launch progress for <XCUIApplicationImpl: 0x600000c92a60 com.armstrong.PetSafe at /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app>: Simulator device failed to launch com.armstrong.PetSafe. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The request to open "com.armstrong.PetSafe" failed. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The operation couldn’t be completed. The process failed to launch. (Underlying Error: The operation couldn’t be completed. Launch failed. (Underlying Error: Launchd job spawn failed. Resource temporarily unavailable))))
+    t =     4.51s Tear Down
+Test Case '-[PetSafeUITests.ScannerTests testScannerCloseButton]' failed (4.593 seconds).
+Test Case '-[PetSafeUITests.ScannerTests testScannerOpensFromDashboard]' started.
+    t =     0.03s Start Test at 2026-02-11 12:17:16.241
+    t =     0.25s Set Up
+    t =     0.26s                                     Open com.armstrong.PetSafe
+    t =     0.26s                                         Launch com.armstrong.PetSafe
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/ScannerTests.swift:8: error: -[PetSafeUITests.ScannerTests testScannerOpensFromDashboard] : Failed to get launch progress for <XCUIApplicationImpl: 0x600000c92a60 com.armstrong.PetSafe at /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app>: Simulator device failed to launch com.armstrong.PetSafe. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The request to open "com.armstrong.PetSafe" failed. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The operation couldn’t be completed. The process failed to launch. (Underlying Error: The operation couldn’t be completed. Launch failed. (Underlying Error: Launchd job spawn failed. Resource temporarily unavailable))))
+    t =     3.56s Tear Down
+Test Case '-[PetSafeUITests.ScannerTests testScannerOpensFromDashboard]' failed (3.809 seconds).
+Test Case '-[PetSafeUITests.ScannerTests testScannerUIElements]' started.
+    t =     0.00s Start Test at 2026-02-11 12:17:20.027
+    t =     0.10s Set Up
+    t =     0.10s                                             Open com.armstrong.PetSafe
+    t =     0.12s                                                 Launch com.armstrong.PetSafe
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/ScannerTests.swift:50: error: -[PetSafeUITests.ScannerTests testScannerUIElements] : Failed to get launch progress for <XCUIApplicationImpl: 0x600000c92a60 com.armstrong.PetSafe at /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app>: Simulator device failed to launch com.armstrong.PetSafe. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The request to open "com.armstrong.PetSafe" failed. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The operation couldn’t be completed. The process failed to launch. (Underlying Error: The operation couldn’t be completed. Launch failed. (Underlying Error: Launchd job spawn failed. Resource temporarily unavailable))))
+    t =     3.54s Tear Down
+Test Case '-[PetSafeUITests.ScannerTests testScannerUIElements]' failed (3.672 seconds).
+Test Suite 'ScannerTests' failed at 2026-02-11 12:17:23.722.
+	 Executed 6 tests, with 6 failures (0 unexpected) in 99.451 (99.493) seconds
+Test Suite 'FoodLogTests' started at 2026-02-11 12:17:23.848.
+Test Case '-[PetSafeUITests.FoodLogTests testAddFoodButton]' started.
+    t =     0.00s Start Test at 2026-02-11 12:17:23.849
+    t =     0.16s Set Up
+    t =     0.16s                                                     Open com.armstrong.PetSafe
+    t =     0.16s                                                         Launch com.armstrong.PetSafe
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/FoodLogTests.swift:50: error: -[PetSafeUITests.FoodLogTests testAddFoodButton] : Failed to get launch progress for <XCUIApplicationImpl: 0x600000c92a60 com.armstrong.PetSafe at /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app>: Simulator device failed to launch com.armstrong.PetSafe. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The request to open "com.armstrong.PetSafe" failed. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The operation couldn’t be completed. The process failed to launch. (Underlying Error: The operation couldn’t be completed. Launch failed. (Underlying Error: Launchd job spawn failed. Resource temporarily unavailable))))
+    t =     2.86s Tear Down
+Test Case '-[PetSafeUITests.FoodLogTests testAddFoodButton]' failed (3.102 seconds).
+Test Case '-[PetSafeUITests.FoodLogTests testDeleteFoodEntry]' started.
+    t =     0.01s Start Test at 2026-02-11 12:17:26.959
+    t =     0.15s Set Up
+    t =     0.22s                                                             Open com.armstrong.PetSafe
+    t =     0.23s                                                                 Launch com.armstrong.PetSafe
+    t =     3.05s                                                                     Setting up automation session
+    t =     6.59s                                                                     Wait for com.armstrong.PetSafe to idle
+    t =    14.14s                                                             Tap "email_field" TextField
+    t =    14.14s                                                                 Wait for com.armstrong.PetSafe to idle
+    t =    14.15s                                                                 Find the "email_field" TextField
+    t =    14.49s                                                                 Check for interrupting elements affecting "email_field" TextField
+    t =    14.59s                                                                 Synthesize event
+    t =    15.21s                                                                 Wait for com.armstrong.PetSafe to idle
+    t =    16.83s                                                             Type 'test@petsafe.com' into "email_field" TextField
+    t =    16.83s                                                                 Wait for com.armstrong.PetSafe to idle
+    t =    17.07s                                                                 Find the "email_field" TextField
+    t =    17.20s                                                                 Check for interrupting elements affecting "email_field" TextField
+    t =    17.32s                                                                 Synthesize event
+    t =    17.83s                                                                 Wait for com.armstrong.PetSafe to idle
+    t =    17.99s                                                             Tap "password_field" SecureTextField
+    t =    17.99s                                                                 Wait for com.armstrong.PetSafe to idle
+    t =    18.00s                                                                 Find the "password_field" SecureTextField
+    t =    18.04s                                                                 Check for interrupting elements affecting "password_field" SecureTextField
+    t =    18.12s                                                                 Synthesize event
+    t =    18.59s                                                                 Wait for com.armstrong.PetSafe to idle
+    t =    19.49s                                                             Type '<redacted>' into "password_field" SecureTextField
+    t =    19.49s                                                                 Wait for com.armstrong.PetSafe to idle
+    t =    19.87s                                                                 Find the "password_field" SecureTextField
+    t =    19.96s                                                                 Check for interrupting elements affecting "password_field" SecureTextField
+    t =    20.10s                                                                 Synthesize event
+    t =    20.42s                                                                 Wait for com.armstrong.PetSafe to idle
+    t =    20.64s                                                             Tap "login_button" Button
+    t =    20.64s                                                                 Wait for com.armstrong.PetSafe to idle
+    t =    20.64s                                                                 Find the "login_button" Button
+    t =    20.71s                                                                 Check for interrupting elements affecting "login_button" Button
+    t =    20.76s                                                                 Synthesize event
+    t =    20.77s                                                                     Scroll element to visible
+    t =    20.79s                                                                     Find the "login_button" Button
+    t =    20.87s                                                                     Computed hit point {201, 334.83333333333337} after scrolling to visible
+    t =    21.15s                                                                 Wait for com.armstrong.PetSafe to idle
+    t =    23.11s                                                             Waiting 10.0s for "Home" Button to exist
+    t =    24.14s                                                                 Checking `Expect predicate `existsNoRetry == 1` for object "Home" Button`
+    t =    24.15s                                                                     Checking existence of `"Home" Button`
+    t =    24.33s                                                             Checking existence of `"Scan" Button`
+    t =    24.41s                                                             Checking existence of `"Log" Button`
+    t =    24.45s Tear Down
+Test Case '-[PetSafeUITests.FoodLogTests testDeleteFoodEntry]' passed (24.915 seconds).
+Test Case '-[PetSafeUITests.FoodLogTests testEmptyStateDisplay]' started.
+    t =     0.00s Start Test at 2026-02-11 12:17:51.871
+    t =     0.09s Set Up
+    t =     0.09s                                                             Open com.armstrong.PetSafe
+    t =     0.09s                                                                 Launch com.armstrong.PetSafe
+    t =     0.09s                                                                     Terminate com.armstrong.PetSafe:81687
+    t =     2.38s                                                                     Setting up automation session
+    t =     7.98s                                                                     Wait for com.armstrong.PetSafe to idle
+    t =    11.12s                                                             Tap "email_field" TextField
+    t =    11.13s                                                                 Wait for com.armstrong.PetSafe to idle
+    t =    11.13s                                                                 Find the "email_field" TextField
+    t =    12.35s                                                                     Find the "email_field" TextField (retry 1)
+    t =    12.50s                                                                 Check for interrupting elements affecting "email_field" TextField
+    t =    12.60s                                                                 Synthesize event
+    t =    12.91s                                                                 Wait for com.armstrong.PetSafe to idle
+    t =    14.28s                                                             Type 'newuser@example.com' into "email_field" TextField
+    t =    14.29s                                                                 Wait for com.armstrong.PetSafe to idle
+    t =    14.63s                                                                 Find the "email_field" TextField
+    t =    14.74s                                                                 Check for interrupting elements affecting "email_field" TextField
+    t =    14.79s                                                                 Synthesize event
+    t =    15.30s                                                                 Wait for com.armstrong.PetSafe to idle
+    t =    15.50s                                                             Tap "password_field" SecureTextField
+    t =    15.51s                                                                 Wait for com.armstrong.PetSafe to idle
+    t =    15.51s                                                                 Find the "password_field" SecureTextField
+    t =    15.74s                                                                 Check for interrupting elements affecting "password_field" SecureTextField
+    t =    16.41s                                                                 Synthesize event
+    t =    16.76s                                                                 Wait for com.armstrong.PetSafe to idle
+    t =    17.87s                                                             Type '<redacted>' into "password_field" SecureTextField
+    t =    17.87s                                                                 Wait for com.armstrong.PetSafe to idle
+    t =    18.17s                                                                 Find the "password_field" SecureTextField
+    t =    18.25s                                                                 Check for interrupting elements affecting "password_field" SecureTextField
+    t =    18.34s                                                                 Synthesize event
+    t =    18.66s                                                                 Wait for com.armstrong.PetSafe to idle
+    t =    19.02s                                                             Tap "login_button" Button
+    t =    19.02s                                                                 Wait for com.armstrong.PetSafe to idle
+    t =    19.03s                                                                 Find the "login_button" Button
+    t =    19.08s                                                                 Check for interrupting elements affecting "login_button" Button
+    t =    19.14s                                                                 Synthesize event
+    t =    19.16s                                                                     Scroll element to visible
+    t =    19.20s                                                                     Find the "login_button" Button
+    t =    19.36s                                                                     Computed hit point {201, 334.83333333333337} after scrolling to visible
+    t =    19.66s                                                                 Wait for com.armstrong.PetSafe to idle
+    t =    20.88s                                                             Waiting 10.0s for "Home" Button to exist
+    t =    21.91s                                                                 Checking `Expect predicate `existsNoRetry == 1` for object "Home" Button`
+    t =    21.92s                                                                     Checking existence of `"Home" Button`
+    t =    22.10s                                                             Checking existence of `"Scan" Button`
+    t =    22.13s                                                             Checking existence of `"Log" Button`
+    t =    22.20s Tear Down
+Test Case '-[PetSafeUITests.FoodLogTests testEmptyStateDisplay]' passed (22.740 seconds).
+Test Case '-[PetSafeUITests.FoodLogTests testFilterButton]' started.
+    t =     0.00s Start Test at 2026-02-11 12:18:14.616
+    t =     0.09s Set Up
+    t =     0.09s                                                             Open com.armstrong.PetSafe
+    t =     0.09s                                                                 Launch com.armstrong.PetSafe
+    t =     0.09s                                                                     Terminate com.armstrong.PetSafe:81697
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/FoodLogTests.swift:158: error: -[PetSafeUITests.FoodLogTests testFilterButton] : Failed to get launch progress for <XCUIApplicationImpl: 0x600000c92a60 com.armstrong.PetSafe at /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app>: Simulator device failed to launch com.armstrong.PetSafe. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The request to open "com.armstrong.PetSafe" failed. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The operation couldn’t be completed. The process failed to launch. (Underlying Error: The operation couldn’t be completed. Launch failed. (Underlying Error: Launchd job spawn failed. Resource temporarily unavailable))))
+    t =     1.68s Tear Down
+Test Case '-[PetSafeUITests.FoodLogTests testFilterButton]' failed (1.909 seconds).
+Test Case '-[PetSafeUITests.FoodLogTests testFoodEntriesDisplay]' started.
+    t =     0.00s Start Test at 2026-02-11 12:18:16.528
+    t =     0.10s Set Up
+    t =     0.11s                                                                     Open com.armstrong.PetSafe
+    t =     0.11s                                                                         Launch com.armstrong.PetSafe
+    t =     0.78s                                                                             Setting up automation session
+    t =     5.71s                                                                             Wait for com.armstrong.PetSafe to idle
+    t =     7.96s                                                                     Tap "email_field" TextField
+    t =     7.96s                                                                         Wait for com.armstrong.PetSafe to idle
+    t =     7.97s                                                                         Find the "email_field" TextField
+    t =     9.28s                                                                             Find the "email_field" TextField (retry 1)
+    t =     9.96s                                                                         Check for interrupting elements affecting "email_field" TextField
+    t =    10.47s                                                                         Synthesize event
+    t =    10.81s                                                                         Wait for com.armstrong.PetSafe to idle
+    t =    12.06s                                                                     Type 'test@petsafe.com' into "email_field" TextField
+    t =    12.06s                                                                         Wait for com.armstrong.PetSafe to idle
+    t =    12.42s                                                                         Find the "email_field" TextField
+    t =    12.58s                                                                         Check for interrupting elements affecting "email_field" TextField
+    t =    12.67s                                                                         Synthesize event
+    t =    13.15s                                                                         Wait for com.armstrong.PetSafe to idle
+    t =    13.28s                                                                     Tap "password_field" SecureTextField
+    t =    13.29s                                                                         Wait for com.armstrong.PetSafe to idle
+    t =    13.29s                                                                         Find the "password_field" SecureTextField
+    t =    13.34s                                                                         Check for interrupting elements affecting "password_field" SecureTextField
+    t =    13.37s                                                                         Synthesize event
+    t =    13.67s                                                                         Wait for com.armstrong.PetSafe to idle
+    t =    13.76s                                                                     Type '<redacted>' into "password_field" SecureTextField
+    t =    13.76s                                                                         Wait for com.armstrong.PetSafe to idle
+    t =    14.15s                                                                         Find the "password_field" SecureTextField
+    t =    14.21s                                                                         Check for interrupting elements affecting "password_field" SecureTextField
+    t =    14.30s                                                                         Synthesize event
+    t =    14.62s                                                                         Wait for com.armstrong.PetSafe to idle
+    t =    14.85s                                                                     Tap "login_button" Button
+    t =    14.85s                                                                         Wait for com.armstrong.PetSafe to idle
+    t =    14.85s                                                                         Find the "login_button" Button
+    t =    14.89s                                                                         Check for interrupting elements affecting "login_button" Button
+    t =    14.93s                                                                         Synthesize event
+    t =    14.94s                                                                             Scroll element to visible
+    t =    14.97s                                                                             Find the "login_button" Button
+    t =    15.07s                                                                             Computed hit point {201, 334.83333333333337} after scrolling to visible
+    t =    15.35s                                                                         Wait for com.armstrong.PetSafe to idle
+    t =    15.99s                                                                     Waiting 10.0s for "Home" Button to exist
+    t =    17.03s                                                                         Checking `Expect predicate `existsNoRetry == 1` for object "Home" Button`
+    t =    17.03s                                                                             Checking existence of `"Home" Button`
+    t =    17.27s                                                                     Checking existence of `"Scan" Button`
+    t =    17.30s                                                                     Checking existence of `"Log" Button`
+    t =    17.33s Tear Down
+Test Case '-[PetSafeUITests.FoodLogTests testFoodEntriesDisplay]' passed (17.616 seconds).
+Test Case '-[PetSafeUITests.FoodLogTests testFoodLogTabDisplay]' started.
+    t =     0.00s Start Test at 2026-02-11 12:18:34.143
+    t =     0.18s Set Up
+    t =     0.18s                                                                     Open com.armstrong.PetSafe
+    t =     0.18s                                                                         Launch com.armstrong.PetSafe
+    t =     0.18s                                                                             Terminate com.armstrong.PetSafe:81702
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/FoodLogTests.swift:8: error: -[PetSafeUITests.FoodLogTests testFoodLogTabDisplay] : Failed to get launch progress for <XCUIApplicationImpl: 0x600000c92a60 com.armstrong.PetSafe at /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app>: Simulator device failed to launch com.armstrong.PetSafe. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The request to open "com.armstrong.PetSafe" failed. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The operation couldn’t be completed. The process failed to launch. (Underlying Error: The operation couldn’t be completed. Launch failed. (Underlying Error: Launchd job spawn failed. Resource temporarily unavailable))))
+    t =     1.70s Tear Down
+Test Case '-[PetSafeUITests.FoodLogTests testFoodLogTabDisplay]' failed (1.870 seconds).
+Test Case '-[PetSafeUITests.FoodLogTests testTotalCopperDisplay]' started.
+    t =     0.00s Start Test at 2026-02-11 12:18:36.017
+    t =     0.06s Set Up
+    t =     0.06s                                                                             Open com.armstrong.PetSafe
+    t =     0.07s                                                                                 Launch com.armstrong.PetSafe
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/FoodLogTests.swift:101: error: -[PetSafeUITests.FoodLogTests testTotalCopperDisplay] : Failed to get launch progress for <XCUIApplicationImpl: 0x600000c92a60 com.armstrong.PetSafe at /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app>: Simulator device failed to launch com.armstrong.PetSafe. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The request to open "com.armstrong.PetSafe" failed. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The operation couldn’t be completed. The process failed to launch. (Underlying Error: The operation couldn’t be completed. Launch failed. (Underlying Error: Launchd job spawn failed. Resource temporarily unavailable))))
+    t =     0.50s Tear Down
+Test Case '-[PetSafeUITests.FoodLogTests testTotalCopperDisplay]' failed (0.505 seconds).
+Test Suite 'FoodLogTests' failed at 2026-02-11 12:18:36.518.
+	 Executed 7 tests, with 4 failures (0 unexpected) in 72.657 (72.670) seconds
+Test Suite 'AuthenticationTests' started at 2026-02-11 12:18:36.541.
+Test Case '-[PetSafeUITests.AuthenticationTests testCreateAccountNavigation]' started.
+    t =     0.00s Start Test at 2026-02-11 12:18:36.541
+    t =     0.02s Set Up
+    t =     0.02s                                                                                     Open com.armstrong.PetSafe
+    t =     0.02s                                                                                         Launch com.armstrong.PetSafe
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/AuthenticationTests.swift:68: error: -[PetSafeUITests.AuthenticationTests testCreateAccountNavigation] : Failed to get launch progress for <XCUIApplicationImpl: 0x600000c92a60 com.armstrong.PetSafe at /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app>: Simulator device failed to launch com.armstrong.PetSafe. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The request to open "com.armstrong.PetSafe" failed. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The operation couldn’t be completed. The process failed to launch. (Underlying Error: The operation couldn’t be completed. Launch failed. (Underlying Error: Launchd job spawn failed. Resource temporarily unavailable))))
+    t =     0.64s Tear Down
+Test Case '-[PetSafeUITests.AuthenticationTests testCreateAccountNavigation]' failed (0.683 seconds).
+Test Case '-[PetSafeUITests.AuthenticationTests testEmptyFieldsValidation]' started.
+    t =     0.00s Start Test at 2026-02-11 12:18:37.225
+    t =     0.02s Set Up
+    t =     0.02s                                                                                             Open com.armstrong.PetSafe
+    t =     0.02s                                                                                                 Launch com.armstrong.PetSafe
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/AuthenticationTests.swift:55: error: -[PetSafeUITests.AuthenticationTests testEmptyFieldsValidation] : Failed to get launch progress for <XCUIApplicationImpl: 0x600000c92a60 com.armstrong.PetSafe at /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app>: Simulator device failed to launch com.armstrong.PetSafe. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The request to open "com.armstrong.PetSafe" failed. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The operation couldn’t be completed. The process failed to launch. (Underlying Error: The operation couldn’t be completed. Launch failed. (Underlying Error: Launchd job spawn failed. Resource temporarily unavailable))))
+    t =     0.88s Tear Down
+Test Case '-[PetSafeUITests.AuthenticationTests testEmptyFieldsValidation]' failed (0.911 seconds).
+Test Case '-[PetSafeUITests.AuthenticationTests testForgotPasswordNavigation]' started.
+    t =     0.00s Start Test at 2026-02-11 12:18:38.137
+    t =     0.02s Set Up
+    t =     0.02s                                                                                                     Open com.armstrong.PetSafe
+    t =     0.02s                                                                                                         Launch com.armstrong.PetSafe
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/AuthenticationTests.swift:83: error: -[PetSafeUITests.AuthenticationTests testForgotPasswordNavigation] : Failed to get launch progress for <XCUIApplicationImpl: 0x600000c92a60 com.armstrong.PetSafe at /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app>: Simulator device failed to launch com.armstrong.PetSafe. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The request to open "com.armstrong.PetSafe" failed. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The operation couldn’t be completed. The process failed to launch. (Underlying Error: The operation couldn’t be completed. Launch failed. (Underlying Error: Launchd job spawn failed. Resource temporarily unavailable))))
+    t =     0.69s Tear Down
+Test Case '-[PetSafeUITests.AuthenticationTests testForgotPasswordNavigation]' failed (0.722 seconds).
+Test Case '-[PetSafeUITests.AuthenticationTests testInvalidEmailFormat]' started.
+    t =     0.00s Start Test at 2026-02-11 12:18:38.859
+    t =     0.02s Set Up
+    t =     0.02s                                                                                                             Open com.armstrong.PetSafe
+    t =     0.02s                                                                                                                 Launch com.armstrong.PetSafe
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/AuthenticationTests.swift:40: error: -[PetSafeUITests.AuthenticationTests testInvalidEmailFormat] : Failed to get launch progress for <XCUIApplicationImpl: 0x600000c92a60 com.armstrong.PetSafe at /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app>: Simulator device failed to launch com.armstrong.PetSafe. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The request to open "com.armstrong.PetSafe" failed. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The operation couldn’t be completed. The process failed to launch. (Underlying Error: The operation couldn’t be completed. Launch failed. (Underlying Error: Launchd job spawn failed. Resource temporarily unavailable))))
+    t =     0.65s Tear Down
+Test Case '-[PetSafeUITests.AuthenticationTests testInvalidEmailFormat]' failed (0.668 seconds).
+Test Case '-[PetSafeUITests.AuthenticationTests testLoginScreenDisplays]' started.
+    t =     0.00s Start Test at 2026-02-11 12:18:39.527
+    t =     0.02s Set Up
+    t =     0.02s                                                                                                                     Open com.armstrong.PetSafe
+    t =     0.02s                                                                                                                         Launch com.armstrong.PetSafe
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/AuthenticationTests.swift:8: error: -[PetSafeUITests.AuthenticationTests testLoginScreenDisplays] : Failed to get launch progress for <XCUIApplicationImpl: 0x600000c92a60 com.armstrong.PetSafe at /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app>: Simulator device failed to launch com.armstrong.PetSafe. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The request to open "com.armstrong.PetSafe" failed. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The operation couldn’t be completed. The process failed to launch. (Underlying Error: The operation couldn’t be completed. Launch failed. (Underlying Error: Launchd job spawn failed. Resource temporarily unavailable))))
+    t =     0.86s Tear Down
+Test Case '-[PetSafeUITests.AuthenticationTests testLoginScreenDisplays]' failed (0.868 seconds).
+Test Case '-[PetSafeUITests.AuthenticationTests testSignInWithApple]' started.
+    t =     0.00s Start Test at 2026-02-11 12:18:40.396
+    t =     0.02s Set Up
+    t =     0.02s                                                                                                                             Open com.armstrong.PetSafe
+    t =     0.02s                                                                                                                                 Launch com.armstrong.PetSafe
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/AuthenticationTests.swift:98: error: -[PetSafeUITests.AuthenticationTests testSignInWithApple] : Failed to get launch progress for <XCUIApplicationImpl: 0x600000c92a60 com.armstrong.PetSafe at /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app>: Simulator device failed to launch com.armstrong.PetSafe. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The request to open "com.armstrong.PetSafe" failed. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The operation couldn’t be completed. The process failed to launch. (Underlying Error: The operation couldn’t be completed. Launch failed. (Underlying Error: Launchd job spawn failed. Resource temporarily unavailable))))
+    t =     0.64s Tear Down
+Test Case '-[PetSafeUITests.AuthenticationTests testSignInWithApple]' failed (0.685 seconds).
+Test Case '-[PetSafeUITests.AuthenticationTests testValidLogin]' started.
+    t =     0.00s Start Test at 2026-02-11 12:18:41.081
+    t =     0.02s Set Up
+    t =     0.02s                                                                                                                                     Open com.armstrong.PetSafe
+    t =     0.02s                                                                                                                                         Launch com.armstrong.PetSafe
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/AuthenticationTests.swift:21: error: -[PetSafeUITests.AuthenticationTests testValidLogin] : Failed to get launch progress for <XCUIApplicationImpl: 0x600000c92a60 com.armstrong.PetSafe at /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app>: Simulator device failed to launch com.armstrong.PetSafe. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The request to open "com.armstrong.PetSafe" failed. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The operation couldn’t be completed. The process failed to launch. (Underlying Error: The operation couldn’t be completed. Launch failed. (Underlying Error: Launchd job spawn failed. Resource temporarily unavailable))))
+    t =     0.64s Tear Down
+Test Case '-[PetSafeUITests.AuthenticationTests testValidLogin]' failed (0.659 seconds).
+Test Suite 'AuthenticationTests' failed at 2026-02-11 12:18:41.741.
+	 Executed 7 tests, with 7 failures (0 unexpected) in 5.197 (5.200) seconds
+Test Suite 'SettingsTests' started at 2026-02-11 12:18:41.761.
+Test Case '-[PetSafeUITests.SettingsTests testCloseSettings]' started.
+    t =     0.00s Start Test at 2026-02-11 12:18:41.761
+    t =     0.01s Set Up
+    t =     0.01s                                                                                                                                             Open com.armstrong.PetSafe
+    t =     0.02s                                                                                                                                                 Launch com.armstrong.PetSafe
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/SettingsTests.swift:268: error: -[PetSafeUITests.SettingsTests testCloseSettings] : Failed to get launch progress for <XCUIApplicationImpl: 0x600000c92a60 com.armstrong.PetSafe at /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app>: Simulator device failed to launch com.armstrong.PetSafe. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The request to open "com.armstrong.PetSafe" failed. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The operation couldn’t be completed. The process failed to launch. (Underlying Error: The operation couldn’t be completed. Launch failed. (Underlying Error: Launchd job spawn failed. Resource temporarily unavailable))))
+    t =     0.86s Tear Down
+Test Case '-[PetSafeUITests.SettingsTests testCloseSettings]' failed (0.918 seconds).
+Test Case '-[PetSafeUITests.SettingsTests testDogProfileDisplay]' started.
+    t =     0.00s Start Test at 2026-02-11 12:18:42.681
+    t =     0.02s Set Up
+    t =     0.03s                                                                                                                                                     Open com.armstrong.PetSafe
+    t =     0.03s                                                                                                                                                         Launch com.armstrong.PetSafe
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/SettingsTests.swift:27: error: -[PetSafeUITests.SettingsTests testDogProfileDisplay] : Failed to get launch progress for <XCUIApplicationImpl: 0x600000c92a60 com.armstrong.PetSafe at /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app>: Simulator device failed to launch com.armstrong.PetSafe. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The request to open "com.armstrong.PetSafe" failed. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The operation couldn’t be completed. The process failed to launch. (Underlying Error: The operation couldn’t be completed. Launch failed. (Underlying Error: Launchd job spawn failed. Resource temporarily unavailable))))
+    t =     0.90s Tear Down
+Test Case '-[PetSafeUITests.SettingsTests testDogProfileDisplay]' failed (0.914 seconds).
+Test Case '-[PetSafeUITests.SettingsTests testEditProfileButton]' started.
+    t =     0.00s Start Test at 2026-02-11 12:18:43.594
+    t =     0.02s Set Up
+    t =     0.02s                                                                                                                                                             Open com.armstrong.PetSafe
+    t =     0.02s                                                                                                                                                                 Launch com.armstrong.PetSafe
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/SettingsTests.swift:55: error: -[PetSafeUITests.SettingsTests testEditProfileButton] : Failed to get launch progress for <XCUIApplicationImpl: 0x600000c92a60 com.armstrong.PetSafe at /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app>: Simulator device failed to launch com.armstrong.PetSafe. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The request to open "com.armstrong.PetSafe" failed. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The operation couldn’t be completed. The process failed to launch. (Underlying Error: The operation couldn’t be completed. Launch failed. (Underlying Error: Launchd job spawn failed. Resource temporarily unavailable))))
+    t =     0.65s Tear Down
+Test Case '-[PetSafeUITests.SettingsTests testEditProfileButton]' failed (0.686 seconds).
+Test Case '-[PetSafeUITests.SettingsTests testExportDataButton]' started.
+    t =     0.00s Start Test at 2026-02-11 12:18:44.282
+    t =     0.03s Set Up
+    t =     0.03s                                                                                                                                                                     Open com.armstrong.PetSafe
+    t =     0.03s                                                                                                                                                                         Launch com.armstrong.PetSafe
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/SettingsTests.swift:163: error: -[PetSafeUITests.SettingsTests testExportDataButton] : Failed to get launch progress for <XCUIApplicationImpl: 0x600000c92a60 com.armstrong.PetSafe at /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app>: Simulator device failed to launch com.armstrong.PetSafe. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The request to open "com.armstrong.PetSafe" failed. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The operation couldn’t be completed. The process failed to launch. (Underlying Error: The operation couldn’t be completed. Launch failed. (Underlying Error: Launchd job spawn failed. Resource temporarily unavailable))))
+    t =     0.87s Tear Down
+Test Case '-[PetSafeUITests.SettingsTests testExportDataButton]' failed (0.940 seconds).
+Test Case '-[PetSafeUITests.SettingsTests testFreeUserSubscriptionStatus]' started.
+    t =     0.00s Start Test at 2026-02-11 12:18:45.223
+    t =     0.02s Set Up
+    t =     0.02s                                                                                                                                                                             Open com.armstrong.PetSafe
+    t =     0.02s                                                                                                                                                                                 Launch com.armstrong.PetSafe
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/SettingsTests.swift:80: error: -[PetSafeUITests.SettingsTests testFreeUserSubscriptionStatus] : Failed to get launch progress for <XCUIApplicationImpl: 0x600000c92a60 com.armstrong.PetSafe at /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app>: Simulator device failed to launch com.armstrong.PetSafe. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The request to open "com.armstrong.PetSafe" failed. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The operation couldn’t be completed. The process failed to launch. (Underlying Error: The operation couldn’t be completed. Launch failed. (Underlying Error: Launchd job spawn failed. Resource temporarily unavailable))))
+    t =     0.65s Tear Down
+Test Case '-[PetSafeUITests.SettingsTests testFreeUserSubscriptionStatus]' failed (0.679 seconds).
+Test Case '-[PetSafeUITests.SettingsTests testLogoutFlow]' started.
+    t =     0.00s Start Test at 2026-02-11 12:18:45.901
+    t =     0.01s Set Up
+    t =     0.02s                                                                                                                                                                                     Open com.armstrong.PetSafe
+    t =     0.02s                                                                                                                                                                                         Launch com.armstrong.PetSafe
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/SettingsTests.swift:238: error: -[PetSafeUITests.SettingsTests testLogoutFlow] : Failed to get launch progress for <XCUIApplicationImpl: 0x600000c92a60 com.armstrong.PetSafe at /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app>: Simulator device failed to launch com.armstrong.PetSafe. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The request to open "com.armstrong.PetSafe" failed. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The operation couldn’t be completed. The process failed to launch. (Underlying Error: The operation couldn’t be completed. Launch failed. (Underlying Error: Launchd job spawn failed. Resource temporarily unavailable))))
+    t =     0.84s Tear Down
+Test Case '-[PetSafeUITests.SettingsTests testLogoutFlow]' failed (0.861 seconds).
+Test Case '-[PetSafeUITests.SettingsTests testNotificationsToggle]' started.
+    t =     0.00s Start Test at 2026-02-11 12:18:46.764
+    t =     0.06s Set Up
+    t =     0.06s                                                                                                                                                                                             Open com.armstrong.PetSafe
+    t =     0.06s                                                                                                                                                                                                 Launch com.armstrong.PetSafe
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/SettingsTests.swift:132: error: -[PetSafeUITests.SettingsTests testNotificationsToggle] : Failed to get launch progress for <XCUIApplicationImpl: 0x600000c92a60 com.armstrong.PetSafe at /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app>: Simulator device failed to launch com.armstrong.PetSafe. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The request to open "com.armstrong.PetSafe" failed. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The operation couldn’t be completed. The process failed to launch. (Underlying Error: The operation couldn’t be completed. Launch failed. (Underlying Error: Launchd job spawn failed. Resource temporarily unavailable))))
+    t =     0.70s Tear Down
+Test Case '-[PetSafeUITests.SettingsTests testNotificationsToggle]' failed (0.730 seconds).
+Test Case '-[PetSafeUITests.SettingsTests testPrivacyPolicyLink]' started.
+    t =     0.00s Start Test at 2026-02-11 12:18:47.494
+    t =     0.02s Set Up
+    t =     0.02s                                                                                                                                                                                                     Open com.armstrong.PetSafe
+    t =     0.02s                                                                                                                                                                                                         Launch com.armstrong.PetSafe
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/SettingsTests.swift:188: error: -[PetSafeUITests.SettingsTests testPrivacyPolicyLink] : Failed to get launch progress for <XCUIApplicationImpl: 0x600000c92a60 com.armstrong.PetSafe at /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app>: Simulator device failed to launch com.armstrong.PetSafe. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The request to open "com.armstrong.PetSafe" failed. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The operation couldn’t be completed. The process failed to launch. (Underlying Error: The operation couldn’t be completed. Launch failed. (Underlying Error: Launchd job spawn failed. Resource temporarily unavailable))))
+    t =     0.65s Tear Down
+Test Case '-[PetSafeUITests.SettingsTests testPrivacyPolicyLink]' failed (0.691 seconds).
+Test Case '-[PetSafeUITests.SettingsTests testSettingsScreenOpens]' started.
+    t =     0.00s Start Test at 2026-02-11 12:18:48.185
+    t =     0.02s Set Up
+    t =     0.02s                                                                                                                                                                                                             Open com.armstrong.PetSafe
+    t =     0.02s                                                                                                                                                                                                                 Launch com.armstrong.PetSafe
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/SettingsTests.swift:8: error: -[PetSafeUITests.SettingsTests testSettingsScreenOpens] : Failed to get launch progress for <XCUIApplicationImpl: 0x600000c92a60 com.armstrong.PetSafe at /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app>: Simulator device failed to launch com.armstrong.PetSafe. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The request to open "com.armstrong.PetSafe" failed. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The operation couldn’t be completed. The process failed to launch. (Underlying Error: The operation couldn’t be completed. Launch failed. (Underlying Error: Launchd job spawn failed. Resource temporarily unavailable))))
+    t =     0.65s Tear Down
+Test Case '-[PetSafeUITests.SettingsTests testSettingsScreenOpens]' failed (0.680 seconds).
+Test Case '-[PetSafeUITests.SettingsTests testTermsOfServiceLink]' started.
+    t =     0.00s Start Test at 2026-02-11 12:18:48.865
+    t =     0.01s Set Up
+    t =     0.01s                                                                                                                                                                                                                     Open com.armstrong.PetSafe
+    t =     0.02s                                                                                                                                                                                                                         Launch com.armstrong.PetSafe
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/SettingsTests.swift:213: error: -[PetSafeUITests.SettingsTests testTermsOfServiceLink] : Failed to get launch progress for <XCUIApplicationImpl: 0x600000c92a60 com.armstrong.PetSafe at /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app>: Simulator device failed to launch com.armstrong.PetSafe. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The request to open "com.armstrong.PetSafe" failed. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The operation couldn’t be completed. The process failed to launch. (Underlying Error: The operation couldn’t be completed. Launch failed. (Underlying Error: Launchd job spawn failed. Resource temporarily unavailable))))
+    t =     0.64s Tear Down
+Test Case '-[PetSafeUITests.SettingsTests testTermsOfServiceLink]' failed (0.662 seconds).
+Test Case '-[PetSafeUITests.SettingsTests testUpgradeToPremiumButton]' started.
+    t =     0.00s Start Test at 2026-02-11 12:18:49.528
+    t =     0.02s Set Up
+    t =     0.02s                                                                                                                                                                                                                             Open com.armstrong.PetSafe
+    t =     0.02s                                                                                                                                                                                                                                 Launch com.armstrong.PetSafe
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/SettingsTests.swift:104: error: -[PetSafeUITests.SettingsTests testUpgradeToPremiumButton] : Failed to get launch progress for <XCUIApplicationImpl: 0x600000c92a60 com.armstrong.PetSafe at /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app>: Simulator device failed to launch com.armstrong.PetSafe. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The request to open "com.armstrong.PetSafe" failed. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The operation couldn’t be completed. The process failed to launch. (Underlying Error: The operation couldn’t be completed. Launch failed. (Underlying Error: Launchd job spawn failed. Resource temporarily unavailable))))
+    t =     0.65s Tear Down
+Test Case '-[PetSafeUITests.SettingsTests testUpgradeToPremiumButton]' failed (0.672 seconds).
+Test Suite 'SettingsTests' failed at 2026-02-11 12:18:50.200.
+	 Executed 11 tests, with 11 failures (0 unexpected) in 8.433 (8.440) seconds
+Test Suite 'DashboardTests' started at 2026-02-11 12:18:50.219.
+Test Case '-[PetSafeUITests.DashboardTests testAchievementsNavigation]' started.
+    t =     0.00s Start Test at 2026-02-11 12:18:50.219
+    t =     0.02s Set Up
+    t =     0.02s                                                                                                                                                                                                                                     Open com.armstrong.PetSafe
+    t =     0.02s                                                                                                                                                                                                                                         Launch com.armstrong.PetSafe
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/DashboardTests.swift:99: error: -[PetSafeUITests.DashboardTests testAchievementsNavigation] : Failed to get launch progress for <XCUIApplicationImpl: 0x600000c92a60 com.armstrong.PetSafe at /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app>: Simulator device failed to launch com.armstrong.PetSafe. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The request to open "com.armstrong.PetSafe" failed. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The operation couldn’t be completed. The process failed to launch. (Underlying Error: The operation couldn’t be completed. Launch failed. (Underlying Error: Launchd job spawn failed. Resource temporarily unavailable))))
+    t =     0.64s Tear Down
+Test Case '-[PetSafeUITests.DashboardTests testAchievementsNavigation]' failed (0.681 seconds).
+Test Case '-[PetSafeUITests.DashboardTests testCopperTrackerDisplay]' started.
+    t =     0.00s Start Test at 2026-02-11 12:18:50.900
+    t =     0.02s Set Up
+    t =     0.02s                                                                                                                                                                                                                                             Open com.armstrong.PetSafe
+    t =     0.02s                                                                                                                                                                                                                                                 Launch com.armstrong.PetSafe
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/DashboardTests.swift:52: error: -[PetSafeUITests.DashboardTests testCopperTrackerDisplay] : Failed to get launch progress for <XCUIApplicationImpl: 0x600000c92a60 com.armstrong.PetSafe at /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app>: Simulator device failed to launch com.armstrong.PetSafe. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The request to open "com.armstrong.PetSafe" failed. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The operation couldn’t be completed. The process failed to launch. (Underlying Error: The operation couldn’t be completed. Launch failed. (Underlying Error: Launchd job spawn failed. Resource temporarily unavailable))))
+    t =     0.65s Tear Down
+Test Case '-[PetSafeUITests.DashboardTests testCopperTrackerDisplay]' failed (0.665 seconds).
+Test Case '-[PetSafeUITests.DashboardTests testDashboardDisplaysAfterLogin]' started.
+    t =     0.00s Start Test at 2026-02-11 12:18:51.565
+    t =     0.02s Set Up
+    t =     0.02s                                                                                                                                                                                                                                                     Open com.armstrong.PetSafe
+    t =     0.02s                                                                                                                                                                                                                                                         Launch com.armstrong.PetSafe
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/DashboardTests.swift:8: error: -[PetSafeUITests.DashboardTests testDashboardDisplaysAfterLogin] : Failed to get launch progress for <XCUIApplicationImpl: 0x600000c92a60 com.armstrong.PetSafe at /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app>: Simulator device failed to launch com.armstrong.PetSafe. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The request to open "com.armstrong.PetSafe" failed. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The operation couldn’t be completed. The process failed to launch. (Underlying Error: The operation couldn’t be completed. Launch failed. (Underlying Error: Launchd job spawn failed. Resource temporarily unavailable))))
+    t =     0.64s Tear Down
+Test Case '-[PetSafeUITests.DashboardTests testDashboardDisplaysAfterLogin]' failed (0.675 seconds).
+Test Case '-[PetSafeUITests.DashboardTests testPremiumBadgeDisplay]' started.
+    t =     0.00s Start Test at 2026-02-11 12:18:52.241
+    t =     0.02s Set Up
+    t =     0.02s                                                                                                                                                                                                                                                             Open com.armstrong.PetSafe
+    t =     0.02s                                                                                                                                                                                                                                                                 Launch com.armstrong.PetSafe
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/DashboardTests.swift:143: error: -[PetSafeUITests.DashboardTests testPremiumBadgeDisplay] : Failed to get launch progress for <XCUIApplicationImpl: 0x600000c92a60 com.armstrong.PetSafe at /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app>: Simulator device failed to launch com.armstrong.PetSafe. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The request to open "com.armstrong.PetSafe" failed. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The operation couldn’t be completed. The process failed to launch. (Underlying Error: The operation couldn’t be completed. Launch failed. (Underlying Error: Launchd job spawn failed. Resource temporarily unavailable))))
+    t =     0.65s Tear Down
+Test Case '-[PetSafeUITests.DashboardTests testPremiumBadgeDisplay]' failed (0.661 seconds).
+Test Case '-[PetSafeUITests.DashboardTests testSettingsButtonOpensSettings]' started.
+    t =     0.00s Start Test at 2026-02-11 12:18:52.903
+    t =     0.02s Set Up
+    t =     0.02s                                                                                                                                                                                                                                                                     Open com.armstrong.PetSafe
+    t =     0.02s                                                                                                                                                                                                                                                                         Launch com.armstrong.PetSafe
+    t =     0.64s                                                                                                                                                                                                                                                                             Setting up automation session
+    t =     2.30s                                                                                                                                                                                                                                                                             Wait for com.armstrong.PetSafe to idle
+    t =     3.77s                                                                                                                                                                                                                                                                     Tap "email_field" TextField
+    t =     3.77s                                                                                                                                                                                                                                                                         Wait for com.armstrong.PetSafe to idle
+    t =     3.78s                                                                                                                                                                                                                                                                         Find the "email_field" TextField
+    t =     4.89s                                                                                                                                                                                                                                                                             Find the "email_field" TextField (retry 1)
+    t =     5.03s                                                                                                                                                                                                                                                                         Check for interrupting elements affecting "email_field" TextField
+    t =     5.10s                                                                                                                                                                                                                                                                         Synthesize event
+    t =     5.42s                                                                                                                                                                                                                                                                         Wait for com.armstrong.PetSafe to idle
+    t =     6.34s                                                                                                                                                                                                                                                                     Type 'test@petsafe.com' into "email_field" TextField
+    t =     6.34s                                                                                                                                                                                                                                                                         Wait for com.armstrong.PetSafe to idle
+    t =     6.69s                                                                                                                                                                                                                                                                         Find the "email_field" TextField
+    t =     6.77s                                                                                                                                                                                                                                                                         Check for interrupting elements affecting "email_field" TextField
+    t =     6.87s                                                                                                                                                                                                                                                                         Synthesize event
+    t =     7.34s                                                                                                                                                                                                                                                                         Wait for com.armstrong.PetSafe to idle
+    t =     7.46s                                                                                                                                                                                                                                                                     Tap "password_field" SecureTextField
+    t =     7.46s                                                                                                                                                                                                                                                                         Wait for com.armstrong.PetSafe to idle
+    t =     7.46s                                                                                                                                                                                                                                                                         Find the "password_field" SecureTextField
+    t =     7.50s                                                                                                                                                                                                                                                                         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     7.53s                                                                                                                                                                                                                                                                         Synthesize event
+    t =     7.83s                                                                                                                                                                                                                                                                         Wait for com.armstrong.PetSafe to idle
+    t =     7.96s                                                                                                                                                                                                                                                                     Type '<redacted>' into "password_field" SecureTextField
+    t =     7.96s                                                                                                                                                                                                                                                                         Wait for com.armstrong.PetSafe to idle
+    t =     8.35s                                                                                                                                                                                                                                                                         Find the "password_field" SecureTextField
+    t =     8.41s                                                                                                                                                                                                                                                                         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     8.45s                                                                                                                                                                                                                                                                         Synthesize event
+    t =     8.78s                                                                                                                                                                                                                                                                         Wait for com.armstrong.PetSafe to idle
+    t =     8.98s                                                                                                                                                                                                                                                                     Tap "login_button" Button
+    t =     8.98s                                                                                                                                                                                                                                                                         Wait for com.armstrong.PetSafe to idle
+    t =     8.98s                                                                                                                                                                                                                                                                         Find the "login_button" Button
+    t =     9.02s                                                                                                                                                                                                                                                                         Check for interrupting elements affecting "login_button" Button
+    t =     9.05s                                                                                                                                                                                                                                                                         Synthesize event
+    t =     9.06s                                                                                                                                                                                                                                                                             Scroll element to visible
+    t =     9.08s                                                                                                                                                                                                                                                                             Find the "login_button" Button
+    t =     9.13s                                                                                                                                                                                                                                                                             Computed hit point {201, 334.83333333333337} after scrolling to visible
+    t =     9.42s                                                                                                                                                                                                                                                                         Wait for com.armstrong.PetSafe to idle
+    t =     9.83s                                                                                                                                                                                                                                                                     Waiting 10.0s for "Home" Button to exist
+    t =    10.87s                                                                                                                                                                                                                                                                         Checking `Expect predicate `existsNoRetry == 1` for object "Home" Button`
+    t =    10.87s                                                                                                                                                                                                                                                                             Checking existence of `"Home" Button`
+    t =    10.94s                                                                                                                                                                                                                                                                     Checking existence of `"Scan" Button`
+    t =    10.97s                                                                                                                                                                                                                                                                     Checking existence of `"Log" Button`
+    t =    11.00s Tear Down
+Test Case '-[PetSafeUITests.DashboardTests testSettingsButtonOpensSettings]' passed (11.360 seconds).
+Test Case '-[PetSafeUITests.DashboardTests testTabBarAlwaysVisible]' started.
+    t =     0.00s Start Test at 2026-02-11 12:19:04.267
+    t =     0.07s Set Up
+    t =     0.07s                                                                                                                                                                                                                                                                     Open com.armstrong.PetSafe
+    t =     0.07s                                                                                                                                                                                                                                                                         Launch com.armstrong.PetSafe
+    t =     0.07s                                                                                                                                                                                                                                                                             Terminate com.armstrong.PetSafe:81711
+    t =     1.55s                                                                                                                                                                                                                                                                             Setting up automation session
+    t =     3.85s                                                                                                                                                                                                                                                                             Wait for com.armstrong.PetSafe to idle
+    t =     5.53s                                                                                                                                                                                                                                                                     Tap "email_field" TextField
+    t =     5.53s                                                                                                                                                                                                                                                                         Wait for com.armstrong.PetSafe to idle
+    t =     5.53s                                                                                                                                                                                                                                                                         Find the "email_field" TextField
+    t =     6.63s                                                                                                                                                                                                                                                                             Find the "email_field" TextField (retry 1)
+    t =     6.73s                                                                                                                                                                                                                                                                         Check for interrupting elements affecting "email_field" TextField
+    t =     6.79s                                                                                                                                                                                                                                                                         Synthesize event
+    t =     7.10s                                                                                                                                                                                                                                                                         Wait for com.armstrong.PetSafe to idle
+    t =     7.52s                                                                                                                                                                                                                                                                     Type 'test@petsafe.com' into "email_field" TextField
+    t =     7.52s                                                                                                                                                                                                                                                                         Wait for com.armstrong.PetSafe to idle
+    t =     7.89s                                                                                                                                                                                                                                                                         Find the "email_field" TextField
+    t =     7.95s                                                                                                                                                                                                                                                                         Check for interrupting elements affecting "email_field" TextField
+    t =     7.98s                                                                                                                                                                                                                                                                         Synthesize event
+    t =     8.45s                                                                                                                                                                                                                                                                         Wait for com.armstrong.PetSafe to idle
+    t =     8.45s                                                                                                                                                                                                                                                                     Tap "password_field" SecureTextField
+    t =     8.45s                                                                                                                                                                                                                                                                         Wait for com.armstrong.PetSafe to idle
+    t =     8.45s                                                                                                                                                                                                                                                                         Find the "password_field" SecureTextField
+    t =     8.48s                                                                                                                                                                                                                                                                         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     8.51s                                                                                                                                                                                                                                                                         Synthesize event
+    t =     8.80s                                                                                                                                                                                                                                                                         Wait for com.armstrong.PetSafe to idle
+    t =     9.11s                                                                                                                                                                                                                                                                     Type '<redacted>' into "password_field" SecureTextField
+    t =     9.11s                                                                                                                                                                                                                                                                         Wait for com.armstrong.PetSafe to idle
+    t =     9.11s                                                                                                                                                                                                                                                                         Find the "password_field" SecureTextField
+    t =     9.16s                                                                                                                                                                                                                                                                         Check for interrupting elements affecting "password_field" SecureTextField
+    t =     9.19s                                                                                                                                                                                                                                                                         Synthesize event
+    t =     9.50s                                                                                                                                                                                                                                                                         Wait for com.armstrong.PetSafe to idle
+    t =     9.64s                                                                                                                                                                                                                                                                     Tap "login_button" Button
+    t =     9.64s                                                                                                                                                                                                                                                                         Wait for com.armstrong.PetSafe to idle
+    t =     9.65s                                                                                                                                                                                                                                                                         Find the "login_button" Button
+    t =     9.68s                                                                                                                                                                                                                                                                         Check for interrupting elements affecting "login_button" Button
+    t =     9.71s                                                                                                                                                                                                                                                                         Synthesize event
+    t =     9.72s                                                                                                                                                                                                                                                                             Scroll element to visible
+    t =     9.72s                                                                                                                                                                                                                                                                             Find the "login_button" Button
+    t =     9.76s                                                                                                                                                                                                                                                                             Computed hit point {201, 334.83333333333337} after scrolling to visible
+    t =    10.05s                                                                                                                                                                                                                                                                         Wait for com.armstrong.PetSafe to idle
+    t =    10.38s                                                                                                                                                                                                                                                                     Waiting 10.0s for "Home" Button to exist
+    t =    11.41s                                                                                                                                                                                                                                                                         Checking `Expect predicate `existsNoRetry == 1` for object "Home" Button`
+    t =    11.42s                                                                                                                                                                                                                                                                             Checking existence of `"Home" Button`
+    t =    11.49s                                                                                                                                                                                                                                                                     Checking existence of `"Scan" Button`
+    t =    11.52s                                                                                                                                                                                                                                                                     Checking existence of `"Log" Button`
+    t =    11.55s Tear Down
+Test Case '-[PetSafeUITests.DashboardTests testTabBarAlwaysVisible]' passed (11.836 seconds).
+Test Case '-[PetSafeUITests.DashboardTests testTabNavigation]' started.
+    t =     0.00s Start Test at 2026-02-11 12:19:16.104
+    t =     0.08s Set Up
+    t =     0.08s                                                                                                                                                                                                                                                                     Open com.armstrong.PetSafe
+    t =     0.08s                                                                                                                                                                                                                                                                         Launch com.armstrong.PetSafe
+    t =     0.08s                                                                                                                                                                                                                                                                             Terminate com.armstrong.PetSafe:81728
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/DashboardTests.swift:21: error: -[PetSafeUITests.DashboardTests testTabNavigation] : Failed to get launch progress for <XCUIApplicationImpl: 0x600000c92a60 com.armstrong.PetSafe at /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app>: Simulator device failed to launch com.armstrong.PetSafe. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The request to open "com.armstrong.PetSafe" failed. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The operation couldn’t be completed. The process failed to launch. (Underlying Error: The operation couldn’t be completed. Launch failed. (Underlying Error: Launchd job spawn failed. Resource temporarily unavailable))))
+    t =     2.14s Tear Down
+Test Case '-[PetSafeUITests.DashboardTests testTabNavigation]' failed (2.176 seconds).
+Test Case '-[PetSafeUITests.DashboardTests testWelcomeMessageDisplays]' started.
+    t =     0.00s Start Test at 2026-02-11 12:19:18.279
+    t =     0.03s Set Up
+    t =     0.03s                                                                                                                                                                                                                                                                             Open com.armstrong.PetSafe
+    t =     0.03s                                                                                                                                                                                                                                                                                 Launch com.armstrong.PetSafe
+/Users/kevinarmstrong/Documents/PetSafe/PetSafeUITests/Tests/DashboardTests.swift:122: error: -[PetSafeUITests.DashboardTests testWelcomeMessageDisplays] : Failed to get launch progress for <XCUIApplicationImpl: 0x600000c92a60 com.armstrong.PetSafe at /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app>: Simulator device failed to launch com.armstrong.PetSafe. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The request to open "com.armstrong.PetSafe" failed. The request was denied by service delegate (SBMainWorkspace). (Underlying Error: The operation couldn’t be completed. The process failed to launch. (Underlying Error: The operation couldn’t be completed. Launch failed. (Underlying Error: Launchd job spawn failed. Resource temporarily unavailable))))
+    t =     0.67s Tear Down
+Test Case '-[PetSafeUITests.DashboardTests testWelcomeMessageDisplays]' failed (0.693 seconds).
+Test Suite 'DashboardTests' failed at 2026-02-11 12:19:18.972.
+	 Executed 8 tests, with 6 failures (0 unexpected) in 28.747 (28.753) seconds

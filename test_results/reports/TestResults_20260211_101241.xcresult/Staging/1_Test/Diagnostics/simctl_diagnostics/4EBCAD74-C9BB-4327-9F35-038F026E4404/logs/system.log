@@ -1,0 +1,4 @@
+Feb 11 10:14:50 Kevins-MacBook-Pro syslogd[71516]: --- syslogd restarted ---
+Feb 11 10:14:50 Kevins-MacBook-Pro syslogd[71516]: Configuration Notice:
+	ASL Module "com.apple.contacts.ContactsAutocomplete" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.

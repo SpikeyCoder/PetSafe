@@ -1,0 +1,24 @@
+{
+  "source": "/Users/kevinarmstrong/Documents/PetSafe/PetSafe/AlertsPanel.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Alerts & Recommendations",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 58
+        }
+      },
+      {
+        "comment": "",
+        "key": "No alerts at this time.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 73
+        }
+      }
+    ]
+  },
+  "version": 1
+}

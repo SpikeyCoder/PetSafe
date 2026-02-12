@@ -1,0 +1,72 @@
+{
+  "source": "/Users/kevinarmstrong/Documents/PetSafe/PetSafe/MembershipPlans.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Membership",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 172
+        }
+      },
+      {
+        "comment": "",
+        "key": "Choose Your Plan",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 147
+        }
+      },
+      {
+        "comment": "",
+        "key": "Start your journey to better pet health management.",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 148
+        }
+      },
+      {
+        "comment": "",
+        "key": "30-day money-back guarantee. Cancel anytime. By subscribing, you agree to our Terms of Service. PetSafe is for informational purposes only.",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 162
+        }
+      },
+      {
+        "comment": "",
+        "key": "Maybe later",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 160
+        }
+      },
+      {
+        "comment": "",
+        "key": "Processing your subscription...",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 177
+        }
+      },
+      {
+        "comment": "",
+        "key": "/%@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 204
+        }
+      },
+      {
+        "comment": "",
+        "key": "Included Features",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 222
+        }
+      }
+    ]
+  },
+  "version": 1
+}

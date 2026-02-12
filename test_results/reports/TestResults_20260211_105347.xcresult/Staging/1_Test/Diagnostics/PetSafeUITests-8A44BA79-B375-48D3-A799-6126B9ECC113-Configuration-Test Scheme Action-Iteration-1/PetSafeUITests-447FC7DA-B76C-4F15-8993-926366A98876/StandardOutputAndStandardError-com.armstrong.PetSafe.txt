@@ -1,0 +1,393 @@
+Standard output and standard error from com.armstrong.PetSafe with process ID 75609 beginning at 2026-02-11 19:13:07 +0000
+
+2026-02-11 11:13:41.328766-0800 PetSafe[75609:4177000] [Default] Received request to exchange capabilities, remote interface capabilities are: <XCTCapabilities: 0x600000004a60>: {
+    "query runtime issue reporting" = 1;
+    "query runtime issue reporting/automation type mismatch" = 1;
+}
+2026-02-11 11:13:41.341509-0800 PetSafe[75609:4177000] [Default] Received request to notify when the main run loop is idle
+2026-02-11 11:13:41.341677-0800 PetSafe[75609:4177000] [Default] Idle notifier finished setting up run loop observer
+2026-02-11 11:13:41.341748-0800 PetSafe[75609:4177000] [Default] Received request to notify when animations are idle
+2026-02-11 11:13:41.341791-0800 PetSafe[75609:4177000] [Default] Sending animations idle reply with error: (null)
+2026-02-11 11:13:43.345630-0800 PetSafe[75609:4176990] [General] Failed to send CA Event for app launch measurements for ca_event_type: 0 event_name: com.apple.app_launch_measurement.FirstFramePresentationMetric
+🔄 SubscriptionServiceImpl: Loading products from StoreKit...
+2026-02-11 11:13:43.496106-0800 PetSafe[75609:4175773] [Default] Idle notifier run loop observer fired
+2026-02-11 11:13:43.496157-0800 PetSafe[75609:4175773] [Default] Sending main run loop idle reply
+2026-02-11 11:13:43.605540-0800 PetSafe[75609:4177009] [General] Failed to send CA Event for app launch measurements for ca_event_type: 1 event_name: com.apple.app_launch_measurement.ExtendedLaunchMetrics
+2026-02-11 11:13:43.701054-0800 PetSafe[75609:4177001] [Default] Error enumerating all current transactions: Error Domain=ASDErrorDomain Code=509 "No active account" UserInfo={NSLocalizedDescription=No active account}
+2026-02-11 11:13:43.721209-0800 PetSafe[75609:4177001] [Default] Error enumerating unfinished transactions for first transaction listener: Error Domain=ASDErrorDomain Code=509 "No active account" UserInfo={NSLocalizedDescription=No active account}
+2026-02-11 11:13:45.838714-0800 PetSafe[75609:4177009] [Default] Received request to notify when the main run loop is idle
+2026-02-11 11:13:45.839229-0800 PetSafe[75609:4177009] [Default] Idle notifier finished setting up run loop observer
+2026-02-11 11:13:45.873691-0800 PetSafe[75609:4177009] [Default] Received request to notify when animations are idle
+2026-02-11 11:13:45.873784-0800 PetSafe[75609:4177009] [Default] Sending animations idle reply with error: (null)
+2026-02-11 11:13:47.160389-0800 PetSafe[75609:4175773] [Default] Idle notifier run loop observer fired
+2026-02-11 11:13:47.160526-0800 PetSafe[75609:4175773] [Default] Sending main run loop idle reply
+2026-02-11 11:13:47.396943-0800 PetSafe[75609:4176990] [Default] Received request to fetch matches for query: ↪︎ Descendants matching type TextField
+    ↪︎ Elements matching predicate '"email_field" IN identifiers'
+2026-02-11 11:13:47.398302-0800 PetSafe[75609:4176990] [Default] Evaluating query:
+ ↪︎ Descendants matching type TextField
+    ↪︎ Elements matching predicate '"email_field" IN identifiers'
+2026-02-11 11:13:47.398356-0800 PetSafe[75609:4176990] [Default] Getting root element snapshot
+2026-02-11 11:13:47.398435-0800 PetSafe[75609:4176990] [Default] Getting snapshot for App element pid: 75609 for query ↪︎ Descendants matching type TextField
+    ↪︎ Elements matching predicate '"email_field" IN identifiers'
+2026-02-11 11:13:47.398643-0800 PetSafe[75609:4176990] [Default] Query requires iOS snapshot attributes XC_kAXXCAttributeElementBaseType, XC_kAXXCAttributeIdentifier, XC_kAXXCAttributeElementType, XC_kAXXCAttributeAutomationType, XC_kAXXCAttributeLabel, XC_kAXXCAttributeValue, XC_kAXXCAttributeTraits, XC_kAXXCAttributePlaceholderValue.
+2026-02-11 11:13:47.398780-0800 PetSafe[75609:4176990] [Default] XCTPerformOnMainRunLoop[not MT]: about to CFRunLoopPerform
+2026-02-11 11:13:47.398886-0800 PetSafe[75609:4175773] [Default] XCTPerformOnMainRunLoop[MT]: inside CFRunLoopPerform
+2026-02-11 11:13:47.398903-0800 PetSafe[75609:4176990] [Default] XCTPerformOnMainRunLoop[not MT]: waiting with 30.00s responsiveness timeout
+2026-02-11 11:13:47.401249-0800 PetSafe[75609:4175773] [Default] XCTPerformOnMainRunLoop[MT]: MT responded in time (won the race to the busy flag)
+2026-02-11 11:13:47.404935-0800 PetSafe[75609:4176990] [Default] XCTPerformOnMainRunLoop[not MT]: waiting 60.00s for work to complete
+2026-02-11 11:13:47.419669-0800 PetSafe[75609:4175773] void * _Nullable NSMapGet(NSMapTable * _Nonnull, const void * _Nullable): map table argument is NULL
+2026-02-11 11:13:47.420261-0800 PetSafe[75609:4175773] [Default] Got main window <AXUIElementRef 0x600000c1ea00> {pid=75609} {uid=[ID:3 hash:0x10370ce40]}
+2026-02-11 11:13:47.423225-0800 PetSafe[75609:4175773] [Default] Capturing hierarchy with attributes XC_kAXXCAttributeElementBaseType, XC_kAXXCAttributeIdentifier, XC_kAXXCAttributeElementType, XC_kAXXCAttributeAutomationType, XC_kAXXCAttributeLabel, XC_kAXXCAttributeTraits, XC_kAXXCAttributeTruncatedValue, XC_kAXXCAttributeParent, XC_kAXXCAttributePlaceholderValue
+2026-02-11 11:13:47.423373-0800 PetSafe[75609:4175773] [Default] Capturing hierarchy with parameters {
+    attributes =     (
+        5004,
+        5019,
+        5003,
+        5058,
+        2001,
+        2004,
+        2158,
+        5002,
+        5043
+    );
+    maxArrayCount = 2147483647;
+    maxChildren = 2147483647;
+    maxDepth = 2147483647;
+    snapshotKeyHonorModalViews = 0;
+    traverseFromParentsToChildren = 1;
+}
+2026-02-11 11:13:47.423551-0800 PetSafe[75609:4175773] [Default] Snapshot attributes 5004, 5019, 5003, 5058, 2001, 2004, 2158, 5002, 5043
+2026-02-11 11:14:04.771016-0800 PetSafe[75609:4175773] [Default] Got snapshot for <AXUIElementRef 0x600000c90de0> {pid=75609} {uid=[ID:1 hash:0x0]}
+2026-02-11 11:14:04.772091-0800 PetSafe[75609:4175773] [Default] Got app orientation 0
+2026-02-11 11:14:04.772148-0800 PetSafe[75609:4175773] [Default] Captured accessibility snapshot data in 17.37s
+2026-02-11 11:14:04.777574-0800 PetSafe[75609:4176990] [Default] Found main window: Window
+2026-02-11 11:14:04.777684-0800 PetSafe[75609:4176990] [Default] Checking 'Sign In' for privileged AX value slot attributes
+2026-02-11 11:14:04.777746-0800 PetSafe[75609:4176990] [Default] Preferring automation type 48 instead of legacy element type OTHER derived from class/trait: UILabel:UILabel 8590000128
+2026-02-11 11:14:04.777929-0800 PetSafe[75609:4176990] [Default] Checking 'shield.checkerboard' for privileged AX value slot attributes
+2026-02-11 11:14:04.777975-0800 PetSafe[75609:4176990] [Default] Checking 'Welcome to PetSafe' for privileged AX value slot attributes
+2026-02-11 11:14:04.778018-0800 PetSafe[75609:4176990] [Default] Checking 'Sign in to continue' for privileged AX value slot attributes
+2026-02-11 11:14:04.778119-0800 PetSafe[75609:4176990] [Default] Checking 'Email' for privileged AX value slot attributes
+2026-02-11 11:14:04.782874-0800 PetSafe[75609:4176990] [Default] Checking 'Email' for privileged AX value slot attributes
+2026-02-11 11:14:04.782913-0800 PetSafe[75609:4176990] [Default] Checking 'Password' for privileged AX value slot attributes
+2026-02-11 11:14:04.782941-0800 PetSafe[75609:4176990] [Default] Checking 'Password' for privileged AX value slot attributes
+2026-02-11 11:14:04.782973-0800 PetSafe[75609:4176990] [Default] Checking 'Sign In' for privileged AX value slot attributes
+2026-02-11 11:14:04.783015-0800 PetSafe[75609:4176990] [Default] Checking '🧪 Developer Test Accounts' for privileged AX value slot attributes
+2026-02-11 11:14:04.783045-0800 PetSafe[75609:4176990] [Default] Checking 'person.crop.circle.badge.checkmark' for privileged AX value slot attributes
+2026-02-11 11:14:04.783075-0800 PetSafe[75609:4176990] [Default] Checking '🧪 Developer Test Accounts' for privileged AX value slot attributes
+2026-02-11 11:14:04.789582-0800 PetSafe[75609:4176990] [Default] Checking 'Go Down' for privileged AX value slot attributes
+2026-02-11 11:14:04.789686-0800 PetSafe[75609:4176990] [Default] ScrollView is not actually a child of Other, including at this point anyway (rdar://problem/20738636)
+2026-02-11 11:14:04.789737-0800 PetSafe[75609:4176990] [Default] Other is not actually a child of Other, including at this point anyway (rdar://problem/20738636)
+2026-02-11 11:14:04.789836-0800 PetSafe[75609:4176990] [Default] XCTPerformOnMainRunLoop[not MT]: about to CFRunLoopPerform
+2026-02-11 11:14:04.789870-0800 PetSafe[75609:4176990] [Default] XCTPerformOnMainRunLoop[not MT]: waiting with 30.00s responsiveness timeout
+2026-02-11 11:14:06.997039-0800 PetSafe[75609:4175773] [Default] XCTPerformOnMainRunLoop[MT]: inside CFRunLoopPerform
+2026-02-11 11:14:07.030707-0800 PetSafe[75609:4175773] [Default] XCTPerformOnMainRunLoop[MT]: MT responded in time (won the race to the busy flag)
+2026-02-11 11:14:07.030785-0800 PetSafe[75609:4176990] [Default] XCTPerformOnMainRunLoop[not MT]: waiting 60.00s for work to complete
+2026-02-11 11:14:07.051989-0800 PetSafe[75609:4175773] [Default] XCTElementQuery: set data source for rootElementSnapshot to <XCTAutomationSession: 0x60000260d2c0>
+2026-02-11 11:14:07.052917-0800 PetSafe[75609:4176990] [Default] Finding all matches with input Application, pid: 75609, label: 'PetSafe' using transformers 
+↪︎ Descendants matching type TextField
+    ↪︎ Elements matching predicate '"email_field" IN identifiers'
+2026-02-11 11:14:07.103211-0800 PetSafe[75609:4176990] [Default] [Match All] applied transformer `Descendants matching type TextField` to input {(
+    Application, pid: 75609, label: 'PetSafe'
+)}, found {(
+    TextField, placeholderValue: 'Email'
+)}
+2026-02-11 11:14:07.106154-0800 PetSafe[75609:4176990] [Default] [Match All] applied transformer `Elements matching predicate '"email_field" IN identifiers'` to input {(
+    TextField, placeholderValue: 'Email'
+)}, found {(
+)}
+2026-02-11 11:14:07.106242-0800 PetSafe[75609:4176990] [Default] [Match All] setting out related elements in early return {(
+)}
+2026-02-11 11:14:07.106808-0800 PetSafe[75609:4176990] [Default] Current tree:
+Application, 0x1038235c0, pid: 75609, label: 'PetSafe' <App element pid: 75609>
+  Window (Main), 0x103831650 <AX element pid: 75609, elementOrHash.elementID: 4352691776.3>
+    Other, 0x1038319e0 <AX element pid: 75609, elementOrHash.elementID: 4352785248.4>
+      Other, 0x103831d40 <AX element pid: 75609, elementOrHash.elementID: 4352692704.5>
+        Other, 0x1038320e0 <AX element pid: 75609, elementOrHash.elementID: 4350670960.6>
+          Other, 0x103832430 <AX element pid: 75609, elementOrHash.elementID: 4354921424.7>
+            Other, 0x1038327c0 <AX element pid: 75609, elementOrHash.elementID: 4358958864.8>
+              NavigationBar, 0x103832b40, identifier: 'Sign In' <AX element pid: 75609, elementOrHash.elementID: 4352855200.9>
+                StaticText, 0x103832e90, label: 'Sign In' <AX element pid: 75609, elementOrHash.elementID: 4354174832.12>
+              Other, 0x103833230 <AX element pid: 75609, elementOrHash.elementID: 4354177088.10>
+                Other, 0x1038335b0 <AX element pid: 75609, elementOrHash.elementID: 4358979360.13>
+                  Other, 0x103833900 <AX element pid: 75609, elementOrHash.elementID: 4352854304.15>
+                    Other, 0x103833c60 <AX element pid: 75609, elementOrHash.elementID: 4354998944.16>
+                      ScrollView, 0x103833fe0 <AX element pid: 75609, elementOrHash.elementID: 4437773824.17>
+                        Other, 0x103834340 <AX element pid: 75609, elementOrHash.elementID: 4357920176.18>
+                          Image, 0x103834690, identifier: 'shield.checkerboard', label: 'shield.checkerboard' <AX element pid: 75609, elementOrHash.elementID: 4354988096.20>
+                          StaticText, 0x1038349f0, label: 'Welcome to PetSafe' <AX element pid: 75609, elementOrHash.elementID: 4354242240.21>
+                          StaticText, 0x103834d70, label: 'Sign in to continue' <AX element pid: 75609, elementOrHash.elementID: 4352867264.22>
+                          TextField, 0x103758a90, placeholderValue: 'Email' <AX element pid: 75609, elementOrHash.elementID: 4421519360.23>
+                          SecureTextField, 0x1038350f0, placeholderValue: 'Password' <AX element pid: 75609, elementOrHash.elementID: 4387885568.24>
+                          Button, 0x103835460, label: 'Sign In', Disabled <AX element pid: 75609, elementOrHash.elementID: 4350764608.25>
+                          Button, 0x1038357d0, label: 'Sign in with Apple' <AX element pid: 75609, elementOrHash.elementID: 4350569760.26>
+                          Button, 0x103835b30, label: '🧪 Developer Test Accounts' <AX element pid: 75609, elementOrHash.elementID: 4355807456.27>
+                            Image, 0x103835e90, identifier: 'person.crop.circle.badge.checkmark', label: 'person.crop.circle.badge.checkmark' <AX element pid: 75609, elementOrHash.elementID: 4358978928.29>
+                            StaticText, 0x1038361f0, label: '🧪 Developer Test Accounts' <AX element pid: 75609, elementOrHash.elementID: 4355817152.30>
+                            Image, 0x10355b7c0, identifier: 'chevron.down', label: 'Go Down' <AX element pid: 75609, elementOrHash.elementID: 4355825808.31>
+                        Other, 0x10355b8e0, label: 'Vertical scroll bar, 1 page', value: 0% <AX element pid: 75609, elementOrHash.elementID: 4352930528.19>
+                          Other, 0x103559770 <AX element pid: 75609, elementOrHash.elementID: 4354986672.28>
+                        Other, 0x103559890, label: 'Vertical scroll bar, 1 page', value: 0% <AX element pid: 75609, elementOrHash.elementID: 4352930528.19>
+                          Other, 0x1035599b0 <AX element pid: 75609, elementOrHash.elementID: 4354986672.28>
+              Other, 0x103559ad0 <AX element pid: 75609, elementOrHash.elementID: 4354178032.11>
+                Other, 0x103559bf0 <AX element pid: 75609, elementOrHash.elementID: 4352864448.14>
+2026-02-11 11:14:07.110956-0800 PetSafe[75609:4176990] [Default] Query ↪︎ Descendants matching type TextField
+    ↪︎ Elements matching predicate '"email_field" IN identifiers' found matching snapshots: {(
+)} (error: (null))
+2026-02-11 11:14:07.111132-0800 PetSafe[75609:4176990] [Default] Replying to query ↪︎ Descendants matching type TextField
+    ↪︎ Elements matching predicate '"email_field" IN identifiers' with results: <XCTElementQueryResults: 0x600000cc41e0> (error: (null))
+2026-02-11 11:14:08.232332-0800 PetSafe[75609:4178441] [Default] Received request to fetch matches for query: ↪︎ Descendants matching type TextField
+    ↪︎ Elements matching predicate '"email_field" IN identifiers'
+2026-02-11 11:14:08.232545-0800 PetSafe[75609:4176990] [Default] Evaluating query:
+ ↪︎ Descendants matching type TextField
+    ↪︎ Elements matching predicate '"email_field" IN identifiers'
+2026-02-11 11:14:08.232600-0800 PetSafe[75609:4176990] [Default] Getting root element snapshot
+2026-02-11 11:14:08.232653-0800 PetSafe[75609:4176990] [Default] Getting snapshot for App element pid: 75609 for query ↪︎ Descendants matching type TextField
+    ↪︎ Elements matching predicate '"email_field" IN identifiers'
+2026-02-11 11:14:08.232772-0800 PetSafe[75609:4176990] [Default] Query requires iOS snapshot attributes XC_kAXXCAttributeElementBaseType, XC_kAXXCAttributeIdentifier, XC_kAXXCAttributeElementType, XC_kAXXCAttributeAutomationType, XC_kAXXCAttributeLabel, XC_kAXXCAttributeValue, XC_kAXXCAttributeTraits, XC_kAXXCAttributePlaceholderValue.
+2026-02-11 11:14:08.232863-0800 PetSafe[75609:4176990] [Default] XCTPerformOnMainRunLoop[not MT]: about to CFRunLoopPerform
+2026-02-11 11:14:08.232912-0800 PetSafe[75609:4176990] [Default] XCTPerformOnMainRunLoop[not MT]: waiting with 30.00s responsiveness timeout
+⚠️ SubscriptionServiceImpl: No products found for IDs: ["com.petsafe.premium.monthly", "com.petsafe.premium.yearly"]
+   Make sure:
+   1. StoreKit Configuration file exists (PetSafe.storekit)
+   2. It's enabled in Scheme → Run → Options → StoreKit Configuration
+   3. Product IDs match: ["com.petsafe.premium.monthly", "com.petsafe.premium.yearly"]
+2026-02-11 11:14:08.471365-0800 PetSafe[75609:4175773] [Default] XCTPerformOnMainRunLoop[MT]: inside CFRunLoopPerform
+2026-02-11 11:14:08.471511-0800 PetSafe[75609:4175773] [Default] XCTPerformOnMainRunLoop[MT]: MT responded in time (won the race to the busy flag)
+2026-02-11 11:14:08.471528-0800 PetSafe[75609:4176990] [Default] XCTPerformOnMainRunLoop[not MT]: waiting 60.00s for work to complete
+2026-02-11 11:14:08.490920-0800 PetSafe[75609:4175773] [Default] Got main window <AXUIElementRef 0x600000cc4ba0> {pid=75609} {uid=[ID:3 hash:0x10370ce40]}
+2026-02-11 11:14:08.517077-0800 PetSafe[75609:4175773] [Default] Capturing hierarchy with attributes XC_kAXXCAttributeElementBaseType, XC_kAXXCAttributeIdentifier, XC_kAXXCAttributeElementType, XC_kAXXCAttributeAutomationType, XC_kAXXCAttributeLabel, XC_kAXXCAttributeTraits, XC_kAXXCAttributeTruncatedValue, XC_kAXXCAttributeParent, XC_kAXXCAttributePlaceholderValue
+2026-02-11 11:14:08.517775-0800 PetSafe[75609:4175773] [Default] Capturing hierarchy with parameters {
+    attributes =     (
+        5004,
+        5019,
+        5003,
+        5058,
+        2001,
+        2004,
+        2158,
+        5002,
+        5043
+    );
+    maxArrayCount = 2147483647;
+    maxChildren = 2147483647;
+    maxDepth = 2147483647;
+    snapshotKeyHonorModalViews = 0;
+    traverseFromParentsToChildren = 1;
+}
+2026-02-11 11:14:08.517855-0800 PetSafe[75609:4175773] [Default] Snapshot attributes 5004, 5019, 5003, 5058, 2001, 2004, 2158, 5002, 5043
+2026-02-11 11:14:08.791298-0800 PetSafe[75609:4178441] [Default] Error enumerating all current transactions: Error Domain=ASDErrorDomain Code=509 "No active account" UserInfo={NSLocalizedDescription=No active account}
+2026-02-11 11:14:08.946220-0800 PetSafe[75609:4175773] [Default] Got snapshot for <AXUIElementRef 0x600000cbf270> {pid=75609} {uid=[ID:1 hash:0x0]}
+2026-02-11 11:14:08.946318-0800 PetSafe[75609:4175773] [Default] Got app orientation 0
+2026-02-11 11:14:08.946353-0800 PetSafe[75609:4175773] [Default] Captured accessibility snapshot data in 0.47s
+2026-02-11 11:14:08.946420-0800 PetSafe[75609:4176990] [Default] Checking 'PetSafe' for privileged AX value slot attributes
+2026-02-11 11:14:08.946510-0800 PetSafe[75609:4176990] [Default] Found main window: Window
+2026-02-11 11:14:08.946592-0800 PetSafe[75609:4176990] [Default] Checking 'Sign In' for privileged AX value slot attributes
+2026-02-11 11:14:08.946684-0800 PetSafe[75609:4176990] [Default] Preferring automation type 48 instead of legacy element type OTHER derived from class/trait: UILabel:UILabel 8590000128
+2026-02-11 11:14:08.946812-0800 PetSafe[75609:4176990] [Default] Checking 'Email' for privileged AX value slot attributes
+2026-02-11 11:14:08.946857-0800 PetSafe[75609:4176990] [Default] Checking 'Email' for privileged AX value slot attributes
+2026-02-11 11:14:08.946904-0800 PetSafe[75609:4176990] [Default] Checking 'Password' for privileged AX value slot attributes
+2026-02-11 11:14:08.946948-0800 PetSafe[75609:4176990] [Default] Checking 'Password' for privileged AX value slot attributes
+2026-02-11 11:14:08.947077-0800 PetSafe[75609:4176990] [Default] ScrollView is not actually a child of Other, including at this point anyway (rdar://problem/20738636)
+2026-02-11 11:14:08.947137-0800 PetSafe[75609:4176990] [Default] Other is not actually a child of Other, including at this point anyway (rdar://problem/20738636)
+2026-02-11 11:14:08.947218-0800 PetSafe[75609:4176990] [Default] XCTPerformOnMainRunLoop[not MT]: about to CFRunLoopPerform
+2026-02-11 11:14:08.947253-0800 PetSafe[75609:4176990] [Default] XCTPerformOnMainRunLoop[not MT]: waiting with 30.00s responsiveness timeout
+2026-02-11 11:14:09.330578-0800 PetSafe[75609:4175773] [Default] XCTPerformOnMainRunLoop[MT]: inside CFRunLoopPerform
+2026-02-11 11:14:09.330748-0800 PetSafe[75609:4175773] [Default] XCTPerformOnMainRunLoop[MT]: MT responded in time (won the race to the busy flag)
+2026-02-11 11:14:09.330794-0800 PetSafe[75609:4176990] [Default] XCTPerformOnMainRunLoop[not MT]: waiting 60.00s for work to complete
+2026-02-11 11:14:09.330824-0800 PetSafe[75609:4175773] [Default] XCTElementQuery: set data source for rootElementSnapshot to <XCTAutomationSession: 0x60000260d2c0>
+2026-02-11 11:14:09.331087-0800 PetSafe[75609:4176990] [Default] Finding all matches with input Application, pid: 75609, label: 'PetSafe' using transformers 
+↪︎ Descendants matching type TextField
+    ↪︎ Elements matching predicate '"email_field" IN identifiers'
+2026-02-11 11:14:09.333306-0800 PetSafe[75609:4176990] [Default] [Match All] applied transformer `Descendants matching type TextField` to input {(
+    Application, pid: 75609, label: 'PetSafe'
+)}, found {(
+    TextField, placeholderValue: 'Email'
+)}
+2026-02-11 11:14:09.337168-0800 PetSafe[75609:4176990] [Default] [Match All] applied transformer `Elements matching predicate '"email_field" IN identifiers'` to input {(
+    TextField, placeholderValue: 'Email'
+)}, found {(
+)}
+2026-02-11 11:14:09.337228-0800 PetSafe[75609:4176990] [Default] [Match All] setting out related elements in early return {(
+)}
+2026-02-11 11:14:09.337764-0800 PetSafe[75609:4176990] [Default] Current tree:
+Application, 0x1038357d0, pid: 75609, label: 'PetSafe' <App element pid: 75609>
+  Window (Main), 0x103835460 <AX element pid: 75609, elementOrHash.elementID: 4352691776.3>
+    Other, 0x103835e90 <AX element pid: 75609, elementOrHash.elementID: 4352785248.4>
+      Other, 0x1038361f0 <AX element pid: 75609, elementOrHash.elementID: 4352692704.5>
+        Other, 0x103835b30 <AX element pid: 75609, elementOrHash.elementID: 4350670960.6>
+          Other, 0x103834340 <AX element pid: 75609, elementOrHash.elementID: 4354921424.7>
+            Other, 0x103833fe0 <AX element pid: 75609, elementOrHash.elementID: 4358958864.8>
+              NavigationBar, 0x103833c60, identifier: 'Sign In' <AX element pid: 75609, elementOrHash.elementID: 4352855200.9>
+                StaticText, 0x103833900, label: 'Sign In' <AX element pid: 75609, elementOrHash.elementID: 4354174832.12>
+              Other, 0x10375b4b0 <AX element pid: 75609, elementOrHash.elementID: 4354177088.10>
+                Other, 0x103728ad0 <AX element pid: 75609, elementOrHash.elementID: 4358979360.13>
+                  Other, 0x10375d7f0 <AX element pid: 75609, elementOrHash.elementID: 4352854304.15>
+                    Other, 0x10375a610 <AX element pid: 75609, elementOrHash.elementID: 4354998944.16>
+                      ScrollView, 0x103739e20 <AX element pid: 75609, elementOrHash.elementID: 4437773824.17>
+                        Other, 0x10372d490 <AX element pid: 75609, elementOrHash.elementID: 4354176672.32>
+                          Other, 0x1037314a0 <AX element pid: 75609, elementOrHash.elementID: 4350702672.34>
+                        Other, 0x103758a90 <AX element pid: 75609, elementOrHash.elementID: 4353746112.33>
+                        Other, 0x10375d180 <AX element pid: 75609, elementOrHash.elementID: 4357920176.18>
+                          Image, 0x10372b0a0, identifier: 'shield.checkerboard', label: 'shield.checkerboard' <AX element pid: 75609, elementOrHash.elementID: 4354988096.20>
+                          StaticText, 0x103754900, label: 'Welcome to PetSafe' <AX element pid: 75609, elementOrHash.elementID: 4354242240.21>
+                          StaticText, 0x1037389f0, label: 'Sign in to continue' <AX element pid: 75609, elementOrHash.elementID: 4352867264.22>
+                          TextField, 0x1037199c0, placeholderValue: 'Email' <AX element pid: 75609, elementOrHash.elementID: 4421519360.23>
+                          SecureTextField, 0x1038335b0, placeholderValue: 'Password' <AX element pid: 75609, elementOrHash.elementID: 4387885568.24>
+                          Button, 0x103833230, label: 'Sign In', Disabled <AX element pid: 75609, elementOrHash.elementID: 4350764608.25>
+                          Button, 0x1038327c0, label: 'Sign in with Apple' <AX element pid: 75609, elementOrHash.elementID: 4350569760.26>
+                          Button, 0x103832430, label: '🧪 Developer Test Accounts' <AX element pid: 75609, elementOrHash.elementID: 4355807456.27>
+                            Image, 0x1038320e0, identifier: 'person.crop.circle.badge.checkmark', label: 'person.crop.circle.badge.checkmark' <AX element pid: 75609, elementOrHash.elementID: 4358978928.29>
+                            StaticText, 0x103831d40, label: '🧪 Developer Test Accounts' <AX element pid: 75609, elementOrHash.elementID: 4355817152.30>
+                            Image, 0x1038319e0, identifier: 'chevron.down', label: 'Go Down' <AX element pid: 75609, elementOrHash.elementID: 4355825808.31>
+                        Other, 0x103831650, label: 'Vertical scroll bar, 1 page', value: 0% <AX element pid: 75609, elementOrHash.elementID: 4352930528.19>
+                          Other, 0x1038235c0 <AX element pid: 75609, elementOrHash.elementID: 4354986672.28>
+                        Other, 0x10392ded0, label: 'Vertical scroll bar, 1 page', value: 0% <AX element pid: 75609, elementOrHash.elementID: 4352930528.19>
+                          Other, 0x103912990 <AX element pid: 75609, elementOrHash.elementID: 4354986672.28>
+              Other, 0x103756030 <AX element pid: 75609, elementOrHash.elementID: 4354178032.11>
+                Other, 0x10373e050 <AX element pid: 75609, elementOrHash.elementID: 4352864448.14>
+2026-02-11 11:14:09.345506-0800 PetSafe[75609:4176990] [Default] Query ↪︎ Descendants matching type TextField
+    ↪︎ Elements matching predicate '"email_field" IN identifiers' found matching snapshots: {(
+)} (error: (null))
+2026-02-11 11:14:09.345609-0800 PetSafe[75609:4176990] [Default] Replying to query ↪︎ Descendants matching type TextField
+    ↪︎ Elements matching predicate '"email_field" IN identifiers' with results: <XCTElementQueryResults: 0x600000ccccf0> (error: (null))
+2026-02-11 11:14:10.384367-0800 PetSafe[75609:4177000] [Default] Received request to fetch matches for query: ↪︎ Descendants matching type TextField
+    ↪︎ Elements matching predicate '"email_field" IN identifiers'
+2026-02-11 11:14:10.384503-0800 PetSafe[75609:4178441] [Default] Evaluating query:
+ ↪︎ Descendants matching type TextField
+    ↪︎ Elements matching predicate '"email_field" IN identifiers'
+2026-02-11 11:14:10.384553-0800 PetSafe[75609:4178441] [Default] Getting root element snapshot
+2026-02-11 11:14:10.384607-0800 PetSafe[75609:4178441] [Default] Getting snapshot for App element pid: 75609 for query ↪︎ Descendants matching type TextField
+    ↪︎ Elements matching predicate '"email_field" IN identifiers'
+2026-02-11 11:14:10.384662-0800 PetSafe[75609:4178441] [Default] Query requires iOS snapshot attributes XC_kAXXCAttributeElementBaseType, XC_kAXXCAttributeIdentifier, XC_kAXXCAttributeElementType, XC_kAXXCAttributeAutomationType, XC_kAXXCAttributeLabel, XC_kAXXCAttributeValue, XC_kAXXCAttributeTraits, XC_kAXXCAttributePlaceholderValue.
+2026-02-11 11:14:10.385498-0800 PetSafe[75609:4178441] [Default] XCTPerformOnMainRunLoop[not MT]: about to CFRunLoopPerform
+2026-02-11 11:14:10.385527-0800 PetSafe[75609:4178441] [Default] XCTPerformOnMainRunLoop[not MT]: waiting with 30.00s responsiveness timeout
+2026-02-11 11:14:10.775421-0800 PetSafe[75609:4175773] [Default] XCTPerformOnMainRunLoop[MT]: inside CFRunLoopPerform
+2026-02-11 11:14:10.775501-0800 PetSafe[75609:4175773] [Default] XCTPerformOnMainRunLoop[MT]: MT responded in time (won the race to the busy flag)
+2026-02-11 11:14:10.775521-0800 PetSafe[75609:4178441] [Default] XCTPerformOnMainRunLoop[not MT]: waiting 60.00s for work to complete
+2026-02-11 11:14:10.777743-0800 PetSafe[75609:4175773] [Default] Got main window <AXUIElementRef 0x600000ccd080> {pid=75609} {uid=[ID:3 hash:0x10370ce40]}
+2026-02-11 11:14:10.778129-0800 PetSafe[75609:4175773] [Default] Capturing hierarchy with attributes XC_kAXXCAttributeElementBaseType, XC_kAXXCAttributeIdentifier, XC_kAXXCAttributeElementType, XC_kAXXCAttributeAutomationType, XC_kAXXCAttributeLabel, XC_kAXXCAttributeTraits, XC_kAXXCAttributeTruncatedValue, XC_kAXXCAttributeParent, XC_kAXXCAttributePlaceholderValue
+2026-02-11 11:14:10.778224-0800 PetSafe[75609:4175773] [Default] Capturing hierarchy with parameters {
+    attributes =     (
+        5004,
+        5019,
+        5003,
+        5058,
+        2001,
+        2004,
+        2158,
+        5002,
+        5043
+    );
+    maxArrayCount = 2147483647;
+    maxChildren = 2147483647;
+    maxDepth = 2147483647;
+    snapshotKeyHonorModalViews = 0;
+    traverseFromParentsToChildren = 1;
+}
+2026-02-11 11:14:10.778276-0800 PetSafe[75609:4175773] [Default] Snapshot attributes 5004, 5019, 5003, 5058, 2001, 2004, 2158, 5002, 5043
+2026-02-11 11:14:10.911106-0800 PetSafe[75609:4175773] [Default] Got snapshot for <AXUIElementRef 0x600000ccc480> {pid=75609} {uid=[ID:1 hash:0x0]}
+2026-02-11 11:14:10.911249-0800 PetSafe[75609:4175773] [Default] Got app orientation 0
+2026-02-11 11:14:10.911293-0800 PetSafe[75609:4175773] [Default] Captured accessibility snapshot data in 0.14s
+2026-02-11 11:14:10.911376-0800 PetSafe[75609:4178441] [Default] Checking 'PetSafe' for privileged AX value slot attributes
+2026-02-11 11:14:10.911447-0800 PetSafe[75609:4178441] [Default] Found main window: Window
+2026-02-11 11:14:10.911518-0800 PetSafe[75609:4178441] [Default] Checking 'Sign In' for privileged AX value slot attributes
+2026-02-11 11:14:10.911592-0800 PetSafe[75609:4178441] [Default] Preferring automation type 48 instead of legacy element type OTHER derived from class/trait: UILabel:UILabel 8590000128
+2026-02-11 11:14:10.911711-0800 PetSafe[75609:4178441] [Default] Checking 'Email' for privileged AX value slot attributes
+2026-02-11 11:14:10.911801-0800 PetSafe[75609:4178441] [Default] Checking 'Email' for privileged AX value slot attributes
+2026-02-11 11:14:10.911837-0800 PetSafe[75609:4178441] [Default] Checking 'Password' for privileged AX value slot attributes
+2026-02-11 11:14:10.911870-0800 PetSafe[75609:4178441] [Default] Checking 'Password' for privileged AX value slot attributes
+2026-02-11 11:14:10.911968-0800 PetSafe[75609:4178441] [Default] ScrollView is not actually a child of Other, including at this point anyway (rdar://problem/20738636)
+2026-02-11 11:14:10.912016-0800 PetSafe[75609:4178441] [Default] Other is not actually a child of Other, including at this point anyway (rdar://problem/20738636)
+2026-02-11 11:14:10.912085-0800 PetSafe[75609:4178441] [Default] XCTPerformOnMainRunLoop[not MT]: about to CFRunLoopPerform
+2026-02-11 11:14:10.912117-0800 PetSafe[75609:4178441] [Default] XCTPerformOnMainRunLoop[not MT]: waiting with 30.00s responsiveness timeout
+2026-02-11 11:14:10.914209-0800 PetSafe[75609:4175773] [Default] XCTPerformOnMainRunLoop[MT]: inside CFRunLoopPerform
+2026-02-11 11:14:10.914248-0800 PetSafe[75609:4175773] [Default] XCTPerformOnMainRunLoop[MT]: MT responded in time (won the race to the busy flag)
+2026-02-11 11:14:10.914252-0800 PetSafe[75609:4178441] [Default] XCTPerformOnMainRunLoop[not MT]: waiting 60.00s for work to complete
+2026-02-11 11:14:10.914286-0800 PetSafe[75609:4175773] [Default] XCTElementQuery: set data source for rootElementSnapshot to <XCTAutomationSession: 0x60000260d2c0>
+2026-02-11 11:14:10.914390-0800 PetSafe[75609:4178441] [Default] Finding all matches with input Application, pid: 75609, label: 'PetSafe' using transformers 
+↪︎ Descendants matching type TextField
+    ↪︎ Elements matching predicate '"email_field" IN identifiers'
+2026-02-11 11:14:10.914989-0800 PetSafe[75609:4178441] [Default] [Match All] applied transformer `Descendants matching type TextField` to input {(
+    Application, pid: 75609, label: 'PetSafe'
+)}, found {(
+    TextField, placeholderValue: 'Email'
+)}
+2026-02-11 11:14:10.915255-0800 PetSafe[75609:4178441] [Default] [Match All] applied transformer `Elements matching predicate '"email_field" IN identifiers'` to input {(
+    TextField, placeholderValue: 'Email'
+)}, found {(
+)}
+2026-02-11 11:14:10.915288-0800 PetSafe[75609:4178441] [Default] [Match All] setting out related elements in early return {(
+)}
+2026-02-11 11:14:10.916029-0800 PetSafe[75609:4178441] [Default] Current tree:
+Application, 0x103817090, pid: 75609, label: 'PetSafe' <App element pid: 75609>
+  Window (Main), 0x10352a290 <AX element pid: 75609, elementOrHash.elementID: 4352691776.3>
+    Other, 0x1038350f0 <AX element pid: 75609, elementOrHash.elementID: 4352785248.4>
+      Other, 0x103835b30 <AX element pid: 75609, elementOrHash.elementID: 4352692704.5>
+        Other, 0x1038361f0 <AX element pid: 75609, elementOrHash.elementID: 4350670960.6>
+          Other, 0x103831d40 <AX element pid: 75609, elementOrHash.elementID: 4354921424.7>
+            Other, 0x1038320e0 <AX element pid: 75609, elementOrHash.elementID: 4358958864.8>
+              NavigationBar, 0x103832430, identifier: 'Sign In' <AX element pid: 75609, elementOrHash.elementID: 4352855200.9>
+                StaticText, 0x1038319e0, label: 'Sign In' <AX element pid: 75609, elementOrHash.elementID: 4354174832.12>
+              Other, 0x10372fb70 <AX element pid: 75609, elementOrHash.elementID: 4354177088.10>
+                Other, 0x10370df50 <AX element pid: 75609, elementOrHash.elementID: 4358979360.13>
+                  Other, 0x10375a610 <AX element pid: 75609, elementOrHash.elementID: 4352854304.15>
+                    Other, 0x10373bc10 <AX element pid: 75609, elementOrHash.elementID: 4354998944.16>
+                      ScrollView, 0x103727a90 <AX element pid: 75609, elementOrHash.elementID: 4437773824.17>
+                        Other, 0x103757000 <AX element pid: 75609, elementOrHash.elementID: 4354176672.32>
+                          Other, 0x103758a90 <AX element pid: 75609, elementOrHash.elementID: 4350702672.34>
+                        Other, 0x1037314a0 <AX element pid: 75609, elementOrHash.elementID: 4353746112.33>
+                        Other, 0x103754900 <AX element pid: 75609, elementOrHash.elementID: 4357920176.18>
+                          Image, 0x1037385b0, identifier: 'shield.checkerboard', label: 'shield.checkerboard' <AX element pid: 75609, elementOrHash.elementID: 4354988096.20>
+                          StaticText, 0x1037199c0, label: 'Welcome to PetSafe' <AX element pid: 75609, elementOrHash.elementID: 4354242240.21>
+                          StaticText, 0x103756030, label: 'Sign in to continue' <AX element pid: 75609, elementOrHash.elementID: 4352867264.22>
+                          TextField, 0x10373e050, placeholderValue: 'Email' <AX element pid: 75609, elementOrHash.elementID: 4421519360.23>
+                          SecureTextField, 0x10373e170, placeholderValue: 'Password' <AX element pid: 75609, elementOrHash.elementID: 4387885568.24>
+                          Button, 0x1038327c0, label: 'Sign In', Disabled <AX element pid: 75609, elementOrHash.elementID: 4350764608.25>
+                          Button, 0x103830220, label: 'Sign in with Apple' <AX element pid: 75609, elementOrHash.elementID: 4350569760.26>
+                          Button, 0x1038847b0, label: '🧪 Developer Test Accounts' <AX element pid: 75609, elementOrHash.elementID: 4355807456.27>
+                            Image, 0x10382feb0, identifier: 'person.crop.circle.badge.checkmark', label: 'person.crop.circle.badge.checkmark' <AX element pid: 75609, elementOrHash.elementID: 4358978928.29>
+                            StaticText, 0x103824a80, label: '🧪 Developer Test Accounts' <AX element pid: 75609, elementOrHash.elementID: 4355817152.30>
+                            Image, 0x10382f810, identifier: 'chevron.down', label: 'Go Down' <AX element pid: 75609, elementOrHash.elementID: 4355825808.31>
+                        Other, 0x10382fb70, label: 'Vertical scroll bar, 1 page', value: 0% <AX element pid: 75609, elementOrHash.elementID: 4352930528.19>
+                          Other, 0x10382edb0 <AX element pid: 75609, elementOrHash.elementID: 4354986672.28>
+                        Other, 0x1038335b0, label: 'Vertical scroll bar, 1 page', value: 0% <AX element pid: 75609, elementOrHash.elementID: 4352930528.19>
+                          Other, 0x103833230 <AX element pid: 75609, elementOrHash.elementID: 4354986672.28>
+              Other, 0x10382ce60 <AX element pid: 75609, elementOrHash.elementID: 4354178032.11>
+                Other, 0x103833900 <AX element pid: 75609, elementOrHash.elementID: 4352864448.14>
+2026-02-11 11:14:10.918198-0800 PetSafe[75609:4178441] [Default] Query ↪︎ Descendants matching type TextField
+    ↪︎ Elements matching predicate '"email_field" IN identifiers' found matching snapshots: {(
+)} (error: (null))
+2026-02-11 11:14:10.918311-0800 PetSafe[75609:4178441] [Default] Replying to query ↪︎ Descendants matching type TextField
+    ↪︎ Elements matching predicate '"email_field" IN identifiers' with results: <XCTElementQueryResults: 0x600000cd0420> (error: (null))
+Standard output and standard error from com.armstrong.PetSafe with process ID 75696 beginning at 2026-02-11 19:15:08 +0000
+
+2026-02-11 11:15:22.612789-0800 PetSafe[75696:4181420] [Default] Received request to exchange capabilities, remote interface capabilities are: <XCTCapabilities: 0x600000011480>: {
+    "query runtime issue reporting" = 1;
+    "query runtime issue reporting/automation type mismatch" = 1;
+}
+2026-02-11 11:15:22.791420-0800 PetSafe[75696:4181420] [Default] Received request to notify when the main run loop is idle
+2026-02-11 11:15:22.791599-0800 PetSafe[75696:4181420] [Default] Idle notifier finished setting up run loop observer
+2026-02-11 11:15:22.792274-0800 PetSafe[75696:4181420] [Default] Received request to notify when animations are idle
+2026-02-11 11:15:22.792325-0800 PetSafe[75696:4181420] [Default] Sending animations idle reply with error: (null)
+2026-02-11 11:15:29.670100-0800 PetSafe[75696:4181646] [General] Failed to send CA Event for app launch measurements for ca_event_type: 0 event_name: com.apple.app_launch_measurement.FirstFramePresentationMetric
+🔄 SubscriptionServiceImpl: Loading products from StoreKit...
+2026-02-11 11:15:30.002640-0800 PetSafe[75696:4180685] [Default] Idle notifier run loop observer fired
+2026-02-11 11:15:30.002696-0800 PetSafe[75696:4180685] [Default] Sending main run loop idle reply
+2026-02-11 11:15:30.072712-0800 PetSafe[75696:4181466] [General] Failed to send CA Event for app launch measurements for ca_event_type: 1 event_name: com.apple.app_launch_measurement.ExtendedLaunchMetrics
+2026-02-11 11:15:30.137228-0800 PetSafe[75696:4181466] [Default] Error enumerating all current transactions: Error Domain=ASDErrorDomain Code=509 "No active account" UserInfo={NSLocalizedDescription=No active account}
+2026-02-11 11:15:30.137607-0800 PetSafe[75696:4181466] [Default] Error enumerating unfinished transactions for first transaction listener: Error Domain=ASDErrorDomain Code=509 "No active account" UserInfo={NSLocalizedDescription=No active account}
+2026-02-11 11:15:32.652317-0800 PetSafe[75696:4181452] [Default] Received request to notify when the main run loop is idle
+2026-02-11 11:15:32.670875-0800 PetSafe[75696:4181452] [Default] Idle notifier finished setting up run loop observer
+2026-02-11 11:15:32.671116-0800 PetSafe[75696:4181452] [Default] Received request to notify when animations are idle
+2026-02-11 11:15:32.671193-0800 PetSafe[75696:4181452] [Default] Sending animations idle reply with error: (null)
+2026-02-11 11:16:33.908129-0800 PetSafe[75696:4183696] [Default] Received request to fetch matches for query: ↪︎ Descendants matching type TextField
+    ↪︎ Elements matching predicate '"email_field" IN identifiers'
+2026-02-11 11:16:33.910934-0800 PetSafe[75696:4183694] [Default] Evaluating query:
+ ↪︎ Descendants matching type TextField
+    ↪︎ Elements matching predicate '"email_field" IN identifiers'
+2026-02-11 11:16:33.911355-0800 PetSafe[75696:4183694] [Default] Getting root element snapshot
+2026-02-11 11:16:33.911514-0800 PetSafe[75696:4183694] [Default] Getting snapshot for App element pid: 75696 for query ↪︎ Descendants matching type TextField
+    ↪︎ Elements matching predicate '"email_field" IN identifiers'
+2026-02-11 11:16:33.912071-0800 PetSafe[75696:4183694] [Default] Query requires iOS snapshot attributes XC_kAXXCAttributeElementBaseType, XC_kAXXCAttributeIdentifier, XC_kAXXCAttributeElementType, XC_kAXXCAttributeAutomationType, XC_kAXXCAttributeLabel, XC_kAXXCAttributeValue, XC_kAXXCAttributeTraits, XC_kAXXCAttributePlaceholderValue.
+2026-02-11 11:16:33.946132-0800 PetSafe[75696:4183694] [Default] XCTPerformOnMainRunLoop[not MT]: about to CFRunLoopPerform
+2026-02-11 11:16:33.946525-0800 PetSafe[75696:4183694] [Default] XCTPerformOnMainRunLoop[not MT]: waiting with 30.00s responsiveness timeout

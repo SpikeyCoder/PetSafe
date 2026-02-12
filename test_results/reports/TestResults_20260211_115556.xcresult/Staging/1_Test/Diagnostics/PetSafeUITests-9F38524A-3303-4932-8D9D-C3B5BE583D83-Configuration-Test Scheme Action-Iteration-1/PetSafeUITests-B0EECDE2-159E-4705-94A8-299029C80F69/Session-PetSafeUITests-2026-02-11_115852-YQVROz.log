@@ -1,0 +1,799 @@
+Xcode version: 26.2 (17C52)
+11:58:52.171 xcodebuild[79860:4273041] Beginning test session PetSafeUITests-79CB735F-CDCD-46EE-BC54-FC3488DB8137 at 2026-02-11 11:58:52.170 on target <DVTiPhoneSimulator: 0x88a94c280> {
+		SimDevice: Clone 3 of iPhone 17 Pro (1E3242E0-B231-4AF9-B72E-2654E0AA379F, iOS 26.1, Shutdown)
+} (26.1 (23B86))
+11:58:52.171 xcodebuild[79860:4273041] 	/Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild
+test-without-building
+-project
+/Users/kevinarmstrong/Documents/PetSafe/PetSafe.xcodeproj
+-scheme
+PetSafe
+-destination
+platform=iOS Simulator,id=EF835E06-7665-4CAC-B7BE-3019D50CA10C
+-only-testing:PetSafeUITests
+-disable-concurrent-testing
+-maximum-concurrent-test-device-destinations
+1
+-resultBundlePath
+/Users/kevinarmstrong/Documents/PetSafe/test_results/reports/TestResults_20260211_115556.xcresult
+-enableCodeCoverage
+YES
+ANTHROPIC_LOG=debug
+11:58:52.199 xcodebuild[79860:4273041] Test standard output and standard error is at /Users/kevinarmstrong/Documents/PetSafe/test_results/reports/TestResults_20260211_115556.xcresult/Staging/1_Test/Diagnostics/PetSafeUITests-9F38524A-3303-4932-8D9D-C3B5BE583D83-Configuration-Test Scheme Action-Iteration-1/PetSafeUITests-B0EECDE2-159E-4705-94A8-299029C80F69/StandardOutputAndStandardError.txt
+11:58:54.233 xcodebuild[79860:4273041] 1E3242E0-B231-4AF9-B72E-2654E0AA379F: Received sim device notification: {
+    notification = "availableDevices_changed";
+}
+11:58:54.234 xcodebuild[79860:4273041] 1E3242E0-B231-4AF9-B72E-2654E0AA379F: Received sim device notification: {
+    device = "Clone 3 of iPhone 17 Pro (1E3242E0-B231-4AF9-B72E-2654E0AA379F, iOS 26.1, Booting)";
+    "last_booted_at" = "2026-02-11 19:58:54 +0000";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+11:58:54.237 xcodebuild[79860:4273041] /Users/kevinarmstrong/Library/Developer/XCTestDevices: Received sim device set notification: {
+    device = "Clone 3 of iPhone 17 Pro (1E3242E0-B231-4AF9-B72E-2654E0AA379F, iOS 26.1, Booting)";
+    "last_booted_at" = "2026-02-11 19:58:54 +0000";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+11:58:54.237 xcodebuild[79860:4273041] /Users/kevinarmstrong/Library/Developer/XCTestDevices: Received sim device set notification: {
+    device = "Clone 3 of iPhone 17 Pro (1E3242E0-B231-4AF9-B72E-2654E0AA379F, iOS 26.1, Booting)";
+    "last_booted_at" = "2026-02-11 19:58:54 +0000";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+11:58:54.238 xcodebuild[79860:4273041] /Users/kevinarmstrong/Library/Developer/XCTestDevices: Received sim device set notification: {
+    device = "Clone 3 of iPhone 17 Pro (1E3242E0-B231-4AF9-B72E-2654E0AA379F, iOS 26.1, Booting)";
+    "last_booted_at" = "2026-02-11 19:58:54 +0000";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+11:58:55.043 xcodebuild[79860:4273041] 1E3242E0-B231-4AF9-B72E-2654E0AA379F: Received sim device notification: {
+    notification = "availableDevices_changed";
+}
+11:58:55.043 xcodebuild[79860:4273041] 1E3242E0-B231-4AF9-B72E-2654E0AA379F: Received sim device notification: {
+    device = "Clone 3 of iPhone 17 Pro (1E3242E0-B231-4AF9-B72E-2654E0AA379F, iOS 26.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+11:58:55.044 xcodebuild[79860:4273041] /Users/kevinarmstrong/Library/Developer/XCTestDevices: Received sim device set notification: {
+    device = "Clone 3 of iPhone 17 Pro (1E3242E0-B231-4AF9-B72E-2654E0AA379F, iOS 26.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+11:58:55.056 xcodebuild[79860:4276686] 📱<DVTiPhoneSimulator (0x88a94c280), Clone 3 of iPhone 17 Pro, unknown class, 26.1 (23B86), 1E3242E0-B231-4AF9-B72E-2654E0AA379F> claim LaunchSessionClaim_0x88bf8eb80 on simulator was issued, 2 claims exist.
+11:58:55.059 xcodebuild[79860:4273041] /Users/kevinarmstrong/Library/Developer/XCTestDevices: Received sim device set notification: {
+    device = "Clone 3 of iPhone 17 Pro (1E3242E0-B231-4AF9-B72E-2654E0AA379F, iOS 26.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+11:58:55.059 xcodebuild[79860:4273041] /Users/kevinarmstrong/Library/Developer/XCTestDevices: Received sim device set notification: {
+    device = "Clone 3 of iPhone 17 Pro (1E3242E0-B231-4AF9-B72E-2654E0AA379F, iOS 26.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+11:58:55.060 xcodebuild[79860:4273041] Setting up test runner session
+11:58:55.060 xcodebuild[79860:4282977] Sim Clone 3 of iPhone 17 Pro: Unregistering for sim device notification with token 5
+11:58:55.061 xcodebuild[79860:4282977] Calling -[SimDevice getenv:error:] for TESTMANAGERD_SIM_SOCK
+11:58:55.063 xcodebuild[79860:4273041] Registering/updating daemon-based crash report observer for process names (
+    xctest,
+    debugserver,
+    FrontBoard,
+    assertiond,
+    runningboardd,
+    SpringBoard,
+    testmanagerd,
+    backboardd,
+    DTServiceHub,
+    "PetSafeUITests-Runner",
+    PetSafe,
+    PetSafeUITests
+)
+11:58:55.116 xcodebuild[79860:4282977] Sim Clone 3 of iPhone 17 Pro has testmanagerd socket at /private/tmp/com.apple.launchd.AkMPBBWD2i/com.apple.testmanagerd.unix-domain.socket
+11:58:55.116 xcodebuild[79860:4282977] Validating test connection socket path (/private/tmp/com.apple.launchd.AkMPBBWD2i/com.apple.testmanagerd.unix-domain.socket)
+11:58:55.116 xcodebuild[79860:4282977] Constructing transport for test connection socket
+11:58:55.116 xcodebuild[79860:4282977] Connected socket 61 to testmanagerd for Sim Clone 3 of iPhone 17 Pro
+11:58:55.117 xcodebuild[79860:4282977] Received connection for test runner session
+11:58:55.117 xcodebuild[79860:4282977] Listening for proxy connection request from the test bundle
+11:58:55.121 xcodebuild[79860:4273041] Test runner session acquired connection.
+11:58:55.122 xcodebuild[79860:4282977] Initiating session with identifier: 79CB735F-CDCD-46EE-BC54-FC3488DB8137
+11:59:11.527 xcodebuild[79860:4280440] Got reply to session initiation request with identifier 79CB735F-CDCD-46EE-BC54-FC3488DB8137 (error: (null))
+11:59:12.990 xcodebuild[79860:4273041] Finished requesting crash reports. Continuing with testing.
+11:59:13.073 xcodebuild[79860:4273041] Launch session started.
+11:59:13.160 xcodebuild[79860:4282976] 📱<DVTiPhoneSimulator (0x88a94c280), Clone 3 of iPhone 17 Pro, unknown class, 26.1 (23B86), 1E3242E0-B231-4AF9-B72E-2654E0AA379F> claim LaunchSessionClaim_0x88bf8eb80 on simulator was issued, 2 claims exist.
+11:59:13.178 xcodebuild[79860:4280440] 📱<DVTiPhoneSimulator (0x88a94c280), Clone 3 of iPhone 17 Pro, unknown class, 26.1 (23B86), 1E3242E0-B231-4AF9-B72E-2654E0AA379F> claim LaunchSessionClaim_0x88bf8eb80 on simulator was issued, 2 claims exist.
+11:59:13.179 xcodebuild[79860:4280440] 1E3242E0-B231-4AF9-B72E-2654E0AA379F: Registered for sim device notification, got token 8
+11:59:13.179 xcodebuild[79860:4284380] 1E3242E0-B231-4AF9-B72E-2654E0AA379F: Unregistering for sim device notification with token 8
+11:59:13.193 xcodebuild[79860:4280440] 1E3242E0-B231-4AF9-B72E-2654E0AA379F: Installing app at path: /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafeUITests-Runner.app and options: {
+    SkipWatchAppInstall = 1;
+}
+12:05:07.877 xcodebuild[79860:4280440] 1E3242E0-B231-4AF9-B72E-2654E0AA379F: Installed app at path: /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafeUITests-Runner.app and options: {
+    SkipWatchAppInstall = 1;
+}
+12:05:07.934 xcodebuild[79860:4280440] 1E3242E0-B231-4AF9-B72E-2654E0AA379F: Launching app with identifier: com.armstrong.PetSafeUITests.xctrunner and options: {
+    "activate_suspended" = 1;
+    arguments =     (
+    );
+    environment =     {
+        "ANTHROPIC_LOG" = debug;
+        "APP_DISTRIBUTOR_ID_OVERRIDE" = "com.apple.AppStore";
+        "CA_ASSERT_MAIN_THREAD_TRANSACTIONS" = 0;
+        "CA_DEBUG_TRANSACTIONS" = 0;
+        "DYLD_FRAMEWORK_PATH" = "/Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks";
+        "DYLD_INSERT_LIBRARIES" = "/usr/lib/libRPAC.dylib:/Library/Developer/CoreSimulator/Volumes/iOS_23B86/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libMainThreadChecker.dylib:/usr/lib/libRPAC.dylib";
+        "DYLD_LIBRARY_PATH" = "/Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib";
+        "LLVM_PROFILE_FILE" = "/var/folders/c_/1vvhh6zj1qg7vw82fbdr2dyr0000gn/T/com.armstrong.PetSafeUITests.xctrunner/D268CB91-3ED7-409E-ABBF-58033FB420C4-79860-0000036476183B6D/A95EE64C-57C8-401A-9671-B922D4DA0F16-%p%c.profraw";
+        NSApplicationQuitWithoutSuddenTermination = YES;
+        NSUnbufferedIO = YES;
+        "OS_ACTIVITY_DT_MODE" = YES;
+        "PERFC_ENABLE_EXTENDED_DIAGNOSTIC_FORMAT" = 1;
+        "PERFC_ENABLE_PROFILE_MODE" = 1;
+        "PERFC_RESET_INSERT_LIBRARIES" = 1;
+        "PERFC_SUPPRESS_SYSTEM_REPORTS" = 1;
+        "RUN_DESTINATION_DEVICE_NAME" = "Clone 3 of iPhone 17 Pro";
+        "RUN_DESTINATION_DEVICE_PLATFORM_IDENTIFIER" = "com.apple.platform.iphonesimulator";
+        "RUN_DESTINATION_DEVICE_UDID" = "1E3242E0-B231-4AF9-B72E-2654E0AA379F";
+        "SQLITE_ENABLE_THREAD_ASSERTIONS" = 1;
+        TERM = dumb;
+        "XCODE_SCHEME_NAME" = PetSafe;
+        "XCODE_TEST_PLAN_NAME" = PetSafe;
+        XCTestBundleInjectPath = "/usr/lib/libRPAC.dylib:/Library/Developer/CoreSimulator/Volumes/iOS_23B86/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libMainThreadChecker.dylib:/usr/lib/libRPAC.dylib";
+        XCTestBundlePath = "PlugIns/PetSafeUITests.xctest";
+        XCTestConfigurationFilePath = "";
+        XCTestSessionIdentifier = "79CB735F-CDCD-46EE-BC54-FC3488DB8137";
+        "__XCODE_BUILT_PRODUCTS_DIR_PATHS" = "/Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator";
+        "__XPC_DYLD_FRAMEWORK_PATH" = "/Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator";
+        "__XPC_DYLD_LIBRARY_PATH" = "/Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator";
+        "__XPC_LLVM_PROFILE_FILE" = "/var/folders/c_/1vvhh6zj1qg7vw82fbdr2dyr0000gn/T/com.armstrong.PetSafeUITests.xctrunner/D268CB91-3ED7-409E-ABBF-58033FB420C4-79860-0000036476183B6D/A95EE64C-57C8-401A-9671-B922D4DA0F16-%p%c.profraw";
+    };
+    stderr = "/dev/ttys004";
+    stdout = "/dev/ttys004";
+    "terminate_running_process" = 1;
+    "wait_for_debugger" = 1;
+}
+12:10:14.652 xcodebuild[79860:4301443] 1E3242E0-B231-4AF9-B72E-2654E0AA379F: Launched app with identifier: com.armstrong.PetSafeUITests.xctrunner (pid = 81280)
+12:10:14.715 xcodebuild[79860:4301443] 📱<DVTiPhoneSimulator (0x88a94c280), Clone 3 of iPhone 17 Pro, unknown class, 26.1 (23B86), 1E3242E0-B231-4AF9-B72E-2654E0AA379F> tracking pid 81280
+12:10:14.715 xcodebuild[79860:4301443] 📱<DVTiPhoneSimulator (0x88a94c280), Clone 3 of iPhone 17 Pro, unknown class, 26.1 (23B86), 1E3242E0-B231-4AF9-B72E-2654E0AA379F> checking to see if pid 81280 is valid: kill(pid, 0) = 0 (YES, it's still running)
+12:10:14.738 xcodebuild[79860:4315333] 1E3242E0-B231-4AF9-B72E-2654E0AA379F: Registered for sim device notification, got token 10
+12:10:14.738 xcodebuild[79860:4318272] 1E3242E0-B231-4AF9-B72E-2654E0AA379F: Unregistering for sim device notification with token 10
+12:10:36.981 xcodebuild[79860:4273041] Test process runnable PID is 81280.
+12:10:36.981 xcodebuild[79860:4315333] XCTHTestOperationStateMachine: Transitioning from state Initial to AcquiredPID
+12:10:44.772 xcodebuild[79860:4273041] 📱<DVTiPhoneSimulator (0x88a94c280), Clone 3 of iPhone 17 Pro, unknown class, 26.1 (23B86), 1E3242E0-B231-4AF9-B72E-2654E0AA379F> checking to see if pid 81280 is valid: kill(pid, 0) = 0 (YES, it's still running)
+12:10:49.254 xcodebuild[79860:4318273] 📱<DVTiPhoneSimulator (0x88a94c280), Clone 3 of iPhone 17 Pro, unknown class, 26.1 (23B86), 1E3242E0-B231-4AF9-B72E-2654E0AA379F> checking to see if pid 81280 is valid: kill(pid, 0) = 0 (YES, it's still running)
+2026-02-11 12:10:49.932659-0800 PetSafeUITests-Runner[81280:4318408] [Default] Running tests...
+12:10:50.509 xcodebuild[79860:4318273] Handling proxy channel request from test runner
+12:10:50.484 PetSafeUITests-Runner[81280:4318408] Creating future for 'requesting test configuration' with timeout 600.00
+12:10:50.484 PetSafeUITests-Runner[81280:4318408] Notifying test runner ready
+12:10:50.514 xcodebuild[79860:4318273] Test runner is ready with capabilities: <XCTCapabilities: 0x88da78440>: {
+    "delayed attachment transfer" = 1;
+    "fetch all test identifiers" = 1;
+    "ubiquitous test identifiers" = 1;
+}
+12:10:50.552 xcodebuild[79860:4273041] Test runner session successfully initiated.
+12:10:50.552 xcodebuild[79860:4318273] XCTHTestOperationStateMachine: Transitioning from state AcquiredPID to ReportedReady
+12:10:50.552 xcodebuild[79860:4273041] Authorizing test process ID 81280
+12:10:50.484 PetSafeUITests-Runner[81280:4318408] <XCTWaiter: 0x600000c21fb0> entering wait loop for 600.00s with expectations: `requesting test configuration`
+12:10:50.552 PetSafeUITests-Runner[81280:4320396] -[XCTRunnerDaemonSession(XCTMessagingRole_UIApplicationStateUpdating) _XCT_applicationDidUpdateState:] com.armstrong.PetSafeUITests.xctrunner@/Users/kevinarmstrong/Library/Developer/XCTestDevices/1E3242E0-B231-4AF9-B72E-2654E0AA379F/data/Containers/Bundle/Application/FC621383-538B-4D87-9FEE-84ED40A4FAFF/PetSafeUITests-Runner.app pid: 81280 state: running background
+12:10:50.583 PetSafeUITests-Runner[81280:4320396] Received test runner ready reply. Waiting for request to start running tests.
+12:10:50.583 PetSafeUITests-Runner[81280:4318408] Returning result XCTWaiterResultCompleted for synchronous waiter <XCTWaiter: 0x600000c21fb0>
+12:10:50.583 PetSafeUITests-Runner[81280:4318408] Wait <XCTWaiterWait: 0x600001722140> completed after 0.099s
+12:10:50.583 PetSafeUITests-Runner[81280:4318408] cleaning up requesting test configuration
+12:10:50.583 PetSafeUITests-Runner[81280:4318408] Loading test bundle at: file:///Users/kevinarmstrong/Library/Developer/XCTestDevices/1E3242E0-B231-4AF9-B72E-2654E0AA379F/data/Containers/Bundle/Application/FC621383-538B-4D87-9FEE-84ED40A4FAFF/PetSafeUITests-Runner.app/PlugIns/PetSafeUITests.xctest/
+12:10:50.588 xcodebuild[79860:4273041] Got authorization response from test daemon: Success
+12:10:50.589 xcodebuild[79860:4273041] Registering/updating daemon-based crash report observer for process names (
+    xctest,
+    debugserver,
+    FrontBoard,
+    assertiond,
+    runningboardd,
+    SpringBoard,
+    testmanagerd,
+    backboardd,
+    DTServiceHub,
+    "PetSafeUITests-Runner",
+    PetSafe,
+    PetSafeUITests
+)
+12:10:50.589 xcodebuild[79860:4273041] Telling test runner to start executing tests.
+12:10:50.592 PetSafeUITests-Runner[81280:4320396] _IDE_startExecutingTestPlanWithProtocolVersion:36
+12:10:50.593 PetSafeUITests-Runner[81280:4320396] LOCAL HARNESS CI STATE: none
+12:10:50.594 PetSafeUITests-Runner[81280:4320396] <XCTWaiter: 0x600000c20330> entering wait loop for 599.34s with expectations: `preparing execution worker`
+12:10:50.594 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:50.614 PetSafeUITests-Runner[81280:4318408] Finished loading test bundle
+12:10:50.616 PetSafeUITests-Runner[81280:4318408] Registering in-process symbolication service with image names: PetSafeUITests, PetSafe, PetSafeUITests-Runner
+12:10:50.616 PetSafeUITests-Runner[81280:4318408] Running tests with active test configuration: <XCTestConfiguration: 0x107207750>
+	                  testBundleURL:file:///Users/kevinarmstrong/Library/Developer/XCTestDevices/1E3242E0-B231-4AF9-B72E-2654E0AA379F/data/Containers/Bundle/Application/FC621383-538B-4D87-9FEE-84ED40A4FAFF/PetSafeUITests-Runner.app/PlugIns/PetSafeUITests.xctest/
+	         testBundleRelativePath:PlugIns/PetSafeUITests.xctest
+	              productModuleName:PetSafeUITests
+	                  testSelection:<XCTTestSelection: 0x600000c284e0>
+	            identifiersToRun:(null)
+	            identifiersToSkip:
+	            tagsToRun:(null)
+	            tagsToSkip:<XCTTagSelection: 0x60000022c4a0>
+	            mode:and
+	            tags:{(
+)}
+	  includeXCTests:NO
+
+
+	             reportResultsToIDE:YES
+	               testsDrivenByIDE:YES
+	inProcessParallelizationEnabled:YES
+	              sessionIdentifier:79CB735F-CDCD-46EE-BC54-FC3488DB8137
+	      disablePerformanceMetrics:NO
+	treatMissingBaselinesAsFailures:NO
+	                baselineFileURL:(null)
+	       baselineFileRelativePath:(null)
+	          targetApplicationPath:/Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app
+	      targetApplicationBundleID:com.armstrong.PetSafe
+	 testApplicationDependencies:
+{
+    "com.armstrong.PetSafe" = "/Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafe.app";
+    "com.armstrong.PetSafeUITests.xctrunner" = "/Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafeUITests-Runner.app";
+}
+	 bundleIDsForCrashReportEmphasis:
+{(
+    "com.armstrong.PetSafe",
+    "com.armstrong.PetSafeUITests"
+)}
+	 testApplicationUserOverrides:(null)
+	     targetApplicationArguments:
+	   targetApplicationEnvironment:
+{
+    "APP_DISTRIBUTOR_ID_OVERRIDE" = "com.apple.AppStore";
+    "DYLD_FRAMEWORK_PATH" = "/Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator";
+    "DYLD_LIBRARY_PATH" = "/Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator";
+    "XCODE_SCHEME_NAME" = PetSafe;
+    "XCODE_TEST_PLAN_NAME" = PetSafe;
+    "__XCODE_BUILT_PRODUCTS_DIR_PATHS" = "/Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator";
+    "__XPC_DYLD_FRAMEWORK_PATH" = "/Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator";
+    "__XPC_DYLD_LIBRARY_PATH" = "/Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator";
+}
+	                  reportActivities:YES
+	          testsMustRunOnMainThread:YES
+	            initializeForUITesting:YES
+	            traceCollectionEnabled:(null)
+	 enablePerformanceTestsDiagnostics:(null)
+	 aggregateStatisticsBeforeCrash:
+{
+    XCSuiteRecordsKey =     {
+    };
+}
+	        automationFrameworkPath:/Library/Developer/CoreSimulator/Volumes/iOS_23B86/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.1.simruntime/Contents/Resources/RuntimeRoot/Developer/Library/PrivateFrameworks/XCTAutomationSupport.framework
+	                     emitOSLogs:NO
+	       systemAttachmentLifetime:deleteOnSuccess
+	         userAttachmentLifetime:deleteOnSuccess
+	   preferredScreenCaptureFormat:screenRecording
+	   gatherLocalizableStringsData:NO
+	          testExecutionOrdering:alphabetical
+	    randomExecutionOrderingSeed:(null)
+	               repetitionPolicy:<XCTRepetitionPolicy: 0x60000022b600>
+	            mode:None
+	            maximumIterations:1
+	            repeatInNewRunnerProcess:NO
+
+	       runtimeDiagnosticsPolicy:<XCTRuntimeDiagnosticsPolicy: 0x600000c12280>
+	            otherRuntimeIssuesDetectionPolicy:<XCTRuntimeIssueDetectionPolicy: 0x60000022b6a0>
+	            detectionEnabled:YES
+	            severity:warning
+
+	            threadPerformanceCheckerRuntimeIssueDetectionPolicy:<XCTRuntimeIssueDetectionPolicy: 0x60000022b6a0>
+	            detectionEnabled:YES
+	            severity:warning
+
+	            mainThreadCheckerDetectionPolicy:<XCTRuntimeIssueDetectionPolicy: 0x60000022b6a0>
+	            detectionEnabled:YES
+	            severity:warning
+
+	            checkedAllocations:disabled
+
+	            testTimeoutsEnabled:NO
+	              leaksCheckingMode:off
+	 defaultTestExecutionTimeAllowance:600
+	 maximumTestExecutionTimeAllowance:0
+	                IDECapabilities:<XCTCapabilities: 0x60000001c310>: {
+    "XCTIssue capability" = 1;
+    "daemon container sandbox extension" = 1;
+    "delayed attachment transfer" = 1;
+    "expected failure test capability" = 1;
+    "in-process test parallelization capability" = 1;
+    "request diagnostics for specific devices" = 1;
+    "runner plan" = 1;
+    "skipped suite capability" = 1;
+    "skipped test capability" = 1;
+    "test case run configurations" = 1;
+    "test iterations" = 2;
+    "test timeout capability" = 1;
+    traits = 1;
+    "ubiquitous test identifiers" = 1;
+    "unified issue recorded" = 1;
+}
+	         applicationBundleInfos:
+{
+    "com.armstrong.PetSafe" = "<XCTApplicationBundleInfo localizations:[en] infoDictionary:[UISupportedInterfaceOrientations~ipad: (\n    UIInterfaceOrientationPortrait,\n    UIInterfaceOrientationPortraitUpsideDown,\n    UIInterfaceOrientationLandscapeLeft,\n    UIInterfaceOrientationLandscapeRight\n), UISupportedInterfaceOrientations~iphone: (\n    UIInterfaceOrientationPortrait,\n    UIInterfaceOrientationLandscapeLeft,\n    UIInterfaceOrientationLandscapeRight\n)]>";
+    "com.armstrong.PetSafeUITests.xctrunner" = "<XCTApplicationBundleInfo localizations:[en] infoDictionary:[UISupportedInterfaceOrientations~ipad: (\n    UIInterfaceOrientationPortrait,\n    UIInterfaceOrientationPortraitUpsideDown,\n    UIInterfaceOrientationLandscapeLeft,\n    UIInterfaceOrientationLandscapeRight\n), UISupportedInterfaceOrientations: (\n    UIInterfaceOrientationPortrait,\n    UIInterfaceOrientationLandscapeLeft,\n    UIInterfaceOrientationLandscapeRight\n)]>";
+}
+
+12:10:50.617 PetSafeUITests-Runner[81280:4318408] <XCTWaiter: 0x600000c26850> entering wait loop for 600.00s with expectations: `requesting ready for testing`
+12:10:50.617 PetSafeUITests-Runner[81280:4318408] Returning result XCTWaiterResultCompleted for synchronous waiter <XCTWaiter: 0x600000c26850>
+12:10:50.618 PetSafeUITests-Runner[81280:4318408] Wait <XCTWaiterWait: 0x600001724180> completed after 0.001s
+12:10:50.618 PetSafeUITests-Runner[81280:4318408] cleaning up requesting ready for testing
+12:10:50.618 PetSafeUITests-Runner[81280:4318408] <XCTWaiter: 0x600000c194d0> entering wait loop for 600.00s with expectations: `IDE proxy`
+12:10:50.618 PetSafeUITests-Runner[81280:4318408] Returning result XCTWaiterResultCompleted for synchronous waiter <XCTWaiter: 0x600000c194d0>
+12:10:50.618 PetSafeUITests-Runner[81280:4318408] Wait <XCTWaiterWait: 0x60000171ca80> completed after 0.000s
+12:10:50.618 PetSafeUITests-Runner[81280:4318408] cleaning up IDE proxy
+12:10:50.618 PetSafeUITests-Runner[81280:4318408] Initializing for UI testing.
+12:10:50.621 PetSafeUITests-Runner[81280:4318408] Linked XCTAutomationSupport.framework from /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTAutomationSupport.framework/XCTAutomationSupport, built with Xcode 2620(17C49), modified on Friday, December 5, 2025 at 1:25:49 AM Pacific Standard Time, bundle version: 24507
+12:10:50.623 PetSafeUITests-Runner[81280:4318408] <XCTWaiter: 0x600000c071b0> entering wait loop for 60.00s with expectations: `initiating daemon session`
+12:10:50.623 PetSafeUITests-Runner[81280:4318408] Returning result XCTWaiterResultCompleted for synchronous waiter <XCTWaiter: 0x600000c071b0>
+12:10:50.623 PetSafeUITests-Runner[81280:4318408] Wait <XCTWaiterWait: 0x6000017141c0> completed after 0.000s
+12:10:50.623 PetSafeUITests-Runner[81280:4318408] cleaning up initiating daemon session
+12:10:50.623 PetSafeUITests-Runner[81280:4318408] Creating future for 'enabling automation mode' with timeout 60.00
+12:10:50.623 PetSafeUITests-Runner[81280:4318408] <XCTWaiter: 0x600000c071e0> entering wait loop for 60.00s with expectations: `enabling automation mode`
+12:10:50.630 PetSafeUITests-Runner[81280:4318408] Returning result XCTWaiterResultCompleted for synchronous waiter <XCTWaiter: 0x600000c071e0>
+12:10:50.632 PetSafeUITests-Runner[81280:4318408] Wait <XCTWaiterWait: 0x600001716d00> completed after 0.009s
+12:10:50.632 PetSafeUITests-Runner[81280:4318408] cleaning up enabling automation mode
+12:10:50.632 PetSafeUITests-Runner[81280:4318408] Creating future for 'loading Accessibility' with timeout 70.00
+12:10:50.633 PetSafeUITests-Runner[81280:4318408] <XCTWaiter: 0x600000c2c1b0> entering wait loop for 70.00s with expectations: `loading Accessibility`
+12:10:50.712 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:50.864 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:50.969 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:51.076 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:51.185 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:51.315 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:51.437 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:51.578 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:51.700 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:51.820 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:51.950 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:52.053 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:52.181 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:52.292 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:52.432 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:52.536 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:52.645 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:52.769 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:53.007 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:53.118 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:53.242 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:53.354 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:53.512 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:53.656 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:53.866 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:54.013 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:54.165 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:54.338 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:54.515 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:54.652 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:54.764 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:54.939 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:55.188 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:55.322 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:55.435 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:55.545 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:55.721 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:55.882 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:55.989 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:56.100 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:56.219 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:56.489 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:56.597 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:56.716 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:57.366 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:58.245 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:58.445 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:58.607 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:58.710 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:58.945 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:59.055 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:59.195 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:59.319 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:59.532 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:59.643 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:59.801 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:10:59.959 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:00.102 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:00.210 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:00.310 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:00.421 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:00.528 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:00.786 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:00.900 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:01.317 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:01.427 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:01.742 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:01.930 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:02.066 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:02.632 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:02.882 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:03.403 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:03.568 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:03.775 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:03.894 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:04.009 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:04.117 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:04.220 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:04.364 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:04.473 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:04.661 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:04.788 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:04.898 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:05.008 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:05.175 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:05.333 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:05.458 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:05.664 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:05.867 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:06.079 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:06.402 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:06.533 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:07.077 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:07.366 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:07.547 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:07.658 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:07.763 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:07.874 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:08.022 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:08.136 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:08.245 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:08.351 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:08.515 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:08.629 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:08.769 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:08.874 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:09.067 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:09.171 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:09.277 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:09.426 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:09.528 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:09.656 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:09.777 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:09.902 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:10.012 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:10.182 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:10.304 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:11.018 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:11.359 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:11.459 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:11.584 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:11.690 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:11.793 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:11.940 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:12.057 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:12.206 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:12.317 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:12.417 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:12.541 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:12.643 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:12.767 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:12.942 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:13.060 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:13.170 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:13.280 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:13.391 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:13.501 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:13.606 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:13.716 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:13.834 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:13.936 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:14.097 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:14.283 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:14.425 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:14.665 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:15.006 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:15.145 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:15.368 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:16.234 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:16.526 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:16.637 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:16.747 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:16.855 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:16.960 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:17.100 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:17.277 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:17.382 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:17.489 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:17.592 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:17.696 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:17.837 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:17.956 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:18.108 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:18.215 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:18.322 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:18.432 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:18.542 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:18.644 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:18.754 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:18.866 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:18.970 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:19.074 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:19.178 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:19.285 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:19.387 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:19.507 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:19.647 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:19.782 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:19.895 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:20.081 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:20.183 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:20.327 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:20.437 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:20.631 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:20.760 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:20.943 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:21.213 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:21.605 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:21.886 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:21.989 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:22.183 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:22.357 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:22.466 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:22.574 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:23.009 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:23.119 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:23.229 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:23.347 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:23.448 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:23.555 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:23.667 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:23.855 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:23.964 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:24.127 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:24.311 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:24.416 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:24.518 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:24.621 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:24.728 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:24.838 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:24.949 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:25.056 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:25.162 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:25.266 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:25.597 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:25.708 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:25.883 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:25.996 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:26.099 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:26.295 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:26.411 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:26.541 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:26.643 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:26.763 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:26.918 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:27.138 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:27.376 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:27.495 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:27.619 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:27.762 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:27.918 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:28.033 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:28.216 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:28.353 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:28.480 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:28.597 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:28.708 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:28.818 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:28.926 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:29.027 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:29.226 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:29.328 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:29.432 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:29.537 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:29.648 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:29.751 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:29.858 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:30.101 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:30.211 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:30.315 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:30.425 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:30.531 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:30.632 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:30.738 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:30.847 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:31.006 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:31.160 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:31.261 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:31.364 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:31.484 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:31.589 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:31.697 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:31.802 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:31.919 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:32.042 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:32.143 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:32.254 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:32.360 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:32.473 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:32.647 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:32.747 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:32.866 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:33.214 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:33.328 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:33.533 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:33.662 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:33.774 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:33.886 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:34.053 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:34.261 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:34.400 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:34.512 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:34.625 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:34.755 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:34.859 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:34.971 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:35.080 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:35.181 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:35.291 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:35.393 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:35.503 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:35.609 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:35.714 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:35.819 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:35.923 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:36.034 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:36.187 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:36.294 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:36.404 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:36.515 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:36.630 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:36.735 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:36.896 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:37.091 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:37.193 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:37.303 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:37.518 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:37.642 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:37.776 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:37.882 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:38.022 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:38.132 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:38.241 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:38.344 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:38.454 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:38.559 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:38.669 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:38.776 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:38.886 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:39.011 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:39.121 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:39.265 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:39.424 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:39.621 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:39.733 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:39.843 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:39.984 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:40.109 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:40.263 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:40.380 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:40.554 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:40.671 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:40.787 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:40.898 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:41.008 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:41.118 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:41.228 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:41.338 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:41.547 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:41.662 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:41.946 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:42.256 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:42.366 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:42.497 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:42.636 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:42.834 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:43.002 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:43.153 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:43.535 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:43.644 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:43.755 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:43.866 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:43.976 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:44.076 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:44.177 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:44.284 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:44.390 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:44.500 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:44.604 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:44.714 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:44.826 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:44.928 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:45.039 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:45.181 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:45.283 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:45.387 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:45.497 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:45.602 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:45.731 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:46.006 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:46.116 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:46.243 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:46.354 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:46.465 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:46.629 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:46.904 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:47.100 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:47.211 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:47.329 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:47.553 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:47.679 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:47.887 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:48.142 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:48.288 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:48.924 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:49.299 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:49.404 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:49.514 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:49.636 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:49.859 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:49.968 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:50.070 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:50.179 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:50.281 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:50.385 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:50.542 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:50.684 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:50.805 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:50.910 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:51.012 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:51.122 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:51.228 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:51.337 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:51.449 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:51.562 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:51.707 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:51.884 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:51.988 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:52.170 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:52.355 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:52.549 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:52.657 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:52.768 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:52.945 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:53.202 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:53.354 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:53.481 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:53.590 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:53.728 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:53.856 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:53.966 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:54.080 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:54.183 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:54.303 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:54.454 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:54.579 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:54.690 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:54.810 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:54.920 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:55.024 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:55.134 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:55.244 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:55.381 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:55.851 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:55.978 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:56.199 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:56.363 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:56.465 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:56.612 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:56.775 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:56.923 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:56.953 PetSafeUITests-Runner[81280:4318408] Returning result XCTWaiterResultCompleted for synchronous waiter <XCTWaiter: 0x600000c2c1b0>
+12:11:56.953 PetSafeUITests-Runner[81280:4318408] Wait <XCTWaiterWait: 0x600001725800> completed after 66.321s
+12:11:56.953 PetSafeUITests-Runner[81280:4318408] cleaning up loading Accessibility
+12:11:56.954 PetSafeUITests-Runner[81280:4318408] Error from daemon in loading AX: Timed out waiting for AX loaded notification
+12:11:56.954 PetSafeUITests-Runner[81280:4318408] Failed to load accessibility.
+12:11:56.955 PetSafeUITests-Runner[81280:4318408] Failed to initialize for UI testing: Error Domain=XCTDaemonErrorDomain Code=18 "Timed out waiting for AX loaded notification" UserInfo={NSLocalizedDescription=Timed out waiting for AX loaded notification}
+2026-02-11 12:11:56.955161-0800 PetSafeUITests-Runner[81280:4318408] [Default] Failed to initialize for UI testing: Error Domain=XCTDaemonErrorDomain Code=18 "Timed out waiting for AX loaded notification" UserInfo={NSLocalizedDescription=Timed out waiting for AX loaded notification}
+12:11:56.978 xcodebuild[79860:4273041] Test runner began initialization for UI testing.
+12:11:57.051 xcodebuild[79860:4273041] Initialization failure for UI testing: Timed out waiting for AX loaded notification
+12:11:57.043 PetSafeUITests-Runner[81280:4320396] Current run loop empty; sleeping the thread for 0.100s
+12:11:57.051 xcodebuild[79860:4273041] Test operation failure: Error Domain=XCTHTestOperationCoordinatorErrorDomain Code=8 "The test runner failed to initialize for UI testing" UserInfo={NSLocalizedDescription=The test runner failed to initialize for UI testing, NSUnderlyingError=0x88dadfd20 {Error Domain=XCTDaemonErrorDomain Code=18 "Timed out waiting for AX loaded notification" UserInfo={NSLocalizedDescription=Timed out waiting for AX loaded notification}}}
+12:11:57.057 xcodebuild[79860:4273041] _finishWithError:Error Domain=XCTHTestOperationCoordinatorErrorDomain Code=8 "The test runner failed to initialize for UI testing" UserInfo={NSLocalizedDescription=The test runner failed to initialize for UI testing, NSUnderlyingError=0x88dadfd20 {Error Domain=XCTDaemonErrorDomain Code=18 "Timed out waiting for AX loaded notification" UserInfo={NSLocalizedDescription=Timed out waiting for AX loaded notification}}}
+12:11:57.057 xcodebuild[79860:4273041] Current state: testRunnerLaunchSessionHasFinishedReceivingData: NO, delegateBlockQueue.count: 0
+12:11:57.058 xcodebuild[79860:4273041] <XCTHTestOperationCoordinator: 0x88bf8ee80>: _considerFlushingDelegateBlockQueue - nothing to flush

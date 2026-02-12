@@ -1,0 +1,374 @@
+Xcode version: 26.2 (17C52)
+10:15:11.389 xcodebuild[71161:4006638] Beginning test session PetSafeUITests-A2A09CE2-63BD-486A-BAE1-C1B2E37EBAE0 at 2026-02-11 10:15:11.388 on target <DVTiPhoneSimulator: 0xc7161c280> {
+		SimDevice: Clone 3 of iPhone 17 Pro (5949F850-ABFA-43F6-BFB4-215E95C6A13F, iOS 26.1, Shutdown)
+} (26.1 (23B86))
+10:15:11.389 xcodebuild[71161:4006638] 	/Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild
+test-without-building
+-project
+/Users/kevinarmstrong/Documents/PetSafe/PetSafe.xcodeproj
+-scheme
+PetSafe
+-destination
+platform=iOS Simulator,id=EF835E06-7665-4CAC-B7BE-3019D50CA10C
+-only-testing:PetSafeUITests
+-resultBundlePath
+/Users/kevinarmstrong/Documents/PetSafe/test_results/reports/TestResults_20260211_101241.xcresult
+-enableCodeCoverage
+YES
+ANTHROPIC_LOG=debug
+10:15:11.393 xcodebuild[71161:4006638] Test standard output and standard error is at /Users/kevinarmstrong/Documents/PetSafe/test_results/reports/TestResults_20260211_101241.xcresult/Staging/1_Test/Diagnostics/PetSafeUITests-CD5E0A92-1EA0-40F2-B900-B42535EF3D15-Configuration-Test Scheme Action-Iteration-1/PetSafeUITests-6D2734F7-3026-4F38-90DC-08EB261779EC/StandardOutputAndStandardError.txt
+10:15:13.442 xcodebuild[71161:4006638] 5949F850-ABFA-43F6-BFB4-215E95C6A13F: Received sim device notification: {
+    notification = "availableDevices_changed";
+}
+10:15:13.443 xcodebuild[71161:4006638] 5949F850-ABFA-43F6-BFB4-215E95C6A13F: Received sim device notification: {
+    device = "Clone 3 of iPhone 17 Pro (5949F850-ABFA-43F6-BFB4-215E95C6A13F, iOS 26.1, Booting)";
+    "last_booted_at" = "2026-02-11 18:15:13 +0000";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+10:15:13.444 xcodebuild[71161:4006638] /Users/kevinarmstrong/Library/Developer/XCTestDevices: Received sim device set notification: {
+    device = "Clone 3 of iPhone 17 Pro (5949F850-ABFA-43F6-BFB4-215E95C6A13F, iOS 26.1, Booting)";
+    "last_booted_at" = "2026-02-11 18:15:13 +0000";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+10:15:13.444 xcodebuild[71161:4006638] /Users/kevinarmstrong/Library/Developer/XCTestDevices: Received sim device set notification: {
+    device = "Clone 3 of iPhone 17 Pro (5949F850-ABFA-43F6-BFB4-215E95C6A13F, iOS 26.1, Booting)";
+    "last_booted_at" = "2026-02-11 18:15:13 +0000";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+10:15:13.445 xcodebuild[71161:4006638] /Users/kevinarmstrong/Library/Developer/XCTestDevices: Received sim device set notification: {
+    device = "Clone 3 of iPhone 17 Pro (5949F850-ABFA-43F6-BFB4-215E95C6A13F, iOS 26.1, Booting)";
+    "last_booted_at" = "2026-02-11 18:15:13 +0000";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+10:15:16.705 xcodebuild[71161:4006638] 5949F850-ABFA-43F6-BFB4-215E95C6A13F: Received sim device notification: {
+    notification = "availableDevices_changed";
+}
+10:15:16.705 xcodebuild[71161:4006638] 5949F850-ABFA-43F6-BFB4-215E95C6A13F: Received sim device notification: {
+    device = "Clone 3 of iPhone 17 Pro (5949F850-ABFA-43F6-BFB4-215E95C6A13F, iOS 26.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+10:15:16.707 xcodebuild[71161:4011555] 📱<DVTiPhoneSimulator (0xc7161c280), Clone 3 of iPhone 17 Pro, unknown class, 26.1 (23B86), 5949F850-ABFA-43F6-BFB4-215E95C6A13F> claim LaunchSessionClaim_0xc75f76b80 on simulator was issued, 2 claims exist.
+10:15:16.718 xcodebuild[71161:4006638] /Users/kevinarmstrong/Library/Developer/XCTestDevices: Received sim device set notification: {
+    device = "Clone 3 of iPhone 17 Pro (5949F850-ABFA-43F6-BFB4-215E95C6A13F, iOS 26.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+10:15:16.719 xcodebuild[71161:4006638] /Users/kevinarmstrong/Library/Developer/XCTestDevices: Received sim device set notification: {
+    device = "Clone 3 of iPhone 17 Pro (5949F850-ABFA-43F6-BFB4-215E95C6A13F, iOS 26.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+10:15:16.719 xcodebuild[71161:4006638] /Users/kevinarmstrong/Library/Developer/XCTestDevices: Received sim device set notification: {
+    device = "Clone 3 of iPhone 17 Pro (5949F850-ABFA-43F6-BFB4-215E95C6A13F, iOS 26.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+10:15:16.721 xcodebuild[71161:4006638] Setting up test runner session
+10:15:16.721 xcodebuild[71161:4013308] Sim Clone 3 of iPhone 17 Pro: Unregistering for sim device notification with token 5
+10:15:16.721 xcodebuild[71161:4013308] Calling -[SimDevice getenv:error:] for TESTMANAGERD_SIM_SOCK
+10:15:16.722 xcodebuild[71161:4006638] Registering/updating daemon-based crash report observer for process names (
+    xctest,
+    debugserver,
+    FrontBoard,
+    assertiond,
+    runningboardd,
+    SpringBoard,
+    testmanagerd,
+    backboardd,
+    DTServiceHub,
+    "PetSafeUITests-Runner",
+    PetSafe,
+    PetSafeUITests
+)
+10:15:16.736 xcodebuild[71161:4013308] Sim Clone 3 of iPhone 17 Pro has testmanagerd socket at /private/tmp/com.apple.launchd.2OcCv97WmE/com.apple.testmanagerd.unix-domain.socket
+10:15:16.736 xcodebuild[71161:4013308] Validating test connection socket path (/private/tmp/com.apple.launchd.2OcCv97WmE/com.apple.testmanagerd.unix-domain.socket)
+10:15:16.736 xcodebuild[71161:4013308] Constructing transport for test connection socket
+10:15:16.736 xcodebuild[71161:4013308] Connected socket 58 to testmanagerd for Sim Clone 3 of iPhone 17 Pro
+10:15:16.736 xcodebuild[71161:4013308] Received connection for test runner session
+10:15:16.743 xcodebuild[71161:4013308] Listening for proxy connection request from the test bundle
+10:15:16.744 xcodebuild[71161:4006638] Test runner session acquired connection.
+10:15:16.744 xcodebuild[71161:4013308] Initiating session with identifier: A2A09CE2-63BD-486A-BAE1-C1B2E37EBAE0
+10:15:25.143 xcodebuild[71161:4011045] Got reply to session initiation request with identifier A2A09CE2-63BD-486A-BAE1-C1B2E37EBAE0 (error: (null))
+10:15:25.402 xcodebuild[71161:4006638] Finished requesting crash reports. Continuing with testing.
+10:15:25.622 xcodebuild[71161:4006638] Launch session started.
+10:15:25.862 xcodebuild[71161:4015146] 📱<DVTiPhoneSimulator (0xc7161c280), Clone 3 of iPhone 17 Pro, unknown class, 26.1 (23B86), 5949F850-ABFA-43F6-BFB4-215E95C6A13F> claim LaunchSessionClaim_0xc75f76b80 on simulator was issued, 2 claims exist.
+10:15:25.911 xcodebuild[71161:4015145] 📱<DVTiPhoneSimulator (0xc7161c280), Clone 3 of iPhone 17 Pro, unknown class, 26.1 (23B86), 5949F850-ABFA-43F6-BFB4-215E95C6A13F> claim LaunchSessionClaim_0xc75f76b80 on simulator was issued, 2 claims exist.
+10:15:25.912 xcodebuild[71161:4015145] 5949F850-ABFA-43F6-BFB4-215E95C6A13F: Registered for sim device notification, got token 8
+10:15:25.913 xcodebuild[71161:4011045] 5949F850-ABFA-43F6-BFB4-215E95C6A13F: Unregistering for sim device notification with token 8
+10:15:25.952 xcodebuild[71161:4011045] 5949F850-ABFA-43F6-BFB4-215E95C6A13F: Installing app at path: /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafeUITests-Runner.app and options: {
+    SkipWatchAppInstall = 1;
+}
+10:40:15.958 xcodebuild[71161:4011045] 5949F850-ABFA-43F6-BFB4-215E95C6A13F: Installed app at path: /Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator/PetSafeUITests-Runner.app and options: {
+    SkipWatchAppInstall = 1;
+}
+10:40:15.993 xcodebuild[71161:4011045] 5949F850-ABFA-43F6-BFB4-215E95C6A13F: Launching app with identifier: com.armstrong.PetSafeUITests.xctrunner and options: {
+    "activate_suspended" = 1;
+    arguments =     (
+    );
+    environment =     {
+        "ANTHROPIC_LOG" = debug;
+        "APP_DISTRIBUTOR_ID_OVERRIDE" = "com.apple.AppStore";
+        "CA_ASSERT_MAIN_THREAD_TRANSACTIONS" = 0;
+        "CA_DEBUG_TRANSACTIONS" = 0;
+        "DYLD_FRAMEWORK_PATH" = "/Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks";
+        "DYLD_INSERT_LIBRARIES" = "/usr/lib/libRPAC.dylib:/Library/Developer/CoreSimulator/Volumes/iOS_23B86/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libMainThreadChecker.dylib:/usr/lib/libRPAC.dylib";
+        "DYLD_LIBRARY_PATH" = "/Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib";
+        "LLVM_PROFILE_FILE" = "/var/folders/c_/1vvhh6zj1qg7vw82fbdr2dyr0000gn/T/com.armstrong.PetSafeUITests.xctrunner/44967F70-78C8-46D3-87CA-C28F4FE3BF1E-71161-00000341A9DC9BF7/3A52FB4D-BAD3-489A-B086-398CC01B3E55-%p%c.profraw";
+        NSApplicationQuitWithoutSuddenTermination = YES;
+        NSUnbufferedIO = YES;
+        "OS_ACTIVITY_DT_MODE" = YES;
+        "PERFC_ENABLE_EXTENDED_DIAGNOSTIC_FORMAT" = 1;
+        "PERFC_ENABLE_PROFILE_MODE" = 1;
+        "PERFC_RESET_INSERT_LIBRARIES" = 1;
+        "PERFC_SUPPRESS_SYSTEM_REPORTS" = 1;
+        "RUN_DESTINATION_DEVICE_NAME" = "Clone 3 of iPhone 17 Pro";
+        "RUN_DESTINATION_DEVICE_PLATFORM_IDENTIFIER" = "com.apple.platform.iphonesimulator";
+        "RUN_DESTINATION_DEVICE_UDID" = "5949F850-ABFA-43F6-BFB4-215E95C6A13F";
+        "SQLITE_ENABLE_THREAD_ASSERTIONS" = 1;
+        TERM = dumb;
+        "XCODE_SCHEME_NAME" = PetSafe;
+        "XCODE_TEST_PLAN_NAME" = PetSafe;
+        XCTestBundleInjectPath = "/usr/lib/libRPAC.dylib:/Library/Developer/CoreSimulator/Volumes/iOS_23B86/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libMainThreadChecker.dylib:/usr/lib/libRPAC.dylib";
+        XCTestBundlePath = "PlugIns/PetSafeUITests.xctest";
+        XCTestConfigurationFilePath = "";
+        XCTestSessionIdentifier = "A2A09CE2-63BD-486A-BAE1-C1B2E37EBAE0";
+        "__XCODE_BUILT_PRODUCTS_DIR_PATHS" = "/Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator";
+        "__XPC_DYLD_FRAMEWORK_PATH" = "/Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator";
+        "__XPC_DYLD_LIBRARY_PATH" = "/Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator";
+        "__XPC_LLVM_PROFILE_FILE" = "/var/folders/c_/1vvhh6zj1qg7vw82fbdr2dyr0000gn/T/com.armstrong.PetSafeUITests.xctrunner/44967F70-78C8-46D3-87CA-C28F4FE3BF1E-71161-00000341A9DC9BF7/3A52FB4D-BAD3-489A-B086-398CC01B3E55-%p%c.profraw";
+    };
+    stderr = "/dev/ttys020";
+    stdout = "/dev/ttys020";
+    "terminate_running_process" = 1;
+    "wait_for_debugger" = 1;
+}
+10:48:50.619 xcodebuild[71161:4006638] 5949F850-ABFA-43F6-BFB4-215E95C6A13F: Received sim device notification: {
+    notification = "availableDevices_changed";
+}
+10:48:50.619 xcodebuild[71161:4006638] 5949F850-ABFA-43F6-BFB4-215E95C6A13F: Received sim device notification: {
+    device = "Clone 3 of iPhone 17 Pro (5949F850-ABFA-43F6-BFB4-215E95C6A13F, iOS 26.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+10:48:50.620 xcodebuild[71161:4006638] /Users/kevinarmstrong/Library/Developer/XCTestDevices: Received sim device set notification: {
+    device = "Clone 3 of iPhone 17 Pro (5949F850-ABFA-43F6-BFB4-215E95C6A13F, iOS 26.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+10:48:50.620 xcodebuild[71161:4006638] /Users/kevinarmstrong/Library/Developer/XCTestDevices: Received sim device set notification: {
+    device = "Clone 3 of iPhone 17 Pro (5949F850-ABFA-43F6-BFB4-215E95C6A13F, iOS 26.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+10:48:50.621 xcodebuild[71161:4006638] /Users/kevinarmstrong/Library/Developer/XCTestDevices: Received sim device set notification: {
+    device = "Clone 3 of iPhone 17 Pro (5949F850-ABFA-43F6-BFB4-215E95C6A13F, iOS 26.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+10:48:50.621 xcodebuild[71161:4006638] /Users/kevinarmstrong/Library/Developer/XCTestDevices: Received sim device set notification: {
+    device = "Clone 3 of iPhone 17 Pro (5949F850-ABFA-43F6-BFB4-215E95C6A13F, iOS 26.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+10:48:50.767 xcodebuild[71161:4066452] 5949F850-ABFA-43F6-BFB4-215E95C6A13F: Failed to launch app with identifier: com.armstrong.PetSafeUITests.xctrunner and options: {
+    "activate_suspended" = 1;
+    arguments =     (
+    );
+    environment =     {
+        "ANTHROPIC_LOG" = debug;
+        "APP_DISTRIBUTOR_ID_OVERRIDE" = "com.apple.AppStore";
+        "CA_ASSERT_MAIN_THREAD_TRANSACTIONS" = 0;
+        "CA_DEBUG_TRANSACTIONS" = 0;
+        "DYLD_FRAMEWORK_PATH" = "/Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks";
+        "DYLD_INSERT_LIBRARIES" = "/usr/lib/libRPAC.dylib:/Library/Developer/CoreSimulator/Volumes/iOS_23B86/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libMainThreadChecker.dylib:/usr/lib/libRPAC.dylib";
+        "DYLD_LIBRARY_PATH" = "/Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib";
+        "LLVM_PROFILE_FILE" = "/var/folders/c_/1vvhh6zj1qg7vw82fbdr2dyr0000gn/T/com.armstrong.PetSafeUITests.xctrunner/44967F70-78C8-46D3-87CA-C28F4FE3BF1E-71161-00000341A9DC9BF7/3A52FB4D-BAD3-489A-B086-398CC01B3E55-%p%c.profraw";
+        NSApplicationQuitWithoutSuddenTermination = YES;
+        NSUnbufferedIO = YES;
+        "OS_ACTIVITY_DT_MODE" = YES;
+        "PERFC_ENABLE_EXTENDED_DIAGNOSTIC_FORMAT" = 1;
+        "PERFC_ENABLE_PROFILE_MODE" = 1;
+        "PERFC_RESET_INSERT_LIBRARIES" = 1;
+        "PERFC_SUPPRESS_SYSTEM_REPORTS" = 1;
+        "RUN_DESTINATION_DEVICE_NAME" = "Clone 3 of iPhone 17 Pro";
+        "RUN_DESTINATION_DEVICE_PLATFORM_IDENTIFIER" = "com.apple.platform.iphonesimulator";
+        "RUN_DESTINATION_DEVICE_UDID" = "5949F850-ABFA-43F6-BFB4-215E95C6A13F";
+        "SQLITE_ENABLE_THREAD_ASSERTIONS" = 1;
+        TERM = dumb;
+        "XCODE_SCHEME_NAME" = PetSafe;
+        "XCODE_TEST_PLAN_NAME" = PetSafe;
+        XCTestBundleInjectPath = "/usr/lib/libRPAC.dylib:/Library/Developer/CoreSimulator/Volumes/iOS_23B86/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libMainThreadChecker.dylib:/usr/lib/libRPAC.dylib";
+        XCTestBundlePath = "PlugIns/PetSafeUITests.xctest";
+        XCTestConfigurationFilePath = "";
+        XCTestSessionIdentifier = "A2A09CE2-63BD-486A-BAE1-C1B2E37EBAE0";
+        "__XCODE_BUILT_PRODUCTS_DIR_PATHS" = "/Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator";
+        "__XPC_DYLD_FRAMEWORK_PATH" = "/Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator";
+        "__XPC_DYLD_LIBRARY_PATH" = "/Users/kevinarmstrong/Library/Developer/Xcode/DerivedData/PetSafe-fmaddssytjkdnjgxngsipkxkxtyr/Build/Products/Debug-iphonesimulator";
+        "__XPC_LLVM_PROFILE_FILE" = "/var/folders/c_/1vvhh6zj1qg7vw82fbdr2dyr0000gn/T/com.armstrong.PetSafeUITests.xctrunner/44967F70-78C8-46D3-87CA-C28F4FE3BF1E-71161-00000341A9DC9BF7/3A52FB4D-BAD3-489A-B086-398CC01B3E55-%p%c.profraw";
+    };
+    stderr = "/dev/ttys020";
+    stdout = "/dev/ttys020";
+    "terminate_running_process" = 1;
+    "wait_for_debugger" = 1;
+} (error = Error Domain=NSMachErrorDomain Code=-308 "(ipc/mig) server died")
+10:48:50.848 xcodebuild[71161:4006638] 📱<DVTiPhoneSimulator (0xc7161c280), Clone 3 of iPhone 17 Pro, unknown class, 26.1 (23B86), 5949F850-ABFA-43F6-BFB4-215E95C6A13F> claim LaunchSessionClaim_0xc75f76b80 on simulator was relinquished, 1 claims remain.
+10:48:50.851 xcodebuild[71161:4006638] 📱<DVTiPhoneSimulator (0xc7161c280), Clone 3 of iPhone 17 Pro, unknown class, 26.1 (23B86), 5949F850-ABFA-43F6-BFB4-215E95C6A13F> claim LaunchSessionClaim_0xc75f76b80 on simulator was relinquished, 1 claims remain.
+10:48:50.853 xcodebuild[71161:4006638] 📱<DVTiPhoneSimulator (0xc7161c280), Clone 3 of iPhone 17 Pro, unknown class, 26.1 (23B86), 5949F850-ABFA-43F6-BFB4-215E95C6A13F> claim LaunchSessionClaim_0xc75f76b80 on simulator was relinquished, 1 claims remain.
+10:48:50.859 xcodebuild[71161:4006638] Launch session expired.
+10:48:50.860 xcodebuild[71161:4091359] XCTHTestOperationStateMachine: Transitioning from state Initial to PendingFinalization
+10:48:50.863 xcodebuild[71161:4006638] Test operation failure: Error Domain=XCTHTestOperationCoordinatorErrorDomain Code=4 "Failed to install or launch the test runner" UserInfo={NSLocalizedDescription=Failed to install or launch the test runner, NSUnderlyingError=0xc77f0e520 {Error Domain=NSMachErrorDomain Code=-308 "(ipc/mig) server died" UserInfo={DVTAnalyticsEventNameKey=com.apple.dt.IDERunOperationWorkerFinished, DVTAnalyticsEventDictionaryKey={
+    "device_identifier" = "EF835E06-7665-4CAC-B7BE-3019D50CA10C";
+    "device_model" = "iPhone18,1";
+    "device_osBuild" = "26.1 (23B86)";
+    "device_osBuild_monotonic" = 2301008600;
+    "device_os_variant" = 1;
+    "device_platform" = "com.apple.platform.iphonesimulator";
+    "device_platform_family" = 2;
+    "device_reality" = 2;
+    "device_thinningType" = "iPhone18,1";
+    "device_transport" = 4;
+    "launchSession_schemeCommand" = Test;
+    "launchSession_schemeCommand_enum" = 2;
+    "launchSession_targetArch" = arm64;
+    "launchSession_targetArch_enum" = 6;
+    "operation_duration_ms" = 2005003;
+    "operation_errorCode" = "-308";
+    "operation_errorDomain" = NSMachErrorDomain;
+    "operation_errorWorker" = IDELaunchiPhoneSimulatorLauncher;
+    "operation_error_reportable" = 1;
+    "operation_name" = IDERunOperationWorkerGroup;
+    "param_consoleMode" = 0;
+    "param_debugger_attachToExtensions" = 0;
+    "param_debugger_attachToXPC" = 0;
+    "param_debugger_type" = 1;
+    "param_destination_isProxy" = 0;
+    "param_destination_platform" = "com.apple.platform.iphonesimulator";
+    "param_diag_MTE_enable" = 0;
+    "param_diag_MainThreadChecker_stopOnIssue" = 0;
+    "param_diag_MallocStackLogging_enableDuringAttach" = 0;
+    "param_diag_MallocStackLogging_enableForXPC" = 0;
+    "param_diag_allowLocationSimulation" = 1;
+    "param_diag_checker_mtc_enable" = 0;
+    "param_diag_checker_tpc_enable" = 1;
+    "param_diag_gpu_frameCapture_enable" = 3;
+    "param_diag_gpu_shaderValidation_enable" = 0;
+    "param_diag_gpu_validation_enable" = 1;
+    "param_diag_guardMalloc_enable" = 0;
+    "param_diag_memoryGraphOnResourceException" = 0;
+    "param_diag_queueDebugging_enable" = 1;
+    "param_diag_runtimeProfile_generate" = 1;
+    "param_diag_sanitizer_asan_enable" = 0;
+    "param_diag_sanitizer_tsan_enable" = 0;
+    "param_diag_sanitizer_tsan_stopOnIssue" = 0;
+    "param_diag_sanitizer_ubsan_enable" = 0;
+    "param_diag_sanitizer_ubsan_stopOnIssue" = 0;
+    "param_diag_showNonLocalizedStrings" = 0;
+    "param_diag_viewDebugging_enabled" = 0;
+    "param_diag_viewDebugging_insertDylibOnLaunch" = 0;
+    "param_install_style" = 2;
+    "param_launcher_UID" = 2;
+    "param_launcher_allowDeviceSensorReplayData" = 0;
+    "param_launcher_kind" = 0;
+    "param_launcher_style" = 0;
+    "param_launcher_substyle" = 64;
+    "param_lldbVersion_component_idx_1" = 0;
+    "param_lldbVersion_monotonic" = 170302360021;
+    "param_runnable_appExtensionHostRunMode" = 0;
+    "param_runnable_productType" = "com.apple.product-type.application";
+    "param_testing_launchedForTesting" = 1;
+    "param_testing_suppressSimulatorApp" = 1;
+    "param_testing_usingCLI" = 0;
+    "sdk_canonicalName" = "iphonesimulator26.2";
+    "sdk_osVersion" = "26.2";
+    "sdk_platformID" = 7;
+    "sdk_variant" = iphonesimulator;
+    "sdk_version_monotonic" = 2302005300;
+}, IDERunOperationFailingWorker=IDELaunchiPhoneSimulatorLauncher, DVTIssueReportingFunctionalityKey=1, DVTErrorCreationDateKey=2026-02-11 18:48:50 +0000}}}
+10:48:50.863 xcodebuild[71161:4006638] _finishWithError:Error Domain=XCTHTestOperationCoordinatorErrorDomain Code=4 "Failed to install or launch the test runner" UserInfo={NSLocalizedDescription=Failed to install or launch the test runner, NSUnderlyingError=0xc77f0e520 {Error Domain=NSMachErrorDomain Code=-308 "(ipc/mig) server died" UserInfo={DVTAnalyticsEventNameKey=com.apple.dt.IDERunOperationWorkerFinished, DVTAnalyticsEventDictionaryKey={
+    "device_identifier" = "EF835E06-7665-4CAC-B7BE-3019D50CA10C";
+    "device_model" = "iPhone18,1";
+    "device_osBuild" = "26.1 (23B86)";
+    "device_osBuild_monotonic" = 2301008600;
+    "device_os_variant" = 1;
+    "device_platform" = "com.apple.platform.iphonesimulator";
+    "device_platform_family" = 2;
+    "device_reality" = 2;
+    "device_thinningType" = "iPhone18,1";
+    "device_transport" = 4;
+    "launchSession_schemeCommand" = Test;
+    "launchSession_schemeCommand_enum" = 2;
+    "launchSession_targetArch" = arm64;
+    "launchSession_targetArch_enum" = 6;
+    "operation_duration_ms" = 2005003;
+    "operation_errorCode" = "-308";
+    "operation_errorDomain" = NSMachErrorDomain;
+    "operation_errorWorker" = IDELaunchiPhoneSimulatorLauncher;
+    "operation_error_reportable" = 1;
+    "operation_name" = IDERunOperationWorkerGroup;
+    "param_consoleMode" = 0;
+    "param_debugger_attachToExtensions" = 0;
+    "param_debugger_attachToXPC" = 0;
+    "param_debugger_type" = 1;
+    "param_destination_isProxy" = 0;
+    "param_destination_platform" = "com.apple.platform.iphonesimulator";
+    "param_diag_MTE_enable" = 0;
+    "param_diag_MainThreadChecker_stopOnIssue" = 0;
+    "param_diag_MallocStackLogging_enableDuringAttach" = 0;
+    "param_diag_MallocStackLogging_enableForXPC" = 0;
+    "param_diag_allowLocationSimulation" = 1;
+    "param_diag_checker_mtc_enable" = 0;
+    "param_diag_checker_tpc_enable" = 1;
+    "param_diag_gpu_frameCapture_enable" = 3;
+    "param_diag_gpu_shaderValidation_enable" = 0;
+    "param_diag_gpu_validation_enable" = 1;
+    "param_diag_guardMalloc_enable" = 0;
+    "param_diag_memoryGraphOnResourceException" = 0;
+    "param_diag_queueDebugging_enable" = 1;
+    "param_diag_runtimeProfile_generate" = 1;
+    "param_diag_sanitizer_asan_enable" = 0;
+    "param_diag_sanitizer_tsan_enable" = 0;
+    "param_diag_sanitizer_tsan_stopOnIssue" = 0;
+    "param_diag_sanitizer_ubsan_enable" = 0;
+    "param_diag_sanitizer_ubsan_stopOnIssue" = 0;
+    "param_diag_showNonLocalizedStrings" = 0;
+    "param_diag_viewDebugging_enabled" = 0;
+    "param_diag_viewDebugging_insertDylibOnLaunch" = 0;
+    "param_install_style" = 2;
+    "param_launcher_UID" = 2;
+    "param_launcher_allowDeviceSensorReplayData" = 0;
+    "param_launcher_kind" = 0;
+    "param_launcher_style" = 0;
+    "param_launcher_substyle" = 64;
+    "param_lldbVersion_component_idx_1" = 0;
+    "param_lldbVersion_monotonic" = 170302360021;
+    "param_runnable_appExtensionHostRunMode" = 0;
+    "param_runnable_productType" = "com.apple.product-type.application";
+    "param_testing_launchedForTesting" = 1;
+    "param_testing_suppressSimulatorApp" = 1;
+    "param_testing_usingCLI" = 0;
+    "sdk_canonicalName" = "iphonesimulator26.2";
+    "sdk_osVersion" = "26.2";
+    "sdk_platformID" = 7;
+    "sdk_variant" = iphonesimulator;
+    "sdk_version_monotonic" = 2302005300;
+}, IDERunOperationFailingWorker=IDELaunchiPhoneSimulatorLauncher, DVTIssueReportingFunctionalityKey=1, DVTErrorCreationDateKey=2026-02-11 18:48:50 +0000}}}
+10:48:50.863 xcodebuild[71161:4006638] Current state: testRunnerLaunchSessionHasFinishedReceivingData: NO, delegateBlockQueue.count: 0
+10:48:50.863 xcodebuild[71161:4006638] <XCTHTestOperationCoordinator: 0xc75f76e80>: _considerFlushingDelegateBlockQueue - nothing to flush

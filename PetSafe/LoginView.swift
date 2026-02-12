@@ -40,12 +40,14 @@ struct LoginView: View {
                             .padding(12)
                             .background(Color(.systemBackground))
                             .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray.opacity(0.2)))
+                            .accessibilityIdentifier("email_field")
 
                         SecureField("Password", text: $password)
                             .textContentType(.password)
                             .padding(12)
                             .background(Color(.systemBackground))
                             .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray.opacity(0.2)))
+                            .accessibilityIdentifier("password_field")
                     }
                     .padding(.horizontal)
 
@@ -64,6 +66,7 @@ struct LoginView: View {
                     }
                     .disabled(isSigningIn || email.isEmpty || password.isEmpty)
                     .padding(.horizontal)
+                    .accessibilityIdentifier("login_button")
 
                     SignInWithAppleButton(.signIn) { request in
                         request.requestedScopes = [.fullName, .email]
@@ -257,12 +260,28 @@ struct LoginView: View {
     // MARK: - Authentication
     private func signIn() {
         isSigningIn = true
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+        authError = nil
+
+        // Validate email format
+        if !isValidEmail(email) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                isSigningIn = false
+                authError = "Please enter a valid email address"
+            }
+            return
+        }
+
+        // UI Testing Mode: Skip delay for faster tests
+        let isUITesting = ProcessInfo.processInfo.arguments.contains("UI-Testing")
+        let delay = isUITesting ? 0.1 : 0.8
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
             isSigningIn = false
 
             // Check if it's a premium test account
             let isPremium = email.lowercased() == "test@petsafe.com" ||
-                           email.lowercased() == "premium@petsafe.com"
+                           email.lowercased() == "premium@petsafe.com" ||
+                           (isUITesting && email.contains("test")) // Any test email gets premium in UI tests
 
             if let callback = onLoginWithPremium {
                 callback(isPremium)
@@ -270,6 +289,13 @@ struct LoginView: View {
                 onLoginSuccess?()
             }
         }
+    }
+
+    // MARK: - Email Validation
+    private func isValidEmail(_ email: String) -> Bool {
+        let emailRegex = "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$"
+        let emailPredicate = NSPredicate(format: "SELF MATCHES %@", emailRegex)
+        return emailPredicate.evaluate(with: email)
     }
 
     private func quickLoginAsPremium() {

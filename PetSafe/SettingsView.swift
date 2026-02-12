@@ -140,9 +140,14 @@ struct SettingsView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button("Done") {
+                    Button {
                         dismiss()
+                    } label: {
+                        Image(systemName: "xmark")
+                            .font(.headline)
                     }
+                    .accessibilityLabel("Close")
+                    .accessibilityIdentifier("close_button")
                 }
             }
         }

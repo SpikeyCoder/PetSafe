@@ -39,6 +39,8 @@ struct FoodLogView: View {
                 }
             }
         }
+        .navigationTitle("Food Log")
+        .navigationBarTitleDisplayMode(.inline)
         .onAppear {
             viewModel.loadEntries()
         }

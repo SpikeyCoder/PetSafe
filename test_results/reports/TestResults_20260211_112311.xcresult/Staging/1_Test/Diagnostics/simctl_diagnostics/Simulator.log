@@ -1,0 +1,43 @@
+Jan 13 15:17:59 Kevins-MacBook-Pro Simulator[20227] <Error>: Pasteboard for device CFAF99AE-5C1C-464F-B99D-1F83332BA1C7 lost connection
+Jan 20 21:24:05 Kevins-MacBook-Pro Simulator[20227] <Error>: Pasteboard for device CFAF99AE-5C1C-464F-B99D-1F83332BA1C7 lost connection
+Jan 29 17:16:53 Kevins-MacBook-Pro Simulator[20227] <Error>: Pasteboard for device CFAF99AE-5C1C-464F-B99D-1F83332BA1C7 lost connection
+Feb 22 11:56:02 Kevins-MacBook-Pro Simulator[6132] <Error>: Pasteboard for device CFAF99AE-5C1C-464F-B99D-1F83332BA1C7 lost connection
+Feb 22 12:44:15 Kevins-MacBook-Pro Simulator[69912] <Error>: Pasteboard for device CFAF99AE-5C1C-464F-B99D-1F83332BA1C7 lost connection
+Feb 23 13:13:01 Kevins-MacBook-Pro Simulator[73871] <Error>: Pasteboard for device 2248703E-1BEE-427E-B630-2F8A5BC184E3 lost connection
+Feb 23 13:13:01 Kevins-MacBook-Pro Simulator[73871] <Error>: Pasteboard for device 980B268B-0B89-4AF7-9A97-76326748434A lost connection
+Mar  3 10:57:53 Kevins-MacBook-Pro Simulator[19919] <Error>: Pasteboard for device CFAF99AE-5C1C-464F-B99D-1F83332BA1C7 lost connection
+Apr 24 17:12:48 Kevins-MacBook-Pro Simulator[8550] <Error>: Pasteboard for device 931BEFBB-74BE-49A3-BE02-14982655CFCA lost connection
+Apr 24 17:12:48 Kevins-MacBook-Pro Simulator[8550] <Error>: Pasteboard for device EFA35819-36FA-4D2D-A641-22D25A5EF6E9 lost connection
+May  1 13:27:12 Kevins-MacBook-Pro Simulator[39942] <Error>: Pasteboard for device EFA35819-36FA-4D2D-A641-22D25A5EF6E9 lost connection
+May  2 09:23:21 Kevins-MacBook-Pro Simulator[39942] <Error>: Pasteboard for device 931BEFBB-74BE-49A3-BE02-14982655CFCA lost connection
+May  4 14:11:02 Kevins-MacBook-Pro Simulator[39942] <Error>: Pasteboard for device 931BEFBB-74BE-49A3-BE02-14982655CFCA lost connection
+May 24 17:46:42 Kevins-MacBook-Pro Simulator[39942] <Error>: Pasteboard for device 931BEFBB-74BE-49A3-BE02-14982655CFCA lost connection
+Aug 29 16:52:14 Kevins-MacBook-Pro Simulator[1411] <Error>: Pasteboard for device 931BEFBB-74BE-49A3-BE02-14982655CFCA lost connection
+Nov 22 16:15:38 Kevins-MacBook-Pro Simulator[8341] <Error>: Pasteboard for device 68497557-F986-4A78-B710-B12E72EF351F lost connection
+Oct 17 20:24:25 Kevins-MacBook-Pro Simulator[85287] <Error>: Pasteboard for device 68497557-F986-4A78-B710-B12E72EF351F lost connection
+Nov 16 10:52:23 Kevins-MacBook-Pro Simulator[85287] <Error>: Pasteboard for device 2D92412B-CE9E-40D0-84E2-3E91D67F05AD lost connection
+Nov 16 10:52:23 Kevins-MacBook-Pro Simulator[85287] <Error>: Failed to lookup pasteboard Mach service in device 2D92412B-CE9E-40D0-84E2-3E91D67F05AD: Error Domain=NSPOSIXErrorDomain Code=61 "Connection refused" UserInfo={NSLocalizedDescription=Loaded CoreSimulatorService is no longer valid for this process.  Simulator services will no longer be available.  Error=Error Domain=NSPOSIXErrorDomain Code=61 "Connection refused" UserInfo={NSLocalizedDescription=CoreSimulator.framework was changed while the process was running.  This is not a supported configuration and can occur if Xcode.app was updated while the process was running.  Service version (1051.9.4) does not match expected service version (1048).}}
+Nov 16 15:57:04 Kevins-MacBook-Pro Simulator[65041] <Error>: Pasteboard for device 6E5C28A6-A08D-4EE5-8215-024AC6C8D265 lost connection
+Feb 11 07:37:19 Kevins-MacBook-Pro Simulator[63909] <Error>: Pasteboard for device EF835E06-7665-4CAC-B7BE-3019D50CA10C lost connection
+Feb 11 09:40:15 Kevins-MacBook-Pro Simulator[63909] <Error>: Pasteboard for device EF835E06-7665-4CAC-B7BE-3019D50CA10C lost connection
+Feb 11 09:40:15 Kevins-MacBook-Pro Simulator[63909] <Error>: Failed to lookup pasteboard Mach service in device EF835E06-7665-4CAC-B7BE-3019D50CA10C: Error Domain=com.apple.CoreSimulator.SimError Code=405 "Unable to lookup in current state: Shutting Down" UserInfo={NSLocalizedDescription=Unable to lookup in current state: Shutting Down}
+Feb 11 09:41:49 Kevins-MacBook-Pro Simulator[63909] <Error>: Pasteboard for device C3739D54-AD78-4D2E-AFE3-0FB429518C28 lost connection
+Feb 11 09:41:49 Kevins-MacBook-Pro Simulator[63909] <Error>: Failed to lookup pasteboard Mach service in device C3739D54-AD78-4D2E-AFE3-0FB429518C28: Error Domain=com.apple.CoreSimulator.SimError Code=405 "Unable to lookup in current state: Shutting Down" UserInfo={NSLocalizedDescription=Unable to lookup in current state: Shutting Down}
+Feb 11 10:02:29 Kevins-MacBook-Pro Simulator[63909] <Error>: Pasteboard for device EF835E06-7665-4CAC-B7BE-3019D50CA10C lost connection
+Feb 11 10:02:29 Kevins-MacBook-Pro Simulator[63909] <Error>: Failed to lookup pasteboard Mach service in device EF835E06-7665-4CAC-B7BE-3019D50CA10C: Error Domain=com.apple.CoreSimulator.SimError Code=405 "Unable to lookup in current state: Shutting Down" UserInfo={NSLocalizedDescription=Unable to lookup in current state: Shutting Down}
+Feb 11 10:04:20 Kevins-MacBook-Pro Simulator[63909] <Error>: Pasteboard for device 21F385DD-6D3B-4703-8F06-8F373BEA88D8 lost connection
+Feb 11 10:04:20 Kevins-MacBook-Pro Simulator[63909] <Error>: Failed to lookup pasteboard Mach service in device 21F385DD-6D3B-4703-8F06-8F373BEA88D8: Error Domain=com.apple.CoreSimulator.SimError Code=405 "Unable to lookup in current state: Shutting Down" UserInfo={NSLocalizedDescription=Unable to lookup in current state: Shutting Down}
+Feb 11 10:13:08 Kevins-MacBook-Pro Simulator[63909] <Error>: Pasteboard for device EF835E06-7665-4CAC-B7BE-3019D50CA10C lost connection
+Feb 11 10:13:08 Kevins-MacBook-Pro Simulator[63909] <Error>: Failed to lookup pasteboard Mach service in device EF835E06-7665-4CAC-B7BE-3019D50CA10C: Error Domain=com.apple.CoreSimulator.SimError Code=405 "Unable to lookup in current state: Shutting Down" UserInfo={NSLocalizedDescription=Unable to lookup in current state: Shutting Down}
+Feb 11 10:48:32 Kevins-MacBook-Pro Simulator[63909] <Error>: Pasteboard for device EA12E49C-26DC-41EA-9FD6-4AF5BB3633D8 lost connection
+Feb 11 10:48:35 Kevins-MacBook-Pro Simulator[63909] <Error>: Pasteboard for device 4EBCAD74-C9BB-4327-9F35-038F026E4404 lost connection
+Feb 11 10:48:51 Kevins-MacBook-Pro Simulator[63909] <Error>: Pasteboard for device 5949F850-ABFA-43F6-BFB4-215E95C6A13F lost connection
+Feb 11 10:53:02 Kevins-MacBook-Pro Simulator[63909] <Error>: Pasteboard for device 1E1FD33B-122C-462B-8782-8E7938D9D066 lost connection
+Feb 11 10:53:02 Kevins-MacBook-Pro Simulator[63909] <Error>: Failed to lookup pasteboard Mach service in device 1E1FD33B-122C-462B-8782-8E7938D9D066: Error Domain=com.apple.CoreSimulator.SimError Code=405 "Unable to lookup in current state: Shutting Down" UserInfo={NSLocalizedDescription=Unable to lookup in current state: Shutting Down}
+Feb 11 10:53:02 Kevins-MacBook-Pro Simulator[63909] <Error>: Pasteboard for device 916AE1E7-456A-43A1-AEFC-C54B047298B0 lost connection
+Feb 11 10:53:02 Kevins-MacBook-Pro Simulator[63909] <Error>: Failed to lookup pasteboard Mach service in device 916AE1E7-456A-43A1-AEFC-C54B047298B0: Error Domain=com.apple.CoreSimulator.SimError Code=405 "Unable to lookup in current state: Shutting Down" UserInfo={NSLocalizedDescription=Unable to lookup in current state: Shutting Down}
+Feb 11 11:24:22 Kevins-MacBook-Pro Simulator[75985] <Error>: Pasteboard for device EF835E06-7665-4CAC-B7BE-3019D50CA10C lost connection
+Feb 11 11:24:22 Kevins-MacBook-Pro Simulator[75985] <Error>: Failed to lookup pasteboard Mach service in device EF835E06-7665-4CAC-B7BE-3019D50CA10C: Error Domain=com.apple.CoreSimulator.SimError Code=405 "Unable to lookup in current state: Shutting Down" UserInfo={NSLocalizedDescription=Unable to lookup in current state: Shutting Down}
+Feb 11 11:28:25 Kevins-MacBook-Pro Simulator[75985] <Error>: Pasteboard for device 4880CE61-2456-44DC-8AFD-CAE43ECFDD21 lost connection
+Feb 11 11:28:27 Kevins-MacBook-Pro Simulator[75985] <Error>: Pasteboard for device 2088D985-C788-4F02-8902-70120F847951 lost connection
+Feb 11 11:28:36 Kevins-MacBook-Pro Simulator[75985] <Error>: Pasteboard for device 45B4F419-76D4-4EC5-9901-5328F5B2AC25 lost connection

@@ -1,0 +1,136 @@
+{
+  "source": "/Users/kevinarmstrong/Documents/PetSafe/PetSafe/LoginView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Sign In",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 197
+        }
+      },
+      {
+        "comment": "",
+        "key": "Welcome to PetSafe",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 28
+        }
+      },
+      {
+        "comment": "",
+        "key": "Sign in to continue",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 30
+        }
+      },
+      {
+        "comment": "",
+        "key": "Email",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 35
+        }
+      },
+      {
+        "comment": "",
+        "key": "Password",
+        "location": {
+          "startingColumn": 37,
+          "startingLine": 44
+        }
+      },
+      {
+        "comment": "",
+        "key": "Signing In...",
+        "location": {
+          "startingColumn": 48,
+          "startingLine": 57
+        }
+      },
+      {
+        "comment": "",
+        "key": "Sign In",
+        "location": {
+          "startingColumn": 66,
+          "startingLine": 57
+        }
+      },
+      {
+        "comment": "",
+        "key": "Hide Test Accounts",
+        "location": {
+          "startingColumn": 57,
+          "startingLine": 133
+        }
+      },
+      {
+        "comment": "",
+        "key": "🧪 Developer Test Accounts",
+        "location": {
+          "startingColumn": 80,
+          "startingLine": 133
+        }
+      },
+      {
+        "comment": "",
+        "key": "Quick Test Accounts",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 144
+        }
+      },
+      {
+        "comment": "",
+        "key": "Quick Login as Premium",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 177
+        }
+      },
+      {
+        "comment": "",
+        "key": "📧 %@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 233
+        }
+      },
+      {
+        "comment": "",
+        "key": "🔑 %@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 237
+        }
+      },
+      {
+        "comment": "",
+        "key": "Tap to auto-fill and sign in",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 241
+        }
+      },
+      {
+        "comment": "",
+        "key": "PREMIUM",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 215
+        }
+      },
+      {
+        "comment": "",
+        "key": "FREE",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 223
+        }
+      }
+    ]
+  },
+  "version": 1
+}

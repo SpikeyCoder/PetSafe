@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Target 'PetSafeTests' in project 'PetSafe'
+➜ Explicit dependency on target 'PetSafe' in project 'PetSafe'
+Target 'PetSafe' in project 'PetSafe' (no dependencies)

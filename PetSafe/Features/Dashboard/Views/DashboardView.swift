@@ -85,6 +85,7 @@ struct DashboardView: View {
                 Button("Log Out", role: .destructive) {
                     onLogout()
                 }
+                .accessibilityIdentifier("confirm_logout_button")
                 Button("Cancel", role: .cancel) { }
             } message: {
                 Text("Are you sure you want to log out?")
@@ -127,6 +128,8 @@ struct DashboardView: View {
             .clipShape(RoundedRectangle(cornerRadius: Theme.CornerRadius.md))
         }
         .buttonStyle(.plain)
+        .accessibilityIdentifier("\(title)Tab")
+        .accessibilityLabel(title)
     }
 
     // MARK: - Home Tab
@@ -164,14 +167,19 @@ struct DashboardView: View {
     private var homeHeader: some View {
         HStack {
             VStack(alignment: .leading, spacing: 4) {
-                Text("PetSafe")
-                    .font(Theme.Typography.title)
-                    .fontWeight(.bold)
-
                 if let profile = dogProfile {
+                    Text("Welcome back!")
+                        .font(Theme.Typography.title)
+                        .fontWeight(.bold)
+                        .accessibilityIdentifier("welcome_message")
+
                     Text("Protecting \(profile.name)")
                         .font(Theme.Typography.caption)
                         .foregroundStyle(.secondary)
+                } else {
+                    Text("PetSafe")
+                        .font(Theme.Typography.title)
+                        .fontWeight(.bold)
                 }
             }
 
@@ -339,50 +347,56 @@ struct DashboardView: View {
     }
 
     private var todaysCopperCard: some View {
-        VStack(alignment: .leading, spacing: Theme.Spacing.md) {
-            HStack {
-                Text("Today's Copper")
-                    .font(Theme.Typography.headline)
-                Spacer()
-                HStack(spacing: 4) {
-                    Image(systemName: foodLogViewModel.copperStatus.iconName)
-                    Text(foodLogViewModel.copperStatus.text)
-                }
-                .font(Theme.Typography.subheadline.weight(.semibold))
-                .foregroundStyle(foodLogViewModel.copperStatus.color)
-                .badgeStyle(
-                    backgroundColor: foodLogViewModel.copperStatus.backgroundColor,
-                    foregroundColor: foodLogViewModel.copperStatus.color
-                )
-            }
-
-            HStack(alignment: .firstTextBaseline, spacing: 4) {
-                Text(String(format: "%.1f", foodLogViewModel.totalCopperToday))
-                    .font(Theme.Typography.customTitle(32))
-                    .fontWeight(.bold)
+        Group {
+            VStack(alignment: .leading, spacing: Theme.Spacing.md) {
+                HStack {
+                    Text("Today's Copper")
+                        .font(Theme.Typography.headline)
+                        .accessibilityIdentifier("todays_intake_label")
+                    Spacer()
+                    HStack(spacing: 4) {
+                        Image(systemName: foodLogViewModel.copperStatus.iconName)
+                        Text(foodLogViewModel.copperStatus.text)
+                    }
+                    .font(Theme.Typography.subheadline.weight(.semibold))
                     .foregroundStyle(foodLogViewModel.copperStatus.color)
-                Text("/ \(dogProfile?.dailyCopperLimit ?? 5.0, specifier: "%.1f") mg")
-                    .font(Theme.Typography.callout)
-                    .foregroundStyle(.secondary)
-            }
-
-            // Progress bar
-            GeometryReader { geometry in
-                ZStack(alignment: .leading) {
-                    Capsule()
-                        .fill(Color.gray.opacity(0.15))
-
-                    Capsule()
-                        .fill(foodLogViewModel.copperStatus.color)
-                        .frame(width: geometry.size.width * (foodLogViewModel.copperPercentage / 100))
+                    .badgeStyle(
+                        backgroundColor: foodLogViewModel.copperStatus.backgroundColor,
+                        foregroundColor: foodLogViewModel.copperStatus.color
+                    )
                 }
+
+                HStack(alignment: .firstTextBaseline, spacing: 4) {
+                    Text(String(format: "%.1f", foodLogViewModel.totalCopperToday))
+                        .font(Theme.Typography.customTitle(32))
+                        .fontWeight(.bold)
+                        .foregroundStyle(foodLogViewModel.copperStatus.color)
+                    Text("/ \(dogProfile?.dailyCopperLimit ?? 5.0, specifier: "%.1f") mg")
+                        .font(Theme.Typography.callout)
+                        .foregroundStyle(.secondary)
+                        .accessibilityIdentifier("recommended_limit_label")
+                }
+
+                // Progress bar
+                GeometryReader { geometry in
+                    ZStack(alignment: .leading) {
+                        Capsule()
+                            .fill(Color.gray.opacity(0.15))
+
+                        Capsule()
+                            .fill(foodLogViewModel.copperStatus.color)
+                            .frame(width: geometry.size.width * (foodLogViewModel.copperPercentage / 100))
+                    }
+                }
+                .frame(height: 10)
             }
-            .frame(height: 10)
+            .cardStyle(
+                backgroundColor: foodLogViewModel.copperStatus.backgroundColor,
+                borderColor: foodLogViewModel.copperStatus.borderColor
+            )
         }
-        .cardStyle(
-            backgroundColor: foodLogViewModel.copperStatus.backgroundColor,
-            borderColor: foodLogViewModel.copperStatus.borderColor
-        )
+        .accessibilityElement(children: .contain)
+        .accessibilityIdentifier("copper_tracker_card")
     }
 
     private var quickActionsCard: some View {
@@ -483,40 +497,7 @@ struct DashboardView: View {
             viewModel: subscriptionViewModel,
             featureName: "Barcode Scanner"
         ) {
-            VStack(spacing: Theme.Spacing.xl) {
-                Spacer()
-
-                Image(systemName: "barcode.viewfinder")
-                    .font(.system(size: 64))
-                    .foregroundStyle(Theme.Colors.orange600)
-
-                Text("Ready to Scan")
-                    .font(Theme.Typography.title)
-
-                Text("Tap below to start scanning food product barcodes")
-                    .font(Theme.Typography.subheadline)
-                    .foregroundStyle(.secondary)
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal)
-
-                Button {
-                    showingScanner = true
-                } label: {
-                    HStack {
-                        Image(systemName: "camera.viewfinder")
-                        Text("Start Scanner")
-                    }
-                    .font(Theme.Typography.headline)
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .background(Theme.Colors.orange600)
-                    .foregroundStyle(.white)
-                    .clipShape(RoundedRectangle(cornerRadius: Theme.CornerRadius.lg))
-                }
-                .padding(.horizontal)
-
-                Spacer()
-            }
+            BarcodeScannerView(viewModel: scannerViewModel)
         }
     }
 
